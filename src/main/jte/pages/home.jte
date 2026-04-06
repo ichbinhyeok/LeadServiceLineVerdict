@@ -28,7 +28,8 @@
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">$unsafe{jsonLd}</script>
     @endfor
-    <link rel="stylesheet" href="/app.css?v=20260405-qa3">
+    <script src="/app.js?v=20260406-mobile-nav1" defer></script>
+    <link rel="stylesheet" href="/app.css?v=20260406-mobile-nav1">
     <link rel="icon" href="/favicon.svg?v=20260405-qa3" type="image/svg+xml">
 </head>
 <body>
@@ -41,6 +42,19 @@
             <a href="/#states">States</a>
             <a href="/#guides">Guides</a>
         </nav>
+        <details class="site-nav-mobile" data-mobile-nav>
+            <summary class="site-nav-mobile__toggle">
+                <span class="material-symbols-outlined site-nav-mobile__icon--menu">menu</span>
+                <span class="material-symbols-outlined site-nav-mobile__icon--close">close</span>
+                <span>Menu</span>
+            </summary>
+            <nav class="site-nav-mobile__panel">
+                <a class="active" href="/">Home</a>
+                <a href="/lookup">Lookup</a>
+                <a href="/#states">States</a>
+                <a href="/#guides">Guides</a>
+            </nav>
+        </details>
         <div class="site-avatar"><span class="material-symbols-outlined">water_drop</span></div>
     </div>
 </header>

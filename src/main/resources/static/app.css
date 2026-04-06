@@ -126,6 +126,78 @@ input {
   gap: 28px;
 }
 
+.site-nav-mobile {
+  display: none;
+}
+
+.site-nav-mobile__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(0, 52, 111, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--blue);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  box-shadow: 0 16px 36px -32px rgba(0, 52, 111, 0.45);
+}
+
+.site-nav-mobile__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.site-nav-mobile__toggle .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.site-nav-mobile__icon--close {
+  display: none;
+}
+
+.site-nav-mobile[open] .site-nav-mobile__icon--menu {
+  display: none;
+}
+
+.site-nav-mobile[open] .site-nav-mobile__icon--close {
+  display: inline-flex;
+}
+
+.site-nav-mobile__panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  width: min(280px, calc(100vw - 24px));
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid rgba(0, 52, 111, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 28px 52px -34px rgba(0, 52, 111, 0.42);
+  backdrop-filter: blur(18px);
+}
+
+.site-nav-mobile__panel a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 14px;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.site-nav-mobile__panel a.active {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
 .site-nav a {
   color: var(--ink-soft);
   font-size: 1rem;
@@ -954,34 +1026,34 @@ code {
     --shell: min(100% - 24px, 1220px);
   }
 
+  .brand-mark {
+    font-size: 1rem;
+    letter-spacing: -0.025em;
+  }
+
   .site-header__inner {
-    min-height: auto;
-    padding: 14px 0 10px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    min-height: 58px;
+    padding: 8px 0;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
   .site-nav {
-    display: flex;
-    order: 3;
-    width: 100%;
-    gap: 16px;
-    margin-top: 8px;
-    padding-bottom: 2px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    white-space: nowrap;
-  }
-
-  .site-nav::-webkit-scrollbar {
     display: none;
   }
 
-  .site-nav a {
-    flex: 0 0 auto;
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
+  .site-nav-mobile {
+    display: block;
+    position: relative;
+    margin-left: auto;
+  }
+
+  .site-nav-mobile__panel {
+    width: min(260px, calc(100vw - 24px));
+  }
+
+  .site-avatar {
+    display: none;
   }
 
   .utility-nav a,
