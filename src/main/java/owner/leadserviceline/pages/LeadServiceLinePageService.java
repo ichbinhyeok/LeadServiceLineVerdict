@@ -27,6 +27,7 @@ import owner.leadserviceline.lookup.GeocodedAddress;
 import owner.leadserviceline.lookup.LookupEventRecord;
 import owner.leadserviceline.lookup.LookupLoggingProperties;
 import owner.leadserviceline.recommendation.RecommendationClickEventRecord;
+import owner.leadserviceline.recommendation.RecommendationImpressionEventRecord;
 import owner.leadserviceline.recommendation.RecommendationLoggingProperties;
 import owner.leadserviceline.web.SiteRuntimeProperties;
 import owner.leadserviceline.data.SourceEvidenceRecord;
@@ -85,7 +86,7 @@ public class LeadServiceLinePageService {
 				addressGeocoder,
 				new ObjectMapper(),
 				new LookupLoggingProperties(false, "data/logs/lookup-events.jsonl", 14),
-				new RecommendationLoggingProperties(false, "data/logs/recommendation-clicks.jsonl", 30),
+				new RecommendationLoggingProperties(false, "data/logs/recommendation-clicks.jsonl", "data/logs/recommendation-impressions.jsonl", 30),
 				new SiteRuntimeProperties("https://leadlinerecord.com", false, "", true, "admin", "tlsgur3108")
 		);
 	}
@@ -352,6 +353,7 @@ public class LeadServiceLinePageService {
 
 	public AdminPageModel adminPage() {
 		var recommendationEvents = readRecommendationEvents();
+		var recommendationImpressions = readRecommendationImpressions();
 		var lookupEvents = readLookupEvents();
 		var recentClicks = recommendationEvents.stream()
 				.sorted(Comparator.comparing(RecommendationClickEventRecord::timestamp).reversed())
@@ -365,7 +367,32 @@ public class LeadServiceLinePageService {
 						event.destinationDomain()
 				))
 				.toList();
+		var slotPerformance = buildPerformanceRows(
+				recommendationImpressions.stream()
+						.collect(Collectors.groupingBy(
+								event -> hasText(event.slot()) ? event.slot() : "unknown",
+								Collectors.counting()
+						)),
+				recommendationEvents.stream()
+						.collect(Collectors.groupingBy(
+								event -> hasText(event.slot()) ? event.slot() : "unknown",
+								Collectors.counting()
+						))
+		);
+		var pagePerformance = buildPerformanceRows(
+				recommendationImpressions.stream()
+						.collect(Collectors.groupingBy(
+								event -> hasText(event.pagePath()) ? event.pagePath() : "unknown",
+								Collectors.counting()
+						)),
+				recommendationEvents.stream()
+						.collect(Collectors.groupingBy(
+								event -> hasText(event.sourcePath()) ? event.sourcePath() : "unknown",
+								Collectors.counting()
+						))
+		);
 		var metrics = List.of(
+				new OpsMetric("Recommendation impressions", recommendationImpressions.size()),
 				new OpsMetric("Recommendation clicks", recommendationEvents.size()),
 				new OpsMetric("Unique products", (int) recommendationEvents.stream()
 						.map(RecommendationClickEventRecord::recommendationSlug)
@@ -384,6 +411,8 @@ public class LeadServiceLinePageService {
 				brandTitle("Admin"),
 				metrics,
 				recentClicks,
+				slotPerformance,
+				pagePerformance,
 				recommendationLoggingProperties.recommendationLogEnabled(),
 				lookupLoggingProperties.lookupLogEnabled(),
 				siteRuntimeProperties.opsReviewEnabled()
@@ -1906,6 +1935,28 @@ public class LeadServiceLinePageService {
 		}
 	}
 
+	private List<RecommendationImpressionEventRecord> readRecommendationImpressions() {
+		var logPathValue = recommendationLoggingProperties.recommendationImpressionLogPath();
+		if (!hasText(logPathValue)) {
+			return List.of();
+		}
+		var logPath = Path.of(logPathValue);
+		if (!Files.exists(logPath)) {
+			return List.of();
+		}
+		try (var lines = Files.lines(logPath)) {
+			return lines
+					.map(String::trim)
+					.filter(this::hasText)
+					.map(this::readRecommendationImpression)
+					.flatMap(Optional::stream)
+					.toList();
+		} catch (IOException exception) {
+			LOGGER.warn("Unable to read recommendation impression log file {}", logPath, exception);
+			return List.of();
+		}
+	}
+
 	private Optional<LookupEventRecord> readLookupEvent(String line) {
 		try {
 			return Optional.of(objectMapper.readValue(line, LookupEventRecord.class));
@@ -1922,6 +1973,41 @@ public class LeadServiceLinePageService {
 			LOGGER.warn("Skipping unreadable recommendation log line");
 			return Optional.empty();
 		}
+	}
+
+	private Optional<RecommendationImpressionEventRecord> readRecommendationImpression(String line) {
+		try {
+			return Optional.of(objectMapper.readValue(line, RecommendationImpressionEventRecord.class));
+		} catch (IOException exception) {
+			LOGGER.warn("Skipping unreadable recommendation impression log line");
+			return Optional.empty();
+		}
+	}
+
+	private List<AdminPerformanceRow> buildPerformanceRows(Map<String, Long> impressionsByLabel, Map<String, Long> clicksByLabel) {
+		var labels = new LinkedHashSet<String>();
+		labels.addAll(impressionsByLabel.keySet());
+		labels.addAll(clicksByLabel.keySet());
+
+		return labels.stream()
+				.map(label -> {
+					var impressions = impressionsByLabel.getOrDefault(label, 0L).intValue();
+					var clicks = clicksByLabel.getOrDefault(label, 0L).intValue();
+					return new AdminPerformanceRow(label, impressions, clicks, formatCtr(clicks, impressions));
+				})
+				.sorted(Comparator.comparingInt(AdminPerformanceRow::clicks).reversed()
+						.thenComparing(Comparator.comparingInt(AdminPerformanceRow::impressions).reversed())
+						.thenComparing(AdminPerformanceRow::label))
+				.limit(10)
+				.toList();
+	}
+
+	private String formatCtr(int clicks, int impressions) {
+		if (impressions <= 0) {
+			return "0.0%";
+		}
+		var ctr = (clicks * 100.0d) / impressions;
+		return String.format(Locale.US, "%.1f%%", ctr);
 	}
 
 	private String lookupBucketKey(LookupEventRecord event) {

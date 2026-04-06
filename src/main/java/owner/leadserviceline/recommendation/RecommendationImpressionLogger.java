@@ -1,7 +1,6 @@
 package owner.leadserviceline.recommendation;
 
 import java.io.IOException;
-import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -20,43 +19,41 @@ import org.springframework.stereotype.Component;
 
 @Component
 @EnableConfigurationProperties(RecommendationLoggingProperties.class)
-public class RecommendationClickLogger {
+public class RecommendationImpressionLogger {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(RecommendationClickLogger.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(RecommendationImpressionLogger.class);
 
 	private final ObjectMapper objectMapper;
 	private final RecommendationLoggingProperties properties;
 	private final Object appendLock = new Object();
 
-	public RecommendationClickLogger(ObjectMapper objectMapper, RecommendationLoggingProperties properties) {
+	public RecommendationImpressionLogger(ObjectMapper objectMapper, RecommendationLoggingProperties properties) {
 		this.objectMapper = objectMapper;
 		this.properties = properties;
 	}
 
-	public void logClick(ProductRecommendationRecord recommendation, String referer, String slot) {
+	public void logImpression(ProductRecommendationRecord recommendation, String pagePath, String slot) {
 		if (!properties.recommendationLogEnabled()) {
 			return;
 		}
 
-		var event = new RecommendationClickEventRecord(
+		var event = new RecommendationImpressionEventRecord(
 				Instant.now().toString(),
 				recommendation.slug(),
 				recommendation.guideSlug(),
-				recommendation.name(),
-				extractSourcePath(referer),
-				normalizeValue(slot),
-				extractDestinationDomain(recommendation.destinationUrl())
+				normalizeValue(pagePath),
+				normalizeValue(slot)
 		);
 
 		try {
 			appendLine(event);
 		} catch (IOException exception) {
-			LOGGER.warn("Unable to append recommendation click event to {}", properties.recommendationLogPath(), exception);
+			LOGGER.warn("Unable to append recommendation impression event to {}", properties.recommendationImpressionLogPath(), exception);
 		}
 	}
 
-	private void appendLine(RecommendationClickEventRecord event) throws IOException {
-		var logPath = Path.of(properties.recommendationLogPath());
+	private void appendLine(RecommendationImpressionEventRecord event) throws IOException {
+		var logPath = Path.of(properties.recommendationImpressionLogPath());
 		var parent = logPath.getParent();
 		if (parent != null) {
 			Files.createDirectories(parent);
@@ -107,35 +104,12 @@ public class RecommendationClickLogger {
 		}
 	}
 
-	private Optional<RecommendationClickEventRecord> readEvent(String line) {
+	private Optional<RecommendationImpressionEventRecord> readEvent(String line) {
 		try {
-			return Optional.of(objectMapper.readValue(line, RecommendationClickEventRecord.class));
+			return Optional.of(objectMapper.readValue(line, RecommendationImpressionEventRecord.class));
 		} catch (IOException exception) {
-			LOGGER.warn("Skipping unreadable recommendation log line during append");
+			LOGGER.warn("Skipping unreadable recommendation impression log line during append");
 			return Optional.empty();
-		}
-	}
-
-	private String extractSourcePath(String referer) {
-		if (referer == null || referer.isBlank()) {
-			return "";
-		}
-		try {
-			var uri = URI.create(referer);
-			return uri.getPath() == null ? "" : uri.getPath();
-		} catch (IllegalArgumentException exception) {
-			return referer.startsWith("/") ? referer : "";
-		}
-	}
-
-	private String extractDestinationDomain(String destinationUrl) {
-		if (destinationUrl == null || destinationUrl.isBlank()) {
-			return "";
-		}
-		try {
-			return Optional.ofNullable(URI.create(destinationUrl).getHost()).orElse("");
-		} catch (IllegalArgumentException exception) {
-			return "";
 		}
 	}
 

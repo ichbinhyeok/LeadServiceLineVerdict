@@ -6,6 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public record RecommendationLoggingProperties(
 		boolean recommendationLogEnabled,
 		String recommendationLogPath,
+		String recommendationImpressionLogPath,
 		int recommendationLogRetentionDays
 ) {
 

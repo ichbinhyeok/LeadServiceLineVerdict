@@ -54,7 +54,11 @@
                 <p>${page.guide().heroSummary()}</p>
                 <div class="hero-actions">
                     <a class="button" href="/lookup">Find your utility</a>
-                    <a class="button secondary" href="/#guides">More guides</a>
+                    @if (!page.recommendations().isEmpty())
+                        <a class="button secondary" href="#recommendations">See recommendations</a>
+                    @else
+                        <a class="button secondary" href="/#guides">More guides</a>
+                    @endif
                 </div>
                 <div class="support-banner" style="margin-top: 28px;">
                     <strong>Verdict</strong>
@@ -133,7 +137,7 @@
     </section>
 
     @if (!page.recommendations().isEmpty())
-        <section class="section-block">
+        <section class="section-block" id="recommendations">
             <div class="editorial-line">
                 <div class="kicker">Recommended products</div>
             </div>
@@ -153,6 +157,13 @@
             <div class="section-grid two" style="margin-top: 24px;">
                 @for (var recommendation : page.recommendations())
                     <div class="content-card">
+                        <img src="/events/recommendation-impression?slug=${recommendation.slug()}&pagePath=/guides/${page.guide().slug()}&slot=guide-card"
+                             alt=""
+                             width="1"
+                             height="1"
+                             loading="eager"
+                             decoding="async"
+                             style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;">
                         <span class="label">${recommendation.badge()}</span>
                         <h3>${recommendation.name()}</h3>
                         <p><strong>Best for:</strong> ${recommendation.bestFor()}</p>
@@ -160,9 +171,9 @@
                         <p><strong>Watchout:</strong> ${recommendation.watchout()}</p>
                         <p class="muted">${recommendation.evidenceNote()}</p>
                         <div class="hero-actions" style="margin-top: 18px;">
-                            <a class="button" href="/go/${recommendation.slug()}" rel="nofollow noopener" target="_blank">${recommendation.destinationLabel()}</a>
+                            <a class="button" href="/go/${recommendation.slug()}?slot=guide-card" rel="nofollow noopener" target="_blank">${recommendation.destinationLabel()}</a>
                         </div>
-                        <p class="muted" style="margin-top: 14px;">${recommendation.merchantName()} · last verified ${recommendation.lastVerified().toString()}.</p>
+                        <p class="muted" style="margin-top: 14px;">${recommendation.merchantName()} - last verified ${recommendation.lastVerified().toString()}.</p>
                     </div>
                 @endfor
             </div>
@@ -236,4 +247,3 @@
 </footer>
 </body>
 </html>
-

@@ -262,17 +262,46 @@ class SiteControllerTest {
 				.andExpect(status().isOk())
 				.andExpect(content().string(Matchers.containsString("Brita Elite Replacement Filters")))
 				.andExpect(content().string(Matchers.containsString("Epic Smart Shield Under-Sink Water Filter System")))
-				.andExpect(content().string(Matchers.containsString("/go/brita-elite-replacement-filters")));
+				.andExpect(content().string(Matchers.containsString("/go/brita-elite-replacement-filters?slot=guide-card")))
+				.andExpect(content().string(Matchers.containsString("/events/recommendation-impression?slug=brita-elite-replacement-filters&pagePath=/guides/best-lead-reduction-filters-after-a-lead-notice&slot=guide-card")));
 	}
 
 	@Test
 	void recommendationRedirectUsesOfficialProductUrl() throws Exception {
 		mockMvc.perform(get("/go/brita-elite-replacement-filters")
+						.param("slot", "guide-card")
 						.header("Referer", "https://example.test/guides/best-lead-reduction-filters-after-a-lead-notice"))
 				.andExpect(status().is3xxRedirection())
 				.andExpect(header().string("Location", "https://www.brita.com/products/elite-replacement-filters/"))
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
 				.andExpect(header().string("X-Robots-Tag", Matchers.containsString("noindex, nofollow")));
+	}
+
+	@Test
+	void recommendationImpressionPixelResponds() throws Exception {
+		mockMvc.perform(get("/events/recommendation-impression")
+						.param("slug", "brita-elite-replacement-filters")
+						.param("pagePath", "/guides/best-lead-reduction-filters-after-a-lead-notice")
+						.param("slot", "guide-card"))
+				.andExpect(status().isOk())
+				.andExpect(content().contentTypeCompatibleWith(MediaType.IMAGE_GIF))
+				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")));
+	}
+
+	@Test
+	void utilityFilterPageShowsDirectQuickPickLinks() throws Exception {
+		mockMvc.perform(get("/lead-service-line/co/denver/denver-water/filter-and-testing"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("/go/pur-plus-faucet-system-vertical?slot=utility-filter-testing-faucet")))
+				.andExpect(content().string(Matchers.containsString("/go/tap-score-lead-and-copper?slot=utility-filter-testing-test")));
+	}
+
+	@Test
+	void utilityReplacementCostPageShowsDirectQuickPickLinks() throws Exception {
+		mockMvc.perform(get("/lead-service-line/dc/washington/dc-water/replacement-cost"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("/go/pur-plus-faucet-system-vertical?slot=utility-cost-faucet")))
+				.andExpect(content().string(Matchers.containsString("/go/tap-score-essential-city-water?slot=utility-cost-test")));
 	}
 
 	@Test

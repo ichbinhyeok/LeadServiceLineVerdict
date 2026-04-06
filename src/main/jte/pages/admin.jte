@@ -117,6 +117,57 @@
             </div>
         @endif
     </section>
+
+    <section class="section-block">
+        <div class="section-grid two">
+            <div>
+                <div class="editorial-line">
+                    <div class="kicker">Slot performance</div>
+                </div>
+                <h2>Which CTA surfaces are getting action.</h2>
+                @if (page.slotPerformance().isEmpty())
+                    <div class="support-banner">
+                        <strong>No slot data yet</strong>
+                        <p>Slot-level impressions and clicks will appear here once pages start loading and readers hit recommendation CTAs.</p>
+                    </div>
+                @else
+                    <div class="content-stack">
+                        @for (var row : page.slotPerformance())
+                            <div class="content-card">
+                                <h3>${row.label()}</h3>
+                                <p><strong>Impressions:</strong> ${row.impressions()}</p>
+                                <p><strong>Clicks:</strong> ${row.clicks()}</p>
+                                <p><strong>CTR:</strong> ${row.ctrLabel()}</p>
+                            </div>
+                        @endfor
+                    </div>
+                @endif
+            </div>
+            <div>
+                <div class="editorial-line">
+                    <div class="kicker">Page performance</div>
+                </div>
+                <h2>Which pages are generating recommendation activity.</h2>
+                @if (page.pagePerformance().isEmpty())
+                    <div class="support-banner">
+                        <strong>No page data yet</strong>
+                        <p>Page-level impressions and clicks will appear here once recommendation surfaces start loading.</p>
+                    </div>
+                @else
+                    <div class="content-stack">
+                        @for (var row : page.pagePerformance())
+                            <div class="content-card">
+                                <h3>${row.label()}</h3>
+                                <p><strong>Impressions:</strong> ${row.impressions()}</p>
+                                <p><strong>Clicks:</strong> ${row.clicks()}</p>
+                                <p><strong>CTR:</strong> ${row.ctrLabel()}</p>
+                            </div>
+                        @endfor
+                    </div>
+                @endif
+            </div>
+        </div>
+    </section>
 </main>
 </body>
 </html>

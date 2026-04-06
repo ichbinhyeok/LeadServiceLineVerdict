@@ -203,6 +203,54 @@
 
     <section class="section-block section-soft">
         <div class="editorial-line">
+            <div class="kicker">Interim quick picks</div>
+        </div>
+        <h2>Direct product options while replacement funding or scheduling is still moving.</h2>
+        <div class="section-grid three">
+            <div class="content-card tint-blue">
+                <img src="/events/recommendation-impression?slug=pur-plus-faucet-system-vertical&pagePath=${page.currentRoute().path()}&slot=utility-cost-faucet"
+                     alt=""
+                     width="1"
+                     height="1"
+                     loading="eager"
+                     decoding="async"
+                     style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;">
+                <span class="label">Lower-friction filter</span>
+                <h3>PUR PLUS Faucet Filtration System</h3>
+                <p>Best when the household needs a simple interim setup while quotes, reimbursements, or utility timing are still unresolved.</p>
+                <a class="button" href="/go/pur-plus-faucet-system-vertical?slot=utility-cost-faucet" rel="nofollow noopener" target="_blank">Open direct filter option</a>
+            </div>
+            <div class="content-card tint-soft">
+                <img src="/events/recommendation-impression?slug=epic-smart-shield-under-sink&pagePath=${page.currentRoute().path()}&slot=utility-cost-under-sink"
+                     alt=""
+                     width="1"
+                     height="1"
+                     loading="eager"
+                     decoding="async"
+                     style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;">
+                <span class="label">Higher-volume kitchen</span>
+                <h3>Epic Smart Shield Under-Sink Filter</h3>
+                <p>Best when the likely delay is long enough that a sturdier under-sink setup makes more sense than a shorter-term workaround.</p>
+                <a class="button" href="/go/epic-smart-shield-under-sink?slot=utility-cost-under-sink" rel="nofollow noopener" target="_blank">Open direct under-sink option</a>
+            </div>
+            <div class="content-card tint-warm">
+                <img src="/events/recommendation-impression?slug=tap-score-essential-city-water&pagePath=${page.currentRoute().path()}&slot=utility-cost-test"
+                     alt=""
+                     width="1"
+                     height="1"
+                     loading="eager"
+                     decoding="async"
+                     style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;">
+                <span class="label">Baseline utility-water test</span>
+                <h3>Tap Score Essential City Water Test</h3>
+                <p>Best when a broader baseline could justify the interim plan or document a before-and-after change while replacement remains pending.</p>
+                <a class="button" href="/go/tap-score-essential-city-water?slot=utility-cost-test" rel="nofollow noopener" target="_blank">Open direct test option</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block section-soft">
+        <div class="editorial-line">
             <div class="kicker">Interim buying guides</div>
         </div>
         <h2>Useful when the out-of-pocket path will take time.</h2>

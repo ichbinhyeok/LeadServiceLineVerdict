@@ -8,6 +8,7 @@ import owner.leadserviceline.pages.LeadServiceLinePageService;
 import owner.leadserviceline.pages.OpsReviewSnapshotModel;
 import owner.leadserviceline.lookup.LookupEventLogger;
 import owner.leadserviceline.recommendation.RecommendationClickLogger;
+import owner.leadserviceline.recommendation.RecommendationImpressionLogger;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -29,20 +30,25 @@ import org.springframework.web.server.ResponseStatusException;
 @EnableConfigurationProperties(SiteRuntimeProperties.class)
 public class SiteController {
 
+	private static final byte[] TRACKING_PIXEL_GIF = Base64.getDecoder().decode("R0lGODlhAQABAIABAP///wAAACwAAAAAAQABAAACAkQBADs=");
+
 	private final LeadServiceLinePageService pageService;
 	private final LookupEventLogger lookupEventLogger;
 	private final RecommendationClickLogger recommendationClickLogger;
+	private final RecommendationImpressionLogger recommendationImpressionLogger;
 	private final SiteRuntimeProperties siteRuntimeProperties;
 
 	public SiteController(
 			LeadServiceLinePageService pageService,
 			LookupEventLogger lookupEventLogger,
 			RecommendationClickLogger recommendationClickLogger,
+			RecommendationImpressionLogger recommendationImpressionLogger,
 			SiteRuntimeProperties siteRuntimeProperties
 	) {
 		this.pageService = pageService;
 		this.lookupEventLogger = lookupEventLogger;
 		this.recommendationClickLogger = recommendationClickLogger;
+		this.recommendationImpressionLogger = recommendationImpressionLogger;
 		this.siteRuntimeProperties = siteRuntimeProperties;
 	}
 
@@ -161,11 +167,12 @@ public class SiteController {
 	@GetMapping("/go/{slug}")
 	public ResponseEntity<Void> recommendationRedirect(
 			@PathVariable String slug,
+			@RequestParam(required = false) String slot,
 			@RequestHeader(value = "Referer", required = false) String referer
 	) {
 		var recommendation = pageService.recommendation(slug)
 				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-		recommendationClickLogger.logClick(recommendation, referer);
+		recommendationClickLogger.logClick(recommendation, referer, slot);
 		return ResponseEntity.status(HttpStatus.FOUND)
 				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
 				.header("Pragma", "no-cache")
@@ -173,6 +180,23 @@ public class SiteController {
 				.header("X-Robots-Tag", "noindex, nofollow, noarchive")
 				.location(URI.create(recommendation.destinationUrl()))
 				.build();
+	}
+
+	@GetMapping(value = "/events/recommendation-impression", produces = MediaType.IMAGE_GIF_VALUE)
+	@ResponseBody
+	public ResponseEntity<byte[]> recommendationImpression(
+			@RequestParam String slug,
+			@RequestParam(required = false) String pagePath,
+			@RequestParam(required = false) String slot
+	) {
+		var recommendation = pageService.recommendation(slug)
+				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+		recommendationImpressionLogger.logImpression(recommendation, pagePath, slot);
+		return ResponseEntity.ok()
+				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
+				.header("Pragma", "no-cache")
+				.header("X-Robots-Tag", "noindex, nofollow, noarchive")
+				.body(TRACKING_PIXEL_GIF);
 	}
 
 	@GetMapping({

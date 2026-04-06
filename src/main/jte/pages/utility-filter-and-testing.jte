@@ -102,6 +102,54 @@
 
     <section class="section-block">
         <div class="editorial-line">
+            <div class="kicker">Quick picks</div>
+        </div>
+        <h2>Direct interim options for this utility page.</h2>
+        <div class="section-grid three">
+            <div class="content-card tint-blue">
+                <img src="/events/recommendation-impression?slug=pur-plus-faucet-system-vertical&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-faucet"
+                     alt=""
+                     width="1"
+                     height="1"
+                     loading="eager"
+                     decoding="async"
+                     style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;">
+                <span class="label">Fastest setup</span>
+                <h3>PUR PLUS Faucet Filtration System</h3>
+                <p>Best when the household wants filtered drinking water on demand without waiting on a pitcher refill.</p>
+                <a class="button" href="/go/pur-plus-faucet-system-vertical?slot=utility-filter-testing-faucet" rel="nofollow noopener" target="_blank">Open quick-pick filter</a>
+            </div>
+            <div class="content-card tint-soft">
+                <img src="/events/recommendation-impression?slug=zerowater-10-cup-pitcher&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-pitcher"
+                     alt=""
+                     width="1"
+                     height="1"
+                     loading="eager"
+                     decoding="async"
+                     style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;">
+                <span class="label">Pitcher option</span>
+                <h3>ZeroWater 10 Cup Pitcher</h3>
+                <p>Best when the household prefers a portable pitcher and can stay disciplined on more active filter changes.</p>
+                <a class="button" href="/go/zerowater-10-cup-pitcher?slot=utility-filter-testing-pitcher" rel="nofollow noopener" target="_blank">Open quick-pick pitcher</a>
+            </div>
+            <div class="content-card tint-warm">
+                <img src="/events/recommendation-impression?slug=tap-score-lead-and-copper&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-test"
+                     alt=""
+                     width="1"
+                     height="1"
+                     loading="eager"
+                     decoding="async"
+                     style="position:absolute; width:1px; height:1px; opacity:0; pointer-events:none;">
+                <span class="label">Targeted lab test</span>
+                <h3>Tap Score Lead and Copper Water Test</h3>
+                <p>Best when a narrower lab-backed result would change the next step for this utility-specific situation.</p>
+                <a class="button" href="/go/tap-score-lead-and-copper?slot=utility-filter-testing-test" rel="nofollow noopener" target="_blank">Open quick-pick test</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block">
+        <div class="editorial-line">
             <div class="kicker">Buying guides</div>
         </div>
         <h2>Use dedicated product guides when you are ready to compare actual options.</h2>
