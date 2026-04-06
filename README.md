@@ -37,7 +37,8 @@ A utility-first decision site for homeowners, buyers, and sellers who need to un
   Spring Boot `4.0.5` is already in use here, so deployment stays on Java `21`, not `17`
 
 ## Deployment
-- Docker image: `shinhyeok22/leadline:latest`
+- Docker image: `shinhyeok22/leadline`
+- Release tag strategy: push both `latest` and the full Git commit SHA, then deploy the SHA-pinned image
 - Docker Compose port mapping: external `8094` -> internal `8080`
 - Docker Compose memory cap: `mem_limit: 512m`
 - GitHub Actions workflow: `.github/workflows/deploy.yml`

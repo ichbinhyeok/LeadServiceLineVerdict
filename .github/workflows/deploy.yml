@@ -37,12 +37,15 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push image
+        id: build_image
         uses: docker/build-push-action@v5
         with:
           context: .
           platforms: linux/arm64
           push: true
-          tags: shinhyeok22/leadline:latest
+          tags: |
+            shinhyeok22/leadline:latest
+            shinhyeok22/leadline:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -54,6 +57,9 @@ jobs:
           key: ${{ secrets.OCI_KEY }}
           script: |
             mkdir -p ~/deploy/leadline/logs
+            cat <<EOF > ~/deploy/leadline/.env
+            IMAGE_TAG=${{ github.sha }}
+            EOF
 
       - name: Copy compose file to OCI
         uses: appleboy/scp-action@v0.1.7
@@ -87,8 +93,8 @@ jobs:
             set -e
             cd ~/deploy/leadline
             docker compose ps
-            docker image inspect shinhyeok22/leadline:latest --format '{{json .RepoDigests}}'
-            docker inspect leadline --format '{{.Config.Image}}'
+            docker image inspect shinhyeok22/leadline:${{ github.sha }} --format '{{json .RepoDigests}}'
+            test "$(docker inspect leadline --format '{{.Config.Image}}')" = "shinhyeok22/leadline:${{ github.sha }}"
 
       - name: Verify OCI local homepage on port 8094
         uses: appleboy/ssh-action@v1.0.3

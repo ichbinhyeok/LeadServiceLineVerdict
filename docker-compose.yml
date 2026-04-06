@@ -1,9 +1,10 @@
 services:
   app:
-    image: shinhyeok22/leadline:latest
+    image: shinhyeok22/leadline:${IMAGE_TAG:-latest}
     container_name: leadline
     restart: always
     platform: linux/arm64
+    pull_policy: always
     ports:
       - "8094:8080"
     mem_limit: 512m
