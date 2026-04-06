@@ -1,0 +1,15 @@
+services:
+  app:
+    image: shinhyeok22/leadline:latest
+    container_name: leadline
+    restart: always
+    platform: linux/arm64
+    ports:
+      - "8094:8080"
+    mem_limit: 512m
+    environment:
+      LEAD_SERVICE_LINE_SITE_BASE_URL: https://leadlinerecord.com
+      LEAD_SERVICE_LINE_OPS_REVIEW_ENABLED: "false"
+      LEAD_SERVICE_LINE_LOOKUP_LOG_ENABLED: "false"
+    volumes:
+      - ./logs:/app/data/logs

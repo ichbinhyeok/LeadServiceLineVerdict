@@ -1,4 +1,4 @@
-# LeadServiceLineVerdict
+# Lead Line Record
 
 Public brand: `Lead Line Record`  
 Primary site URL: `https://leadlinerecord.com`
@@ -33,6 +33,20 @@ A utility-first decision site for homeowners, buyers, and sellers who need to un
 - Server-rendered utility, state, program, and guide pages with aggressive caching
 - File-based data pipeline using raw `CSV` plus normalized and derived `JSON`
 - No runtime database in phase 1
+- Java runtime baseline: `21`  
+  Spring Boot `4.0.5` is already in use here, so deployment stays on Java `21`, not `17`
+
+## Deployment
+- Docker image: `shinhyeok22/leadline:latest`
+- Docker Compose port mapping: external `8094` -> internal `8080`
+- Docker Compose memory cap: `mem_limit: 512m`
+- GitHub Actions workflow: `.github/workflows/deploy.yml`
+- Required GitHub secrets:
+  - `DOCKERHUB_USERNAME`
+  - `DOCKERHUB_TOKEN`
+  - `OCI_HOST`
+  - `OCI_USERNAME`
+  - `OCI_KEY`
 
 ## Current launch cohort
 - `DC Water`

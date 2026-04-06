@@ -450,7 +450,7 @@ public final class DataBuildTool {
 		var uri = URI.create(url);
 		var headRequest = HttpRequest.newBuilder(uri)
 				.method("HEAD", HttpRequest.BodyPublishers.noBody())
-				.header("User-Agent", "LeadServiceLineVerdict/1.0")
+				.header("User-Agent", "LeadLineRecord/1.0")
 				.timeout(URL_CHECK_TIMEOUT)
 				.build();
 		var headResponse = client.send(headRequest, HttpResponse.BodyHandlers.discarding());
@@ -464,7 +464,7 @@ public final class DataBuildTool {
 	private int getUrl(HttpClient client, URI uri) throws IOException, InterruptedException {
 		var getRequest = HttpRequest.newBuilder(uri)
 				.GET()
-				.header("User-Agent", "LeadServiceLineVerdict/1.0")
+				.header("User-Agent", "LeadLineRecord/1.0")
 				.timeout(URL_CHECK_TIMEOUT)
 				.build();
 		return client.send(getRequest, HttpResponse.BodyHandlers.discarding()).statusCode();

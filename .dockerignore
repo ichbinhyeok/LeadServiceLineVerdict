@@ -1,0 +1,15 @@
+.git
+.github
+.gradle
+build
+.idea
+.vscode
+.qa-review
+bootrun*.log
+qa-static.log
+jte-classes
+tmp
+tmp-test-data
+$tmp
+node_modules
+*.iml

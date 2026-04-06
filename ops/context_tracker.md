@@ -23,6 +23,8 @@
 - SEO delivery is now present at the route level with canonical tags, robots tags, JSON-LD, `robots.txt`, and `sitemap.xml`.
 - `jte` now runs with precompiled-template configuration rather than development-mode rendering defaults.
 - Support routes are now selective support-layer pages instead of universal utility routes.
+- Public brand, runtime site URL, and internal Spring application identity are now aligned to `Lead Line Record` and `leadlinerecord.com`.
+- OCI deployment scaffolding now exists with ARM64 Docker build, `docker-compose.yml`, external port `8094`, internal port `8080`, and a GitHub Actions deploy workflow.
 - This remains the highest-priority vertical.
 
 ## Latest decisions
@@ -71,6 +73,8 @@
 - Tightened `/lookup` scoring so exact city matches, official lookup paths, postal prefixes, and normalized service-area aliases break ties more cleanly in ambiguous Midwest queries.
 - Replaced unstable Chicago and Racine verification URLs with stable official pages or PDFs so `buildData`, `test`, and `verifySourceUrls` all pass again on the 44-utility cohort.
 - Added file-based `/lookup` event logging so requests can be captured as compact JSONL without introducing a runtime database.
+- Renamed the Spring Boot application class to `LeadLineRecordApplication`, switched runtime identifiers away from `LeadServiceLineVerdict`, and updated outbound `User-Agent` strings.
+- Added production deployment scaffolding based on the `CarMoneyPit` pattern: multi-stage Java 21 Dockerfile, repo-local `docker-compose.yml`, `.dockerignore`, and `.github/workflows/deploy.yml` for OCI auto-deploy.
 - Added Missouri American Water and Blue Springs so Missouri now has both regional and city utility coverage plus a real state program rollup.
 - Added Grand Island, Council Bluffs, Ames, and West Des Moines to deepen the Iowa and Nebraska clusters with official inventory pages and selective program or cost coverage where the sources were strong enough.
 - Added lookup-log review groups so ambiguous or failed resolver traffic can drive the next alias and boundary cleanup pass without a runtime database.

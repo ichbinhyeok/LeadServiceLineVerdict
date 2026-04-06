@@ -7,12 +7,24 @@ plugins {
 
 group = 'owner'
 version = '0.0.1-SNAPSHOT'
-description = 'Lead service line decision site'
+description = 'Lead Line Record'
 
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
 	}
+}
+
+tasks.withType(JavaCompile) {
+	options.compilerArgs << '-parameters'
+}
+
+jar {
+	enabled = false
+}
+
+bootJar {
+	archiveFileName = 'app.jar'
 }
 
 repositories {

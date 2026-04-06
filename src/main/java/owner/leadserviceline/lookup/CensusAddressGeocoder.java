@@ -51,7 +51,7 @@ public class CensusAddressGeocoder implements AddressGeocoder {
 					+ "&vintage=" + URLEncoder.encode(properties.censusGeocoderVintage(), StandardCharsets.UTF_8)
 					+ "&format=json";
 			var request = HttpRequest.newBuilder(URI.create(url))
-					.header("User-Agent", "LeadServiceLineVerdict/1.0")
+				.header("User-Agent", "LeadLineRecord/1.0")
 					.timeout(Duration.ofSeconds(6))
 					.GET()
 					.build();
