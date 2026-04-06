@@ -26,7 +26,7 @@
     <meta name="twitter:title" content="${seo.title()}">
     <meta name="twitter:description" content="${seo.description()}">
     @for (var jsonLd : seo.jsonLd())
-        <script type="application/ld+json">${jsonLd}</script>
+        <script type="application/ld+json">$unsafe{jsonLd}</script>
     @endfor
     <link rel="stylesheet" href="/app.css?v=20260405-qa3">
     <link rel="icon" href="/favicon.svg?v=20260405-qa3" type="image/svg+xml">

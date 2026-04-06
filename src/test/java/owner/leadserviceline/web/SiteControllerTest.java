@@ -44,6 +44,15 @@ class SiteControllerTest {
 	}
 
 	@Test
+	void homePageRendersJsonLdWithoutHtmlEscaping() throws Exception {
+		mockMvc.perform(get("/"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("<script type=\"application/ld+json\">{\"")))
+				.andExpect(content().string(Matchers.containsString("\"@context\":\"https://schema.org\"")))
+				.andExpect(content().string(Matchers.not(Matchers.containsString("<script type=\"application/ld+json\">{\\\""))));
+	}
+
+	@Test
 	void utilityPageRendersFromJsonData() throws Exception {
 		mockMvc.perform(get("/lead-service-line/dc/washington/dc-water"))
 				.andExpect(status().isOk())
