@@ -1,5 +1,8 @@
 package owner.leadserviceline.web;
 
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +22,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 		"lead-service-line.census-geocoder-enabled=false",
 		"lead-service-line.ops-review-enabled=true",
 		"lead-service-line.ops-review-token=test-token",
+		"lead-service-line.admin-enabled=true",
+		"lead-service-line.admin-username=admin",
+		"lead-service-line.admin-password=tlsgur3108",
 		"lead-service-line.site-base-url=https://example.test"
 })
 @AutoConfigureMockMvc
@@ -1236,6 +1242,24 @@ class SiteControllerTest {
 	}
 
 	@Test
+	void adminRequiresBasicAuth() throws Exception {
+		mockMvc.perform(get("/admin"))
+				.andExpect(status().isUnauthorized())
+				.andExpect(header().string("WWW-Authenticate", Matchers.containsString("Basic realm=\"Lead Line Admin\"")));
+	}
+
+	@Test
+	void adminPageRendersWithBasicAuth() throws Exception {
+		mockMvc.perform(get("/admin")
+						.header("Authorization", basicAuth("admin", "tlsgur3108")))
+				.andExpect(status().isOk())
+				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
+				.andExpect(content().string(Matchers.containsString("Recommendation click activity and internal review entry points.")))
+				.andExpect(content().string(Matchers.containsString("Recommendation click log")))
+				.andExpect(content().string(Matchers.containsString("Ops review")));
+	}
+
+	@Test
 	void homePageIncludesCanonicalMetadata() throws Exception {
 		mockMvc.perform(get("/"))
 				.andExpect(status().isOk())
@@ -1253,6 +1277,7 @@ class SiteControllerTest {
 				.andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
 				.andExpect(content().string(Matchers.not(Matchers.containsString("Disallow: /lookup"))))
+				.andExpect(content().string(Matchers.containsString("Disallow: /admin")))
 				.andExpect(content().string(Matchers.containsString("Disallow: /ops/")))
 				.andExpect(content().string(Matchers.containsString("Sitemap: https://example.test/sitemap.xml")));
 	}
@@ -1295,5 +1320,10 @@ class SiteControllerTest {
 	void missingUtilityReturnsNotFound() throws Exception {
 		mockMvc.perform(get("/lead-service-line/ca/unknown/none"))
 				.andExpect(status().isNotFound());
+	}
+
+	private String basicAuth(String username, String password) {
+		var token = Base64.getEncoder().encodeToString((username + ":" + password).getBytes(StandardCharsets.UTF_8));
+		return "Basic " + token;
 	}
 }

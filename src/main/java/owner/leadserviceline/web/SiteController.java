@@ -1,6 +1,8 @@
 package owner.leadserviceline.web;
 
 import java.net.URI;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 
 import owner.leadserviceline.pages.LeadServiceLinePageService;
 import owner.leadserviceline.pages.OpsReviewSnapshotModel;
@@ -98,6 +100,22 @@ public class SiteController {
 		model.addAttribute("page", page);
 		model.addAttribute("seo", pageService.opsReviewSeo(page));
 		return "pages/ops-review";
+	}
+
+	@GetMapping("/admin")
+	public Object admin(
+			@RequestHeader(value = HttpHeaders.AUTHORIZATION, required = false) String authorization,
+			HttpServletResponse response,
+			Model model
+	) {
+		if (!hasValidAdminAuthorization(authorization)) {
+			return unauthorizedAdmin();
+		}
+		applySensitiveNoStoreHeaders(response, "noindex,nofollow");
+		var page = pageService.adminPage();
+		model.addAttribute("page", page);
+		model.addAttribute("seo", pageService.adminSeo(page));
+		return "pages/admin";
 	}
 
 	@GetMapping(value = "/ops/review/export", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -218,6 +236,31 @@ public class SiteController {
 		if (expectedToken == null || expectedToken.isBlank() || !expectedToken.equals(opsToken)) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND);
 		}
+	}
+
+	private boolean hasValidAdminAuthorization(String authorization) {
+		if (!siteRuntimeProperties.adminEnabled()) {
+			return false;
+		}
+		if (authorization == null || !authorization.startsWith("Basic ")) {
+			return false;
+		}
+		try {
+			var decoded = new String(Base64.getDecoder().decode(authorization.substring(6)), StandardCharsets.UTF_8);
+			var expected = siteRuntimeProperties.adminUsername() + ":" + siteRuntimeProperties.adminPassword();
+			return decoded.equals(expected);
+		} catch (IllegalArgumentException exception) {
+			return false;
+		}
+	}
+
+	private ResponseEntity<Void> unauthorizedAdmin() {
+		return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+				.header(HttpHeaders.WWW_AUTHENTICATE, "Basic realm=\"Lead Line Admin\"")
+				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
+				.header("Pragma", "no-cache")
+				.header("X-Robots-Tag", "noindex, nofollow, noarchive")
+				.build();
 	}
 
 	private void applySensitiveNoStoreHeaders(HttpServletResponse response, String robots) {

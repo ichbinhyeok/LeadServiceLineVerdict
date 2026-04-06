@@ -6,6 +6,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public record SiteRuntimeProperties(
 		String siteBaseUrl,
 		boolean opsReviewEnabled,
-		String opsReviewToken
+		String opsReviewToken,
+		boolean adminEnabled,
+		String adminUsername,
+		String adminPassword
 ) {
 }

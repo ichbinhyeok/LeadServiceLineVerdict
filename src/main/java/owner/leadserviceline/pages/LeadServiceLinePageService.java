@@ -26,6 +26,8 @@ import owner.leadserviceline.lookup.AddressGeocoder;
 import owner.leadserviceline.lookup.GeocodedAddress;
 import owner.leadserviceline.lookup.LookupEventRecord;
 import owner.leadserviceline.lookup.LookupLoggingProperties;
+import owner.leadserviceline.recommendation.RecommendationClickEventRecord;
+import owner.leadserviceline.recommendation.RecommendationLoggingProperties;
 import owner.leadserviceline.web.SiteRuntimeProperties;
 import owner.leadserviceline.data.SourceEvidenceRecord;
 import owner.leadserviceline.data.ProgramRecord;
@@ -57,6 +59,7 @@ public class LeadServiceLinePageService {
 	private final AddressGeocoder addressGeocoder;
 	private final ObjectMapper objectMapper;
 	private final LookupLoggingProperties lookupLoggingProperties;
+	private final RecommendationLoggingProperties recommendationLoggingProperties;
 	private final SiteRuntimeProperties siteRuntimeProperties;
 
 	@Autowired
@@ -65,12 +68,14 @@ public class LeadServiceLinePageService {
 			AddressGeocoder addressGeocoder,
 			ObjectMapper objectMapper,
 			LookupLoggingProperties lookupLoggingProperties,
+			RecommendationLoggingProperties recommendationLoggingProperties,
 			SiteRuntimeProperties siteRuntimeProperties
 	) {
 		this.repository = repository;
 		this.addressGeocoder = addressGeocoder;
 		this.objectMapper = objectMapper;
 		this.lookupLoggingProperties = lookupLoggingProperties;
+		this.recommendationLoggingProperties = recommendationLoggingProperties;
 		this.siteRuntimeProperties = siteRuntimeProperties;
 	}
 
@@ -80,7 +85,8 @@ public class LeadServiceLinePageService {
 				addressGeocoder,
 				new ObjectMapper(),
 				new LookupLoggingProperties(false, "data/logs/lookup-events.jsonl", 14),
-				new SiteRuntimeProperties("https://leadlinerecord.com", false, "")
+				new RecommendationLoggingProperties(false, "data/logs/recommendation-clicks.jsonl", 30),
+				new SiteRuntimeProperties("https://leadlinerecord.com", false, "", true, "admin", "tlsgur3108")
 		);
 	}
 
@@ -344,6 +350,46 @@ public class LeadServiceLinePageService {
 		return buildOpsReviewSnapshot();
 	}
 
+	public AdminPageModel adminPage() {
+		var recommendationEvents = readRecommendationEvents();
+		var lookupEvents = readLookupEvents();
+		var recentClicks = recommendationEvents.stream()
+				.sorted(Comparator.comparing(RecommendationClickEventRecord::timestamp).reversed())
+				.limit(15)
+				.map(event -> new AdminRecentClick(
+						event.timestamp(),
+						event.productName(),
+						repository.findGuideBySlug(event.guideSlug()).map(GuideRecord::title).orElse(event.guideSlug()),
+						hasText(event.guideSlug()) ? "/guides/" + event.guideSlug() : "",
+						event.sourcePath(),
+						event.destinationDomain()
+				))
+				.toList();
+		var metrics = List.of(
+				new OpsMetric("Recommendation clicks", recommendationEvents.size()),
+				new OpsMetric("Unique products", (int) recommendationEvents.stream()
+						.map(RecommendationClickEventRecord::recommendationSlug)
+						.filter(this::hasText)
+						.distinct()
+						.count()),
+				new OpsMetric("Guides with clicks", (int) recommendationEvents.stream()
+						.map(RecommendationClickEventRecord::guideSlug)
+						.filter(this::hasText)
+						.distinct()
+						.count()),
+				new OpsMetric("Lookup events logged", lookupEvents.size())
+		);
+
+		return new AdminPageModel(
+				brandTitle("Admin"),
+				metrics,
+				recentClicks,
+				recommendationLoggingProperties.recommendationLogEnabled(),
+				lookupLoggingProperties.lookupLogEnabled(),
+				siteRuntimeProperties.opsReviewEnabled()
+		);
+	}
+
 	public PageSeoModel homeSeo(HomePageModel page) {
 		var seoTitle = brandTitle("Lead service line lookup, notices, programs & replacement cost by utility");
 		var description = "Find lead service line lookup, notice, program, and replacement cost guidance by utility and city before you rely on a generic national answer.";
@@ -515,6 +561,17 @@ public class LeadServiceLinePageService {
 		);
 	}
 
+	public PageSeoModel adminSeo(AdminPageModel page) {
+		return new PageSeoModel(
+				page.pageTitle(),
+				"Internal admin dashboard for recommendation click activity and review links.",
+				absoluteUrl("/admin"),
+				"noindex,nofollow",
+				List.of(),
+				defaultSocialImageUrl()
+		);
+	}
+
 	public PageSeoModel staticSeo(StaticPageModel page) {
 		return new PageSeoModel(
 				page.pageTitle(),
@@ -542,6 +599,7 @@ public class LeadServiceLinePageService {
 		return String.join("\n",
 				"User-agent: *",
 				"Allow: /",
+				"Disallow: /admin",
 				"Disallow: /ops/",
 				"Sitemap: " + absoluteUrl("/sitemap.xml"),
 				""
@@ -1826,11 +1884,42 @@ public class LeadServiceLinePageService {
 		}
 	}
 
+	private List<RecommendationClickEventRecord> readRecommendationEvents() {
+		var logPathValue = recommendationLoggingProperties.recommendationLogPath();
+		if (!hasText(logPathValue)) {
+			return List.of();
+		}
+		var logPath = Path.of(logPathValue);
+		if (!Files.exists(logPath)) {
+			return List.of();
+		}
+		try (var lines = Files.lines(logPath)) {
+			return lines
+					.map(String::trim)
+					.filter(this::hasText)
+					.map(this::readRecommendationEvent)
+					.flatMap(Optional::stream)
+					.toList();
+		} catch (IOException exception) {
+			LOGGER.warn("Unable to read recommendation log file {}", logPath, exception);
+			return List.of();
+		}
+	}
+
 	private Optional<LookupEventRecord> readLookupEvent(String line) {
 		try {
 			return Optional.of(objectMapper.readValue(line, LookupEventRecord.class));
 		} catch (IOException exception) {
 			LOGGER.warn("Skipping unreadable lookup log line");
+			return Optional.empty();
+		}
+	}
+
+	private Optional<RecommendationClickEventRecord> readRecommendationEvent(String line) {
+		try {
+			return Optional.of(objectMapper.readValue(line, RecommendationClickEventRecord.class));
+		} catch (IOException exception) {
+			LOGGER.warn("Skipping unreadable recommendation log line");
 			return Optional.empty();
 		}
 	}
