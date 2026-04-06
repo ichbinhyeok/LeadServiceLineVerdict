@@ -26,6 +26,7 @@
 - Public brand, runtime site URL, and internal Spring application identity are now aligned to `Lead Line Record` and `leadlinerecord.com`.
 - OCI deployment scaffolding now exists with ARM64 Docker build, `docker-compose.yml`, external port `8094`, internal port `8080`, and a GitHub Actions deploy workflow.
 - Deployment now pins the OCI server to `shinhyeok22/leadline:${GIT_SHA}` instead of trusting `latest` alone, so image provenance can be verified after each rollout.
+- The OCI workflow is now manual-only (`workflow_dispatch`) so `main` pushes do not modify the shared server automatically.
 - This remains the highest-priority vertical.
 
 ## Latest decisions
@@ -77,6 +78,7 @@
 - Renamed the Spring Boot application class to `LeadLineRecordApplication`, switched runtime identifiers away from `LeadServiceLineVerdict`, and updated outbound `User-Agent` strings.
 - Added production deployment scaffolding based on the `CarMoneyPit` pattern: multi-stage Java 21 Dockerfile, repo-local `docker-compose.yml`, `.dockerignore`, and `.github/workflows/deploy.yml` for OCI auto-deploy.
 - Added post-deploy smoke tests and then upgraded deployment to SHA-pinned image tags so the OCI host is forced onto the exact image built by the current GitHub Actions run.
+- Rolled the workflow back from automatic push-triggered deploys to manual-only execution after shared-server behavior looked unsafe.
 - Added Missouri American Water and Blue Springs so Missouri now has both regional and city utility coverage plus a real state program rollup.
 - Added Grand Island, Council Bluffs, Ames, and West Des Moines to deepen the Iowa and Nebraska clusters with official inventory pages and selective program or cost coverage where the sources were strong enough.
 - Added lookup-log review groups so ambiguous or failed resolver traffic can drive the next alias and boundary cleanup pass without a runtime database.

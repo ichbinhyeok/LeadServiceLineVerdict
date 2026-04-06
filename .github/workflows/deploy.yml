@@ -1,8 +1,7 @@
-name: CD for OCI ARM64
+name: Manual OCI deploy for Lead Line Record
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:

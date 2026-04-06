@@ -42,6 +42,8 @@ A utility-first decision site for homeowners, buyers, and sellers who need to un
 - Docker Compose port mapping: external `8094` -> internal `8080`
 - Docker Compose memory cap: `mem_limit: 512m`
 - GitHub Actions workflow: `.github/workflows/deploy.yml`
+- Deployment trigger: manual `workflow_dispatch` only. `main` pushes do not auto-deploy.
+- Domain, ingress, and public hostname wiring stay manual and must be verified outside this workflow.
 - Required GitHub secrets:
   - `DOCKERHUB_USERNAME`
   - `DOCKERHUB_TOKEN`
