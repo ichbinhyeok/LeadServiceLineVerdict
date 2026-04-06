@@ -70,7 +70,7 @@ public class LeadServiceLinePageService {
 				addressGeocoder,
 				new ObjectMapper(),
 				new LookupLoggingProperties(false, "data/logs/lookup-events.jsonl", 14),
-				new SiteRuntimeProperties("http://localhost:8080", false, "")
+				new SiteRuntimeProperties("https://leadlinerecord.com", false, "")
 		);
 	}
 
@@ -95,7 +95,7 @@ public class LeadServiceLinePageService {
 				.sorted(Comparator.comparing(StateSummary::state))
 				.toList();
 		return new HomePageModel(
-				"Lead Service Line Verdict",
+				"Lead Line Record",
 				states,
 				utilities,
 				guides,
@@ -1139,7 +1139,7 @@ public class LeadServiceLinePageService {
 
 	private String buildHeroTitle(UtilityPageSection section, UtilityRecord utility) {
 		return switch (section) {
-			case OVERVIEW -> utility.utilityName() + " lead service line verdict";
+			case OVERVIEW -> utility.utilityName() + " lead line record";
 			case NOTIFICATION -> "What the " + utility.utilityName() + " notice means";
 			case PROGRAM -> utility.utilityName() + " replacement programs";
 			case REPLACEMENT_COST -> utility.utilityName() + " replacement cost assumptions";
@@ -1438,7 +1438,7 @@ public class LeadServiceLinePageService {
 
 	private String absoluteUrl(String path) {
 		var baseUrl = siteRuntimeProperties.siteBaseUrl();
-		var normalizedBaseUrl = hasText(baseUrl) ? baseUrl.trim() : "http://localhost:8080";
+		var normalizedBaseUrl = hasText(baseUrl) ? baseUrl.trim() : "https://leadlinerecord.com";
 		if (normalizedBaseUrl.endsWith("/")) {
 			normalizedBaseUrl = normalizedBaseUrl.substring(0, normalizedBaseUrl.length() - 1);
 		}

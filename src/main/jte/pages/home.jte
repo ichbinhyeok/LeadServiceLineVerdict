@@ -20,7 +20,7 @@
 <body>
 <header class="site-header">
     <div class="site-header__inner">
-        <a class="brand-mark" href="/">Lead Service Line Verdict</a>
+        <a class="brand-mark" href="/">Lead Line Record</a>
         <nav class="site-nav">
             <a class="active" href="/">Home</a>
             <a href="/lookup">Lookup</a>
@@ -182,7 +182,7 @@
 <footer class="footer">
     <div class="footer__inner">
         <div>
-            <div class="brand-mark">Lead Service Line Verdict</div>
+            <div class="brand-mark">Lead Line Record</div>
             <p class="muted">Utility-by-utility guidance on lead line notices, replacement programs, and who may pay for replacement.</p>
         </div>
         <div class="footer__links">

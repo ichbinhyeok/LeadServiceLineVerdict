@@ -17,7 +17,7 @@
 <body>
 <header class="site-header">
     <div class="site-header__inner">
-        <a class="brand-mark" href="/">The Civic Ledger</a>
+        <a class="brand-mark" href="/">Lead Line Record</a>
         <nav class="site-nav">
             <a href="/">Home</a>
             <a href="/lookup">Lookup</a>

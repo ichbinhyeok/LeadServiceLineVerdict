@@ -1,5 +1,8 @@
 # LeadServiceLineVerdict
 
+Public brand: `Lead Line Record`  
+Primary site URL: `https://leadlinerecord.com`
+
 **Date:** 2026-04-04 (Asia/Seoul)  
 **Purpose:** This folder is a self-contained design packet for building a US-focused **lead service line inventory and replacement decision site** with utility-first SEO and sponsor-friendly local monetization.
 

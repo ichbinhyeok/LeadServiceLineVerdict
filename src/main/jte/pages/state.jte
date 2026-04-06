@@ -20,7 +20,7 @@
 <body>
 <header class="site-header">
     <div class="site-header__inner">
-        <a class="brand-mark" href="/">Lead Service Line Verdict</a>
+        <a class="brand-mark" href="/">Lead Line Record</a>
         <nav class="site-nav">
             <a href="/">Home</a>
             <a href="/lookup">Lookup</a>
@@ -154,7 +154,7 @@
 <footer class="footer">
     <div class="footer__inner">
         <div>
-            <div class="brand-mark">Lead Service Line Verdict</div>
+            <div class="brand-mark">Lead Line Record</div>
             <p class="muted">${page.state().toUpperCase()} utility directory and program tracker for lead service line decisions.</p>
         </div>
         <div class="footer__links">
