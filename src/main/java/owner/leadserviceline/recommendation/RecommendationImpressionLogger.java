@@ -5,6 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.time.Duration;
 import java.time.Instant;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
@@ -22,10 +23,12 @@ import org.springframework.stereotype.Component;
 public class RecommendationImpressionLogger {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(RecommendationImpressionLogger.class);
+	private static final Duration PRUNE_INTERVAL = Duration.ofHours(6);
 
 	private final ObjectMapper objectMapper;
 	private final RecommendationLoggingProperties properties;
 	private final Object appendLock = new Object();
+	private Instant lastPruneAt = Instant.EPOCH;
 
 	public RecommendationImpressionLogger(ObjectMapper objectMapper, RecommendationLoggingProperties properties) {
 		this.objectMapper = objectMapper;
@@ -59,17 +62,26 @@ public class RecommendationImpressionLogger {
 			Files.createDirectories(parent);
 		}
 		synchronized (appendLock) {
-			pruneExpiredEvents(logPath);
+			pruneExpiredEventsIfDue(logPath);
 			var line = objectMapper.writeValueAsString(event) + System.lineSeparator();
 			Files.writeString(logPath, line, StandardCharsets.UTF_8, StandardOpenOption.CREATE, StandardOpenOption.APPEND, StandardOpenOption.WRITE);
 		}
 	}
 
-	private void pruneExpiredEvents(Path logPath) throws IOException {
+	private void pruneExpiredEventsIfDue(Path logPath) throws IOException {
+		var now = Instant.now();
+		if (Duration.between(lastPruneAt, now).compareTo(PRUNE_INTERVAL) < 0) {
+			return;
+		}
+		pruneExpiredEvents(logPath, now);
+		lastPruneAt = now;
+	}
+
+	private void pruneExpiredEvents(Path logPath, Instant now) throws IOException {
 		if (!Files.exists(logPath)) {
 			return;
 		}
-		var cutoff = Instant.now().minus(properties.recommendationLogRetentionDays(), ChronoUnit.DAYS);
+		var cutoff = now.minus(properties.recommendationLogRetentionDays(), ChronoUnit.DAYS);
 		var originalLines = Files.readAllLines(logPath, StandardCharsets.UTF_8);
 		var keptLines = originalLines.stream()
 				.map(String::trim)
