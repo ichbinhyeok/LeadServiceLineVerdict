@@ -21,6 +21,7 @@ import java.util.stream.Stream;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import owner.leadserviceline.data.LeadServiceLineRepository;
 import owner.leadserviceline.data.GuideRecord;
+import owner.leadserviceline.data.ProductRecommendationRecord;
 import owner.leadserviceline.lookup.AddressGeocoder;
 import owner.leadserviceline.lookup.GeocodedAddress;
 import owner.leadserviceline.lookup.LookupEventRecord;
@@ -40,6 +41,15 @@ public class LeadServiceLinePageService {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(LeadServiceLinePageService.class);
 	private static final Map<String, String> STATE_NAMES = buildStateNames();
+	private static final List<String> TRUST_PAGE_PATHS = List.of(
+			"/about",
+			"/affiliate-disclosure",
+			"/methodology",
+			"/editorial-policy",
+			"/privacy",
+			"/terms",
+			"/contact"
+	);
 	private static final int SOURCE_REVIEW_WARNING_DAYS = 90;
 	private static final int RECORD_REVIEW_WARNING_DAYS = 120;
 
@@ -116,7 +126,7 @@ public class LeadServiceLinePageService {
 		var routeCount = repository.routesForState(normalizedState).size();
 		var programCount = repository.programsForState(normalizedState).size();
 		return Optional.of(new StatePageModel(
-				"Lead service line routes for " + normalizedState.toUpperCase(Locale.US),
+				brandTitle(stateDisplayName(normalizedState) + " lead service line lookup, notices & replacement help by utility"),
 				normalizedState,
 				utilities,
 				programCount,
@@ -158,7 +168,7 @@ public class LeadServiceLinePageService {
 				.count();
 
 		return Optional.of(new StateProgramsPageModel(
-				"Lead service line programs for " + normalizedState.toUpperCase(Locale.US),
+				brandTitle(stateDisplayName(normalizedState) + " lead service line programs and replacement funding by utility"),
 				normalizedState,
 				cards,
 				utilityCount,
@@ -175,8 +185,26 @@ public class LeadServiceLinePageService {
 								.filter(candidate -> !candidate.slug().equals(guide.slug()))
 								.sorted(Comparator.comparing(GuideRecord::title))
 								.limit(3)
-								.toList()
+								.toList(),
+						repository.recommendationsForGuide(guide.slug())
 				));
+	}
+
+	public Optional<ProductRecommendationRecord> recommendation(String slug) {
+		return repository.findRecommendationBySlug(normalizeSegment(slug));
+	}
+
+	public Optional<StaticPageModel> staticPage(String path) {
+		return Optional.ofNullable(switch (normalizePath(path)) {
+			case "/about" -> aboutPage();
+			case "/affiliate-disclosure" -> affiliateDisclosurePage();
+			case "/methodology" -> methodologyPage();
+			case "/editorial-policy" -> editorialPolicyPage();
+			case "/privacy" -> privacyPage();
+			case "/terms" -> termsPage();
+			case "/contact" -> contactPage();
+			default -> null;
+		});
 	}
 
 	public Optional<UtilityPageModel> utilityPage(String state, String city, String utilitySlug, String routeSection) {
@@ -194,6 +222,7 @@ public class LeadServiceLinePageService {
 		var pageSection = UtilityPageSection.fromRouteTemplate(route.get().template());
 		var programs = repository.programsForUtility(utility.get().utilityId());
 		var cost = repository.costForUtility(utility.get().utilityId()).orElse(null);
+		var routeSources = buildRouteSources(pageSection, utility.get(), programs, cost);
 
 		var utilityRoutes = repository.routesForUtility(utility.get().utilityId()).stream()
 				.sorted(Comparator.comparingInt(this::routeOrder))
@@ -221,7 +250,8 @@ public class LeadServiceLinePageService {
 				buildProgramSummaries(programs),
 				cost,
 				buildCostResponsibilities(cost, programs),
-				buildRouteSources(pageSection, utility.get(), programs, cost)
+				routeSources,
+				buildTrustModel(route.get(), utility.get(), routeSources)
 		));
 	}
 
@@ -315,60 +345,88 @@ public class LeadServiceLinePageService {
 	}
 
 	public PageSeoModel homeSeo(HomePageModel page) {
-		var description = "Find utility-by-utility lead service line answers: inventory status, mailed notices, replacement programs, and likely replacement cost.";
+		var seoTitle = brandTitle("Lead service line lookup, notices, programs & replacement cost by utility");
+		var description = "Find lead service line lookup, notice, program, and replacement cost guidance by utility and city before you rely on a generic national answer.";
 		return new PageSeoModel(
-				page.pageTitle(),
+				seoTitle,
 				description,
 				absoluteUrl("/"),
 				"index,follow",
-				List.of(toJsonLd(Map.of(
-						"@context", "https://schema.org",
-						"@type", "WebSite",
-						"name", page.pageTitle(),
-						"url", absoluteUrl("/"),
-						"description", description
-				)))
+				List.of(
+						toJsonLd(Map.of(
+								"@context", "https://schema.org",
+								"@type", "WebSite",
+								"name", page.pageTitle(),
+								"url", absoluteUrl("/"),
+								"description", description
+						)),
+						toJsonLd(Map.of(
+								"@context", "https://schema.org",
+								"@type", "Organization",
+								"name", page.pageTitle(),
+								"url", absoluteUrl("/"),
+								"logo", absoluteUrl("/favicon.svg")
+						))
+				),
+				defaultSocialImageUrl()
 		);
 	}
 
 	public PageSeoModel stateSeo(StatePageModel page) {
-		var description = page.state().toUpperCase(Locale.US) + " utility directory for lead service line notices, replacement programs, and local replacement questions.";
+		var stateName = stateDisplayName(page.state());
+		var description = stateName + " utility directory for lead service line lookup, notices, replacement programs, and local replacement help.";
 		return new PageSeoModel(
 				page.pageTitle(),
 				description,
 				absoluteUrl("/lead-service-line/" + page.state()),
 				"index,follow",
-				List.of(toJsonLd(Map.of(
-						"@context", "https://schema.org",
-						"@type", "CollectionPage",
-						"name", page.pageTitle(),
-						"url", absoluteUrl("/lead-service-line/" + page.state()),
-						"description", description
-				)))
+				List.of(
+						toJsonLd(Map.of(
+								"@context", "https://schema.org",
+								"@type", "CollectionPage",
+								"name", page.pageTitle(),
+								"url", absoluteUrl("/lead-service-line/" + page.state()),
+								"description", description
+						)),
+						toJsonLd(breadcrumbData(List.of(
+								Map.entry("Home", absoluteUrl("/")),
+								Map.entry(stateName, absoluteUrl("/lead-service-line/" + page.state()))
+						)))
+				),
+				defaultSocialImageUrl()
 		);
 	}
 
 	public PageSeoModel stateProgramsSeo(StateProgramsPageModel page) {
-		var description = page.state().toUpperCase(Locale.US) + " utility-linked lead service line program tracker for replacement support, reimbursement, and loan paths.";
+		var stateName = stateDisplayName(page.state());
+		var description = stateName + " utility-linked lead service line program tracker for replacement support, reimbursement, and loan paths.";
 		return new PageSeoModel(
 				page.pageTitle(),
 				description,
 				absoluteUrl("/lead-service-line/" + page.state() + "/programs"),
 				"index,follow",
-				List.of(toJsonLd(Map.of(
-						"@context", "https://schema.org",
-						"@type", "CollectionPage",
-						"name", page.pageTitle(),
-						"url", absoluteUrl("/lead-service-line/" + page.state() + "/programs"),
-						"description", description
-				)))
+				List.of(
+						toJsonLd(Map.of(
+								"@context", "https://schema.org",
+								"@type", "CollectionPage",
+								"name", page.pageTitle(),
+								"url", absoluteUrl("/lead-service-line/" + page.state() + "/programs"),
+								"description", description
+						)),
+						toJsonLd(breadcrumbData(List.of(
+								Map.entry("Home", absoluteUrl("/")),
+								Map.entry(stateName, absoluteUrl("/lead-service-line/" + page.state())),
+								Map.entry("Programs", absoluteUrl("/lead-service-line/" + page.state() + "/programs"))
+						)))
+				),
+				defaultSocialImageUrl()
 		);
 	}
 
 	public PageSeoModel guideSeo(GuidePageModel page) {
 		var path = "/guides/" + page.guide().slug();
 		return new PageSeoModel(
-				page.pageTitle(),
+				brandTitle(page.pageTitle()),
 				page.guide().heroSummary(),
 				absoluteUrl(path),
 				"index,follow",
@@ -382,10 +440,11 @@ public class LeadServiceLinePageService {
 								"dateModified", page.guide().lastVerified().toString()
 						)),
 						toJsonLd(breadcrumbData(List.of(
-								Map.entry("Guides", absoluteUrl("/")),
+								Map.entry("Home", absoluteUrl("/")),
 								Map.entry(page.guide().title(), absoluteUrl(path))
 						)))
-				)
+				),
+				defaultSocialImageUrl()
 		);
 	}
 
@@ -398,10 +457,22 @@ public class LeadServiceLinePageService {
 				"@type", "WebPage",
 				"name", page.pageTitle(),
 				"url", absoluteUrl(path),
-				"description", description
+				"description", description,
+				"dateModified", routeLastModified(page.currentRoute()).orElse(page.utility().lastVerified()).toString(),
+				"publisher", Map.of(
+						"@type", "Organization",
+						"name", "Lead Line Record",
+						"url", absoluteUrl("/")
+				),
+				"reviewedBy", Map.of(
+						"@type", "Organization",
+						"name", page.trust().reviewedBy(),
+						"url", absoluteUrl("/editorial-policy")
+				)
 		)));
 		jsonLd.add(toJsonLd(breadcrumbData(List.of(
-				Map.entry("States", absoluteUrl("/lead-service-line/" + page.utility().state())),
+				Map.entry("Home", absoluteUrl("/")),
+				Map.entry(stateDisplayName(page.utility().state()), absoluteUrl("/lead-service-line/" + page.utility().state())),
 				Map.entry(page.utility().utilityName(), absoluteUrl(buildUtilityPath(page.utility().state(), page.utility().city(), page.utility().utilitySlug(), null))),
 				Map.entry(page.section().label(), absoluteUrl(path))
 		))));
@@ -410,14 +481,15 @@ public class LeadServiceLinePageService {
 				description,
 				absoluteUrl(path),
 				page.currentRoute().indexable() ? "index,follow" : "noindex,follow",
-				jsonLd
+				jsonLd,
+				defaultSocialImageUrl()
 		);
 	}
 
 	public PageSeoModel lookupSeo(LookupPageModel page) {
 		var description = "Use an address, city, or utility hint to find the likely utility page, then confirm on the official utility lookup.";
 		return new PageSeoModel(
-				page.pageTitle(),
+				brandTitle("Lead service line utility lookup"),
 				description,
 				absoluteUrl("/lookup"),
 				"noindex,nofollow",
@@ -427,17 +499,42 @@ public class LeadServiceLinePageService {
 						"name", page.pageTitle(),
 						"url", absoluteUrl("/lookup"),
 						"description", description
-				)))
+				))),
+				defaultSocialImageUrl()
 		);
 	}
 
 	public PageSeoModel opsReviewSeo(OpsReviewPageModel page) {
 		return new PageSeoModel(
-				page.pageTitle(),
+				brandTitle(page.pageTitle()),
 				"Internal review queue for stale records, low-confidence cost routes, and dataset gaps.",
 				absoluteUrl("/ops/review"),
 				"noindex,nofollow",
-				List.of()
+				List.of(),
+				defaultSocialImageUrl()
+		);
+	}
+
+	public PageSeoModel staticSeo(StaticPageModel page) {
+		return new PageSeoModel(
+				page.pageTitle(),
+				page.heroSummary(),
+				absoluteUrl(page.path()),
+				"index,follow",
+				List.of(
+						toJsonLd(Map.of(
+								"@context", "https://schema.org",
+								"@type", "WebPage",
+								"name", page.heroTitle(),
+								"url", absoluteUrl(page.path()),
+								"description", page.heroSummary()
+						)),
+						toJsonLd(breadcrumbData(List.of(
+								Map.entry("Home", absoluteUrl("/")),
+								Map.entry(page.heroTitle(), absoluteUrl(page.path()))
+						)))
+				),
+				defaultSocialImageUrl()
 		);
 	}
 
@@ -445,7 +542,6 @@ public class LeadServiceLinePageService {
 		return String.join("\n",
 				"User-agent: *",
 				"Allow: /",
-				"Disallow: /lookup",
 				"Disallow: /ops/",
 				"Sitemap: " + absoluteUrl("/sitemap.xml"),
 				""
@@ -454,13 +550,23 @@ public class LeadServiceLinePageService {
 
 	public String sitemapXml() {
 		var urls = new ArrayList<String>();
-		urls.add(urlEntry("/", OffsetDateTime.now().toLocalDate().toString()));
+		var seenPaths = new LinkedHashSet<String>();
+		addSitemapEntry(urls, seenPaths, "/", latestSiteDate().map(LocalDate::toString).orElse(null));
+		TRUST_PAGE_PATHS.forEach(path -> addSitemapEntry(urls, seenPaths, path, null));
+		repository.utilities().stream()
+				.map(UtilityRecord::state)
+				.distinct()
+				.sorted()
+				.forEach(state -> addSitemapEntry(urls, seenPaths, "/lead-service-line/" + state, stateLastModified(state).map(LocalDate::toString).orElse(null)));
+		repository.programs().stream()
+				.map(ProgramRecord::state)
+				.distinct()
+				.sorted()
+				.forEach(state -> addSitemapEntry(urls, seenPaths, "/lead-service-line/" + state + "/programs", stateLastModified(state).map(LocalDate::toString).orElse(null)));
 		repository.routes().stream()
 				.filter(RouteRecord::indexable)
 				.sorted(Comparator.comparing(RouteRecord::canonicalPath))
-				.map(RouteRecord::canonicalPath)
-				.distinct()
-				.forEach(path -> urls.add(urlEntry(path, OffsetDateTime.now().toLocalDate().toString())));
+				.forEach(route -> addSitemapEntry(urls, seenPaths, route.canonicalPath(), routeLastModified(route).map(LocalDate::toString).orElse(null)));
 		return """
 				<?xml version="1.0" encoding="UTF-8"?>
 				<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -534,6 +640,25 @@ public class LeadServiceLinePageService {
 			refs.addAll(cost.sourceRefs());
 		}
 		return repository.sourcesForRefs(refs);
+	}
+
+	private UtilityTrustModel buildTrustModel(RouteRecord route, UtilityRecord utility, List<SourceEvidenceRecord> sources) {
+		var lastVerified = routeLastModified(route).orElse(utility.lastVerified());
+		var publishers = sources.stream()
+				.map(SourceEvidenceRecord::publisherName)
+				.filter(this::hasText)
+				.distinct()
+				.limit(4)
+				.toList();
+		var reviewSummary = "Reviewed against official utility, city, and program sources tied to this route. Address-level truth still belongs to the utility lookup or inventory record.";
+		return new UtilityTrustModel(
+				"Lead Line Record editorial review",
+				reviewSummary,
+				lastVerified != null ? lastVerified.toString() : "",
+				"shinhyeok22@gmail.com",
+				sources.size(),
+				publishers
+		);
 	}
 
 	private List<UtilityDecisionFact> buildKeyFacts(
@@ -757,12 +882,12 @@ public class LeadServiceLinePageService {
 
 	private String buildPageTitle(UtilityPageSection section, UtilityRecord utility) {
 		return switch (section) {
-			case OVERVIEW -> utility.utilityName() + " lead service line overview in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US);
-			case NOTIFICATION -> utility.utilityName() + " lead service line notice guide in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US);
-			case PROGRAM -> utility.utilityName() + " lead service line replacement programs in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US);
-			case REPLACEMENT_COST -> utility.utilityName() + " lead service line replacement cost in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US);
-			case FILTER_AND_TESTING -> utility.utilityName() + " lead service line filter and testing guidance";
-			case BUYER_SELLER -> utility.utilityName() + " lead service line buyer and seller checklist";
+			case OVERVIEW -> brandTitle(utility.utilityName() + " lead service line lookup, notices & replacement help in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US));
+			case NOTIFICATION -> brandTitle(utility.utilityName() + " lead service line notices in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US));
+			case PROGRAM -> brandTitle(utility.utilityName() + " lead service line programs in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US));
+			case REPLACEMENT_COST -> brandTitle(utility.utilityName() + " lead service line replacement cost in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US));
+			case FILTER_AND_TESTING -> brandTitle(utility.utilityName() + " lead service line filter and testing guidance in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US));
+			case BUYER_SELLER -> brandTitle(utility.utilityName() + " lead service line buyer and seller guidance in " + utility.city() + ", " + utility.state().toUpperCase(Locale.US));
 		};
 	}
 
@@ -1368,9 +1493,315 @@ public class LeadServiceLinePageService {
 					+ ". Compare public-side and private-side coverage, eligibility, and application friction.";
 			case REPLACEMENT_COST -> utility.utilityName() + " replacement cost guidance for " + utility.city() + ", " + utility.state().toUpperCase(Locale.US)
 					+ ". Separate public-side and private-side responsibility and keep local assumptions visible.";
-			case FILTER_AND_TESTING -> utility.utilityName() + " interim filter and testing guidance when replacement cannot happen immediately.";
-			case BUYER_SELLER -> utility.utilityName() + " buyer and seller checklist for lead service line notices, responsibility, and timing.";
+			case FILTER_AND_TESTING -> utility.utilityName() + " interim filter and testing guidance for " + utility.city() + ", " + utility.state().toUpperCase(Locale.US)
+					+ " when replacement cannot happen immediately.";
+			case BUYER_SELLER -> utility.utilityName() + " buyer and seller guidance for lead service line notices, responsibility, and timing in "
+					+ utility.city() + ", " + utility.state().toUpperCase(Locale.US) + ".";
 		};
+	}
+
+	private StaticPageModel aboutPage() {
+		return new StaticPageModel(
+				"/about",
+				brandTitle("About Lead Line Record"),
+				"Trust page",
+				"About this site",
+				"Lead Line Record is a utility-by-utility reference for lead service line lookup, notice interpretation, replacement support, and cost responsibility.",
+				"",
+				List.of(
+						new StaticPageSection(
+								"What this site covers",
+								List.of(
+										"Each public page is scoped to a named utility, city, and route. The goal is to help a resident, buyer, seller, or landlord understand what the official local record says before acting.",
+										"The site organizes utility inventory language, notice context, replacement programs, and cost responsibility into separate pages so those questions do not get blurred together."
+								)
+						),
+						new StaticPageSection(
+								"What this site does not do",
+								List.of(
+										"This site is not the official utility lookup, not a parcel-authoritative database, and not a substitute for a utility, licensed plumber, inspector, attorney, or health professional.",
+										"When a local source is weak or too generic, the site stays cautious instead of filling the gap with national-average copy."
+								)
+						)
+				)
+		);
+	}
+
+	private StaticPageModel methodologyPage() {
+		return new StaticPageModel(
+				"/methodology",
+				brandTitle("Lead service line methodology"),
+				"Trust page",
+				"How the site builds a local record",
+				"The site treats the local utility record as the source of truth, then adds narrowly scoped interpretation only when the local evidence is specific enough to support it.",
+				"",
+				List.of(
+						new StaticPageSection(
+								"Source order",
+								List.of(
+										"Utility inventories, official lookup tools, utility notice pages, city program pages, and other primary local records come first. Background guides are secondary and never outrank the local record.",
+										"Every public route is tied to source references and a last-verified date so the reader can see what the page is based on."
+								)
+						),
+						new StaticPageSection(
+								"Indexing rules",
+								List.of(
+										"Indexable pages are selective. Utility pages and guides can be indexed, but low-confidence replacement-cost pages stay noindex until the local methodology and evidence clear a stricter threshold.",
+										"Sitemap lastmod dates follow the underlying verification or generation date instead of stamping every URL with the current day."
+								)
+						),
+						new StaticPageSection(
+								"Cost guidance guardrails",
+								List.of(
+										"Replacement-cost pages are decision aids, not quotes. They stay tied to local responsibility, permit, restoration, and funding assumptions rather than generic national averages.",
+										"If the local methodology is weak, incomplete, or too broad, the route should stay noindex or avoid numeric claims entirely."
+								)
+						)
+				)
+		);
+	}
+
+	private StaticPageModel affiliateDisclosurePage() {
+		return new StaticPageModel(
+				"/affiliate-disclosure",
+				brandTitle("Affiliate disclosure"),
+				"Trust page",
+				"Affiliate and recommendation disclosure",
+				"Some buying guides may contain future affiliate links for filters, cartridges, or lab-backed test kits. If that happens, the site may earn a commission at no extra cost to the reader.",
+				"",
+				List.of(
+						new StaticPageSection(
+								"How affiliate links fit this site",
+								List.of(
+										"The site is built around utility records first. Product and buying guides are secondary support pages for readers who need an interim filter or a test kit while utility verification or replacement is still pending.",
+										"When an affiliate link appears, it should point only to products that match the decision context of the page, such as certified lead-reduction filters or lab-backed water testing kits."
+								)
+						),
+						new StaticPageSection(
+								"Editorial independence",
+								List.of(
+										"Affiliate relationships do not change the underlying utility record, notice interpretation, program coverage, or replacement-responsibility language.",
+										"If a local source says replacement, inspection, or direct utility follow-up comes first, the site should say that even when a product guide is available on the same topic."
+								)
+						),
+						new StaticPageSection(
+								"What the site will and will not recommend",
+								List.of(
+										"Product recommendations should stay narrow: certified lead-reduction filters, replacement cartridges, and water testing kits that help clarify the next action.",
+										"The site should not present a random marketplace listing as a substitute for official utility guidance, a licensed professional, or a confirmed local replacement path."
+								)
+						)
+				)
+		);
+	}
+
+	private StaticPageModel editorialPolicyPage() {
+		return new StaticPageModel(
+				"/editorial-policy",
+				brandTitle("Editorial policy"),
+				"Trust page",
+				"Editorial and review policy",
+				"The site is written to separate factual utility records from interpretation, funding language, and any future sponsor surface.",
+				"",
+				List.of(
+						new StaticPageSection(
+								"Evidence before copy",
+								List.of(
+										"Pages should reflect what the utility, city, or program actually publishes. Unsupported certainty, invented eligibility, and generic fear language are out of scope.",
+										"Inventory status, notice language, program coverage, and cost responsibility are kept separate on purpose because they often change on different timelines."
+								)
+						),
+						new StaticPageSection(
+								"Uncertainty and corrections",
+								List.of(
+										"When a source is ambiguous, the page should say so directly. The site prefers explicit uncertainty over smooth but overstated copy.",
+										"If a local source changes, the public page should be updated with a new verification pass before stronger claims are made."
+								)
+						),
+						new StaticPageSection(
+								"Sponsor separation",
+								List.of(
+										"Any future sponsor or contractor surface should be visually and editorially distinct from the factual utility record.",
+										"Commercial listings should never rewrite or soften the official inventory, notice, program, or replacement-responsibility language."
+								)
+						)
+				)
+		);
+	}
+
+	private StaticPageModel privacyPage() {
+		return new StaticPageModel(
+				"/privacy",
+				brandTitle("Privacy"),
+				"Trust page",
+				"Privacy and lookup handling",
+				"The lookup flow is designed to minimize exposure of raw address text and to keep private search input out of sharable URLs by default.",
+				"",
+				List.of(
+						new StaticPageSection(
+								"Lookup requests",
+								List.of(
+										"The public lookup form submits by POST. A GET request with query parameters is redirected back to a clean /lookup URL so browser history and copied links do not keep the address text.",
+										"Lookup responses are marked no-store and noindex so the route can help users without becoming a search-result landing page."
+								)
+						),
+						new StaticPageSection(
+								"Logging",
+								List.of(
+										"Optional internal lookup diagnostics are disabled by default. When enabled, the log is designed to keep only coarse buckets or short safe labels rather than raw submitted address text.",
+										"Retention for the optional lookup log is intentionally short-lived so the file stays operational, not archival."
+								)
+						),
+						new StaticPageSection(
+								"External links",
+								List.of(
+										"Utility lookup tools, program forms, and source documents live on third-party domains. Their own privacy and security practices control what happens after you leave this site."
+								)
+						)
+				)
+		);
+	}
+
+	private StaticPageModel termsPage() {
+		return new StaticPageModel(
+				"/terms",
+				brandTitle("Terms"),
+				"Trust page",
+				"Terms and usage boundaries",
+				"This site is for general information and decision support. It is not emergency guidance, legal advice, plumbing advice, or a guarantee that a specific parcel record is current.",
+				"",
+				List.of(
+						new StaticPageSection(
+								"Information-only use",
+								List.of(
+										"Use this site to narrow to the right local utility record and to understand likely next steps. Always confirm the property on the official utility lookup, map, or notice path before making a final decision.",
+										"Program details, eligibility rules, and replacement timing can change after a page is verified, so the primary source remains the official utility or city record."
+								)
+						),
+						new StaticPageSection(
+								"No professional relationship",
+								List.of(
+										"Using this site does not create a contractor, attorney, inspector, medical, or engineering relationship.",
+										"If a situation is urgent, health-related, or legally sensitive, contact the utility or an appropriate licensed professional directly."
+								)
+						)
+				)
+		);
+	}
+
+	private StaticPageModel contactPage() {
+		return new StaticPageModel(
+				"/contact",
+				brandTitle("Contact"),
+				"Trust page",
+				"How to route questions correctly",
+				"Utility-specific questions belong with the utility or city contact shown on the underlying local record. For site corrections, source updates, or partnership questions, use the email below.",
+				"shinhyeok22@gmail.com",
+				List.of(
+						new StaticPageSection(
+								"Utility and program questions",
+								List.of(
+										"Questions about an address, replacement scheduling, notice status, water testing, reimbursement, or permits should go to the official utility, city, or program contact linked on the relevant page.",
+										"The local record is the right place to confirm whether the utility offers a lookup tool, replacement crew, reimbursement form, or direct customer support."
+								)
+						),
+						new StaticPageSection(
+								"Site-wide corrections",
+								List.of(
+										"Send correction requests, source updates, and partnership questions to shinhyeok22@gmail.com.",
+										"If you notice a mismatch between a page and the linked source, include the utility name, URL, and the specific sentence that looks outdated."
+								)
+						),
+						new StaticPageSection(
+								"Emergencies",
+								List.of(
+										"Do not use this site for emergencies or same-day service issues. Contact the utility, local health department, or an appropriate licensed professional directly."
+								)
+						)
+				)
+		);
+	}
+
+	private Optional<LocalDate> latestSiteDate() {
+		return Stream.concat(
+				Stream.concat(
+						Stream.concat(
+								repository.utilities().stream().map(UtilityRecord::lastVerified).filter(java.util.Objects::nonNull),
+								repository.programs().stream().map(ProgramRecord::lastVerified).filter(java.util.Objects::nonNull)
+						),
+						Stream.concat(
+								repository.costs().stream().map(owner.leadserviceline.data.CostRecord::lastVerified).filter(java.util.Objects::nonNull),
+								repository.guides().stream().map(GuideRecord::lastVerified).filter(java.util.Objects::nonNull)
+						)
+				),
+				repository.routes().stream()
+						.map(RouteRecord::lastGenerated)
+						.map(this::parseDate)
+						.flatMap(Optional::stream)
+		).max(LocalDate::compareTo);
+	}
+
+	private Optional<LocalDate> stateLastModified(String state) {
+		return Stream.concat(
+				Stream.concat(
+						repository.utilities().stream()
+								.filter(utility -> state.equals(utility.state()))
+								.map(UtilityRecord::lastVerified)
+								.filter(java.util.Objects::nonNull),
+						repository.programs().stream()
+								.filter(program -> state.equals(program.state()))
+								.map(ProgramRecord::lastVerified)
+								.filter(java.util.Objects::nonNull)
+				),
+				Stream.concat(
+						repository.costs().stream()
+								.filter(cost -> state.equals(cost.state()))
+								.map(owner.leadserviceline.data.CostRecord::lastVerified)
+								.filter(java.util.Objects::nonNull),
+						repository.routesForState(state).stream()
+								.map(this::routeLastModified)
+								.flatMap(Optional::stream)
+				)
+		).max(LocalDate::compareTo);
+	}
+
+	private Optional<LocalDate> routeLastModified(RouteRecord route) {
+		var dates = new ArrayList<LocalDate>();
+		parseDate(route.lastGenerated()).ifPresent(dates::add);
+		if (hasText(route.utilityId())) {
+			repository.findUtilityById(route.utilityId())
+					.map(UtilityRecord::lastVerified)
+					.ifPresent(dates::add);
+			repository.programsForUtility(route.utilityId()).stream()
+					.map(ProgramRecord::lastVerified)
+					.filter(java.util.Objects::nonNull)
+					.forEach(dates::add);
+			repository.costForUtility(route.utilityId())
+					.map(owner.leadserviceline.data.CostRecord::lastVerified)
+					.ifPresent(dates::add);
+		}
+		if (route.canonicalPath() != null && route.canonicalPath().startsWith("/guides/")) {
+			var slug = route.canonicalPath().substring("/guides/".length());
+			repository.findGuideBySlug(slug)
+					.map(GuideRecord::lastVerified)
+					.ifPresent(dates::add);
+		}
+		return dates.stream().max(LocalDate::compareTo);
+	}
+
+	private Optional<LocalDate> parseDate(String value) {
+		if (!hasText(value)) {
+			return Optional.empty();
+		}
+		try {
+			return Optional.of(OffsetDateTime.parse(value).toLocalDate());
+		} catch (RuntimeException ignored) {
+			try {
+				return Optional.of(LocalDate.parse(value));
+			} catch (RuntimeException ignoredAgain) {
+				return Optional.empty();
+			}
+		}
 	}
 
 	private List<LookupEventRecord> readLookupEvents() {
@@ -1446,6 +1877,28 @@ public class LeadServiceLinePageService {
 		return normalizedBaseUrl + normalizedPath;
 	}
 
+	private String defaultSocialImageUrl() {
+		return absoluteUrl("/media/pipes-hero.jpg");
+	}
+
+	private String brandTitle(String title) {
+		return title + " | Lead Line Record";
+	}
+
+	private String stateDisplayName(String state) {
+		var normalized = normalizeSegment(state);
+		var stateName = STATE_NAMES.get(normalized);
+		if (!hasText(stateName)) {
+			return normalized.toUpperCase(Locale.US);
+		}
+		return Stream.of(stateName.split(" "))
+				.map(word -> switch (word) {
+					case "of" -> "of";
+					default -> Character.toUpperCase(word.charAt(0)) + word.substring(1);
+				})
+				.collect(Collectors.joining(" "));
+	}
+
 	private Map<String, Object> breadcrumbData(List<Map.Entry<String, String>> crumbs) {
 		var items = new ArrayList<Map<String, Object>>();
 		for (int index = 0; index < crumbs.size(); index++) {
@@ -1474,11 +1927,20 @@ public class LeadServiceLinePageService {
 	}
 
 	private String urlEntry(String path, String lastModified) {
+		var lastModifiedNode = hasText(lastModified)
+				? "\n    <lastmod>%s</lastmod>".formatted(escapeXml(lastModified))
+				: "";
 		return """
 				  <url>
-				    <loc>%s</loc>
-				    <lastmod>%s</lastmod>
-				  </url>""".formatted(escapeXml(absoluteUrl(path)), escapeXml(lastModified));
+				    <loc>%s</loc>%s
+				  </url>""".formatted(escapeXml(absoluteUrl(path)), lastModifiedNode);
+	}
+
+	private void addSitemapEntry(List<String> urls, Set<String> seenPaths, String path, String lastModified) {
+		var normalizedPath = normalizePath(path);
+		if (seenPaths.add(normalizedPath)) {
+			urls.add(urlEntry(normalizedPath, lastModified));
+		}
 	}
 
 	private String escapeXml(String value) {
@@ -1504,6 +1966,14 @@ public class LeadServiceLinePageService {
 			}
 		}
 		return "";
+	}
+
+	private String normalizePath(String path) {
+		if (!hasText(path)) {
+			return "/";
+		}
+		var trimmed = path.trim();
+		return trimmed.startsWith("/") ? trimmed : "/" + trimmed;
 	}
 
 	private String extractPostalPrefix(String value) {

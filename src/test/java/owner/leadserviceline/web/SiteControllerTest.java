@@ -43,7 +43,9 @@ class SiteControllerTest {
 				.andExpect(status().isOk())
 				.andExpect(content().string(Matchers.containsString("verified lead suspected lead no information")))
 				.andExpect(content().string(Matchers.containsString("Where this utility stands now")))
-				.andExpect(content().string(Matchers.containsString("Cost route status")));
+				.andExpect(content().string(Matchers.containsString("Cost route status")))
+				.andExpect(content().string(Matchers.containsString("Lead Line Record editorial review")))
+				.andExpect(content().string(Matchers.containsString("mailto:shinhyeok22@gmail.com")));
 	}
 
 	@Test
@@ -221,6 +223,50 @@ class SiteControllerTest {
 				.andExpect(status().isOk())
 				.andExpect(content().string(Matchers.containsString("Who pays for lead service line replacement?")))
 				.andExpect(content().string(Matchers.containsString("Public-side replacement and private-side replacement are often funded under different rules.")));
+	}
+
+	@Test
+	void homePageShowsBuyingGuidesAndDisclosure() throws Exception {
+		mockMvc.perform(get("/"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("Best lead-reduction filters after a lead notice")))
+				.andExpect(content().string(Matchers.containsString("Best water test kits after a lead notice")))
+				.andExpect(content().string(Matchers.containsString("/affiliate-disclosure")));
+	}
+
+	@Test
+	void affiliateDisclosurePageRenders() throws Exception {
+		mockMvc.perform(get("/affiliate-disclosure"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("Affiliate and recommendation disclosure")))
+				.andExpect(content().string(Matchers.containsString("no extra cost to the reader")));
+	}
+
+	@Test
+	void replacementCostRouteLinksToBuyingGuides() throws Exception {
+		mockMvc.perform(get("/lead-service-line/dc/washington/dc-water/replacement-cost"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("/guides/best-lead-reduction-filters-after-a-lead-notice")))
+				.andExpect(content().string(Matchers.containsString("/guides/best-water-test-kits-after-a-lead-notice")));
+	}
+
+	@Test
+	void buyingGuideRendersRecommendationCards() throws Exception {
+		mockMvc.perform(get("/guides/best-lead-reduction-filters-after-a-lead-notice"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("Brita Elite Replacement Filters")))
+				.andExpect(content().string(Matchers.containsString("Epic Smart Shield Under-Sink Water Filter System")))
+				.andExpect(content().string(Matchers.containsString("/go/brita-elite-replacement-filters")));
+	}
+
+	@Test
+	void recommendationRedirectUsesOfficialProductUrl() throws Exception {
+		mockMvc.perform(get("/go/brita-elite-replacement-filters")
+						.header("Referer", "https://example.test/guides/best-lead-reduction-filters-after-a-lead-notice"))
+				.andExpect(status().is3xxRedirection())
+				.andExpect(header().string("Location", "https://www.brita.com/products/elite-replacement-filters/"))
+				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
+				.andExpect(header().string("X-Robots-Tag", Matchers.containsString("noindex, nofollow")));
 	}
 
 	@Test
@@ -1193,17 +1239,20 @@ class SiteControllerTest {
 	void homePageIncludesCanonicalMetadata() throws Exception {
 		mockMvc.perform(get("/"))
 				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("<title>Lead service line lookup, notices, programs")))
 				.andExpect(content().string(Matchers.containsString("<link rel=\"canonical\" href=\"https://example.test/\">")))
-				.andExpect(content().string(Matchers.containsString("<meta name=\"robots\" content=\"index,follow\">")));
+				.andExpect(content().string(Matchers.containsString("<meta name=\"robots\" content=\"index,follow\">")))
+				.andExpect(content().string(Matchers.containsString("<meta property=\"og:title\" content=\"Lead service line lookup, notices, programs")))
+				.andExpect(content().string(Matchers.containsString("<meta name=\"twitter:card\" content=\"summary_large_image\">")));
 	}
 
 	@Test
-	void robotsTxtDisallowsLookupAndOps() throws Exception {
+	void robotsTxtKeepsLookupCrawlableAndDisallowsOps() throws Exception {
 		mockMvc.perform(get("/robots.txt"))
 				.andExpect(status().isOk())
 				.andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
-				.andExpect(content().string(Matchers.containsString("Disallow: /lookup")))
+				.andExpect(content().string(Matchers.not(Matchers.containsString("Disallow: /lookup"))))
 				.andExpect(content().string(Matchers.containsString("Disallow: /ops/")))
 				.andExpect(content().string(Matchers.containsString("Sitemap: https://example.test/sitemap.xml")));
 	}
@@ -1214,8 +1263,32 @@ class SiteControllerTest {
 				.andExpect(status().isOk())
 				.andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_XML))
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
+				.andExpect(content().string(Matchers.containsString("<loc>https://example.test/about</loc>")))
+				.andExpect(content().string(Matchers.containsString("<loc>https://example.test/lead-service-line/pa</loc>")))
+				.andExpect(content().string(Matchers.containsString("<lastmod>2026-04-06</lastmod>")))
 				.andExpect(content().string(Matchers.containsString("<loc>https://example.test/lead-service-line/dc/washington/dc-water</loc>")))
 				.andExpect(content().string(Matchers.not(Matchers.containsString("/lead-service-line/co/denver/denver-water/replacement-cost"))));
+	}
+
+	@Test
+	void trustPagesRenderAndAreIndexable() throws Exception {
+		mockMvc.perform(get("/methodology"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("How the site builds a local record")))
+				.andExpect(content().string(Matchers.containsString("<meta name=\"robots\" content=\"index,follow\">")))
+				.andExpect(content().string(Matchers.containsString("<meta property=\"og:title\" content=\"Lead service line methodology | Lead Line Record\">")));
+
+		mockMvc.perform(get("/contact"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("mailto:shinhyeok22@gmail.com")))
+				.andExpect(content().string(Matchers.containsString("shinhyeok22@gmail.com")));
+	}
+
+	@Test
+	void statePageUsesSearchFriendlyTitle() throws Exception {
+		mockMvc.perform(get("/lead-service-line/pa"))
+				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("<title>Pennsylvania lead service line lookup, notices")));
 	}
 
 	@Test

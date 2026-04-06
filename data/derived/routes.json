@@ -1,4 +1,26 @@
 [ {
+  "path" : "/guides/best-lead-reduction-filters-after-a-lead-notice",
+  "template" : "guide",
+  "state" : null,
+  "city" : null,
+  "utilityId" : null,
+  "programId" : null,
+  "canonicalPath" : "/guides/best-lead-reduction-filters-after-a-lead-notice",
+  "indexable" : true,
+  "decisionReason" : "evergreen editorial guide",
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
+}, {
+  "path" : "/guides/best-water-test-kits-after-a-lead-notice",
+  "template" : "guide",
+  "state" : null,
+  "city" : null,
+  "utilityId" : null,
+  "programId" : null,
+  "canonicalPath" : "/guides/best-water-test-kits-after-a-lead-notice",
+  "indexable" : true,
+  "decisionReason" : "evergreen editorial guide",
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
+}, {
   "path" : "/guides/known-vs-potential-lead-service-line",
   "template" : "guide",
   "state" : null,
@@ -8,7 +30,7 @@
   "canonicalPath" : "/guides/known-vs-potential-lead-service-line",
   "indexable" : true,
   "decisionReason" : "evergreen editorial guide",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/guides/lead-service-line-buyer-seller-checklist",
   "template" : "guide",
@@ -19,7 +41,7 @@
   "canonicalPath" : "/guides/lead-service-line-buyer-seller-checklist",
   "indexable" : true,
   "decisionReason" : "evergreen editorial guide",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/guides/lead-service-line-replacement-cost",
   "template" : "guide",
@@ -30,7 +52,7 @@
   "canonicalPath" : "/guides/lead-service-line-replacement-cost",
   "indexable" : true,
   "decisionReason" : "evergreen editorial guide",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/guides/lead-water-filter-vs-replacement",
   "template" : "guide",
@@ -41,7 +63,7 @@
   "canonicalPath" : "/guides/lead-water-filter-vs-replacement",
   "indexable" : true,
   "decisionReason" : "evergreen editorial guide",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/guides/what-is-a-lead-service-line",
   "template" : "guide",
@@ -52,7 +74,7 @@
   "canonicalPath" : "/guides/what-is-a-lead-service-line",
   "indexable" : true,
   "decisionReason" : "evergreen editorial guide",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/guides/who-pays-for-lead-service-line-replacement",
   "template" : "guide",
@@ -63,7 +85,7 @@
   "canonicalPath" : "/guides/who-pays-for-lead-service-line-replacement",
   "indexable" : true,
   "decisionReason" : "evergreen editorial guide",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az",
   "template" : "state-hub",
@@ -74,7 +96,7 @@
   "canonicalPath" : "/lead-service-line/az",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/chandler/chandler-water",
   "template" : "utility-overview",
@@ -85,7 +107,7 @@
   "canonicalPath" : "/lead-service-line/az/chandler/chandler-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/chandler/chandler-water/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -96,7 +118,7 @@
   "canonicalPath" : "/lead-service-line/az/chandler/chandler-water/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/chandler/chandler-water/notification",
   "template" : "utility-notification",
@@ -107,7 +129,7 @@
   "canonicalPath" : "/lead-service-line/az/chandler/chandler-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/mesa/mesa-water",
   "template" : "utility-overview",
@@ -118,7 +140,7 @@
   "canonicalPath" : "/lead-service-line/az/mesa/mesa-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/mesa/mesa-water/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -129,7 +151,7 @@
   "canonicalPath" : "/lead-service-line/az/mesa/mesa-water/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/mesa/mesa-water/notification",
   "template" : "utility-notification",
@@ -140,7 +162,7 @@
   "canonicalPath" : "/lead-service-line/az/mesa/mesa-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/phoenix/phoenix-water-services",
   "template" : "utility-overview",
@@ -151,7 +173,7 @@
   "canonicalPath" : "/lead-service-line/az/phoenix/phoenix-water-services",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/phoenix/phoenix-water-services/notification",
   "template" : "utility-notification",
@@ -162,7 +184,7 @@
   "canonicalPath" : "/lead-service-line/az/phoenix/phoenix-water-services/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/phoenix/phoenix-water-services/program",
   "template" : "utility-program",
@@ -173,7 +195,7 @@
   "canonicalPath" : "/lead-service-line/az/phoenix/phoenix-water-services/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/phoenix/phoenix-water-services/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -184,7 +206,7 @@
   "canonicalPath" : "/lead-service-line/az/phoenix/phoenix-water-services/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/programs",
   "template" : "state-programs",
@@ -195,7 +217,7 @@
   "canonicalPath" : "/lead-service-line/az/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/tempe/tempe-water-utilities",
   "template" : "utility-overview",
@@ -206,7 +228,7 @@
   "canonicalPath" : "/lead-service-line/az/tempe/tempe-water-utilities",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/tempe/tempe-water-utilities/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -217,7 +239,7 @@
   "canonicalPath" : "/lead-service-line/az/tempe/tempe-water-utilities/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/tempe/tempe-water-utilities/notification",
   "template" : "utility-notification",
@@ -228,7 +250,7 @@
   "canonicalPath" : "/lead-service-line/az/tempe/tempe-water-utilities/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/tucson/tucson-water",
   "template" : "utility-overview",
@@ -239,7 +261,7 @@
   "canonicalPath" : "/lead-service-line/az/tucson/tucson-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/tucson/tucson-water/notification",
   "template" : "utility-notification",
@@ -250,7 +272,7 @@
   "canonicalPath" : "/lead-service-line/az/tucson/tucson-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/tucson/tucson-water/program",
   "template" : "utility-program",
@@ -261,7 +283,7 @@
   "canonicalPath" : "/lead-service-line/az/tucson/tucson-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/az/tucson/tucson-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -272,7 +294,7 @@
   "canonicalPath" : "/lead-service-line/az/tucson/tucson-water/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/co",
   "template" : "state-hub",
@@ -283,7 +305,7 @@
   "canonicalPath" : "/lead-service-line/co",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/co/denver/denver-water",
   "template" : "utility-overview",
@@ -294,7 +316,7 @@
   "canonicalPath" : "/lead-service-line/co/denver/denver-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/co/denver/denver-water/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -305,7 +327,7 @@
   "canonicalPath" : "/lead-service-line/co/denver/denver-water/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/co/denver/denver-water/notification",
   "template" : "utility-notification",
@@ -316,7 +338,7 @@
   "canonicalPath" : "/lead-service-line/co/denver/denver-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/co/denver/denver-water/program",
   "template" : "utility-program",
@@ -327,7 +349,7 @@
   "canonicalPath" : "/lead-service-line/co/denver/denver-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/co/denver/denver-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -338,7 +360,7 @@
   "canonicalPath" : "/lead-service-line/co/denver/denver-water/replacement-cost",
   "indexable" : false,
   "decisionReason" : "cost route exists for internal review but remains noindex in the seed dataset",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/co/programs",
   "template" : "state-programs",
@@ -349,7 +371,7 @@
   "canonicalPath" : "/lead-service-line/co/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/dc",
   "template" : "state-hub",
@@ -360,7 +382,7 @@
   "canonicalPath" : "/lead-service-line/dc",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/dc/programs",
   "template" : "state-programs",
@@ -371,7 +393,7 @@
   "canonicalPath" : "/lead-service-line/dc/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/dc/washington/dc-water",
   "template" : "utility-overview",
@@ -382,7 +404,7 @@
   "canonicalPath" : "/lead-service-line/dc/washington/dc-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/dc/washington/dc-water/notification",
   "template" : "utility-notification",
@@ -393,7 +415,7 @@
   "canonicalPath" : "/lead-service-line/dc/washington/dc-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/dc/washington/dc-water/program",
   "template" : "utility-program",
@@ -404,7 +426,7 @@
   "canonicalPath" : "/lead-service-line/dc/washington/dc-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/dc/washington/dc-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -415,7 +437,7 @@
   "canonicalPath" : "/lead-service-line/dc/washington/dc-water/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia",
   "template" : "state-hub",
@@ -426,7 +448,7 @@
   "canonicalPath" : "/lead-service-line/ia",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/ames/ames-water-pollution-control",
   "template" : "utility-overview",
@@ -437,7 +459,7 @@
   "canonicalPath" : "/lead-service-line/ia/ames/ames-water-pollution-control",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/ames/ames-water-pollution-control/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -448,7 +470,7 @@
   "canonicalPath" : "/lead-service-line/ia/ames/ames-water-pollution-control/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/ames/ames-water-pollution-control/notification",
   "template" : "utility-notification",
@@ -459,7 +481,7 @@
   "canonicalPath" : "/lead-service-line/ia/ames/ames-water-pollution-control/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/ames/ames-water-pollution-control/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -470,7 +492,7 @@
   "canonicalPath" : "/lead-service-line/ia/ames/ames-water-pollution-control/replacement-cost",
   "indexable" : false,
   "decisionReason" : "cost route exists for internal review but remains noindex in the seed dataset",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/council-bluffs/council-bluffs-water-works",
   "template" : "utility-overview",
@@ -481,7 +503,7 @@
   "canonicalPath" : "/lead-service-line/ia/council-bluffs/council-bluffs-water-works",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/council-bluffs/council-bluffs-water-works/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -492,7 +514,7 @@
   "canonicalPath" : "/lead-service-line/ia/council-bluffs/council-bluffs-water-works/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/council-bluffs/council-bluffs-water-works/notification",
   "template" : "utility-notification",
@@ -503,7 +525,7 @@
   "canonicalPath" : "/lead-service-line/ia/council-bluffs/council-bluffs-water-works/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/council-bluffs/council-bluffs-water-works/program",
   "template" : "utility-program",
@@ -514,7 +536,7 @@
   "canonicalPath" : "/lead-service-line/ia/council-bluffs/council-bluffs-water-works/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/davenport/iowa-american-water",
   "template" : "utility-overview",
@@ -525,7 +547,7 @@
   "canonicalPath" : "/lead-service-line/ia/davenport/iowa-american-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/davenport/iowa-american-water/notification",
   "template" : "utility-notification",
@@ -536,7 +558,7 @@
   "canonicalPath" : "/lead-service-line/ia/davenport/iowa-american-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/davenport/iowa-american-water/program",
   "template" : "utility-program",
@@ -547,7 +569,7 @@
   "canonicalPath" : "/lead-service-line/ia/davenport/iowa-american-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/davenport/iowa-american-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -558,7 +580,7 @@
   "canonicalPath" : "/lead-service-line/ia/davenport/iowa-american-water/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/dubuque/dubuque-water-department",
   "template" : "utility-overview",
@@ -569,7 +591,7 @@
   "canonicalPath" : "/lead-service-line/ia/dubuque/dubuque-water-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/dubuque/dubuque-water-department/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -580,7 +602,7 @@
   "canonicalPath" : "/lead-service-line/ia/dubuque/dubuque-water-department/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/dubuque/dubuque-water-department/notification",
   "template" : "utility-notification",
@@ -591,7 +613,7 @@
   "canonicalPath" : "/lead-service-line/ia/dubuque/dubuque-water-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/dubuque/dubuque-water-department/program",
   "template" : "utility-program",
@@ -602,7 +624,7 @@
   "canonicalPath" : "/lead-service-line/ia/dubuque/dubuque-water-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/iowa-city/iowa-city-water-division",
   "template" : "utility-overview",
@@ -613,7 +635,7 @@
   "canonicalPath" : "/lead-service-line/ia/iowa-city/iowa-city-water-division",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/iowa-city/iowa-city-water-division/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -624,7 +646,7 @@
   "canonicalPath" : "/lead-service-line/ia/iowa-city/iowa-city-water-division/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/iowa-city/iowa-city-water-division/notification",
   "template" : "utility-notification",
@@ -635,7 +657,7 @@
   "canonicalPath" : "/lead-service-line/ia/iowa-city/iowa-city-water-division/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/iowa-city/iowa-city-water-division/program",
   "template" : "utility-program",
@@ -646,7 +668,7 @@
   "canonicalPath" : "/lead-service-line/ia/iowa-city/iowa-city-water-division/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/iowa-city/iowa-city-water-division/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -657,7 +679,7 @@
   "canonicalPath" : "/lead-service-line/ia/iowa-city/iowa-city-water-division/replacement-cost",
   "indexable" : false,
   "decisionReason" : "cost route exists for internal review but remains noindex in the seed dataset",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/programs",
   "template" : "state-programs",
@@ -668,7 +690,7 @@
   "canonicalPath" : "/lead-service-line/ia/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/sioux-city/sioux-city-water-plant",
   "template" : "utility-overview",
@@ -679,7 +701,7 @@
   "canonicalPath" : "/lead-service-line/ia/sioux-city/sioux-city-water-plant",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/sioux-city/sioux-city-water-plant/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -690,7 +712,7 @@
   "canonicalPath" : "/lead-service-line/ia/sioux-city/sioux-city-water-plant/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/sioux-city/sioux-city-water-plant/notification",
   "template" : "utility-notification",
@@ -701,7 +723,7 @@
   "canonicalPath" : "/lead-service-line/ia/sioux-city/sioux-city-water-plant/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/west-des-moines/west-des-moines-water-works",
   "template" : "utility-overview",
@@ -712,7 +734,7 @@
   "canonicalPath" : "/lead-service-line/ia/west-des-moines/west-des-moines-water-works",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/west-des-moines/west-des-moines-water-works/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -723,7 +745,7 @@
   "canonicalPath" : "/lead-service-line/ia/west-des-moines/west-des-moines-water-works/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ia/west-des-moines/west-des-moines-water-works/notification",
   "template" : "utility-notification",
@@ -734,7 +756,7 @@
   "canonicalPath" : "/lead-service-line/ia/west-des-moines/west-des-moines-water-works/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il",
   "template" : "state-hub",
@@ -745,7 +767,7 @@
   "canonicalPath" : "/lead-service-line/il",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/aurora/aurora-water-production-division",
   "template" : "utility-overview",
@@ -756,7 +778,7 @@
   "canonicalPath" : "/lead-service-line/il/aurora/aurora-water-production-division",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/aurora/aurora-water-production-division/notification",
   "template" : "utility-notification",
@@ -767,7 +789,7 @@
   "canonicalPath" : "/lead-service-line/il/aurora/aurora-water-production-division/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/aurora/aurora-water-production-division/program",
   "template" : "utility-program",
@@ -778,7 +800,7 @@
   "canonicalPath" : "/lead-service-line/il/aurora/aurora-water-production-division/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/aurora/aurora-water-production-division/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -789,7 +811,7 @@
   "canonicalPath" : "/lead-service-line/il/aurora/aurora-water-production-division/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/bloomington/bloomington-water-department",
   "template" : "utility-overview",
@@ -800,7 +822,7 @@
   "canonicalPath" : "/lead-service-line/il/bloomington/bloomington-water-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/bloomington/bloomington-water-department/notification",
   "template" : "utility-notification",
@@ -811,7 +833,7 @@
   "canonicalPath" : "/lead-service-line/il/bloomington/bloomington-water-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/bloomington/bloomington-water-department/program",
   "template" : "utility-program",
@@ -822,7 +844,7 @@
   "canonicalPath" : "/lead-service-line/il/bloomington/bloomington-water-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/bloomington/bloomington-water-department/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -833,7 +855,7 @@
   "canonicalPath" : "/lead-service-line/il/bloomington/bloomington-water-department/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/chicago/chicago-water-department",
   "template" : "utility-overview",
@@ -844,7 +866,7 @@
   "canonicalPath" : "/lead-service-line/il/chicago/chicago-water-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/chicago/chicago-water-department/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -855,7 +877,7 @@
   "canonicalPath" : "/lead-service-line/il/chicago/chicago-water-department/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/chicago/chicago-water-department/notification",
   "template" : "utility-notification",
@@ -866,7 +888,7 @@
   "canonicalPath" : "/lead-service-line/il/chicago/chicago-water-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/chicago/chicago-water-department/program",
   "template" : "utility-program",
@@ -877,7 +899,7 @@
   "canonicalPath" : "/lead-service-line/il/chicago/chicago-water-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/evanston/evanston-water-production-bureau",
   "template" : "utility-overview",
@@ -888,7 +910,7 @@
   "canonicalPath" : "/lead-service-line/il/evanston/evanston-water-production-bureau",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/evanston/evanston-water-production-bureau/notification",
   "template" : "utility-notification",
@@ -899,7 +921,7 @@
   "canonicalPath" : "/lead-service-line/il/evanston/evanston-water-production-bureau/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/evanston/evanston-water-production-bureau/program",
   "template" : "utility-program",
@@ -910,7 +932,7 @@
   "canonicalPath" : "/lead-service-line/il/evanston/evanston-water-production-bureau/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/evanston/evanston-water-production-bureau/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -921,7 +943,7 @@
   "canonicalPath" : "/lead-service-line/il/evanston/evanston-water-production-bureau/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/joliet/joliet-public-utilities",
   "template" : "utility-overview",
@@ -932,7 +954,7 @@
   "canonicalPath" : "/lead-service-line/il/joliet/joliet-public-utilities",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/joliet/joliet-public-utilities/notification",
   "template" : "utility-notification",
@@ -943,7 +965,7 @@
   "canonicalPath" : "/lead-service-line/il/joliet/joliet-public-utilities/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/joliet/joliet-public-utilities/program",
   "template" : "utility-program",
@@ -954,7 +976,7 @@
   "canonicalPath" : "/lead-service-line/il/joliet/joliet-public-utilities/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/joliet/joliet-public-utilities/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -965,7 +987,7 @@
   "canonicalPath" : "/lead-service-line/il/joliet/joliet-public-utilities/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/programs",
   "template" : "state-programs",
@@ -976,7 +998,7 @@
   "canonicalPath" : "/lead-service-line/il/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/rockford/rockford-water-division",
   "template" : "utility-overview",
@@ -987,7 +1009,7 @@
   "canonicalPath" : "/lead-service-line/il/rockford/rockford-water-division",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/rockford/rockford-water-division/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -998,7 +1020,7 @@
   "canonicalPath" : "/lead-service-line/il/rockford/rockford-water-division/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/rockford/rockford-water-division/notification",
   "template" : "utility-notification",
@@ -1009,7 +1031,7 @@
   "canonicalPath" : "/lead-service-line/il/rockford/rockford-water-division/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/il/rockford/rockford-water-division/program",
   "template" : "utility-program",
@@ -1020,7 +1042,7 @@
   "canonicalPath" : "/lead-service-line/il/rockford/rockford-water-division/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in",
   "template" : "state-hub",
@@ -1031,7 +1053,7 @@
   "canonicalPath" : "/lead-service-line/in",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/bloomington/bloomington-utilities",
   "template" : "utility-overview",
@@ -1042,7 +1064,7 @@
   "canonicalPath" : "/lead-service-line/in/bloomington/bloomington-utilities",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/bloomington/bloomington-utilities/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1053,7 +1075,7 @@
   "canonicalPath" : "/lead-service-line/in/bloomington/bloomington-utilities/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/bloomington/bloomington-utilities/notification",
   "template" : "utility-notification",
@@ -1064,7 +1086,7 @@
   "canonicalPath" : "/lead-service-line/in/bloomington/bloomington-utilities/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/evansville/evansville-water-and-sewer-utility",
   "template" : "utility-overview",
@@ -1075,7 +1097,7 @@
   "canonicalPath" : "/lead-service-line/in/evansville/evansville-water-and-sewer-utility",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/evansville/evansville-water-and-sewer-utility/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1086,7 +1108,7 @@
   "canonicalPath" : "/lead-service-line/in/evansville/evansville-water-and-sewer-utility/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/evansville/evansville-water-and-sewer-utility/notification",
   "template" : "utility-notification",
@@ -1097,7 +1119,7 @@
   "canonicalPath" : "/lead-service-line/in/evansville/evansville-water-and-sewer-utility/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/fort-wayne/fort-wayne-city-utilities",
   "template" : "utility-overview",
@@ -1108,7 +1130,7 @@
   "canonicalPath" : "/lead-service-line/in/fort-wayne/fort-wayne-city-utilities",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/fort-wayne/fort-wayne-city-utilities/notification",
   "template" : "utility-notification",
@@ -1119,7 +1141,7 @@
   "canonicalPath" : "/lead-service-line/in/fort-wayne/fort-wayne-city-utilities/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/fort-wayne/fort-wayne-city-utilities/program",
   "template" : "utility-program",
@@ -1130,7 +1152,7 @@
   "canonicalPath" : "/lead-service-line/in/fort-wayne/fort-wayne-city-utilities/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/fort-wayne/fort-wayne-city-utilities/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1141,7 +1163,7 @@
   "canonicalPath" : "/lead-service-line/in/fort-wayne/fort-wayne-city-utilities/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/indianapolis/citizens-energy-group",
   "template" : "utility-overview",
@@ -1152,7 +1174,7 @@
   "canonicalPath" : "/lead-service-line/in/indianapolis/citizens-energy-group",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/indianapolis/citizens-energy-group/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1163,7 +1185,7 @@
   "canonicalPath" : "/lead-service-line/in/indianapolis/citizens-energy-group/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/indianapolis/citizens-energy-group/notification",
   "template" : "utility-notification",
@@ -1174,7 +1196,7 @@
   "canonicalPath" : "/lead-service-line/in/indianapolis/citizens-energy-group/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/indianapolis/citizens-energy-group/program",
   "template" : "utility-program",
@@ -1185,7 +1207,7 @@
   "canonicalPath" : "/lead-service-line/in/indianapolis/citizens-energy-group/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/kendallville/kendallville-water-department",
   "template" : "utility-overview",
@@ -1196,7 +1218,7 @@
   "canonicalPath" : "/lead-service-line/in/kendallville/kendallville-water-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/kendallville/kendallville-water-department/notification",
   "template" : "utility-notification",
@@ -1207,7 +1229,7 @@
   "canonicalPath" : "/lead-service-line/in/kendallville/kendallville-water-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/kendallville/kendallville-water-department/program",
   "template" : "utility-program",
@@ -1218,7 +1240,7 @@
   "canonicalPath" : "/lead-service-line/in/kendallville/kendallville-water-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/kendallville/kendallville-water-department/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1229,7 +1251,7 @@
   "canonicalPath" : "/lead-service-line/in/kendallville/kendallville-water-department/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/lafayette/lafayette-water-works",
   "template" : "utility-overview",
@@ -1240,7 +1262,7 @@
   "canonicalPath" : "/lead-service-line/in/lafayette/lafayette-water-works",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/lafayette/lafayette-water-works/notification",
   "template" : "utility-notification",
@@ -1251,7 +1273,7 @@
   "canonicalPath" : "/lead-service-line/in/lafayette/lafayette-water-works/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/lafayette/lafayette-water-works/program",
   "template" : "utility-program",
@@ -1262,7 +1284,7 @@
   "canonicalPath" : "/lead-service-line/in/lafayette/lafayette-water-works/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/lafayette/lafayette-water-works/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1273,7 +1295,7 @@
   "canonicalPath" : "/lead-service-line/in/lafayette/lafayette-water-works/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/mishawaka/mishawaka-utilities",
   "template" : "utility-overview",
@@ -1284,7 +1306,7 @@
   "canonicalPath" : "/lead-service-line/in/mishawaka/mishawaka-utilities",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/mishawaka/mishawaka-utilities/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1295,7 +1317,7 @@
   "canonicalPath" : "/lead-service-line/in/mishawaka/mishawaka-utilities/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/mishawaka/mishawaka-utilities/notification",
   "template" : "utility-notification",
@@ -1306,7 +1328,7 @@
   "canonicalPath" : "/lead-service-line/in/mishawaka/mishawaka-utilities/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/programs",
   "template" : "state-programs",
@@ -1317,7 +1339,7 @@
   "canonicalPath" : "/lead-service-line/in/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/south-bend/south-bend-water-works",
   "template" : "utility-overview",
@@ -1328,7 +1350,7 @@
   "canonicalPath" : "/lead-service-line/in/south-bend/south-bend-water-works",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/south-bend/south-bend-water-works/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1339,7 +1361,7 @@
   "canonicalPath" : "/lead-service-line/in/south-bend/south-bend-water-works/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/south-bend/south-bend-water-works/notification",
   "template" : "utility-notification",
@@ -1350,7 +1372,7 @@
   "canonicalPath" : "/lead-service-line/in/south-bend/south-bend-water-works/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/speedway/speedway-water-works",
   "template" : "utility-overview",
@@ -1361,7 +1383,7 @@
   "canonicalPath" : "/lead-service-line/in/speedway/speedway-water-works",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/speedway/speedway-water-works/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1372,7 +1394,7 @@
   "canonicalPath" : "/lead-service-line/in/speedway/speedway-water-works/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/in/speedway/speedway-water-works/notification",
   "template" : "utility-notification",
@@ -1383,7 +1405,7 @@
   "canonicalPath" : "/lead-service-line/in/speedway/speedway-water-works/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi",
   "template" : "state-hub",
@@ -1394,7 +1416,7 @@
   "canonicalPath" : "/lead-service-line/mi",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/dearborn/dearborn-water-sewerage-division",
   "template" : "utility-overview",
@@ -1405,7 +1427,7 @@
   "canonicalPath" : "/lead-service-line/mi/dearborn/dearborn-water-sewerage-division",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/dearborn/dearborn-water-sewerage-division/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1416,7 +1438,7 @@
   "canonicalPath" : "/lead-service-line/mi/dearborn/dearborn-water-sewerage-division/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/dearborn/dearborn-water-sewerage-division/notification",
   "template" : "utility-notification",
@@ -1427,7 +1449,7 @@
   "canonicalPath" : "/lead-service-line/mi/dearborn/dearborn-water-sewerage-division/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/detroit/detroit-water-and-sewerage-department",
   "template" : "utility-overview",
@@ -1438,7 +1460,7 @@
   "canonicalPath" : "/lead-service-line/mi/detroit/detroit-water-and-sewerage-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/detroit/detroit-water-and-sewerage-department/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1449,7 +1471,7 @@
   "canonicalPath" : "/lead-service-line/mi/detroit/detroit-water-and-sewerage-department/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/detroit/detroit-water-and-sewerage-department/notification",
   "template" : "utility-notification",
@@ -1460,7 +1482,7 @@
   "canonicalPath" : "/lead-service-line/mi/detroit/detroit-water-and-sewerage-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/detroit/detroit-water-and-sewerage-department/program",
   "template" : "utility-program",
@@ -1471,7 +1493,7 @@
   "canonicalPath" : "/lead-service-line/mi/detroit/detroit-water-and-sewerage-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/flint/flint-water-service-center",
   "template" : "utility-overview",
@@ -1482,7 +1504,7 @@
   "canonicalPath" : "/lead-service-line/mi/flint/flint-water-service-center",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/flint/flint-water-service-center/notification",
   "template" : "utility-notification",
@@ -1493,7 +1515,7 @@
   "canonicalPath" : "/lead-service-line/mi/flint/flint-water-service-center/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/flint/flint-water-service-center/program",
   "template" : "utility-program",
@@ -1504,7 +1526,7 @@
   "canonicalPath" : "/lead-service-line/mi/flint/flint-water-service-center/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/flint/flint-water-service-center/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1515,7 +1537,7 @@
   "canonicalPath" : "/lead-service-line/mi/flint/flint-water-service-center/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/grand-rapids/grand-rapids-water-system",
   "template" : "utility-overview",
@@ -1526,7 +1548,7 @@
   "canonicalPath" : "/lead-service-line/mi/grand-rapids/grand-rapids-water-system",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/grand-rapids/grand-rapids-water-system/notification",
   "template" : "utility-notification",
@@ -1537,7 +1559,7 @@
   "canonicalPath" : "/lead-service-line/mi/grand-rapids/grand-rapids-water-system/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/grand-rapids/grand-rapids-water-system/program",
   "template" : "utility-program",
@@ -1548,7 +1570,7 @@
   "canonicalPath" : "/lead-service-line/mi/grand-rapids/grand-rapids-water-system/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/grand-rapids/grand-rapids-water-system/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1559,7 +1581,7 @@
   "canonicalPath" : "/lead-service-line/mi/grand-rapids/grand-rapids-water-system/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/jackson/jackson-water-department",
   "template" : "utility-overview",
@@ -1570,7 +1592,7 @@
   "canonicalPath" : "/lead-service-line/mi/jackson/jackson-water-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/jackson/jackson-water-department/notification",
   "template" : "utility-notification",
@@ -1581,7 +1603,7 @@
   "canonicalPath" : "/lead-service-line/mi/jackson/jackson-water-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/jackson/jackson-water-department/program",
   "template" : "utility-program",
@@ -1592,7 +1614,7 @@
   "canonicalPath" : "/lead-service-line/mi/jackson/jackson-water-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/jackson/jackson-water-department/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1603,7 +1625,7 @@
   "canonicalPath" : "/lead-service-line/mi/jackson/jackson-water-department/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/kalamazoo/kalamazoo-water-department",
   "template" : "utility-overview",
@@ -1614,7 +1636,7 @@
   "canonicalPath" : "/lead-service-line/mi/kalamazoo/kalamazoo-water-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/kalamazoo/kalamazoo-water-department/notification",
   "template" : "utility-notification",
@@ -1625,7 +1647,7 @@
   "canonicalPath" : "/lead-service-line/mi/kalamazoo/kalamazoo-water-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/kalamazoo/kalamazoo-water-department/program",
   "template" : "utility-program",
@@ -1636,7 +1658,7 @@
   "canonicalPath" : "/lead-service-line/mi/kalamazoo/kalamazoo-water-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/kalamazoo/kalamazoo-water-department/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1647,7 +1669,7 @@
   "canonicalPath" : "/lead-service-line/mi/kalamazoo/kalamazoo-water-department/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/lansing/lansing-board-of-water-light",
   "template" : "utility-overview",
@@ -1658,7 +1680,7 @@
   "canonicalPath" : "/lead-service-line/mi/lansing/lansing-board-of-water-light",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/lansing/lansing-board-of-water-light/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1669,7 +1691,7 @@
   "canonicalPath" : "/lead-service-line/mi/lansing/lansing-board-of-water-light/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/lansing/lansing-board-of-water-light/notification",
   "template" : "utility-notification",
@@ -1680,7 +1702,7 @@
   "canonicalPath" : "/lead-service-line/mi/lansing/lansing-board-of-water-light/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/monroe/monroe-water-wastewater",
   "template" : "utility-overview",
@@ -1691,7 +1713,7 @@
   "canonicalPath" : "/lead-service-line/mi/monroe/monroe-water-wastewater",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/monroe/monroe-water-wastewater/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1702,7 +1724,7 @@
   "canonicalPath" : "/lead-service-line/mi/monroe/monroe-water-wastewater/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/monroe/monroe-water-wastewater/notification",
   "template" : "utility-notification",
@@ -1713,7 +1735,7 @@
   "canonicalPath" : "/lead-service-line/mi/monroe/monroe-water-wastewater/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/programs",
   "template" : "state-programs",
@@ -1724,7 +1746,7 @@
   "canonicalPath" : "/lead-service-line/mi/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/st-joseph/st-joseph-water-and-sewer",
   "template" : "utility-overview",
@@ -1735,7 +1757,7 @@
   "canonicalPath" : "/lead-service-line/mi/st-joseph/st-joseph-water-and-sewer",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/st-joseph/st-joseph-water-and-sewer/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1746,7 +1768,7 @@
   "canonicalPath" : "/lead-service-line/mi/st-joseph/st-joseph-water-and-sewer/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/st-joseph/st-joseph-water-and-sewer/notification",
   "template" : "utility-notification",
@@ -1757,7 +1779,7 @@
   "canonicalPath" : "/lead-service-line/mi/st-joseph/st-joseph-water-and-sewer/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mi/st-joseph/st-joseph-water-and-sewer/program",
   "template" : "utility-program",
@@ -1768,7 +1790,7 @@
   "canonicalPath" : "/lead-service-line/mi/st-joseph/st-joseph-water-and-sewer/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn",
   "template" : "state-hub",
@@ -1779,7 +1801,7 @@
   "canonicalPath" : "/lead-service-line/mn",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/duluth/duluth-lead-removal-program",
   "template" : "utility-overview",
@@ -1790,7 +1812,7 @@
   "canonicalPath" : "/lead-service-line/mn/duluth/duluth-lead-removal-program",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/duluth/duluth-lead-removal-program/notification",
   "template" : "utility-notification",
@@ -1801,7 +1823,7 @@
   "canonicalPath" : "/lead-service-line/mn/duluth/duluth-lead-removal-program/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/duluth/duluth-lead-removal-program/program",
   "template" : "utility-program",
@@ -1812,7 +1834,7 @@
   "canonicalPath" : "/lead-service-line/mn/duluth/duluth-lead-removal-program/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/duluth/duluth-lead-removal-program/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1823,7 +1845,7 @@
   "canonicalPath" : "/lead-service-line/mn/duluth/duluth-lead-removal-program/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/minneapolis/minneapolis-public-works-water",
   "template" : "utility-overview",
@@ -1834,7 +1856,7 @@
   "canonicalPath" : "/lead-service-line/mn/minneapolis/minneapolis-public-works-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/minneapolis/minneapolis-public-works-water/notification",
   "template" : "utility-notification",
@@ -1845,7 +1867,7 @@
   "canonicalPath" : "/lead-service-line/mn/minneapolis/minneapolis-public-works-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/minneapolis/minneapolis-public-works-water/program",
   "template" : "utility-program",
@@ -1856,7 +1878,7 @@
   "canonicalPath" : "/lead-service-line/mn/minneapolis/minneapolis-public-works-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/minneapolis/minneapolis-public-works-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1867,7 +1889,7 @@
   "canonicalPath" : "/lead-service-line/mn/minneapolis/minneapolis-public-works-water/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/programs",
   "template" : "state-programs",
@@ -1878,7 +1900,7 @@
   "canonicalPath" : "/lead-service-line/mn/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/saint-paul/saint-paul-regional-water-services",
   "template" : "utility-overview",
@@ -1889,7 +1911,7 @@
   "canonicalPath" : "/lead-service-line/mn/saint-paul/saint-paul-regional-water-services",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/saint-paul/saint-paul-regional-water-services/notification",
   "template" : "utility-notification",
@@ -1900,7 +1922,7 @@
   "canonicalPath" : "/lead-service-line/mn/saint-paul/saint-paul-regional-water-services/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/saint-paul/saint-paul-regional-water-services/program",
   "template" : "utility-program",
@@ -1911,7 +1933,7 @@
   "canonicalPath" : "/lead-service-line/mn/saint-paul/saint-paul-regional-water-services/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mn/saint-paul/saint-paul-regional-water-services/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -1922,7 +1944,7 @@
   "canonicalPath" : "/lead-service-line/mn/saint-paul/saint-paul-regional-water-services/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo",
   "template" : "state-hub",
@@ -1933,7 +1955,7 @@
   "canonicalPath" : "/lead-service-line/mo",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/blue-springs/blue-springs-water-services",
   "template" : "utility-overview",
@@ -1944,7 +1966,7 @@
   "canonicalPath" : "/lead-service-line/mo/blue-springs/blue-springs-water-services",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/blue-springs/blue-springs-water-services/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1955,7 +1977,7 @@
   "canonicalPath" : "/lead-service-line/mo/blue-springs/blue-springs-water-services/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/blue-springs/blue-springs-water-services/notification",
   "template" : "utility-notification",
@@ -1966,7 +1988,7 @@
   "canonicalPath" : "/lead-service-line/mo/blue-springs/blue-springs-water-services/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/columbia/columbia-water-utility",
   "template" : "utility-overview",
@@ -1977,7 +1999,7 @@
   "canonicalPath" : "/lead-service-line/mo/columbia/columbia-water-utility",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/columbia/columbia-water-utility/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -1988,7 +2010,7 @@
   "canonicalPath" : "/lead-service-line/mo/columbia/columbia-water-utility/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/columbia/columbia-water-utility/notification",
   "template" : "utility-notification",
@@ -1999,7 +2021,7 @@
   "canonicalPath" : "/lead-service-line/mo/columbia/columbia-water-utility/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/independence/independence-water-department",
   "template" : "utility-overview",
@@ -2010,7 +2032,7 @@
   "canonicalPath" : "/lead-service-line/mo/independence/independence-water-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/independence/independence-water-department/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2021,7 +2043,7 @@
   "canonicalPath" : "/lead-service-line/mo/independence/independence-water-department/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/independence/independence-water-department/notification",
   "template" : "utility-notification",
@@ -2032,7 +2054,7 @@
   "canonicalPath" : "/lead-service-line/mo/independence/independence-water-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/kansas-city/kansas-city-water",
   "template" : "utility-overview",
@@ -2043,7 +2065,7 @@
   "canonicalPath" : "/lead-service-line/mo/kansas-city/kansas-city-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/kansas-city/kansas-city-water/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2054,7 +2076,7 @@
   "canonicalPath" : "/lead-service-line/mo/kansas-city/kansas-city-water/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/kansas-city/kansas-city-water/notification",
   "template" : "utility-notification",
@@ -2065,7 +2087,7 @@
   "canonicalPath" : "/lead-service-line/mo/kansas-city/kansas-city-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/programs",
   "template" : "state-programs",
@@ -2076,7 +2098,7 @@
   "canonicalPath" : "/lead-service-line/mo/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/springfield/springfield-water-utility",
   "template" : "utility-overview",
@@ -2087,7 +2109,7 @@
   "canonicalPath" : "/lead-service-line/mo/springfield/springfield-water-utility",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/springfield/springfield-water-utility/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2098,7 +2120,7 @@
   "canonicalPath" : "/lead-service-line/mo/springfield/springfield-water-utility/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/springfield/springfield-water-utility/notification",
   "template" : "utility-notification",
@@ -2109,7 +2131,7 @@
   "canonicalPath" : "/lead-service-line/mo/springfield/springfield-water-utility/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/st-louis/missouri-american-water",
   "template" : "utility-overview",
@@ -2120,7 +2142,7 @@
   "canonicalPath" : "/lead-service-line/mo/st-louis/missouri-american-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/st-louis/missouri-american-water/notification",
   "template" : "utility-notification",
@@ -2131,7 +2153,7 @@
   "canonicalPath" : "/lead-service-line/mo/st-louis/missouri-american-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/st-louis/missouri-american-water/program",
   "template" : "utility-program",
@@ -2142,7 +2164,7 @@
   "canonicalPath" : "/lead-service-line/mo/st-louis/missouri-american-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/mo/st-louis/missouri-american-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2153,7 +2175,7 @@
   "canonicalPath" : "/lead-service-line/mo/st-louis/missouri-american-water/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne",
   "template" : "state-hub",
@@ -2164,7 +2186,7 @@
   "canonicalPath" : "/lead-service-line/ne",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/grand-island/grand-island-utilities-department",
   "template" : "utility-overview",
@@ -2175,7 +2197,7 @@
   "canonicalPath" : "/lead-service-line/ne/grand-island/grand-island-utilities-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/grand-island/grand-island-utilities-department/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2186,7 +2208,7 @@
   "canonicalPath" : "/lead-service-line/ne/grand-island/grand-island-utilities-department/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/grand-island/grand-island-utilities-department/notification",
   "template" : "utility-notification",
@@ -2197,7 +2219,7 @@
   "canonicalPath" : "/lead-service-line/ne/grand-island/grand-island-utilities-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/grand-island/grand-island-utilities-department/program",
   "template" : "utility-program",
@@ -2208,7 +2230,7 @@
   "canonicalPath" : "/lead-service-line/ne/grand-island/grand-island-utilities-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/hastings/hastings-utilities-water",
   "template" : "utility-overview",
@@ -2219,7 +2241,7 @@
   "canonicalPath" : "/lead-service-line/ne/hastings/hastings-utilities-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/hastings/hastings-utilities-water/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2230,7 +2252,7 @@
   "canonicalPath" : "/lead-service-line/ne/hastings/hastings-utilities-water/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/hastings/hastings-utilities-water/notification",
   "template" : "utility-notification",
@@ -2241,7 +2263,7 @@
   "canonicalPath" : "/lead-service-line/ne/hastings/hastings-utilities-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/hastings/hastings-utilities-water/program",
   "template" : "utility-program",
@@ -2252,7 +2274,7 @@
   "canonicalPath" : "/lead-service-line/ne/hastings/hastings-utilities-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/omaha/mud-omaha",
   "template" : "utility-overview",
@@ -2263,7 +2285,7 @@
   "canonicalPath" : "/lead-service-line/ne/omaha/mud-omaha",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/omaha/mud-omaha/notification",
   "template" : "utility-notification",
@@ -2274,7 +2296,7 @@
   "canonicalPath" : "/lead-service-line/ne/omaha/mud-omaha/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/omaha/mud-omaha/program",
   "template" : "utility-program",
@@ -2285,7 +2307,7 @@
   "canonicalPath" : "/lead-service-line/ne/omaha/mud-omaha/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/omaha/mud-omaha/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2296,7 +2318,7 @@
   "canonicalPath" : "/lead-service-line/ne/omaha/mud-omaha/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ne/programs",
   "template" : "state-programs",
@@ -2307,7 +2329,7 @@
   "canonicalPath" : "/lead-service-line/ne/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh",
   "template" : "state-hub",
@@ -2318,7 +2340,7 @@
   "canonicalPath" : "/lead-service-line/oh",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/akron/akron-water-supply",
   "template" : "utility-overview",
@@ -2329,7 +2351,7 @@
   "canonicalPath" : "/lead-service-line/oh/akron/akron-water-supply",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/akron/akron-water-supply/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2340,7 +2362,7 @@
   "canonicalPath" : "/lead-service-line/oh/akron/akron-water-supply/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/akron/akron-water-supply/notification",
   "template" : "utility-notification",
@@ -2351,7 +2373,7 @@
   "canonicalPath" : "/lead-service-line/oh/akron/akron-water-supply/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/cincinnati/greater-cincinnati-water-works",
   "template" : "utility-overview",
@@ -2362,7 +2384,7 @@
   "canonicalPath" : "/lead-service-line/oh/cincinnati/greater-cincinnati-water-works",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/cincinnati/greater-cincinnati-water-works/notification",
   "template" : "utility-notification",
@@ -2373,7 +2395,7 @@
   "canonicalPath" : "/lead-service-line/oh/cincinnati/greater-cincinnati-water-works/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/cincinnati/greater-cincinnati-water-works/program",
   "template" : "utility-program",
@@ -2384,7 +2406,7 @@
   "canonicalPath" : "/lead-service-line/oh/cincinnati/greater-cincinnati-water-works/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/cincinnati/greater-cincinnati-water-works/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2395,7 +2417,7 @@
   "canonicalPath" : "/lead-service-line/oh/cincinnati/greater-cincinnati-water-works/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/columbus/columbus-division-of-water",
   "template" : "utility-overview",
@@ -2406,7 +2428,7 @@
   "canonicalPath" : "/lead-service-line/oh/columbus/columbus-division-of-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/columbus/columbus-division-of-water/notification",
   "template" : "utility-notification",
@@ -2417,7 +2439,7 @@
   "canonicalPath" : "/lead-service-line/oh/columbus/columbus-division-of-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/columbus/columbus-division-of-water/program",
   "template" : "utility-program",
@@ -2428,7 +2450,7 @@
   "canonicalPath" : "/lead-service-line/oh/columbus/columbus-division-of-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/columbus/columbus-division-of-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2439,7 +2461,7 @@
   "canonicalPath" : "/lead-service-line/oh/columbus/columbus-division-of-water/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/hamilton/hamilton-utilities-water",
   "template" : "utility-overview",
@@ -2450,7 +2472,7 @@
   "canonicalPath" : "/lead-service-line/oh/hamilton/hamilton-utilities-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/hamilton/hamilton-utilities-water/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2461,7 +2483,7 @@
   "canonicalPath" : "/lead-service-line/oh/hamilton/hamilton-utilities-water/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/hamilton/hamilton-utilities-water/notification",
   "template" : "utility-notification",
@@ -2472,7 +2494,7 @@
   "canonicalPath" : "/lead-service-line/oh/hamilton/hamilton-utilities-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/newark/newark-water",
   "template" : "utility-overview",
@@ -2483,7 +2505,7 @@
   "canonicalPath" : "/lead-service-line/oh/newark/newark-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/newark/newark-water/notification",
   "template" : "utility-notification",
@@ -2494,7 +2516,7 @@
   "canonicalPath" : "/lead-service-line/oh/newark/newark-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/newark/newark-water/program",
   "template" : "utility-program",
@@ -2505,7 +2527,7 @@
   "canonicalPath" : "/lead-service-line/oh/newark/newark-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/newark/newark-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2516,7 +2538,7 @@
   "canonicalPath" : "/lead-service-line/oh/newark/newark-water/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/programs",
   "template" : "state-programs",
@@ -2527,7 +2549,7 @@
   "canonicalPath" : "/lead-service-line/oh/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/toledo/toledo-water-distribution",
   "template" : "utility-overview",
@@ -2538,7 +2560,7 @@
   "canonicalPath" : "/lead-service-line/oh/toledo/toledo-water-distribution",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/toledo/toledo-water-distribution/notification",
   "template" : "utility-notification",
@@ -2549,7 +2571,7 @@
   "canonicalPath" : "/lead-service-line/oh/toledo/toledo-water-distribution/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/toledo/toledo-water-distribution/program",
   "template" : "utility-program",
@@ -2560,7 +2582,7 @@
   "canonicalPath" : "/lead-service-line/oh/toledo/toledo-water-distribution/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/oh/toledo/toledo-water-distribution/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2571,7 +2593,7 @@
   "canonicalPath" : "/lead-service-line/oh/toledo/toledo-water-distribution/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa",
   "template" : "state-hub",
@@ -2582,7 +2604,7 @@
   "canonicalPath" : "/lead-service-line/pa",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/philadelphia/philadelphia-water-department",
   "template" : "utility-overview",
@@ -2593,7 +2615,7 @@
   "canonicalPath" : "/lead-service-line/pa/philadelphia/philadelphia-water-department",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/philadelphia/philadelphia-water-department/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2604,7 +2626,7 @@
   "canonicalPath" : "/lead-service-line/pa/philadelphia/philadelphia-water-department/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/philadelphia/philadelphia-water-department/notification",
   "template" : "utility-notification",
@@ -2615,7 +2637,7 @@
   "canonicalPath" : "/lead-service-line/pa/philadelphia/philadelphia-water-department/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/philadelphia/philadelphia-water-department/program",
   "template" : "utility-program",
@@ -2626,7 +2648,7 @@
   "canonicalPath" : "/lead-service-line/pa/philadelphia/philadelphia-water-department/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/philadelphia/philadelphia-water-department/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2637,7 +2659,7 @@
   "canonicalPath" : "/lead-service-line/pa/philadelphia/philadelphia-water-department/replacement-cost",
   "indexable" : false,
   "decisionReason" : "cost route exists for internal review but remains noindex in the seed dataset",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/pittsburgh/pittsburgh-water",
   "template" : "utility-overview",
@@ -2648,7 +2670,7 @@
   "canonicalPath" : "/lead-service-line/pa/pittsburgh/pittsburgh-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/pittsburgh/pittsburgh-water/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2659,7 +2681,7 @@
   "canonicalPath" : "/lead-service-line/pa/pittsburgh/pittsburgh-water/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/pittsburgh/pittsburgh-water/notification",
   "template" : "utility-notification",
@@ -2670,7 +2692,7 @@
   "canonicalPath" : "/lead-service-line/pa/pittsburgh/pittsburgh-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/pittsburgh/pittsburgh-water/program",
   "template" : "utility-program",
@@ -2681,7 +2703,7 @@
   "canonicalPath" : "/lead-service-line/pa/pittsburgh/pittsburgh-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/pittsburgh/pittsburgh-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2692,7 +2714,7 @@
   "canonicalPath" : "/lead-service-line/pa/pittsburgh/pittsburgh-water/replacement-cost",
   "indexable" : false,
   "decisionReason" : "cost route exists for internal review but remains noindex in the seed dataset",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/pa/programs",
   "template" : "state-programs",
@@ -2703,7 +2725,7 @@
   "canonicalPath" : "/lead-service-line/pa/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ri",
   "template" : "state-hub",
@@ -2714,7 +2736,7 @@
   "canonicalPath" : "/lead-service-line/ri",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ri/programs",
   "template" : "state-programs",
@@ -2725,7 +2747,7 @@
   "canonicalPath" : "/lead-service-line/ri/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ri/providence/providence-water",
   "template" : "utility-overview",
@@ -2736,7 +2758,7 @@
   "canonicalPath" : "/lead-service-line/ri/providence/providence-water",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ri/providence/providence-water/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2747,7 +2769,7 @@
   "canonicalPath" : "/lead-service-line/ri/providence/providence-water/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ri/providence/providence-water/notification",
   "template" : "utility-notification",
@@ -2758,7 +2780,7 @@
   "canonicalPath" : "/lead-service-line/ri/providence/providence-water/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ri/providence/providence-water/program",
   "template" : "utility-program",
@@ -2769,7 +2791,7 @@
   "canonicalPath" : "/lead-service-line/ri/providence/providence-water/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/ri/providence/providence-water/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2780,7 +2802,7 @@
   "canonicalPath" : "/lead-service-line/ri/providence/providence-water/replacement-cost",
   "indexable" : false,
   "decisionReason" : "cost route exists for internal review but remains noindex in the seed dataset",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi",
   "template" : "state-hub",
@@ -2791,7 +2813,7 @@
   "canonicalPath" : "/lead-service-line/wi",
   "indexable" : true,
   "decisionReason" : "state hub with seeded utility depth",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/green-bay/green-bay-water-utility",
   "template" : "utility-overview",
@@ -2802,7 +2824,7 @@
   "canonicalPath" : "/lead-service-line/wi/green-bay/green-bay-water-utility",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/green-bay/green-bay-water-utility/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2813,7 +2835,7 @@
   "canonicalPath" : "/lead-service-line/wi/green-bay/green-bay-water-utility/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/green-bay/green-bay-water-utility/notification",
   "template" : "utility-notification",
@@ -2824,7 +2846,7 @@
   "canonicalPath" : "/lead-service-line/wi/green-bay/green-bay-water-utility/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/green-bay/green-bay-water-utility/program",
   "template" : "utility-program",
@@ -2835,7 +2857,7 @@
   "canonicalPath" : "/lead-service-line/wi/green-bay/green-bay-water-utility/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/madison/madison-water-utility",
   "template" : "utility-overview",
@@ -2846,7 +2868,7 @@
   "canonicalPath" : "/lead-service-line/wi/madison/madison-water-utility",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/madison/madison-water-utility/filter-and-testing",
   "template" : "utility-filter-and-testing",
@@ -2857,7 +2879,7 @@
   "canonicalPath" : "/lead-service-line/wi/madison/madison-water-utility/filter-and-testing",
   "indexable" : false,
   "decisionReason" : "support-layer route kept for utilities that need interim protection guidance",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/madison/madison-water-utility/notification",
   "template" : "utility-notification",
@@ -2868,7 +2890,7 @@
   "canonicalPath" : "/lead-service-line/wi/madison/madison-water-utility/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/madison/madison-water-utility/program",
   "template" : "utility-program",
@@ -2879,7 +2901,7 @@
   "canonicalPath" : "/lead-service-line/wi/madison/madison-water-utility/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/madison/madison-water-utility/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2890,7 +2912,7 @@
   "canonicalPath" : "/lead-service-line/wi/madison/madison-water-utility/replacement-cost",
   "indexable" : false,
   "decisionReason" : "cost route exists for internal review but remains noindex in the seed dataset",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/milwaukee/milwaukee-water-works",
   "template" : "utility-overview",
@@ -2901,7 +2923,7 @@
   "canonicalPath" : "/lead-service-line/wi/milwaukee/milwaukee-water-works",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/milwaukee/milwaukee-water-works/notification",
   "template" : "utility-notification",
@@ -2912,7 +2934,7 @@
   "canonicalPath" : "/lead-service-line/wi/milwaukee/milwaukee-water-works/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/milwaukee/milwaukee-water-works/program",
   "template" : "utility-program",
@@ -2923,7 +2945,7 @@
   "canonicalPath" : "/lead-service-line/wi/milwaukee/milwaukee-water-works/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/milwaukee/milwaukee-water-works/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2934,7 +2956,7 @@
   "canonicalPath" : "/lead-service-line/wi/milwaukee/milwaukee-water-works/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/programs",
   "template" : "state-programs",
@@ -2945,7 +2967,7 @@
   "canonicalPath" : "/lead-service-line/wi/programs",
   "indexable" : true,
   "decisionReason" : "state has verified utility-linked program coverage",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/racine/racine-water-utility",
   "template" : "utility-overview",
@@ -2956,7 +2978,7 @@
   "canonicalPath" : "/lead-service-line/wi/racine/racine-water-utility",
   "indexable" : true,
   "decisionReason" : "official source plus next-step path available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/racine/racine-water-utility/notification",
   "template" : "utility-notification",
@@ -2967,7 +2989,7 @@
   "canonicalPath" : "/lead-service-line/wi/racine/racine-water-utility/notification",
   "indexable" : true,
   "decisionReason" : "official notice source available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/racine/racine-water-utility/program",
   "template" : "utility-program",
@@ -2978,7 +3000,7 @@
   "canonicalPath" : "/lead-service-line/wi/racine/racine-water-utility/program",
   "indexable" : true,
   "decisionReason" : "verified utility-linked program available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 }, {
   "path" : "/lead-service-line/wi/racine/racine-water-utility/replacement-cost",
   "template" : "utility-replacement-cost",
@@ -2989,5 +3011,5 @@
   "canonicalPath" : "/lead-service-line/wi/racine/racine-water-utility/replacement-cost",
   "indexable" : true,
   "decisionReason" : "cost assumptions and source evidence available",
-  "lastGenerated" : "2026-04-05T21:33:53.657264800+09:00"
+  "lastGenerated" : "2026-04-06T19:12:50.089042700+09:00"
 } ]

@@ -163,6 +163,8 @@ class DataBuildToolTest {
 		assertTrue(Files.exists(dataRoot.resolve("normalized/sources/src-hastings-program.json")));
 		assertTrue(Files.exists(dataRoot.resolve("normalized/sources/src-sioux-city-inventory.json")));
 		assertTrue(Files.exists(dataRoot.resolve("normalized/guides/guide-who-pays-for-lead-service-line-replacement.json")));
+		assertTrue(Files.exists(dataRoot.resolve("normalized/recommendations/rec-brita-elite-replacement-filters.json")));
+		assertTrue(Files.exists(dataRoot.resolve("normalized/recommendations/rec-tap-score-advanced-city-water.json")));
 
 		var routes = Files.readString(dataRoot.resolve("derived/routes.json"));
 		assertTrue(routes.contains("\"path\" : \"/lead-service-line/az/programs\""));
@@ -227,7 +229,8 @@ class DataBuildToolTest {
 		assertEquals(63L, countFiles(dataRoot.resolve("normalized/utilities")));
 		assertEquals(49L, countFiles(dataRoot.resolve("normalized/programs")));
 		assertEquals(33L, countFiles(dataRoot.resolve("normalized/costs")));
-		assertEquals(272L, countOccurrences(routes, "\"path\" : "));
+		assertEquals(7L, countFiles(dataRoot.resolve("normalized/recommendations")));
+		assertEquals(274L, countOccurrences(routes, "\"path\" : "));
 	}
 
 	@Test

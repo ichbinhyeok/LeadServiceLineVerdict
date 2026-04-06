@@ -1,0 +1,17 @@
+{
+  "recommendationId" : "rec-zerowater-10-cup-pitcher",
+  "slug" : "zerowater-10-cup-pitcher",
+  "guideSlug" : "best-lead-reduction-filters-after-a-lead-notice",
+  "displayOrder" : 3,
+  "name" : "ZeroWater 10 Cup Pitcher",
+  "badge" : "Pitcher-first households",
+  "category" : "pitcher",
+  "merchantName" : "ZeroWater",
+  "destinationLabel" : "Open official ZeroWater page",
+  "destinationUrl" : "https://www.zerowater.com/products/10-cup-water-filter-pitcher",
+  "bestFor" : "Readers who want a pitcher form factor but still want a stronger contaminant-reduction claim than a basic taste-and-odor filter.",
+  "whyItFits" : "This is a practical step up for households that prefer a portable pitcher and are willing to manage filter life more actively than they would with a faucet or under-sink system.",
+  "watchout" : "High-TDS tap water can shorten filter life, and pitcher flow can feel slower in bigger households, so this is not the best fit for heavy all-day kitchen demand.",
+  "evidenceNote" : "ZeroWater says its 5-stage filtration is IAPMO certified to reduce lead, PFOA/PFOS, chromium, and mercury.",
+  "lastVerified" : [ 2026, 4, 6 ]
+}

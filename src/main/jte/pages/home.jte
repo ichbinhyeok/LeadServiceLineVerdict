@@ -11,6 +11,20 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    <meta property="og:site_name" content="Lead Line Record">
+    <meta property="og:title" content="${seo.title()}">
+    <meta property="og:description" content="${seo.description()}">
+    <meta property="og:url" content="${seo.canonicalUrl()}">
+    <meta property="og:type" content="website">
+    @if (seo.socialImageUrl() != null && !seo.socialImageUrl().isBlank())
+        <meta property="og:image" content="${seo.socialImageUrl()}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="${seo.socialImageUrl()}">
+    @else
+        <meta name="twitter:card" content="summary">
+    @endif
+    <meta name="twitter:title" content="${seo.title()}">
+    <meta name="twitter:description" content="${seo.description()}">
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">${jsonLd}</script>
     @endfor
@@ -162,6 +176,30 @@
         </div>
     </section>
 
+    <section class="section-block section-soft">
+        <div class="editorial-line">
+            <div class="kicker">Interim buying guides</div>
+        </div>
+        <h2>When the utility record is clear but replacement is not immediate.</h2>
+        <div class="section-grid three">
+            <div class="content-card tint-blue">
+                <span class="label">Filter guide</span>
+                <h3><a href="/guides/best-lead-reduction-filters-after-a-lead-notice">Best lead-reduction filters after a lead notice</a></h3>
+                <p>Use this when a notice is real, but the next few weeks still depend on utility verification, funding, or scheduling.</p>
+            </div>
+            <div class="content-card tint-warm">
+                <span class="label">Testing guide</span>
+                <h3><a href="/guides/best-water-test-kits-after-a-lead-notice">Best water test kits after a lead notice</a></h3>
+                <p>Use this when a lab-backed test would actually change the next action instead of creating more noise.</p>
+            </div>
+            <div class="content-card tint-soft">
+                <span class="label">Disclosure</span>
+                <h3><a href="/affiliate-disclosure">How recommendations work</a></h3>
+                <p>Buying guides stay secondary to the local utility record and remain editorially separate from future affiliate links.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="section-block section-soft" id="guides">
         <div class="editorial-line">
             <div class="kicker">Background guides</div>
@@ -188,8 +226,13 @@
         <div class="footer__links">
             <a href="/">Home</a>
             <a href="/lookup">Lookup</a>
-            <a href="/#states">States</a>
-            <a href="/#guides">Guides</a>
+            <a href="/about">About</a>
+            <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+            <a href="/methodology">Methodology</a>
+            <a href="/editorial-policy">Editorial Policy</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/contact">Contact</a>
         </div>
     </div>
 </footer>

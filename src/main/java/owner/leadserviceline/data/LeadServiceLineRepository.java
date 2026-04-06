@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collection;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -74,6 +75,14 @@ public class LeadServiceLineRepository {
 		return Optional.ofNullable(snapshot.guidesBySlug.get(slug));
 	}
 
+	public List<ProductRecommendationRecord> recommendationsForGuide(String guideSlug) {
+		return snapshot.recommendationsByGuideSlug.getOrDefault(guideSlug, List.of());
+	}
+
+	public Optional<ProductRecommendationRecord> findRecommendationBySlug(String slug) {
+		return Optional.ofNullable(snapshot.recommendationsBySlug.get(slug));
+	}
+
 	public Optional<UtilityRecord> findUtilityById(String utilityId) {
 		return Optional.ofNullable(snapshot.utilitiesById.get(utilityId));
 	}
@@ -115,6 +124,9 @@ public class LeadServiceLineRepository {
 		var costs = loadDirectory(dataRoot.resolve("normalized/costs"), CostRecord.class);
 		var sources = loadDirectory(dataRoot.resolve("normalized/sources"), SourceEvidenceRecord.class);
 		var guides = loadDirectory(dataRoot.resolve("normalized/guides"), GuideRecord.class);
+		var recommendations = loadDirectory(dataRoot.resolve("normalized/recommendations"), ProductRecommendationRecord.class).stream()
+				.sorted(Comparator.comparingInt(ProductRecommendationRecord::displayOrder).thenComparing(ProductRecommendationRecord::name))
+				.toList();
 		var routes = loadRoutes(dataRoot.resolve("derived/routes.json"));
 
 		return new DataSnapshot(
@@ -123,6 +135,12 @@ public class LeadServiceLineRepository {
 				costs.stream().collect(Collectors.groupingBy(CostRecord::utilityId)),
 				indexBy(sources, SourceEvidenceRecord::sourceId),
 				indexBy(guides, GuideRecord::slug),
+				indexBy(recommendations, ProductRecommendationRecord::slug),
+				recommendations.stream().collect(Collectors.groupingBy(
+						ProductRecommendationRecord::guideSlug,
+						LinkedHashMap::new,
+						Collectors.toList()
+				)),
 				routes.stream().collect(Collectors.toMap(route -> normalizePath(route.path()), Function.identity()))
 		);
 	}
@@ -180,6 +198,8 @@ public class LeadServiceLineRepository {
 			Map<String, List<CostRecord>> costsByUtilityId,
 			Map<String, SourceEvidenceRecord> sourcesById,
 			Map<String, GuideRecord> guidesBySlug,
+			Map<String, ProductRecommendationRecord> recommendationsBySlug,
+			Map<String, List<ProductRecommendationRecord>> recommendationsByGuideSlug,
 			Map<String, RouteRecord> routesByPath
 	) {
 	}

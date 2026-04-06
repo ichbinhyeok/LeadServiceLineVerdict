@@ -1,8 +1,12 @@
 package owner.leadserviceline.web;
 
+import java.net.URI;
+
 import owner.leadserviceline.pages.LeadServiceLinePageService;
 import owner.leadserviceline.pages.OpsReviewSnapshotModel;
 import owner.leadserviceline.lookup.LookupEventLogger;
+import owner.leadserviceline.recommendation.RecommendationClickLogger;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.http.HttpHeaders;
@@ -25,15 +29,18 @@ public class SiteController {
 
 	private final LeadServiceLinePageService pageService;
 	private final LookupEventLogger lookupEventLogger;
+	private final RecommendationClickLogger recommendationClickLogger;
 	private final SiteRuntimeProperties siteRuntimeProperties;
 
 	public SiteController(
 			LeadServiceLinePageService pageService,
 			LookupEventLogger lookupEventLogger,
+			RecommendationClickLogger recommendationClickLogger,
 			SiteRuntimeProperties siteRuntimeProperties
 	) {
 		this.pageService = pageService;
 		this.lookupEventLogger = lookupEventLogger;
+		this.recommendationClickLogger = recommendationClickLogger;
 		this.siteRuntimeProperties = siteRuntimeProperties;
 	}
 
@@ -131,6 +138,40 @@ public class SiteController {
 		model.addAttribute("page", page);
 		model.addAttribute("seo", pageService.guideSeo(page));
 		return "pages/guide";
+	}
+
+	@GetMapping("/go/{slug}")
+	public ResponseEntity<Void> recommendationRedirect(
+			@PathVariable String slug,
+			@RequestHeader(value = "Referer", required = false) String referer
+	) {
+		var recommendation = pageService.recommendation(slug)
+				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+		recommendationClickLogger.logClick(recommendation, referer);
+		return ResponseEntity.status(HttpStatus.FOUND)
+				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
+				.header("Pragma", "no-cache")
+				.header("Referrer-Policy", "no-referrer")
+				.header("X-Robots-Tag", "noindex, nofollow, noarchive")
+				.location(URI.create(recommendation.destinationUrl()))
+				.build();
+	}
+
+	@GetMapping({
+			"/about",
+			"/affiliate-disclosure",
+			"/methodology",
+			"/editorial-policy",
+			"/privacy",
+			"/terms",
+			"/contact"
+	})
+	public String staticPage(HttpServletRequest request, Model model) {
+		var page = pageService.staticPage(request.getRequestURI())
+				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+		model.addAttribute("page", page);
+		model.addAttribute("seo", pageService.staticSeo(page));
+		return "pages/static-page";
 	}
 
 	@GetMapping({

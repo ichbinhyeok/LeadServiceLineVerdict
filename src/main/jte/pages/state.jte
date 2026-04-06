@@ -11,6 +11,20 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    <meta property="og:site_name" content="Lead Line Record">
+    <meta property="og:title" content="${seo.title()}">
+    <meta property="og:description" content="${seo.description()}">
+    <meta property="og:url" content="${seo.canonicalUrl()}">
+    <meta property="og:type" content="website">
+    @if (seo.socialImageUrl() != null && !seo.socialImageUrl().isBlank())
+        <meta property="og:image" content="${seo.socialImageUrl()}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="${seo.socialImageUrl()}">
+    @else
+        <meta name="twitter:card" content="summary">
+    @endif
+    <meta name="twitter:title" content="${seo.title()}">
+    <meta name="twitter:description" content="${seo.description()}">
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">${jsonLd}</script>
     @endfor
@@ -149,6 +163,30 @@
             </div>
         </div>
     </section>
+
+    <section class="section-block section-soft">
+        <div class="editorial-line">
+            <div class="kicker">Interim buying guides</div>
+        </div>
+        <h2>Useful only after the right utility is identified.</h2>
+        <div class="section-grid three">
+            <div class="content-card tint-blue">
+                <span class="label">Filter guide</span>
+                <h3><a href="/guides/best-lead-reduction-filters-after-a-lead-notice">Best lead-reduction filters after a lead notice</a></h3>
+                <p>Use this after the utility record is clear and the household needs an interim filter format that actually fits the kitchen setup.</p>
+            </div>
+            <div class="content-card tint-warm">
+                <span class="label">Testing guide</span>
+                <h3><a href="/guides/best-water-test-kits-after-a-lead-notice">Best water test kits after a lead notice</a></h3>
+                <p>Use this after the local notice is clear and a lab-backed test would change the next decision.</p>
+            </div>
+            <div class="content-card tint-soft">
+                <span class="label">Disclosure</span>
+                <h3><a href="/affiliate-disclosure">How recommendations work</a></h3>
+                <p>Buying guides remain secondary and should never rewrite a utility's own inventory, notice, or replacement path.</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
@@ -163,6 +201,13 @@
             @if (page.programCount() > 0)
                 <a href="/lead-service-line/${page.state()}/programs">Programs</a>
             @endif
+            <a href="/about">About</a>
+            <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+            <a href="/methodology">Methodology</a>
+            <a href="/editorial-policy">Editorial Policy</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/contact">Contact</a>
         </div>
     </div>
 </footer>

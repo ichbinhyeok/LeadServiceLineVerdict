@@ -11,6 +11,20 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    <meta property="og:site_name" content="Lead Line Record">
+    <meta property="og:title" content="${seo.title()}">
+    <meta property="og:description" content="${seo.description()}">
+    <meta property="og:url" content="${seo.canonicalUrl()}">
+    <meta property="og:type" content="website">
+    @if (seo.socialImageUrl() != null && !seo.socialImageUrl().isBlank())
+        <meta property="og:image" content="${seo.socialImageUrl()}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="${seo.socialImageUrl()}">
+    @else
+        <meta name="twitter:card" content="summary">
+    @endif
+    <meta name="twitter:title" content="${seo.title()}">
+    <meta name="twitter:description" content="${seo.description()}">
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">${jsonLd}</script>
     @endfor
@@ -121,6 +135,30 @@
             </div>
         @endif
     </section>
+
+    <section class="section-block section-soft">
+        <div class="editorial-line">
+            <div class="kicker">Interim buying guides</div>
+        </div>
+        <h2>Use product decisions only after you land on the right utility.</h2>
+        <div class="section-grid three">
+            <div class="content-card tint-blue">
+                <span class="label">Filters</span>
+                <h3><a href="/guides/best-lead-reduction-filters-after-a-lead-notice">Best lead-reduction filters after a lead notice</a></h3>
+                <p>For readers who need an interim drinking-and-cooking water plan while the official replacement path is still pending.</p>
+            </div>
+            <div class="content-card tint-warm">
+                <span class="label">Testing</span>
+                <h3><a href="/guides/best-water-test-kits-after-a-lead-notice">Best water test kits after a lead notice</a></h3>
+                <p>For readers whose next decision depends on a stronger sampling workflow, not a generic strip result.</p>
+            </div>
+            <div class="content-card tint-soft">
+                <span class="label">Disclosure</span>
+                <h3><a href="/affiliate-disclosure">How recommendations work</a></h3>
+                <p>Buying guides are secondary support pages and do not outrank the utility's own lookup, map, or notice language.</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
@@ -132,7 +170,13 @@
         <div class="footer__links">
             <a href="/">Home</a>
             <a href="/lookup">Lookup</a>
-            <a href="/#states">States</a>
+            <a href="/about">About</a>
+            <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+            <a href="/methodology">Methodology</a>
+            <a href="/editorial-policy">Editorial Policy</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/contact">Contact</a>
         </div>
     </div>
 </footer>

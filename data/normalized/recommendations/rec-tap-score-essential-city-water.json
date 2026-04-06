@@ -1,0 +1,17 @@
+{
+  "recommendationId" : "rec-tap-score-essential-city-water",
+  "slug" : "tap-score-essential-city-water",
+  "guideSlug" : "best-water-test-kits-after-a-lead-notice",
+  "displayOrder" : 2,
+  "name" : "Tap Score Essential City Water Test",
+  "badge" : "Baseline city-water panel",
+  "category" : "city_water_test",
+  "merchantName" : "Tap Score",
+  "destinationLabel" : "Open official Tap Score page",
+  "destinationUrl" : "https://mytapscore.com/products/essential-water-test",
+  "bestFor" : "Readers on utility water who want a broader baseline than a lead-only kit without immediately paying for the largest panel.",
+  "whyItFits" : "This sits in the middle: broad enough for a real baseline, still narrower than the advanced package, and easier to justify when the reader is checking a known utility-water concern.",
+  "watchout" : "It is still not the best pick when the concern includes a bigger range of byproducts, VOCs, or a more exhaustive city-water read after repeated problems.",
+  "evidenceNote" : "Tap Score says the Essential City Water Test includes 49 analytes with free shipping both ways and a 5-business-day turnaround.",
+  "lastVerified" : [ 2026, 4, 6 ]
+}

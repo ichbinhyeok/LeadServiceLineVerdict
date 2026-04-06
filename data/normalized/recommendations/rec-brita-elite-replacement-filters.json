@@ -1,0 +1,17 @@
+{
+  "recommendationId" : "rec-brita-elite-replacement-filters",
+  "slug" : "brita-elite-replacement-filters",
+  "guideSlug" : "best-lead-reduction-filters-after-a-lead-notice",
+  "displayOrder" : 1,
+  "name" : "Brita Elite Replacement Filters",
+  "badge" : "Existing Brita households",
+  "category" : "replacement_filter",
+  "merchantName" : "Brita",
+  "destinationLabel" : "Open official Brita page",
+  "destinationUrl" : "https://www.brita.com/products/elite-replacement-filters/",
+  "bestFor" : "Readers who already own a compatible Brita pitcher or dispenser and want the lowest-friction cartridge upgrade.",
+  "whyItFits" : "This is the cleanest interim move for homes that do not want a new installation. Brita positions Elite as its stronger lead-reduction cartridge and a longer-life upgrade over its standard filter.",
+  "watchout" : "This is a replacement filter, not a full setup. It only makes sense if the household already has a compatible Brita system and will keep cartridge changes on schedule.",
+  "evidenceNote" : "Brita says Elite fits all Brita pitchers and dispensers, removes 99% of lead, and is replaced about twice a year.",
+  "lastVerified" : [ 2026, 4, 6 ]
+}

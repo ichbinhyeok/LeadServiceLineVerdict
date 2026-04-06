@@ -11,6 +11,20 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    <meta property="og:site_name" content="Lead Line Record">
+    <meta property="og:title" content="${seo.title()}">
+    <meta property="og:description" content="${seo.description()}">
+    <meta property="og:url" content="${seo.canonicalUrl()}">
+    <meta property="og:type" content="website">
+    @if (seo.socialImageUrl() != null && !seo.socialImageUrl().isBlank())
+        <meta property="og:image" content="${seo.socialImageUrl()}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="${seo.socialImageUrl()}">
+    @else
+        <meta name="twitter:card" content="summary">
+    @endif
+    <meta name="twitter:title" content="${seo.title()}">
+    <meta name="twitter:description" content="${seo.description()}">
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">${jsonLd}</script>
     @endfor
@@ -61,6 +75,26 @@
 </section>
 
 <main class="page-shell">
+    <section class="section-block section-soft">
+        <div class="section-grid two">
+            <div class="content-card">
+                <span class="status-pill">Reviewed by</span>
+                <h2 style="margin-top: 14px;">${page.trust().reviewedBy()}</h2>
+                <p>${page.trust().reviewSummary()}</p>
+                <p><strong>Last verified:</strong> ${page.trust().lastVerifiedLabel()}</p>
+                <p><strong>Corrections:</strong> <a href="mailto:${page.trust().correctionEmail()}">${page.trust().correctionEmail()}</a></p>
+            </div>
+            <div class="content-card">
+                <span class="status-pill soft">Evidence base</span>
+                <h2 style="margin-top: 14px;">${page.trust().evidenceCount()} local source${page.trust().evidenceCount() == 1 ? "" : "s"}</h2>
+                @if (!page.trust().publisherNames().isEmpty())
+                    <p><strong>Primary publishers:</strong> ${String.join(", ", page.trust().publisherNames())}</p>
+                @endif
+                <p>Use the official lookup and utility notices before treating any cost band as a real quote.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="section-block">
         <div class="editorial-line">
             <div class="kicker">Step-by-step guide</div>
@@ -167,6 +201,30 @@
         @endif
     </section>
 
+    <section class="section-block section-soft">
+        <div class="editorial-line">
+            <div class="kicker">Interim buying guides</div>
+        </div>
+        <h2>Useful when the out-of-pocket path will take time.</h2>
+        <div class="section-grid three">
+            <div class="content-card tint-blue">
+                <span class="label">Filter guide</span>
+                <h3><a href="/guides/best-lead-reduction-filters-after-a-lead-notice">Best lead-reduction filters after a lead notice</a></h3>
+                <p>Use this when replacement is delayed by quotes, utility scheduling, reimbursement timing, or owner-side contractor coordination.</p>
+            </div>
+            <div class="content-card tint-warm">
+                <span class="label">Testing guide</span>
+                <h3><a href="/guides/best-water-test-kits-after-a-lead-notice">Best water test kits after a lead notice</a></h3>
+                <p>Use this when a stronger sample could justify the interim plan or document a before-and-after change.</p>
+            </div>
+            <div class="content-card tint-soft">
+                <span class="label">Disclosure</span>
+                <h3><a href="/affiliate-disclosure">How recommendations work</a></h3>
+                <p>Product recommendations should never be presented as a substitute for a funded replacement path or a utility-approved process.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="section-block">
         <div class="editorial-line">
             <div class="kicker">Cost evidence block</div>
@@ -195,6 +253,13 @@
             @if (!page.programSummaries().isEmpty())
                 <a href="${page.navigation().stream().filter(candidate -> "Program".equals(candidate.label())).findFirst().map(link -> link.path()).orElse(page.utility().notificationUrl())}">Programs</a>
             @endif
+            <a href="/about">About</a>
+            <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+            <a href="/methodology">Methodology</a>
+            <a href="/editorial-policy">Editorial Policy</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/contact">Contact</a>
         </div>
     </div>
 </footer>

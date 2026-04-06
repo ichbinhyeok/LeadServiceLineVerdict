@@ -1,0 +1,18 @@
+{
+  "guideId" : "guide-best-water-test-kits-after-a-lead-notice",
+  "slug" : "best-water-test-kits-after-a-lead-notice",
+  "title" : "Best water test kits after a lead notice",
+  "eyebrow" : "Buying guide",
+  "heroSummary" : "Water tests only help when they answer a real decision. The right kit depends on whether you need a lab-backed lead result for a confirmed notice, a post-replacement check, or a narrower interim-filtration decision.",
+  "verdict" : "Pick a lab-backed test kit that clarifies the next action; do not let a test delay the official utility lookup, inspection, or replacement path.",
+  "keyPoints" : [ "Lab-backed kits with clear lead reporting and sampling instructions are usually more useful than impulse strips when the question is service-line related.", "First-draw, flushed, and post-replacement samples answer different questions, so the sampling instructions matter as much as the headline claim.", "A test result does not change the pipe material classification; it only adds information to the interim decision.", "Testing is strongest when it is paired with the utility's own flushing, notice, and replacement guidance." ],
+  "nextSteps" : [ "Check whether the utility already offers testing guidance or a preferred sampling sequence before ordering a kit.", "Decide whether you need a baseline first-draw sample, a before-and-after replacement comparison, or a narrower filter-validation check.", "Choose a kit with instructions and turnaround that fit the decision window instead of the cheapest option on the page." ],
+  "faqs" : [ {
+    "question" : "Should I test before buying a filter?",
+    "answer" : "Only when the result would change what you do next. If the utility already says to use interim filtration while verification or replacement is pending, the filter may be the first move and testing becomes a follow-up step instead of a gate."
+  }, {
+    "question" : "Are cheap instant strips enough for a lead-line decision?",
+    "answer" : "Usually not. They may be useful for a very broad screen, but they are often weaker than a lab-backed workflow when the question is whether to trust an interim plan, compare before-and-after samples, or document a more serious concern."
+  } ],
+  "lastVerified" : [ 2026, 4, 6 ]
+}

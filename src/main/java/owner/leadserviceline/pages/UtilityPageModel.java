@@ -23,6 +23,7 @@ public record UtilityPageModel(
 		List<UtilityProgramSummary> programSummaries,
 		CostRecord cost,
 		List<UtilityCostResponsibility> costResponsibilities,
-		List<SourceEvidenceRecord> sources
+		List<SourceEvidenceRecord> sources,
+		UtilityTrustModel trust
 ) {
 }

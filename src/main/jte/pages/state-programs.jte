@@ -11,6 +11,20 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    <meta property="og:site_name" content="Lead Line Record">
+    <meta property="og:title" content="${seo.title()}">
+    <meta property="og:description" content="${seo.description()}">
+    <meta property="og:url" content="${seo.canonicalUrl()}">
+    <meta property="og:type" content="website">
+    @if (seo.socialImageUrl() != null && !seo.socialImageUrl().isBlank())
+        <meta property="og:image" content="${seo.socialImageUrl()}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="${seo.socialImageUrl()}">
+    @else
+        <meta name="twitter:card" content="summary">
+    @endif
+    <meta name="twitter:title" content="${seo.title()}">
+    <meta name="twitter:description" content="${seo.description()}">
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">${jsonLd}</script>
     @endfor
@@ -138,6 +152,30 @@
             @endfor
         </div>
     </section>
+
+    <section class="section-block">
+        <div class="editorial-line">
+            <div class="kicker">Interim buying guides</div>
+        </div>
+        <h2>Useful while funding, inspection, or scheduling is still in motion.</h2>
+        <div class="section-grid three">
+            <div class="content-card tint-blue">
+                <span class="label">Filter guide</span>
+                <h3><a href="/guides/best-lead-reduction-filters-after-a-lead-notice">Best lead-reduction filters after a lead notice</a></h3>
+                <p>Use this when the program may take time and the household needs an interim drinking-water setup now.</p>
+            </div>
+            <div class="content-card tint-warm">
+                <span class="label">Testing guide</span>
+                <h3><a href="/guides/best-water-test-kits-after-a-lead-notice">Best water test kits after a lead notice</a></h3>
+                <p>Use this when a test would sharpen the next action instead of delaying the official program path.</p>
+            </div>
+            <div class="content-card tint-soft">
+                <span class="label">Disclosure</span>
+                <h3><a href="/affiliate-disclosure">How recommendations work</a></h3>
+                <p>Product guides stay editorially separate from local program coverage and should never soften coverage boundaries.</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
@@ -147,8 +185,16 @@
             <p class="muted">${page.state().toUpperCase()} program tracker for local lead line replacement support.</p>
         </div>
         <div class="footer__links">
+            <a href="/">Home</a>
             <a href="/lead-service-line/${page.state()}">State page</a>
             <a href="/lookup">Lookup</a>
+            <a href="/about">About</a>
+            <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+            <a href="/methodology">Methodology</a>
+            <a href="/editorial-policy">Editorial Policy</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/contact">Contact</a>
         </div>
     </div>
 </footer>

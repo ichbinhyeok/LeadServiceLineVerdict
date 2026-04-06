@@ -37,6 +37,7 @@ import owner.leadserviceline.data.CostRecord;
 import owner.leadserviceline.data.GuideRecord;
 import owner.leadserviceline.data.LineCounts;
 import owner.leadserviceline.data.ProgramRecord;
+import owner.leadserviceline.data.ProductRecommendationRecord;
 import owner.leadserviceline.data.RouteRecord;
 import owner.leadserviceline.data.SourceEvidenceRecord;
 import owner.leadserviceline.data.UtilityRecord;
@@ -52,6 +53,15 @@ public final class DataBuildTool {
 	private static final Set<String> ALLOWED_RECORD_STATUSES = Set.of("verified", "needs_review", "draft");
 	private static final Set<String> ALLOWED_COST_CONFIDENCE = Set.of("low", "medium", "high");
 	private static final Set<String> ALLOWED_ADDRESS_LOOKUP_MODES = Set.of("official_lookup", "service_area_notes", "contact_only");
+	private static final Set<String> ALLOWED_RECOMMENDATION_CATEGORIES = Set.of(
+			"replacement_filter",
+			"faucet_system",
+			"pitcher",
+			"under_sink",
+			"lead_copper_test",
+			"city_water_test",
+			"advanced_city_water_test"
+	);
 
 	private static final CSVFormat CSV = CSVFormat.DEFAULT.builder()
 			.setHeader()
@@ -91,14 +101,16 @@ public final class DataBuildTool {
 		var costs = readCosts(dataRoot.resolve("raw/costs"));
 		var sources = readSources(dataRoot.resolve("raw/sources"));
 		var guides = readGuides(dataRoot.resolve("raw/guides"));
+		var recommendations = readRecommendations(dataRoot.resolve("raw/recommendations"));
 
 		validateUtilities(utilities, sources);
 		validatePrograms(programs, utilities, sources);
 		validateCosts(costs, utilities, sources);
 		validateSources(sources, utilities, programs, costs);
 		validateGuides(guides);
+		validateRecommendations(recommendations, guides);
 		if (checkUrls) {
-			validateReachableUrls(utilities, programs, sources);
+			validateReachableUrls(utilities, programs, sources, recommendations);
 		}
 
 		var costsByUtilityId = costs.stream().collect(java.util.stream.Collectors.toMap(CostRecord::utilityId, cost -> cost));
@@ -109,6 +121,7 @@ public final class DataBuildTool {
 		writeEntityDirectory(dataRoot.resolve("normalized/costs"), costs, CostRecord::costId);
 		writeEntityDirectory(dataRoot.resolve("normalized/sources"), sources, SourceEvidenceRecord::sourceId);
 		writeEntityDirectory(dataRoot.resolve("normalized/guides"), guides, GuideRecord::guideId);
+		writeEntityDirectory(dataRoot.resolve("normalized/recommendations"), recommendations, ProductRecommendationRecord::recommendationId);
 		writeRoutes(dataRoot.resolve("derived/routes.json"), routes);
 	}
 
@@ -170,6 +183,22 @@ public final class DataBuildTool {
 		}
 	}
 
+	private List<ProductRecommendationRecord> readRecommendations(Path directory) {
+		if (!Files.exists(directory)) {
+			return List.of();
+		}
+		try (Stream<Path> files = Files.list(directory)) {
+			return files
+					.filter(path -> path.toString().endsWith(".json"))
+					.sorted()
+					.flatMap(this::readRecommendationFile)
+					.sorted(Comparator.comparing(ProductRecommendationRecord::guideSlug).thenComparingInt(ProductRecommendationRecord::displayOrder))
+					.toList();
+		} catch (IOException exception) {
+			throw new UncheckedIOException("Failed to read raw recommendations from " + directory, exception);
+		}
+	}
+
 	private Stream<SourceEvidenceRecord> readSourceFile(Path path) {
 		try {
 			var sources = objectMapper.readValue(path.toFile(), new TypeReference<List<SourceEvidenceRecord>>() {
@@ -177,6 +206,16 @@ public final class DataBuildTool {
 			return sources.stream();
 		} catch (IOException exception) {
 			throw new UncheckedIOException("Failed to read source file " + path, exception);
+		}
+	}
+
+	private Stream<ProductRecommendationRecord> readRecommendationFile(Path path) {
+		try {
+			var recommendations = objectMapper.readValue(path.toFile(), new TypeReference<List<ProductRecommendationRecord>>() {
+			});
+			return recommendations.stream();
+		} catch (IOException exception) {
+			throw new UncheckedIOException("Failed to read recommendation file " + path, exception);
 		}
 	}
 
@@ -408,10 +447,37 @@ public final class DataBuildTool {
 		}
 	}
 
+	private void validateRecommendations(List<ProductRecommendationRecord> recommendations, List<GuideRecord> guides) {
+		var recommendationIds = new LinkedHashSet<String>();
+		var recommendationSlugs = new LinkedHashSet<String>();
+		var guideSlugs = guides.stream().map(GuideRecord::slug).collect(java.util.stream.Collectors.toSet());
+		for (var recommendation : recommendations) {
+			require(recommendationIds.add(requiredNonBlank(recommendation.recommendationId(), "recommendation.recommendationId")),
+					"Duplicate recommendation id: " + recommendation.recommendationId());
+			require(recommendationSlugs.add(requiredNonBlank(recommendation.slug(), "recommendation.slug")),
+					"Duplicate recommendation slug: " + recommendation.slug());
+			require(recommendation.slug().matches("[a-z0-9-]+"), "Recommendation slug must be lowercase kebab-case: " + recommendation.slug());
+			require(guideSlugs.contains(recommendation.guideSlug()), "Unknown recommendation guide slug: " + recommendation.guideSlug());
+			require(recommendation.displayOrder() > 0, "Recommendation display order must be positive: " + recommendation.recommendationId());
+			require(ALLOWED_RECOMMENDATION_CATEGORIES.contains(recommendation.category()),
+					"Unsupported recommendation category: " + recommendation.category());
+			requiredNonBlank(recommendation.name(), "recommendation.name");
+			requiredNonBlank(recommendation.badge(), "recommendation.badge");
+			requiredNonBlank(recommendation.destinationLabel(), "recommendation.destinationLabel");
+			validateHttpsUrl(requiredNonBlank(recommendation.destinationUrl(), "recommendation.destinationUrl"), "recommendation.destinationUrl");
+			requiredNonBlank(recommendation.bestFor(), "recommendation.bestFor");
+			requiredNonBlank(recommendation.whyItFits(), "recommendation.whyItFits");
+			requiredNonBlank(recommendation.watchout(), "recommendation.watchout");
+			requiredNonBlank(recommendation.evidenceNote(), "recommendation.evidenceNote");
+			validateFreshness(recommendation.lastVerified(), "recommendation.lastVerified " + recommendation.recommendationId());
+		}
+	}
+
 	private void validateReachableUrls(
 			List<UtilityRecord> utilities,
 			List<ProgramRecord> programs,
-			List<SourceEvidenceRecord> sources
+			List<SourceEvidenceRecord> sources,
+			List<ProductRecommendationRecord> recommendations
 	) {
 		var urls = new LinkedHashSet<String>();
 		utilities.forEach(utility -> {
@@ -421,6 +487,7 @@ public final class DataBuildTool {
 		});
 		programs.forEach(program -> urls.add(program.applicationUrl()));
 		sources.forEach(source -> urls.add(source.sourceUrl()));
+		recommendations.forEach(recommendation -> urls.add(recommendation.destinationUrl()));
 
 		var client = HttpClient.newBuilder()
 				.followRedirects(HttpClient.Redirect.NORMAL)
