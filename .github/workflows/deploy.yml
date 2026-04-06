@@ -76,3 +76,42 @@ jobs:
             docker compose pull
             docker compose up -d
             docker image prune -f
+
+      - name: Verify OCI service on port 8094
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.OCI_HOST }}
+          username: ${{ secrets.OCI_USERNAME }}
+          key: ${{ secrets.OCI_KEY }}
+          script: |
+            set -e
+            cd ~/deploy/leadline
+            echo "== docker compose ps =="
+            docker compose ps
+            echo "== image digest =="
+            docker image inspect shinhyeok22/leadline:latest --format '{{json .RepoDigests}}'
+            echo "== container image =="
+            docker inspect leadline --format '{{.Config.Image}}'
+            HOME_HTML=$(curl -sSf http://127.0.0.1:8094/)
+            echo "== local title check =="
+            echo "$HOME_HTML" | grep -o "<title>[^<]*</title>" | head -n 1
+            echo "$HOME_HTML" | grep -q "Lead Line Record"
+            LOOKUP_STATUS=$(curl -s -o /tmp/leadline-lookup.html -w "%{http_code}" http://127.0.0.1:8094/lookup)
+            echo "lookup_status=$LOOKUP_STATUS"
+            test "$LOOKUP_STATUS" = "200"
+            UTILITY_STATUS=$(curl -s -o /tmp/leadline-utility.html -w "%{http_code}" http://127.0.0.1:8094/lead-service-line/dc/washington/dc-water)
+            echo "utility_status=$UTILITY_STATUS"
+            test "$UTILITY_STATUS" = "200"
+
+      - name: Verify public domain
+        run: |
+          set -e
+          HOME_HTML=$(curl -sSf https://leadlinerecord.com/)
+          echo "$HOME_HTML" | grep -o "<title>[^<]*</title>" | head -n 1
+          echo "$HOME_HTML" | grep -q "Lead Line Record"
+          LOOKUP_STATUS=$(curl -s -o /tmp/public-lookup.html -w "%{http_code}" https://leadlinerecord.com/lookup)
+          echo "public_lookup_status=$LOOKUP_STATUS"
+          test "$LOOKUP_STATUS" = "200"
+          UTILITY_STATUS=$(curl -s -o /tmp/public-utility.html -w "%{http_code}" https://leadlinerecord.com/lead-service-line/dc/washington/dc-water)
+          echo "public_utility_status=$UTILITY_STATUS"
+          test "$UTILITY_STATUS" = "200"
