@@ -103,7 +103,14 @@ jobs:
           key: ${{ secrets.OCI_KEY }}
           script: |
             set -e
-            HOME_HTML=$(curl -sSf http://127.0.0.1:8094/)
+            for attempt in 1 2 3 4 5 6; do
+              if HOME_HTML=$(curl -sSf http://127.0.0.1:8094/); then
+                break
+              fi
+              echo "homepage attempt $attempt failed; retrying..."
+              sleep 5
+            done
+            test -n "$HOME_HTML"
             echo "$HOME_HTML" | grep -o "<title>[^<]*</title>" | head -n 1
             echo "$HOME_HTML" | grep -q "Lead Line Record"
 
@@ -115,7 +122,15 @@ jobs:
           key: ${{ secrets.OCI_KEY }}
           script: |
             set -e
-            LOOKUP_STATUS=$(curl -s -o /tmp/leadline-lookup.html -w "%{http_code}" http://127.0.0.1:8094/lookup)
+            for attempt in 1 2 3 4 5 6; do
+              LOOKUP_STATUS=$(curl -s -o /tmp/leadline-lookup.html -w "%{http_code}" http://127.0.0.1:8094/lookup || true)
+              echo "lookup_status=$LOOKUP_STATUS"
+              if [ "$LOOKUP_STATUS" = "200" ]; then
+                break
+              fi
+              echo "lookup attempt $attempt failed; retrying..."
+              sleep 5
+            done
             echo "lookup_status=$LOOKUP_STATUS"
             test "$LOOKUP_STATUS" = "200"
 
@@ -127,19 +142,50 @@ jobs:
           key: ${{ secrets.OCI_KEY }}
           script: |
             set -e
-            UTILITY_STATUS=$(curl -s -o /tmp/leadline-utility.html -w "%{http_code}" http://127.0.0.1:8094/lead-service-line/dc/washington/dc-water)
+            for attempt in 1 2 3 4 5 6; do
+              UTILITY_STATUS=$(curl -s -o /tmp/leadline-utility.html -w "%{http_code}" http://127.0.0.1:8094/lead-service-line/dc/washington/dc-water || true)
+              echo "utility_status=$UTILITY_STATUS"
+              if [ "$UTILITY_STATUS" = "200" ]; then
+                break
+              fi
+              echo "utility attempt $attempt failed; retrying..."
+              sleep 5
+            done
             echo "utility_status=$UTILITY_STATUS"
             test "$UTILITY_STATUS" = "200"
 
       - name: Verify public domain
         run: |
           set -e
-          HOME_HTML=$(curl -sSf https://leadlinerecord.com/)
+          for attempt in 1 2 3 4 5 6; do
+            if HOME_HTML=$(curl -sSf https://leadlinerecord.com/); then
+              break
+            fi
+            echo "public homepage attempt $attempt failed; retrying..."
+            sleep 5
+          done
+          test -n "$HOME_HTML"
           echo "$HOME_HTML" | grep -o "<title>[^<]*</title>" | head -n 1
           echo "$HOME_HTML" | grep -q "Lead Line Record"
-          LOOKUP_STATUS=$(curl -s -o /tmp/public-lookup.html -w "%{http_code}" https://leadlinerecord.com/lookup)
+          for attempt in 1 2 3 4 5 6; do
+            LOOKUP_STATUS=$(curl -s -o /tmp/public-lookup.html -w "%{http_code}" https://leadlinerecord.com/lookup || true)
+            echo "public_lookup_status=$LOOKUP_STATUS"
+            if [ "$LOOKUP_STATUS" = "200" ]; then
+              break
+            fi
+            echo "public lookup attempt $attempt failed; retrying..."
+            sleep 5
+          done
           echo "public_lookup_status=$LOOKUP_STATUS"
           test "$LOOKUP_STATUS" = "200"
-          UTILITY_STATUS=$(curl -s -o /tmp/public-utility.html -w "%{http_code}" https://leadlinerecord.com/lead-service-line/dc/washington/dc-water)
+          for attempt in 1 2 3 4 5 6; do
+            UTILITY_STATUS=$(curl -s -o /tmp/public-utility.html -w "%{http_code}" https://leadlinerecord.com/lead-service-line/dc/washington/dc-water || true)
+            echo "public_utility_status=$UTILITY_STATUS"
+            if [ "$UTILITY_STATUS" = "200" ]; then
+              break
+            fi
+            echo "public utility attempt $attempt failed; retrying..."
+            sleep 5
+          done
           echo "public_utility_status=$UTILITY_STATUS"
           test "$UTILITY_STATUS" = "200"
