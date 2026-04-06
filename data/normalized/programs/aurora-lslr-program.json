@@ -1,0 +1,19 @@
+{
+  "programId" : "aurora-lslr-program",
+  "programSlug" : "aurora-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Aurora",
+  "state" : "il",
+  "utilityIds" : [ "aurora-water-il" ],
+  "subsidyType" : "city-managed replacement program triggered by disturbances elevated lead sampling and annual replacement scheduling",
+  "publicSideCovered" : "yes the city replaces public-side segments at no cost to the customer",
+  "privateSideCovered" : "yes in city-triggered cases and owner-managed early replacement still receives city-side completion at no cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "residents can request replacement through the city's lead notice portal and eligibility depends on lead or galvanized status disturbance or elevated lead results",
+  "contractorRules" : "city staff or contractors coordinate public-side work and homeowners manage the inside-to-curb-stop segment when using the owner-managed path",
+  "deadline" : null,
+  "applicationUrl" : "https://www.aurora.il.us/News-articles/Lead-Service-Line-Replacement-Progress",
+  "sourceRefs" : [ "src-aurora-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

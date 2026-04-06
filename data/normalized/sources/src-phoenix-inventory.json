@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-phoenix-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Phoenix Water Services",
+  "sourceUrl" : "https://pipes.phoenix.gov/",
+  "scopeType" : "utility",
+  "scopeKey" : "phoenix-water-az",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Phoenix says its service line materials inventory is publicly available, includes non-lead lead galvanized and unknown categories, and customers can use the map to view their service line material.",
+  "reviewerNote" : "Official Phoenix inventory page reviewed manually for current material categories.",
+  "status" : "verified"
+}

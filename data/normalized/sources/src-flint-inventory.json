@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-flint-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Flint",
+  "sourceUrl" : "https://www.cityofflint.com/progress-report-on-flint-water/",
+  "scopeType" : "utility",
+  "scopeKey" : "flint-water-mi",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Flint says over 97 percent of lead service line replacements are complete, its 2025 complete distribution system materials inventory is posted on the progress page, and crews continue to replace remaining lead or galvanized residential lines.",
+  "reviewerNote" : "City of Flint progress report reviewed manually for replacement progress and posted inventory references.",
+  "status" : "verified"
+}

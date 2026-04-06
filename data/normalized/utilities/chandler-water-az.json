@@ -1,0 +1,32 @@
+{
+  "utilityId" : "chandler-water-az",
+  "utilitySlug" : "chandler-water",
+  "utilityName" : "City of Chandler Water Utilities",
+  "aliases" : [ "Chandler Water", "City of Chandler Water" ],
+  "city" : "chandler",
+  "county" : "maricopa",
+  "state" : "az",
+  "serviceAreaName" : "City of Chandler",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.chandleraz.gov/residents/water/water-quality/lead-and-copper-rule-service-line-inspection",
+  "lookupUrl" : "https://www.chandleraz.gov/residents/water/water-quality/lead-and-copper-rule-service-line-inspection",
+  "notificationUrl" : "https://www.chandleraz.gov/residents/water/water-quality/lead-and-copper-rule-service-line-inspection",
+  "programIds" : [ ],
+  "contactPhone" : "480-782-3671",
+  "contactEmail" : "lcrr@chandleraz.gov",
+  "inventoryStatus" : "inventory-published-with-no-known-lead-lines",
+  "inventorySummary" : "Chandler says it has not identified a lead service line, about 27604 service lines required verification, and a little over 24000 have already been confirmed as non-lead. Residents with unknown status were notified in fall 2024 and fall 2025 while field verification continues through summer 2026.",
+  "lineCounts" : {
+    "known" : 0,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "chandler" ],
+  "resolverHints" : [ "downtown chandler", "ocotillo", "sun lakes", "west chandler" ],
+  "resolverPostalPrefixes" : [ "852" ],
+  "sourceRefs" : [ "src-chandler-inventory", "src-chandler-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

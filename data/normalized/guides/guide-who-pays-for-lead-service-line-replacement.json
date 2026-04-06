@@ -1,0 +1,18 @@
+{
+  "guideId" : "guide-who-pays-for-lead-service-line-replacement",
+  "slug" : "who-pays-for-lead-service-line-replacement",
+  "title" : "Who pays for lead service line replacement?",
+  "eyebrow" : "Evergreen guide",
+  "heroSummary" : "Payment responsibility depends on the utility, the state, and whether the line is on the public side, private side, or both. Some utilities now cover both sides, while others only cover work in public space.",
+  "verdict" : "Before collecting contractor quotes, confirm which part of the line the utility pays for and whether the program is a grant, reimbursement, loan, or owner-pay path.",
+  "keyPoints" : [ "Public-side replacement and private-side replacement are often funded under different rules.", "A utility may replace the public side at no cost while leaving the private side to the owner.", "Some utilities reimburse private-side work only if the owner applies first or uses an approved contractor.", "Restoration, permits, and driveway work may fall outside the headline program claim." ],
+  "nextSteps" : [ "Open your utility-specific program page to confirm coverage and eligibility.", "Check whether you need to apply before any work starts.", "Use the cost page only after the coverage rules are clear so you do not compare the wrong out-of-pocket number." ],
+  "faqs" : [ {
+    "question" : "Can a utility pay for the public side but not the private side?",
+    "answer" : "Yes. That split is common. Some utilities cover only the portion in public space, while others now replace the full line when funding or policy allows."
+  }, {
+    "question" : "Does no-cost replacement always include restoration?",
+    "answer" : "No. A utility may restore basic excavation but not higher-cost landscaping, custom hardscape, or driveway work. Those details belong in the methodology and program notes."
+  } ],
+  "lastVerified" : [ 2026, 4, 4 ]
+}

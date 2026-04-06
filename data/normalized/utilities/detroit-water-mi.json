@@ -1,0 +1,32 @@
+{
+  "utilityId" : "detroit-water-mi",
+  "utilitySlug" : "detroit-water-and-sewerage-department",
+  "utilityName" : "Detroit Water and Sewerage Department",
+  "aliases" : [ "DWSD", "Detroit Water & Sewerage Department" ],
+  "city" : "detroit",
+  "county" : "wayne",
+  "state" : "mi",
+  "serviceAreaName" : "City of Detroit",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-projects/making-detroit-lead-safe/lead-service-line-replacement-program",
+  "lookupUrl" : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-projects/making-detroit-lead-safe/lead-service-line-replacement-program",
+  "notificationUrl" : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-projects/making-detroit-lead-safe/lead-service-line-replacement-program",
+  "programIds" : [ "detroit-neighborhood-replacement" ],
+  "contactPhone" : "313-267-8000",
+  "contactEmail" : "mydwsd@detroitmi.gov",
+  "inventoryStatus" : "citywide-notices-map-and-neighborhood-replacement-program",
+  "inventorySummary" : "Detroit says June 30 2025 notices covered 123387 service lines with known lead known galvanized or unknown materials, DWSD still estimates more than 80000 lead service lines citywide, and the neighborhood replacement program has already replaced more than 15000 lines since 2018.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "detroit" ],
+  "resolverHints" : [ "bagley", "fitzgerald", "claytown", "chandler park", "cadillac heights" ],
+  "resolverPostalPrefixes" : [ "482" ],
+  "sourceRefs" : [ "src-detroit-inventory", "src-detroit-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

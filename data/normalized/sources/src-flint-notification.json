@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-flint-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Flint",
+  "sourceUrl" : "https://www.cityofflint.com/get-the-lead-out/",
+  "scopeType" : "utility",
+  "scopeKey" : "flint-water-mi",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Flint tells residents to immediately opt in and submit consent forms, explains post-replacement flushing and filter use, and provides a direct request path for remaining inspections and city-scheduled replacements.",
+  "reviewerNote" : "City of Flint get-the-lead-out page reviewed manually for opt-in and resident guidance language.",
+  "status" : "verified"
+}

@@ -1,0 +1,19 @@
+{
+  "programId" : "duluth-citywide-replacement",
+  "programSlug" : "duluth-citywide-replacement",
+  "programName" : "Lead Service Line Replacement",
+  "geography" : "City of Duluth",
+  "state" : "mn",
+  "utilityIds" : [ "duluth-water-mn" ],
+  "subsidyType" : "no-cost replacement in city-planned project areas funded through state and federal sources",
+  "publicSideCovered" : "not separated from the owner side because the city page describes full service line replacement at no cost",
+  "privateSideCovered" : "yes full lead or galvanized requiring replacement work is handled at no cost in eligible projects",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "properties with lead galvanized requiring replacement or suspected lead service lines are included in planned projects",
+  "contractorRules" : "city hires contractors and owners must sign a work agreement for planned work",
+  "deadline" : null,
+  "applicationUrl" : "https://duluthmn.gov/public-works-utilities/lead-water-education/lead-service-line-replacement/",
+  "sourceRefs" : [ "src-duluth-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

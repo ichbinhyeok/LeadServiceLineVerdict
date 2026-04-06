@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-blue-springs-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Blue Springs Water and Sewer Services",
+  "sourceUrl" : "https://www.bluespringsgov.com/1875/Lead-and-Copper-Information",
+  "scopeType" : "utility",
+  "scopeKey" : "blue-springs-water-mo",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Blue Springs publishes lead and copper guidance that tells customers how to flush water, find testing results, and reduce exposure while inventory verification work continues.",
+  "reviewerNote" : "Official Blue Springs lead page reviewed manually.",
+  "status" : "verified"
+}

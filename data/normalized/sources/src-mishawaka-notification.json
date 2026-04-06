@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mishawaka-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Mishawaka Utilities",
+  "sourceUrl" : "https://mishawaka.in.gov/lead-free/",
+  "scopeType" : "utility",
+  "scopeKey" : "mishawaka-water-in",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Mishawaka says letters were mailed in October or November 2024 to customers with lead galvanized steel or unknown service lines and that the utility-side segment will be replaced within 45 days when an owner replaces a lead or galvanized private-side line.",
+  "reviewerNote" : "Official Mishawaka notice and inspection guidance reviewed manually for mailed letters and 45-day coordination language.",
+  "status" : "verified"
+}

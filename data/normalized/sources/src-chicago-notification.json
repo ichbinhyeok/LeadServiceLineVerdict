@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-chicago-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Chicago Department of Water Management",
+  "sourceUrl" : "https://www.leadsafechicago.org/lead-service-line-replacement",
+  "scopeType" : "utility",
+  "scopeKey" : "chicago-water-il",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Chicago directs customers to contact lead.safe@cityofchicago.org or 311 for lead service line replacement help and explains that city-assisted program paths are routed through that intake rather than treated as an automatic citywide replacement promise.",
+  "reviewerNote" : "Lead-Safe Chicago replacement guidance reviewed manually for customer guidance.",
+  "status" : "verified"
+}

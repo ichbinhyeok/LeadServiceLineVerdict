@@ -1,0 +1,19 @@
+{
+  "costId" : "mud-omaha-water-cost-2026",
+  "utilityId" : "mud-omaha-ne",
+  "city" : "omaha",
+  "state" : "ne",
+  "publicSideBand" : "Utility-managed district work is handled within M.U.D.'s replacement program",
+  "privateSideBand" : "Customer-owned lead service lines are replaced free of charge and the district notes an average replacement value around $8000",
+  "fullReplacementBand" : "Full replacement is no direct charge under the program for eligible lead service lines",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "M.U.D. publishes free program language and an average replacement value rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on a lead service line and the district's neighborhood rollout schedule",
+  "restorationAssumption" : "Contractors and post-replacement flushing testing and filtered pitcher support are coordinated through the district program",
+  "methodologySummary" : "M.U.D. publishes an Omaha-specific program page that combines a free replacement promise with an average replacement value of about $8000 so the cost route can anchor its no-cost language in a local number.",
+  "ownerTriggerSummary" : "Owners do not pay when the district confirms an eligible lead service line and schedules the work through the neighborhood rollout rather than a separate owner-managed contractor path.",
+  "sourceRefs" : [ "src-mud-omaha-cost", "src-mud-omaha-program", "src-mud-omaha-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

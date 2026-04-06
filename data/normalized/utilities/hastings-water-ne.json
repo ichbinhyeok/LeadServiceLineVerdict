@@ -1,0 +1,32 @@
+{
+  "utilityId" : "hastings-water-ne",
+  "utilitySlug" : "hastings-utilities-water",
+  "utilityName" : "Hastings Utilities Water Department",
+  "aliases" : [ "Hastings Water", "Hastings Utilities Water Department" ],
+  "city" : "hastings",
+  "county" : "adams",
+  "state" : "ne",
+  "serviceAreaName" : "City of Hastings",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.cityofhastings.org/departments/utilities/service-types/water/",
+  "lookupUrl" : "https://engage.cityofhastings.org/water-lead-services-replacements",
+  "notificationUrl" : "https://engage.cityofhastings.org/water-lead-services-replacements",
+  "programIds" : [ "hastings-water-main-lslr-program" ],
+  "contactPhone" : "402-463-1371",
+  "contactEmail" : "engage_waterdept@cityofhastings.org",
+  "inventoryStatus" : "citywide-lead-replacement-program-and-progress-page-published",
+  "inventorySummary" : "Hastings says it currently has about 1500 lead water service lines, publishes monthly neighborhood progress, has already replaced 279 lead services through the rolling program, and aims to remove all lead water services in 10 years.",
+  "lineCounts" : {
+    "known" : 1500,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "service_area_notes",
+  "resolverMunicipalities" : [ "hastings" ],
+  "resolverHints" : [ "east side hastings", "college view", "south hastings" ],
+  "resolverPostalPrefixes" : [ "689" ],
+  "sourceRefs" : [ "src-hastings-inventory", "src-hastings-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

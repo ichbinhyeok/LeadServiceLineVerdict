@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-grand-rapids-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Grand Rapids Water System",
+  "sourceUrl" : "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-line-replacement-program/",
+  "scopeType" : "program",
+  "scopeKey" : "grand-rapids-lslr-program",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Grand Rapids says the city replaces lead service lines at no cost when there is a leak or the home is within a city construction project and otherwise uses a voluntary ten-pay option for owners who want earlier replacement.",
+  "reviewerNote" : "Official Grand Rapids replacement program page reviewed manually for no-cost eligibility and ten-pay option.",
+  "status" : "verified"
+}

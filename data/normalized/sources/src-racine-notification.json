@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-racine-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Racine Water Utility",
+  "sourceUrl" : "https://www.cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Health/_Documents/Environmental_Health/Lead%20in%20water.pdf",
+  "scopeType" : "utility",
+  "scopeKey" : "racine-water-wi",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Racine's official lead-in-water guidance explains ongoing notice and health guidance for homes with lead galvanized or unknown service line risk even when they are not yet in the current replacement batch.",
+  "reviewerNote" : "Official Racine lead-in-water guidance reviewed manually.",
+  "status" : "verified"
+}

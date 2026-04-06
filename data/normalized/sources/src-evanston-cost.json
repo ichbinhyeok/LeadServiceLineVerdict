@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-evanston-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Evanston Water Production Bureau",
+  "sourceUrl" : "https://www.cityofevanston.org/departments/public_works/plans_programs/private-side_lslr_pilot.php",
+  "scopeType" : "cost",
+  "scopeKey" : "evanston-water-cost-2026",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Evanston says annual project blocks receive full replacement at no additional cost to the homeowner and that homeowner-initiated private-side work may qualify for a $2500 reimbursement plus waived permit fees when owners use the pilot path.",
+  "reviewerNote" : "Official Evanston cost and reimbursement language reviewed manually for project-area versus homeowner-initiated paths.",
+  "status" : "verified"
+}

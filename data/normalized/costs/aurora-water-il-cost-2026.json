@@ -1,0 +1,19 @@
+{
+  "costId" : "aurora-water-il-cost-2026",
+  "utilityId" : "aurora-water-il",
+  "city" : "aurora",
+  "state" : "il",
+  "publicSideBand" : "The city replaces public-side work at no cost when a qualifying lead line disturbance or city project occurs",
+  "privateSideBand" : "Homeowners who replace their private segment outside the city-triggered path pay the contractor cost from the inside meter to the curb stop",
+  "fullReplacementBand" : "Full replacement is no direct charge in city-triggered cases while owner-managed early replacement still requires private-side contractor cost",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Aurora publishes responsibility rules and no-cost triggers rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on line material disturbance events elevated lead results or owner-requested replacement through the city portal",
+  "restorationAssumption" : "The city provides filtration and schedules its remaining segment within 30 days in owner-managed early replacements",
+  "methodologySummary" : "Aurora does not publish a citywide bid range but it does publish utility-specific trigger rules showing when the city covers both sides and when the owner still has a contractor obligation for early replacement.",
+  "ownerTriggerSummary" : "Owners avoid private-side cost only when a qualifying city trigger applies and otherwise pay the private segment first if they initiate replacement before the city has a trigger to replace its side.",
+  "sourceRefs" : [ "src-aurora-cost", "src-aurora-program", "src-aurora-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-toledo-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Toledo Division of Water Distribution",
+  "sourceUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "scopeType" : "program",
+  "scopeKey" : "toledo-lead-line-replacement",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Toledo says its multi-year lead line replacement program removes city-side and customer-side lead service lines and that customer-side replacements are funded at no cost to the owner.",
+  "reviewerNote" : "Official Toledo lead line replacement program page reviewed manually.",
+  "status" : "verified"
+}

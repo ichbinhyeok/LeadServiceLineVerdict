@@ -1,0 +1,18 @@
+{
+  "guideId" : "guide-lead-service-line-replacement-cost",
+  "slug" : "lead-service-line-replacement-cost",
+  "title" : "Lead service line replacement cost",
+  "eyebrow" : "Evergreen guide",
+  "heroSummary" : "Replacement cost is not one number. It changes with line length, surface restoration, permit friction, local labor, and whether the work covers only the private side or the full line.",
+  "verdict" : "Use local cost pages as assumptions, not promises, and always check whether the estimate includes restoration, permit, and street or sidewalk work.",
+  "keyPoints" : [ "Private-side-only replacements can still vary widely depending on excavation complexity.", "A full replacement usually costs more than the private side alone but may be partly covered by a utility program.", "Low-confidence local cost pages should stay noindex until the methodology and evidence are strong enough.", "Owners should compare quotes only after they know the utility's replacement rules and restoration boundaries." ],
+  "nextSteps" : [ "Confirm whether the utility covers any portion of the work.", "Read the local methodology notes before relying on any band or estimate.", "Use utility-approved contractors or reimbursement rules when the program requires it." ],
+  "faqs" : [ {
+    "question" : "Why do some local cost pages stay noindex?",
+    "answer" : "Because the cost assumptions can be too weak or too generic. A noindex decision is appropriate when the site has a useful internal planning page but not yet enough evidence to treat it as a public search landing page."
+  }, {
+    "question" : "What usually drives the biggest price jump?",
+    "answer" : "Surface restoration, permit friction, length of run, and whether the line crosses sidewalks, driveways, or difficult landscaping tend to move the number most."
+  } ],
+  "lastVerified" : [ 2026, 4, 4 ]
+}

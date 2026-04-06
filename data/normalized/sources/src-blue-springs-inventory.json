@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-blue-springs-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Blue Springs Water and Sewer Services",
+  "sourceUrl" : "https://www.bluespringsgov.com/2544/Water-Service-Line-Inventory-Information",
+  "scopeType" : "utility",
+  "scopeKey" : "blue-springs-water-mo",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Blue Springs says it is completing a lead service line inventory, asks residents to inspect private-side material, and provides both an address-check document and a resident survey path.",
+  "reviewerNote" : "Official Blue Springs inventory page reviewed manually.",
+  "status" : "verified"
+}

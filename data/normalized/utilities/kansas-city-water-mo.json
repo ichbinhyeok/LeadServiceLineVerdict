@@ -1,0 +1,32 @@
+{
+  "utilityId" : "kansas-city-water-mo",
+  "utilitySlug" : "kansas-city-water",
+  "utilityName" : "Kansas City Water",
+  "aliases" : [ "KC Water", "KC Water Services" ],
+  "city" : "kansas-city",
+  "county" : "jackson",
+  "state" : "mo",
+  "serviceAreaName" : "City of Kansas City",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.kcmo.gov/Home/Components/News/News/2739/16",
+  "lookupUrl" : "https://www.kcmo.gov/Home/Components/News/News/2739/16",
+  "notificationUrl" : "https://www.kcmo.gov/Home/Components/News/News/2865/231",
+  "programIds" : [ ],
+  "contactPhone" : "816-513-1313",
+  "contactEmail" : null,
+  "inventoryStatus" : "first-service-line-inventory-and-public-map-announced",
+  "inventorySummary" : "Kansas City says its first October 2024 inventory reported zero known lead lines, 23109 galvanized requiring replacement lines, and 24842 unknown lines, and it separately warned in 2026 that service line protection letters were optional homeowner coverage communications rather than replacement notices.",
+  "lineCounts" : {
+    "known" : 0,
+    "potential" : 23109,
+    "unknown" : 24842,
+    "nonLead" : 129958
+  },
+  "addressLookupMode" : "service_area_notes",
+  "resolverMunicipalities" : [ "kansas city" ],
+  "resolverHints" : [ "midtown", "brookside", "northland", "plaza" ],
+  "resolverPostalPrefixes" : [ "641" ],
+  "sourceRefs" : [ "src-kansas-city-inventory", "src-kansas-city-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

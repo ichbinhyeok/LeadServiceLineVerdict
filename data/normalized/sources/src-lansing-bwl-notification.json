@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-lansing-bwl-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Lansing Board of Water and Light",
+  "sourceUrl" : "https://www.lbwl.com/customers/water-resource-center/lead-information",
+  "scopeType" : "utility",
+  "scopeKey" : "lansing-bwl-mi",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "BWL says residents should still follow lead safety guidance for indoor plumbing and that the utility continues periodic lead and copper testing to confirm corrosion control remains effective.",
+  "reviewerNote" : "Official BWL customer guidance reviewed manually.",
+  "status" : "verified"
+}

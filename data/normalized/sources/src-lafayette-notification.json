@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-lafayette-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Lafayette Water Works",
+  "sourceUrl" : "https://lafayette.in.gov/3615/Lead-Service-Line-Replacement-Program",
+  "scopeType" : "utility",
+  "scopeKey" : "lafayette-water-in",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Lafayette says letters were mailed in early November 2024 to residents whose service lines are lead galvanized requiring replacement or unknown and posts both the notice copies and 45-day construction notice workflow online.",
+  "reviewerNote" : "Official Lafayette resident notice language reviewed manually for mailed notice and construction notice workflow.",
+  "status" : "verified"
+}

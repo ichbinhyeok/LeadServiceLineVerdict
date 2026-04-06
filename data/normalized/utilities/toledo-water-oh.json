@@ -1,0 +1,32 @@
+{
+  "utilityId" : "toledo-water-oh",
+  "utilitySlug" : "toledo-water-distribution",
+  "utilityName" : "City of Toledo Division of Water Distribution",
+  "aliases" : [ "Toledo Water", "Toledo Public Utilities" ],
+  "city" : "toledo",
+  "county" : "lucas",
+  "state" : "oh",
+  "serviceAreaName" : "Toledo Public Utilities service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "lookupUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "notificationUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "programIds" : [ "toledo-lead-line-replacement", "toledo-childcare-facility-replacement" ],
+  "contactPhone" : "419-936-2020",
+  "contactEmail" : "dpucustomerservice@toledo.oh.gov",
+  "inventoryStatus" : "inventory-map-and-annual-notices-published",
+  "inventorySummary" : "Toledo says annual notices went to about 50000 customers, all but about 6000 customer lines have been inspected, and only about 100 known customer-owned lead lines remain. The city also says replacement letters go out 45 days before scheduled work and free water filters are provided after replacement when needed.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "toledo" ],
+  "resolverHints" : [ "old west end", "point place", "north toledo", "southwyck" ],
+  "resolverPostalPrefixes" : [ "436" ],
+  "sourceRefs" : [ "src-toledo-inventory", "src-toledo-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

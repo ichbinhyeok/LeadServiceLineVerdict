@@ -1,0 +1,32 @@
+{
+  "utilityId" : "columbus-water-oh",
+  "utilitySlug" : "columbus-division-of-water",
+  "utilityName" : "City of Columbus Division of Water",
+  "aliases" : [ "Lead Safe Columbus", "Columbus Water" ],
+  "city" : "columbus",
+  "county" : "franklin",
+  "state" : "oh",
+  "serviceAreaName" : "City of Columbus Division of Water service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts/Water-Health/Lead-Service-Program-Information",
+  "lookupUrl" : "https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts/Water-Health/Lead-Service-Program-Information",
+  "notificationUrl" : "https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts/Water-Health/Lead-Service-Program-Information",
+  "programIds" : [ "columbus-lslr-program", "columbus-leap" ],
+  "contactPhone" : "614-645-6725",
+  "contactEmail" : "leadsafelines@columbus.gov",
+  "inventoryStatus" : "citywide-inventory-and-project-status-published",
+  "inventorySummary" : "Columbus says customers can search an address to see public and private service line material and whether the property is in an active or upcoming project area, annual line-material notices are not water quality notices, street-by-street no-cost replacement starts with a signed work agreement, and LEAP offers no-interest deferred repayment with no upfront cost for proactive or leaking lines.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "columbus" ],
+  "resolverHints" : [ ],
+  "resolverPostalPrefixes" : [ "432" ],
+  "sourceRefs" : [ "src-columbus-inventory", "src-columbus-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

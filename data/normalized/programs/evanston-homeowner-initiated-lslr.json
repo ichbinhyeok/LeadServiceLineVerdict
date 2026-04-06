@@ -1,0 +1,19 @@
+{
+  "programId" : "evanston-homeowner-initiated-lslr",
+  "programSlug" : "evanston-homeowner-initiated-lslr",
+  "programName" : "Homeowner Initiated LSLR",
+  "geography" : "City of Evanston",
+  "state" : "il",
+  "utilityIds" : [ "evanston-water-il" ],
+  "subsidyType" : "seasonal city lead abatement program that coordinates public-side replacement and pilot reimbursement for private-side work",
+  "publicSideCovered" : "yes the city replaces the public side at no expense to the property owner",
+  "privateSideCovered" : "partial the homeowner-initiated pilot offers reimbursement and waived permit fees while annual water main projects can fully replace affected lines at no cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property must have a lead or galvanized service line and either be in an annual project area or participate in the homeowner-initiated or pilot process",
+  "contractorRules" : "city coordinates with licensed plumbers and city inspections are required",
+  "deadline" : null,
+  "applicationUrl" : "https://www.cityofevanston.org/departments/public_works/plans_programs/private-side_lslr_pilot.php",
+  "sourceRefs" : [ "src-evanston-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

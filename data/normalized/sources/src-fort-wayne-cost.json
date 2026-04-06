@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-fort-wayne-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "Fort Wayne City Utilities",
+  "sourceUrl" : "https://utilities.cityoffortwayne.org/remove-lead",
+  "scopeType" : "cost",
+  "scopeKey" : "fort-wayne-water-cost-2026",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Fort Wayne says targeted grant-funded neighborhood replacements are free and that homeowners outside funded areas may still face private-side replacement costs depending on the program path.",
+  "reviewerNote" : "Official Fort Wayne remove-lead page reviewed manually for free neighborhood work versus outside-area cost exposure.",
+  "status" : "verified"
+}

@@ -1,0 +1,19 @@
+{
+  "programId" : "rockford-lslr-program",
+  "programSlug" : "rockford-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Rockford",
+  "state" : "il",
+  "utilityIds" : [ "rockford-water-il" ],
+  "subsidyType" : "citywide replacement project financed through the Illinois SRF plus voluntary full replacement coordination",
+  "publicSideCovered" : "yes the city replaces public-side segments as part of project phases or voluntary coordination",
+  "privateSideCovered" : "partial private-side work is city-managed in project phases but owner-requested voluntary replacement requires the owner to pay for private-side work",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "identified lead service lines are replaced through city project phases or through owner-requested voluntary full replacement coordination",
+  "contractorRules" : "field services and city contractors coordinate public-space work while owners arrange private plumbers for voluntary replacements",
+  "deadline" : null,
+  "applicationUrl" : "https://rockfordil.gov/320/Lead-Drinking-Water",
+  "sourceRefs" : [ "src-rockford-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

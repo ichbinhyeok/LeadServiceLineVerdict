@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-grand-rapids-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Grand Rapids Water System",
+  "sourceUrl" : "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-line-replacement-program/",
+  "scopeType" : "cost",
+  "scopeKey" : "grand-rapids-water-cost-2026",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Grand Rapids says qualifying leak and city construction replacements are no cost to the owner while voluntary early replacements require the owner to cover the private side through a Water Service Agreement and ten-pay financing path.",
+  "reviewerNote" : "Official Grand Rapids cost responsibility language reviewed manually.",
+  "status" : "verified"
+}

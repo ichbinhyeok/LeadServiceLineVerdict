@@ -1,0 +1,32 @@
+{
+  "utilityId" : "independence-water-mo",
+  "utilitySlug" : "independence-water-department",
+  "utilityName" : "City of Independence Water Department",
+  "aliases" : [ "Independence Water", "Independence Utilities" ],
+  "city" : "independence",
+  "county" : "jackson",
+  "state" : "mo",
+  "serviceAreaName" : "City of Independence",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.independencemo.gov/lead-and-copper-rule",
+  "lookupUrl" : "https://www.independencemo.gov/sites/default/files/2025-12/2025%20LCRI%20Website%20Inventory%20Data%20from%20MDNR%20Inventory.pdf",
+  "notificationUrl" : "https://www.independencemo.gov/lead-and-copper-rule",
+  "programIds" : [ ],
+  "contactPhone" : "816-325-7664",
+  "contactEmail" : null,
+  "inventoryStatus" : "pdf-inventory-and-notice-guidance-published",
+  "inventorySummary" : "Independence says it publishes a current PDF inventory, mails written notices to galvanized requiring replacement and unknown properties, and lets customers request staff help to identify service line materials instead of relying on a full interactive lookup workflow.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "service_area_notes",
+  "resolverMunicipalities" : [ "independence" ],
+  "resolverHints" : [ "englewood independence", "maywood", "south independence" ],
+  "resolverPostalPrefixes" : [ "640" ],
+  "sourceRefs" : [ "src-independence-inventory", "src-independence-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

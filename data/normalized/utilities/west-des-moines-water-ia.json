@@ -1,0 +1,32 @@
+{
+  "utilityId" : "west-des-moines-water-ia",
+  "utilitySlug" : "west-des-moines-water-works",
+  "utilityName" : "West Des Moines Water Works",
+  "aliases" : [ "WDM Water Works", "West Des Moines Water Works" ],
+  "city" : "west-des-moines",
+  "county" : "polk",
+  "state" : "ia",
+  "serviceAreaName" : "West Des Moines Water Works service area",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.wdmww.com/servicelinesurvey.aspx",
+  "lookupUrl" : "https://maps.wdmww.com/gisportal/apps/sites/#/lead-service-line-inventory",
+  "notificationUrl" : "https://www.wdmww.com/faq.aspx",
+  "programIds" : [ ],
+  "contactPhone" : "515-222-3460",
+  "contactEmail" : null,
+  "inventoryStatus" : "survey-page-and-public-results-map-published",
+  "inventorySummary" : "West Des Moines Water Works says it still had about 7000 unknown service materials as of December 2023, asks residents to complete the service line survey, publishes a public results map for address-level review, and uses its FAQ to explain ownership and service-line questions while unknowns are reduced.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : 7000,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "west des moines", "west-des-moines" ],
+  "resolverHints" : [ "valley junction", "jordan creek", "west glen" ],
+  "resolverPostalPrefixes" : [ "502" ],
+  "sourceRefs" : [ "src-wdm-inventory", "src-wdm-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

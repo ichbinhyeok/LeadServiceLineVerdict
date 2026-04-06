@@ -1,0 +1,32 @@
+{
+  "utilityId" : "citizens-energy-group-in",
+  "utilitySlug" : "citizens-energy-group",
+  "utilityName" : "Citizens Energy Group",
+  "aliases" : [ "Citizens Water", "Citizens Energy Group" ],
+  "city" : "indianapolis",
+  "county" : "marion",
+  "state" : "in",
+  "serviceAreaName" : "Citizens Energy Group water service territory",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://experience.arcgis.com/experience/62c6ba97e9374962b57ba4fe26ab7d5a",
+  "lookupUrl" : "https://experience.arcgis.com/experience/62c6ba97e9374962b57ba4fe26ab7d5a",
+  "notificationUrl" : "https://blog.citizensenergygroup.com/news/citizens-energy-group-unveils-lead-service-line-inventory-portal-mailing-letters-to-customers-who-own-or-may-own-lead-water-service-lines",
+  "programIds" : [ "citizens-lslr-program" ],
+  "contactPhone" : "317-924-3311",
+  "contactEmail" : "CustomerCare@citizensenergygroup.com",
+  "inventoryStatus" : "inventory-portal-and-annual-letters-published",
+  "inventorySummary" : "Citizens says it launched a searchable inventory portal, mails annual notices until physical inspection confirms non-lead status or replacement is complete, estimates that more than 75000 customers may still own and use lead service lines, and limits no additional cost replacement promises to the neighborhoods where the active utility program is already scheduled.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "indianapolis" ],
+  "resolverHints" : [ "irvington", "haughville", "broad ripple", "fountain square" ],
+  "resolverPostalPrefixes" : [ "462" ],
+  "sourceRefs" : [ "src-citizens-inventory", "src-citizens-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

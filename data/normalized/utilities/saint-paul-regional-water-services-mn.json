@@ -1,0 +1,32 @@
+{
+  "utilityId" : "saint-paul-regional-water-services-mn",
+  "utilitySlug" : "saint-paul-regional-water-services",
+  "utilityName" : "Saint Paul Regional Water Services",
+  "aliases" : [ "SPRWS", "Saint Paul Water" ],
+  "city" : "saint-paul",
+  "county" : "ramsey",
+  "state" : "mn",
+  "serviceAreaName" : "Saint Paul Regional Water Services service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://www.stpaul.gov/departments/saint-paul-regional-water-services/customer-resources/lead-free-sprws",
+  "lookupUrl" : "https://www.stpaul.gov/departments/saint-paul-regional-water-services/customer-resources/lead-free-sprws",
+  "notificationUrl" : "https://www.stpaul.gov/departments/saint-paul-regional-water-services/customer-resources/lead-free-sprws",
+  "programIds" : [ "lead-free-sprws" ],
+  "contactPhone" : "651-266-6820",
+  "contactEmail" : "lead@stpaul.gov",
+  "inventoryStatus" : "no-cost-citywide-replacement-plan",
+  "inventorySummary" : "SPRWS says it serves about 96000 properties, about 17000 have a lead service line, and about 4500 have a service line of unknown material. Lead Free SPRWS is a 10-year plan that has replaced nearly 4500 lead lines since 2022 and aims to replace about 2100 more in 2026 at no cost to property owners.",
+  "lineCounts" : {
+    "known" : 17000,
+    "potential" : null,
+    "unknown" : 4500,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "saint paul", "st paul", "maplewood", "west st paul", "mendota heights", "south st paul" ],
+  "resolverHints" : [ ],
+  "resolverPostalPrefixes" : [ "551" ],
+  "sourceRefs" : [ "src-saint-paul-inventory", "src-saint-paul-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

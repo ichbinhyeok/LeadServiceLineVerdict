@@ -1,0 +1,18 @@
+{
+  "guideId" : "guide-lead-service-line-buyer-seller-checklist",
+  "slug" : "lead-service-line-buyer-seller-checklist",
+  "title" : "Lead service line buyer and seller checklist",
+  "eyebrow" : "Evergreen guide",
+  "heroSummary" : "Real estate decisions around a lead service line are easier when the parties anchor to the utility inventory, the notice status, and a local replacement path instead of generic plumbing language.",
+  "verdict" : "Buyers and sellers should frame the issue around verified utility records, realistic local replacement costs, and any available utility program or reimbursement path.",
+  "keyPoints" : [ "The utility inventory or notice status should be the first document in the file.", "Disclosure and negotiation language should reflect whether the line is known, possible, or unknown.", "Credits, escrow, or repair timing should match the local replacement methodology rather than a national average.", "If a utility offers a funded replacement path, that changes the economics of the transaction." ],
+  "nextSteps" : [ "Pull the official utility lookup or notice page for the property.", "Review the local program and cost pages tied to that utility.", "Use specific language about service line material instead of vague references to plumbing or water quality." ],
+  "faqs" : [ {
+    "question" : "Should a seller replace the line before listing?",
+    "answer" : "There is no universal answer. It depends on local program coverage, timing, and how the utility classifies the line. Sometimes a seller credit or escrow backed by utility evidence is the better path."
+  }, {
+    "question" : "What should a buyer ask for first?",
+    "answer" : "The buyer should ask for the utility inventory result, any service line notice received, and the current local replacement or reimbursement options tied to that utility."
+  } ],
+  "lastVerified" : [ 2026, 4, 4 ]
+}

@@ -1,0 +1,19 @@
+{
+  "programId" : "columbus-lslr-program",
+  "programSlug" : "columbus-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Columbus Division of Water service area",
+  "state" : "oh",
+  "utilityIds" : [ "columbus-water-oh" ],
+  "subsidyType" : "citywide replacement at no direct charge when construction reaches an eligible property",
+  "publicSideCovered" : "yes public-side replacement is covered during scheduled work",
+  "privateSideCovered" : "yes private-side lead and galvanized lines are replaced during scheduled work",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property owner must sign a work agreement and the property must be in the replacement program area",
+  "contractorRules" : "city crews or contractors perform the scheduled replacement",
+  "deadline" : null,
+  "applicationUrl" : "https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts/Water-Health/Lead-Service-Program-Information",
+  "sourceRefs" : [ "src-columbus-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

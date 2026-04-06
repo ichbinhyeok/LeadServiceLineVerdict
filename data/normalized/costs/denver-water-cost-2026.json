@@ -1,0 +1,19 @@
+{
+  "costId" : "denver-water-cost-2026",
+  "utilityId" : "denver-water-co",
+  "city" : "denver",
+  "state" : "co",
+  "publicSideBand" : "No direct charge to the customer when Denver Water replaces the line under the Lead Reduction Program or during water main work",
+  "privateSideBand" : "$3800 one-time reimbursement for approved off-schedule replacements and the owner covers the remaining private-side cost",
+  "fullReplacementBand" : "No direct charge under the main program but owner-managed early replacement uses the $3800 reimbursement path",
+  "costConfidence" : "low",
+  "housingTypeAssumption" : "Customer-owned lead service line in Denver Water's service area replaced through the utility program or approved reimbursement flow",
+  "permitAssumption" : "Reimbursement cases must be approved in advance and cannot conflict with paving moratoriums",
+  "restorationAssumption" : "Owner-managed replacement scope varies when using the reimbursement option",
+  "methodologySummary" : "Denver does not publish a local homeowner bid range for early replacement and instead splits cost between the no-direct-charge utility-run Lead Reduction Program and a capped $3800 reimbursement path for approved off-schedule cases.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when Denver Water schedules the address in the utility program or replaces the line during water-main work and otherwise move into an owner-managed contractor path with capped reimbursement.",
+  "sourceRefs" : [ "src-denver-program", "src-denver-reimbursement" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : true,
+  "mediumConfidence" : false
+}

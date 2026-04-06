@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-bloomington-il-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Bloomington Water Department",
+  "sourceUrl" : "https://www.bloomingtonil.gov/departments/water/project-updates/water-service-line-inventory",
+  "scopeType" : "utility",
+  "scopeKey" : "bloomington-water-il",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Bloomington says it is potholing properties to verify private-side material, updating its inventory with field work, and publishing the results through an interactive map and dashboard with lead GRR unknown and non-lead categories.",
+  "reviewerNote" : "Official Bloomington inventory page reviewed manually for potholing and map-dashboard workflow.",
+  "status" : "verified"
+}

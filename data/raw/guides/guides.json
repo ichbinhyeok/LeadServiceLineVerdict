@@ -1,0 +1,182 @@
+[
+  {
+    "guideId": "guide-what-is-a-lead-service-line",
+    "slug": "what-is-a-lead-service-line",
+    "title": "What is a lead service line?",
+    "eyebrow": "Evergreen guide",
+    "heroSummary": "A lead service line is the buried pipe that carries water from the water main to a building. It is different from interior plumbing, fixtures, or an old faucet.",
+    "verdict": "Start by confirming whether the service line itself is lead, galvanized requiring replacement, unknown, or non-lead before you spend time comparing filters, testing, or plumbers.",
+    "keyPoints": [
+      "A service line is the pipe between the utility water main and the building entry point.",
+      "Lead service line risk is not the same thing as an old brass faucet or interior solder issue.",
+      "Many utilities track both public-side and private-side material, and the two sides can differ.",
+      "An unknown record means the utility does not yet have enough evidence to classify the line confidently."
+    ],
+    "nextSteps": [
+      "Use your utility's official lookup or service line map first.",
+      "Read the notice language carefully to see whether it refers to a known lead line, possible lead line, or unknown material.",
+      "If the line is not being replaced immediately, move next to filter and testing guidance that matches your utility status."
+    ],
+    "faqs": [
+      {
+        "question": "Does a lead service line mean the water is automatically unsafe every day?",
+        "answer": "Not necessarily. Exposure depends on disturbance, corrosion conditions, and whether lead is present on the public side, private side, or both. That is why the first step is confirming the service line status and reading the utility guidance."
+      },
+      {
+        "question": "Is a lead service line the same thing as plumbing inside the house?",
+        "answer": "No. The service line is the buried pipe that connects the property to the main. Interior plumbing, fixtures, and solder are separate systems and should not be collapsed into the same claim."
+      }
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "guideId": "guide-known-vs-potential-lead-service-line",
+    "slug": "known-vs-potential-lead-service-line",
+    "title": "Known vs potential lead service line",
+    "eyebrow": "Evergreen guide",
+    "heroSummary": "Utilities use different labels for certainty. A known lead line means the utility has direct evidence or a verified record. A potential or possible lead line often means the utility still needs more evidence.",
+    "verdict": "Do not treat a potential lead notice as the same thing as a confirmed line unless the utility explicitly says it should be treated that way for replacement planning.",
+    "keyPoints": [
+      "Known or verified lead usually means the utility has inspection, replacement, or material-record evidence.",
+      "Potential, possible, or suspected lead often reflects incomplete records or a statistical assumption.",
+      "Unknown service line material is a separate category and should stay separate from both known lead and non-lead.",
+      "Your next action depends on the utility's wording, not a generic internet definition."
+    ],
+    "nextSteps": [
+      "Compare the exact notice language against the utility's current inventory or notice page.",
+      "If the property is still only potential or unknown, check whether the utility offers verification or inspection.",
+      "If the property is confirmed lead, move next to program and replacement-cost pages tied to the same utility."
+    ],
+    "faqs": [
+      {
+        "question": "Why would a utility call a line possible lead instead of lead?",
+        "answer": "Utilities often have legacy records with gaps. They may know the installation era, neighborhood pattern, or historic material records but still lack a direct inspection or replacement event that confirms the current material."
+      },
+      {
+        "question": "Should buyers and sellers handle possible lead the same way as known lead?",
+        "answer": "Usually the language should be more specific. Buyers and sellers should frame the issue around the utility's actual certainty level and the cost or verification path that follows from that status."
+      }
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "guideId": "guide-who-pays-for-lead-service-line-replacement",
+    "slug": "who-pays-for-lead-service-line-replacement",
+    "title": "Who pays for lead service line replacement?",
+    "eyebrow": "Evergreen guide",
+    "heroSummary": "Payment responsibility depends on the utility, the state, and whether the line is on the public side, private side, or both. Some utilities now cover both sides, while others only cover work in public space.",
+    "verdict": "Before collecting contractor quotes, confirm which part of the line the utility pays for and whether the program is a grant, reimbursement, loan, or owner-pay path.",
+    "keyPoints": [
+      "Public-side replacement and private-side replacement are often funded under different rules.",
+      "A utility may replace the public side at no cost while leaving the private side to the owner.",
+      "Some utilities reimburse private-side work only if the owner applies first or uses an approved contractor.",
+      "Restoration, permits, and driveway work may fall outside the headline program claim."
+    ],
+    "nextSteps": [
+      "Open your utility-specific program page to confirm coverage and eligibility.",
+      "Check whether you need to apply before any work starts.",
+      "Use the cost page only after the coverage rules are clear so you do not compare the wrong out-of-pocket number."
+    ],
+    "faqs": [
+      {
+        "question": "Can a utility pay for the public side but not the private side?",
+        "answer": "Yes. That split is common. Some utilities cover only the portion in public space, while others now replace the full line when funding or policy allows."
+      },
+      {
+        "question": "Does no-cost replacement always include restoration?",
+        "answer": "No. A utility may restore basic excavation but not higher-cost landscaping, custom hardscape, or driveway work. Those details belong in the methodology and program notes."
+      }
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "guideId": "guide-lead-service-line-replacement-cost",
+    "slug": "lead-service-line-replacement-cost",
+    "title": "Lead service line replacement cost",
+    "eyebrow": "Evergreen guide",
+    "heroSummary": "Replacement cost is not one number. It changes with line length, surface restoration, permit friction, local labor, and whether the work covers only the private side or the full line.",
+    "verdict": "Use local cost pages as assumptions, not promises, and always check whether the estimate includes restoration, permit, and street or sidewalk work.",
+    "keyPoints": [
+      "Private-side-only replacements can still vary widely depending on excavation complexity.",
+      "A full replacement usually costs more than the private side alone but may be partly covered by a utility program.",
+      "Low-confidence local cost pages should stay noindex until the methodology and evidence are strong enough.",
+      "Owners should compare quotes only after they know the utility's replacement rules and restoration boundaries."
+    ],
+    "nextSteps": [
+      "Confirm whether the utility covers any portion of the work.",
+      "Read the local methodology notes before relying on any band or estimate.",
+      "Use utility-approved contractors or reimbursement rules when the program requires it."
+    ],
+    "faqs": [
+      {
+        "question": "Why do some local cost pages stay noindex?",
+        "answer": "Because the cost assumptions can be too weak or too generic. A noindex decision is appropriate when the site has a useful internal planning page but not yet enough evidence to treat it as a public search landing page."
+      },
+      {
+        "question": "What usually drives the biggest price jump?",
+        "answer": "Surface restoration, permit friction, length of run, and whether the line crosses sidewalks, driveways, or difficult landscaping tend to move the number most."
+      }
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "guideId": "guide-lead-water-filter-vs-replacement",
+    "slug": "lead-water-filter-vs-replacement",
+    "title": "Lead water filter vs replacement",
+    "eyebrow": "Evergreen guide",
+    "heroSummary": "A certified filter can reduce interim exposure, but it does not replace the need to verify and, when needed, replace a lead service line.",
+    "verdict": "Use filters as an interim action when replacement is delayed, not as proof that a lead service line issue is solved.",
+    "keyPoints": [
+      "Filters and cartridges only work when they are used and replaced according to the certification and manufacturer instructions.",
+      "Testing can be helpful when it changes the next action or clarifies uncertainty, but it does not change the material of the pipe itself.",
+      "A filter plan is strongest when it is tied to the utility's own notice and flushing guidance.",
+      "Replacement remains the structural fix when a lead service line is confirmed."
+    ],
+    "nextSteps": [
+      "Read the utility's interim protection guidance before buying a filter.",
+      "Use local filter and testing pages for utility-specific framing rather than a generic national answer.",
+      "Keep the replacement path moving even if interim filtration is in place."
+    ],
+    "faqs": [
+      {
+        "question": "Can a filter replace the need for lead service line replacement?",
+        "answer": "No. A filter is an interim protection tool. It can reduce exposure in the near term, but it does not remove the lead service line from service."
+      },
+      {
+        "question": "Should I test before or after replacing a lead line?",
+        "answer": "It depends on the utility's guidance and what decision you are trying to make. Testing is most useful when it clarifies uncertainty or validates an interim protection plan."
+      }
+    ],
+    "lastVerified": "2026-04-04"
+  },
+  {
+    "guideId": "guide-lead-service-line-buyer-seller-checklist",
+    "slug": "lead-service-line-buyer-seller-checklist",
+    "title": "Lead service line buyer and seller checklist",
+    "eyebrow": "Evergreen guide",
+    "heroSummary": "Real estate decisions around a lead service line are easier when the parties anchor to the utility inventory, the notice status, and a local replacement path instead of generic plumbing language.",
+    "verdict": "Buyers and sellers should frame the issue around verified utility records, realistic local replacement costs, and any available utility program or reimbursement path.",
+    "keyPoints": [
+      "The utility inventory or notice status should be the first document in the file.",
+      "Disclosure and negotiation language should reflect whether the line is known, possible, or unknown.",
+      "Credits, escrow, or repair timing should match the local replacement methodology rather than a national average.",
+      "If a utility offers a funded replacement path, that changes the economics of the transaction."
+    ],
+    "nextSteps": [
+      "Pull the official utility lookup or notice page for the property.",
+      "Review the local program and cost pages tied to that utility.",
+      "Use specific language about service line material instead of vague references to plumbing or water quality."
+    ],
+    "faqs": [
+      {
+        "question": "Should a seller replace the line before listing?",
+        "answer": "There is no universal answer. It depends on local program coverage, timing, and how the utility classifies the line. Sometimes a seller credit or escrow backed by utility evidence is the better path."
+      },
+      {
+        "question": "What should a buyer ask for first?",
+        "answer": "The buyer should ask for the utility inventory result, any service line notice received, and the current local replacement or reimbursement options tied to that utility."
+      }
+    ],
+    "lastVerified": "2026-04-04"
+  }
+]

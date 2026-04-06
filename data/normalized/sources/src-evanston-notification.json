@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-evanston-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Evanston Water Production Bureau",
+  "sourceUrl" : "https://www.evanstonleadreplacement.org/",
+  "scopeType" : "utility",
+  "scopeKey" : "evanston-water-il",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Evanston says no-additional-cost replacement is already active in annual project areas and that the city updates its service line inventory and disturbance notifications each year under Illinois requirements.",
+  "reviewerNote" : "Official Evanston lead replacement site reviewed manually for project-area and annual notification language.",
+  "status" : "verified"
+}

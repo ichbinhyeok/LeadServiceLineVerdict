@@ -1,0 +1,19 @@
+{
+  "costId" : "phoenix-water-cost-2026",
+  "utilityId" : "phoenix-water-az",
+  "city" : "phoenix",
+  "state" : "az",
+  "publicSideBand" : "City-managed replacement process covers the public side at no direct charge",
+  "privateSideBand" : "City-managed replacement process covers the private side at no direct charge when replacement is required",
+  "fullReplacementBand" : "Full water service line replacement from meter box to house connection is covered by the city at no cost when a lead or galvanized requiring replacement line is identified",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Phoenix publishes replacement-process coverage rather than a contractor bid range",
+  "permitAssumption" : "Customers must sign a replacement contract after the city verifies the line and schedules work",
+  "restorationAssumption" : "The city says it restores disturbed areas after replacement as part of the replacement process",
+  "methodologySummary" : "Phoenix publishes a utility-run full-line replacement process that covers verification contract signing replacement from the meter box to the house connection and disturbed-area restoration when a lead or galvanized line is identified.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only after Phoenix verifies the line sends the replacement contract and moves the property into the city's scheduled replacement workflow.",
+  "sourceRefs" : [ "src-phoenix-cost", "src-phoenix-program", "src-phoenix-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

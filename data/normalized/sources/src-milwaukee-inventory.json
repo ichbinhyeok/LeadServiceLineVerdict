@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-milwaukee-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Milwaukee Water Works",
+  "sourceUrl" : "https://city.milwaukee.gov/water/LeadPipes/Overview",
+  "scopeType" : "utility",
+  "scopeKey" : "milwaukee-water-works-wi",
+  "capturedAt" : "2026-04-05T10:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Milwaukee Water Works says it is committed to replacing all 65000 remaining lead service lines by 2037 and explains that replacement work is prioritized by need and neighborhood conditions.",
+  "reviewerNote" : "Official Milwaukee overview page reviewed manually.",
+  "status" : "verified"
+}

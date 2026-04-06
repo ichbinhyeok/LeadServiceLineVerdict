@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-fort-wayne-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Fort Wayne City Utilities",
+  "sourceUrl" : "https://www.cityoffortwayne.org/lead",
+  "scopeType" : "utility",
+  "scopeKey" : "fort-wayne-water-in",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Fort Wayne says the lead page provides flushing and filter guidance, explains that owners are responsible for the private pipe to the meter, and routes water-quality questions to city staff instead of treating exposure-reduction guidance as a replacement promise.",
+  "reviewerNote" : "Official Fort Wayne lead page reviewed manually for owner-responsibility and exposure-reduction guidance.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-aurora-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Aurora Water Production Division",
+  "sourceUrl" : "https://www.aurora.il.us/News-articles/Lead-Service-Line-Replacement-Progress",
+  "scopeType" : "program",
+  "scopeKey" : "aurora-lslr-program",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Aurora says customers can request replacement through the lead notice portal, the city replaces lines at no cost when disturbances elevated lead results or other city triggers qualify, and annual replacement opportunities expanded beginning in 2026.",
+  "reviewerNote" : "Official Aurora replacement progress page reviewed manually for qualifying replacement paths.",
+  "status" : "verified"
+}

@@ -1,0 +1,19 @@
+{
+  "costId" : "evanston-water-cost-2026",
+  "utilityId" : "evanston-water-il",
+  "city" : "evanston",
+  "state" : "il",
+  "publicSideBand" : "The city replaces the public side at no cost in homeowner-initiated and annual project paths",
+  "privateSideBand" : "The homeowner-initiated pilot offers a $2500 reimbursement and waived permit fees while annual project blocks receive full replacement at no additional cost",
+  "fullReplacementBand" : "Full replacement is no direct charge when the property is directly impacted by the annual water main project and otherwise the pilot reduces but may not eliminate owner cost",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Evanston publishes program rules and reimbursement support rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on project-area status or participation in the homeowner-initiated pilot process",
+  "restorationAssumption" : "City inspection scheduling permit waivers and restoration follow the city's coordinated replacement process",
+  "methodologySummary" : "Evanston's methodology is utility-specific because it separates annual project blocks that are fully city-funded from homeowner-initiated pilot cases that use a $2500 reimbursement plus waived permit fees.",
+  "ownerTriggerSummary" : "Owners pay little or nothing in annual project areas but may still face a remaining private-side contractor bill when they choose the homeowner-initiated path before the city reaches the block.",
+  "sourceRefs" : [ "src-evanston-cost", "src-evanston-program", "src-evanston-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

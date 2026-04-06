@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-kansas-city-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Kansas City Water",
+  "sourceUrl" : "https://www.kcmo.gov/Home/Components/News/News/2739/16",
+  "scopeType" : "utility",
+  "scopeKey" : "kansas-city-water-mo",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Kansas City says it released its first service line inventory in October 2024, found zero known lead lines, and published public counts showing 23109 galvanized requiring replacement lines and 24842 unknown lines alongside the city map.",
+  "reviewerNote" : "Official Kansas City news page reviewed manually for inventory counts and map language.",
+  "status" : "verified"
+}

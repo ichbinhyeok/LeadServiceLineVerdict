@@ -1,0 +1,32 @@
+{
+  "utilityId" : "flint-water-mi",
+  "utilitySlug" : "flint-water-service-center",
+  "utilityName" : "City of Flint Water Service Center",
+  "aliases" : [ "Flint Water", "City of Flint Water" ],
+  "city" : "flint",
+  "county" : "genesee",
+  "state" : "mi",
+  "serviceAreaName" : "City of Flint",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.cityofflint.com/progress-report-on-flint-water/",
+  "lookupUrl" : "https://www.cityofflint.com/get-the-lead-out/",
+  "notificationUrl" : "https://www.cityofflint.com/get-the-lead-out/",
+  "programIds" : [ "flint-citywide-lslr-program" ],
+  "contactPhone" : "810-410-1133",
+  "contactEmail" : null,
+  "inventoryStatus" : "no-cost-citywide-replacement-and-opt-in-published",
+  "inventorySummary" : "Flint says over 97 percent of lead service line replacements are complete, all replacement work is done at no cost to residents, and households should immediately opt in and submit consent forms so crews can inspect and replace any remaining lead or galvanized lines.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "flint" ],
+  "resolverHints" : [ "downtown flint", "carriage town", "college cultural" ],
+  "resolverPostalPrefixes" : [ "485" ],
+  "sourceRefs" : [ "src-flint-inventory", "src-flint-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

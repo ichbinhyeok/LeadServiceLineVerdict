@@ -1,0 +1,32 @@
+{
+  "utilityId" : "minneapolis-water-mn",
+  "utilitySlug" : "minneapolis-public-works-water",
+  "utilityName" : "City of Minneapolis Public Works Water Treatment & Distribution Services",
+  "aliases" : [ "Minneapolis Water", "minneapolis public works" ],
+  "city" : "minneapolis",
+  "county" : "hennepin",
+  "state" : "mn",
+  "serviceAreaName" : "City of Minneapolis",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.minneapolismn.gov/resident-services/utility-services/water/water-quality/water-quality-lead/plumbing-faucets/lead-service-line-map/",
+  "lookupUrl" : "https://www.minneapolismn.gov/resident-services/utility-services/water/water-quality/water-quality-lead/plumbing-faucets/lead-service-line-map/",
+  "notificationUrl" : "https://www.minneapolismn.gov/resident-services/utility-services/water/water-quality/water-quality-lead/plumbing-faucets/lead-service-line-map/",
+  "programIds" : [ "minneapolis-citywide-replacement" ],
+  "contactPhone" : "612-673-5600",
+  "contactEmail" : "minneapolis311@minneapolismn.gov",
+  "inventoryStatus" : "lead-non-lead-and-unknown-map-updated-daily",
+  "inventorySummary" : "Minneapolis says its lead service line map is updated daily, unknown means there is a valid address but the matching record is not available, owners can request further research when that happens, and citywide replacement is funded at no cost in eligible project areas under the 2033 state goal and 2037 federal requirement.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "minneapolis" ],
+  "resolverHints" : [ "powderhorn park", "whittier", "hawthorne", "bancroft", "bottineau" ],
+  "resolverPostalPrefixes" : [ "554" ],
+  "sourceRefs" : [ "src-minneapolis-inventory", "src-minneapolis-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

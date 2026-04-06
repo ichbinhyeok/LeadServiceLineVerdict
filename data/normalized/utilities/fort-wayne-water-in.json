@@ -1,0 +1,32 @@
+{
+  "utilityId" : "fort-wayne-water-in",
+  "utilitySlug" : "fort-wayne-city-utilities",
+  "utilityName" : "Fort Wayne City Utilities",
+  "aliases" : [ "Fort Wayne City Utilities", "Fort Wayne Water" ],
+  "city" : "fort-wayne",
+  "county" : "allen",
+  "state" : "in",
+  "serviceAreaName" : "Fort Wayne City Utilities",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.cityoffortwayne.org/lead",
+  "lookupUrl" : "https://www.cityoffortwayne.org/lead",
+  "notificationUrl" : "https://utilities.cityoffortwayne.org/remove-lead",
+  "programIds" : [ "fort-wayne-lslr-program" ],
+  "contactPhone" : "260-427-1234",
+  "contactEmail" : "waterquality@cityoffortwayne.org",
+  "inventoryStatus" : "lead-information-and-replacement-program-published",
+  "inventorySummary" : "Fort Wayne says homes built before 1937 are more likely to have lead service lines, owners remain responsible for the private pipe to the meter, grant-funded Remove Lead projects cover selected neighborhoods, and outside those areas replacement cost still depends on the city program path.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "fort wayne" ],
+  "resolverHints" : [ "hamilton", "riverside", "east central", "northside" ],
+  "resolverPostalPrefixes" : [ "468" ],
+  "sourceRefs" : [ "src-fort-wayne-inventory", "src-fort-wayne-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

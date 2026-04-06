@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-aurora-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Aurora Water Production Division",
+  "sourceUrl" : "https://yourvoice.aurora.il.us/leadnotice",
+  "scopeType" : "utility",
+  "scopeKey" : "aurora-water-il",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Aurora says residents can use its interactive lead service line portal to verify whether a line is lead unknown galvanized or connected through connector-unknown material.",
+  "reviewerNote" : "Official Aurora lead notice portal reviewed manually for inventory and map details.",
+  "status" : "verified"
+}

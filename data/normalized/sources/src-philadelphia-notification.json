@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-philadelphia-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Philadelphia Water Department",
+  "sourceUrl" : "https://water.phila.gov/lead/info-sessions/",
+  "scopeType" : "utility",
+  "scopeKey" : "philadelphia-water-department-pa",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Philadelphia Water Department says letters mailed in November 2024 and December 2025 provided information about customer-owned service line materials at every property.",
+  "reviewerNote" : "Official Philadelphia notification explainer reviewed manually for the 2024 and 2025 mailed notice language.",
+  "status" : "verified"
+}

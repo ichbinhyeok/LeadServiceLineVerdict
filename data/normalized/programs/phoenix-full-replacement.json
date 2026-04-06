@@ -1,0 +1,19 @@
+{
+  "programId" : "phoenix-full-replacement",
+  "programSlug" : "phoenix-full-replacement",
+  "programName" : "Phoenix Water Service Line Replacement Plan",
+  "geography" : "City of Phoenix",
+  "state" : "az",
+  "utilityIds" : [ "phoenix-water-az" ],
+  "subsidyType" : "city-managed full replacement when a lead or galvanized requiring replacement line is identified",
+  "publicSideCovered" : "yes city-managed replacement process includes the public side",
+  "privateSideCovered" : "yes full line from the city meter box to the house connection is replaced at no cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "customers with identified lead or galvanized requiring replacement lines are contacted directly and must sign a replacement contract",
+  "contractorRules" : "city staff or contractors schedule and complete the replacement",
+  "deadline" : null,
+  "applicationUrl" : "https://pipes.phoenix.gov/",
+  "sourceRefs" : [ "src-phoenix-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

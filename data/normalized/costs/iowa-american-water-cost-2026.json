@@ -1,0 +1,19 @@
+{
+  "costId" : "iowa-american-water-cost-2026",
+  "utilityId" : "iowa-american-water-ia",
+  "city" : "davenport",
+  "state" : "ia",
+  "publicSideBand" : "The utility manages public-side replacement at no direct charge through its ongoing lead service line program",
+  "privateSideBand" : "Customer-owned lead and galvanized lines are being replaced at no direct cost to the customer",
+  "fullReplacementBand" : "Full replacement is described as no direct cost under the current Iowa American Water program",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Iowa American Water publishes no-direct-cost program language and replacement progress rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on lead galvanized or unknown status identified through the map notices and ongoing replacement schedule",
+  "restorationAssumption" : "The utility coordinates outreach identification and replacement sequencing with customers",
+  "methodologySummary" : "Iowa American Water ties the cost page to its ongoing utility-run program and public progress update rather than to a contractor bid sheet and reports about 1300 completed customer-owned replacements by November 2024.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when Iowa American Water identifies the address through the map notice or self-report workflow and moves the property into the active replacement schedule.",
+  "sourceRefs" : [ "src-iowa-amwater-cost", "src-iowa-amwater-program", "src-iowa-amwater-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

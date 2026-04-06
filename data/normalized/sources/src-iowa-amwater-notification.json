@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-iowa-amwater-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Iowa American Water",
+  "sourceUrl" : "https://newsroom.amwater.com/2024-11-22-Iowa-American-Water-Announces-Lead-Service-Line-Replacement-Program-Progress-Approximately-1%2C300-Customer-Owned-Lines-Replaced",
+  "scopeType" : "utility",
+  "scopeKey" : "iowa-american-water-ia",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Iowa American Water says customers with unknown lines received letters to self-identify materials, customers with lead or galvanized lines received notices about exposure reduction and replacement plans, and about 1300 customer-owned lines had already been replaced by November 2024.",
+  "reviewerNote" : "Iowa American Water press release reviewed manually for notification language and replacement progress.",
+  "status" : "verified"
+}

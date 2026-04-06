@@ -1,0 +1,19 @@
+{
+  "costId" : "columbus-water-cost-2026",
+  "utilityId" : "columbus-water-oh",
+  "city" : "columbus",
+  "state" : "oh",
+  "publicSideBand" : "No direct charge during scheduled city replacement for eligible properties",
+  "privateSideBand" : "No direct charge during scheduled city replacement and LEAP offers deferred repayment outside the scheduled path",
+  "fullReplacementBand" : "Property owners may face a $6000-$10000 replacement cost if the city cannot replace under the scheduled program and no LEAP pathway is used",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "City of Columbus program page publishes both scheduled no-cost replacement and owner-cost language with a citywide estimate range",
+  "permitAssumption" : "Work agreement timing and program-area eligibility determine whether the city or owner bears the immediate cost",
+  "restorationAssumption" : "Columbus says scheduled work includes restoration of construction damage back to pre-replacement condition",
+  "methodologySummary" : "Columbus publishes both a local owner-cost range and a utility-specific no-cost scheduled replacement path so the page can show when the number applies and when it does not.",
+  "ownerTriggerSummary" : "Owners pay only when the address is outside the active city replacement path or declines that schedule and then shift to LEAP or owner-managed replacement instead of the signed-work-agreement city path.",
+  "sourceRefs" : [ "src-columbus-cost", "src-columbus-program", "src-columbus-leap" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

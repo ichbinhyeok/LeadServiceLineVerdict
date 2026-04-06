@@ -1,0 +1,32 @@
+{
+  "utilityId" : "mud-omaha-ne",
+  "utilitySlug" : "mud-omaha",
+  "utilityName" : "Metropolitan Utilities District",
+  "aliases" : [ "MUD Omaha", "Metropolitan Utilities District" ],
+  "city" : "omaha",
+  "county" : "douglas",
+  "state" : "ne",
+  "serviceAreaName" : "Metropolitan Utilities District service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://www.mudomaha.com/lead-information/",
+  "lookupUrl" : "https://experience.arcgis.com/experience/0b2b8f5ae71b41e2b483db56eb4ad486",
+  "notificationUrl" : "https://www.mudomaha.com/lead-status-unknown/",
+  "programIds" : [ "mud-omaha-lslr-program" ],
+  "contactPhone" : "402-554-6666",
+  "contactEmail" : null,
+  "inventoryStatus" : "lead-map-and-free-replacement-program-published",
+  "inventorySummary" : "M.U.D. says customers can use the lead map to distinguish lead and lead-status-unknown records, unknown-status homes can use a survey path plus partner pitchers or sample kits, and the district's multi-year program has been replacing customer-owned lead lines free of charge since 2024.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "omaha", "la vista", "ralston", "bellevue", "papillion" ],
+  "resolverHints" : [ "downtown omaha", "dundee", "benson", "south omaha" ],
+  "resolverPostalPrefixes" : [ "681" ],
+  "sourceRefs" : [ "src-mud-omaha-inventory", "src-mud-omaha-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

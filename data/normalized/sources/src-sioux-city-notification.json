@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-sioux-city-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Sioux City Water Plant",
+  "sourceUrl" : "https://www.sioux-city.org/Home/Components/News/News/14920/271?arch=1&npage=2",
+  "scopeType" : "utility",
+  "scopeKey" : "sioux-city-water-ia",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Sioux City says about 7300 properties could potentially have a lead service line or a galvanized service line affected by lead and points residents back to the online inventory for address-level review.",
+  "reviewerNote" : "Official City of Sioux City news post reviewed manually for published inventory and notice count language.",
+  "status" : "verified"
+}

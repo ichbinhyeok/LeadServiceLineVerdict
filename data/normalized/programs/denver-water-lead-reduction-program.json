@@ -1,0 +1,19 @@
+{
+  "programId" : "denver-water-lead-reduction-program",
+  "programSlug" : "denver-water-lead-reduction-program",
+  "programName" : "Lead Reduction Program",
+  "geography" : "Denver Water service area",
+  "state" : "co",
+  "utilityIds" : [ "denver-water-co" ],
+  "subsidyType" : "utility-managed replacement of customer-owned lead service lines at no direct charge",
+  "publicSideCovered" : "yes when replacement is discovered during water main work or program coordination",
+  "privateSideCovered" : "yes customer-owned lead service line is replaced with copper at no direct charge",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "customer-owned lead service lines in the service area are replaced through neighborhood scheduling and consent",
+  "contractorRules" : "Denver Water or its contractors perform the replacement",
+  "deadline" : null,
+  "applicationUrl" : "https://www.denverwater.org/your-water/water-quality/lead/lead-service-line-replacement-program",
+  "sourceRefs" : [ "src-denver-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

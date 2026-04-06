@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-toledo-childcare",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Toledo Division of Water Distribution",
+  "sourceUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "scopeType" : "program",
+  "scopeKey" : "toledo-childcare-facility-replacement",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Toledo says its childcare facility program is a free replacement path for licensed childcare sites with lead service lines and that customer-owned portions are also replaced if identified as lead.",
+  "reviewerNote" : "Official Toledo childcare replacement program details reviewed manually.",
+  "status" : "verified"
+}

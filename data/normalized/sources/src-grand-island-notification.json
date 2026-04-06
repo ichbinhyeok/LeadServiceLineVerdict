@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-grand-island-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Grand Island Utilities Department",
+  "sourceUrl" : "https://www.giud.com/o/giud/page/lead-service-line-replacement-project-lsl",
+  "scopeType" : "utility",
+  "scopeKey" : "grand-island-utilities-ne",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Grand Island Utilities says customers with lead or unknown lines receive mailed notices while the city works through a multi-year replacement timeline tied to the lookup and outreach workflow.",
+  "reviewerNote" : "Official GIUD replacement project page reviewed manually for notice language.",
+  "status" : "verified"
+}

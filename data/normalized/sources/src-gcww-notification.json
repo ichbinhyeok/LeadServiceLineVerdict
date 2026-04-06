@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-gcww-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Greater Cincinnati Water Works",
+  "sourceUrl" : "https://la.mygcww.org/",
+  "scopeType" : "utility",
+  "scopeKey" : "greater-cincinnati-water-works-oh",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "GCWW explains how the lead program works and tells customers to use a GCWW-supplied filter until post-replacement water test results are shared.",
+  "reviewerNote" : "Official GCWW lead site reviewed manually for filter guidance pending post-replacement test results.",
+  "status" : "verified"
+}

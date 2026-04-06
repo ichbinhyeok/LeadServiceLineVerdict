@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-philadelphia-verification",
+  "sourceType" : "utility_program",
+  "publisherName" : "Philadelphia Water Department",
+  "sourceUrl" : "https://water.phila.gov/service-line/verification/",
+  "scopeType" : "program",
+  "scopeKey" : "philadelphia-service-line-verification",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Philadelphia's Service Line Verification Program is a limited free program and if lead or galvanized metal is found the service line is replaced for free at no cost to the property owner only in that selected verification path.",
+  "reviewerNote" : "Official Philadelphia verification program page reviewed manually for limited free verification and no-cost replacement rules.",
+  "status" : "verified"
+}

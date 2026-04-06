@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-saint-paul-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Saint Paul Regional Water Services",
+  "sourceUrl" : "https://www.stpaul.gov/departments/saint-paul-regional-water-services/customer-resources/lead-free-sprws",
+  "scopeType" : "program",
+  "scopeKey" : "lead-free-sprws",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Lead Free SPRWS is described as a 10-year plan to replace all lead water service lines in the SPRWS service area at no cost to property owners.",
+  "reviewerNote" : "Official Lead Free SPRWS page reviewed manually.",
+  "status" : "verified"
+}

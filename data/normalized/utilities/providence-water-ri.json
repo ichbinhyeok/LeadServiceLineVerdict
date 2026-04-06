@@ -1,0 +1,32 @@
+{
+  "utilityId" : "providence-water-ri",
+  "utilitySlug" : "providence-water",
+  "utilityName" : "Providence Water",
+  "aliases" : [ "Providence Water Supply Board" ],
+  "city" : "providence",
+  "county" : "providence",
+  "state" : "ri",
+  "serviceAreaName" : "Providence Water service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-location-map",
+  "lookupUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-location-map",
+  "notificationUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-line-replacement-programs",
+  "programIds" : [ "providence-accelerated-replacement", "providence-loan-program" ],
+  "contactPhone" : "401-521-6303",
+  "contactEmail" : "PWleadfree@cdmsmith.com",
+  "inventoryStatus" : "lead-and-unknown-lines-on-location-map",
+  "inventorySummary" : "Providence Water says its location map shows utility-side and private-side materials separately, annual letters go to lead or unknown addresses, free replacement is tied to planned utility contracts, and addresses outside that queue move to a separate 10-year 0% loan path instead of a blanket no-cost promise.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "providence", "cranston", "johnston", "north providence", "smithfield" ],
+  "resolverHints" : [ ],
+  "resolverPostalPrefixes" : [ "029" ],
+  "sourceRefs" : [ "src-providence-inventory", "src-providence-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

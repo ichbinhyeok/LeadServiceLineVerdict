@@ -1,0 +1,19 @@
+{
+  "programId" : "hastings-water-main-lslr-program",
+  "programSlug" : "hastings-water-main-lslr-program",
+  "programName" : "Water Main and Lead Service Replacement Program",
+  "geography" : "City of Hastings",
+  "state" : "ne",
+  "utilityIds" : [ "hastings-water-ne" ],
+  "subsidyType" : "city-managed neighborhood replacement program financed with BIL support and Nebraska reimbursement",
+  "publicSideCovered" : "yes lead service replacement is coordinated alongside the city's water main replacement work",
+  "privateSideCovered" : "yes city crews replace lead water service lines in active neighborhoods through the Hastings program",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligibility depends on the active neighborhood construction areas and the city's replacement schedule",
+  "contractorRules" : "city crews coordinate replacement progress and customer letters through the Engage Hastings program hub",
+  "deadline" : null,
+  "applicationUrl" : "https://engage.cityofhastings.org/water-lead-services-replacements",
+  "sourceRefs" : [ "src-hastings-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-south-bend-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of South Bend Water Works",
+  "sourceUrl" : "https://southbendin.gov/work/city-asks-customers-to-complete-survey-on-water-service-line-material/",
+  "scopeType" : "utility",
+  "scopeKey" : "south-bend-water-in",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "South Bend says more than 34000 customers were asked to complete the service line material survey for EPA inventory and mapping requirements and that 311 or the water quality team remains the help path while private-side verification continues before the city overstates replacement timing.",
+  "reviewerNote" : "Official South Bend utility notice and survey article reviewed manually for survey scale, ongoing verification, and resident help language.",
+  "status" : "verified"
+}

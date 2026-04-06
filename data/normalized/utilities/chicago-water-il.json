@@ -1,0 +1,32 @@
+{
+  "utilityId" : "chicago-water-il",
+  "utilitySlug" : "chicago-water-department",
+  "utilityName" : "City of Chicago Department of Water Management",
+  "aliases" : [ "Chicago Water", "Lead Safe Chicago" ],
+  "city" : "chicago",
+  "county" : "cook",
+  "state" : "il",
+  "serviceAreaName" : "City of Chicago",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.leadsafechicago.org/water",
+  "lookupUrl" : "https://www.leadsafechicago.org/water",
+  "notificationUrl" : "https://www.leadsafechicago.org/lead-service-line-replacement",
+  "programIds" : [ "chicago-lslr-program" ],
+  "contactPhone" : "312-742-2406",
+  "contactEmail" : "lead.safe@cityofchicago.org",
+  "inventoryStatus" : "service-line-lookup-and-replacement-info-published",
+  "inventorySummary" : "Chicago says homes built before 1986 have a high likelihood of a lead service line, Lead Safe Chicago routes residents to the inventory and free testing tools, and replacement help runs through 311 or lead.safe@cityofchicago.org rather than a blanket citywide no-cost promise.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "chicago" ],
+  "resolverHints" : [ "loop", "englewood", "austin", "hyde park" ],
+  "resolverPostalPrefixes" : [ "606" ],
+  "sourceRefs" : [ "src-chicago-inventory", "src-chicago-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

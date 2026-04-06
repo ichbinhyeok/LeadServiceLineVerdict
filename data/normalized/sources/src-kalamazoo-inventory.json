@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-kalamazoo-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Kalamazoo Water Department",
+  "sourceUrl" : "https://www.kalamazoocity.org/Residents/Water-Sewer-Service/More-About-Kalamazoos-Utility-Systems/Lead-Copper-Program",
+  "scopeType" : "utility",
+  "scopeKey" : "kalamazoo-water-mi",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Kalamazoo says it tracks lead and copper service line material through its utility lookup tool and that residents can see the current status of their service line records online before deciding whether they are only in a testing path or already in replacement planning.",
+  "reviewerNote" : "Official Kalamazoo lead and copper program page reviewed manually.",
+  "status" : "verified"
+}

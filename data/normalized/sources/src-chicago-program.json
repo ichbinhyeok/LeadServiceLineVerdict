@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-chicago-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Chicago Department of Water Management",
+  "sourceUrl" : "https://www.leadsafechicago.org/lead-service-line-replacement",
+  "scopeType" : "program",
+  "scopeKey" : "chicago-lslr-program",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Chicago says the city is offering multiple lead service line replacement programs and coordinates replacement work for qualifying properties through separate city-assisted paths rather than one blanket workflow.",
+  "reviewerNote" : "Lead-Safe Chicago replacement guidance reviewed manually for program details.",
+  "status" : "verified"
+}

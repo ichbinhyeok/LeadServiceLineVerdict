@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-kalamazoo-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Kalamazoo Water Department",
+  "sourceUrl" : "https://www.kalamazoocity.org/Residents/Water-Sewer-Service/Request-Free-Water-Testing-for-Lead-Copper",
+  "scopeType" : "utility",
+  "scopeKey" : "kalamazoo-water-mi",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Kalamazoo says residents can request free lead and copper testing and receive utility guidance while the city continues inventory and replacement work, and that testing support does not replace the longer replacement workflow.",
+  "reviewerNote" : "Official Kalamazoo free testing page reviewed manually.",
+  "status" : "verified"
+}

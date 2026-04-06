@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-columbia-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Columbia Water Utility",
+  "sourceUrl" : "https://beheard.como.gov/lead-compliance-program",
+  "scopeType" : "utility",
+  "scopeKey" : "columbia-water-mo",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Columbia asks customers with unknown private-side materials to complete an online service line identification survey and explains how to inspect the line.",
+  "reviewerNote" : "City of Columbia lead compliance page reviewed manually for survey and step-by-step inspection guidance.",
+  "status" : "verified"
+}

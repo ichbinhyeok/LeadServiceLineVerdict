@@ -1,0 +1,32 @@
+{
+  "utilityId" : "denver-water-co",
+  "utilitySlug" : "denver-water",
+  "utilityName" : "Denver Water",
+  "aliases" : [ "Lead Reduction Program" ],
+  "city" : "denver",
+  "county" : "denver",
+  "state" : "co",
+  "serviceAreaName" : "Denver Water service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://www.denverwater.org/your-water/water-quality/lead",
+  "lookupUrl" : "https://www.denverwater.org/your-water/water-quality/lead",
+  "notificationUrl" : "https://www.denverwater.org/your-water/water-quality/lead/lead-service-lines",
+  "programIds" : [ "denver-water-lead-reduction-program", "denver-water-reimbursement" ],
+  "contactPhone" : "303-893-2444",
+  "contactEmail" : "lead@denverwater.org",
+  "inventoryStatus" : "possible-line-inventory-published",
+  "inventorySummary" : "Denver Water says its address map can show whether a home is one of the estimated 60000 to 64000 homes with a possible lead service line, replacements are planned neighborhood by neighborhood with a longer outlook from 2026 to 2031, and off-schedule replacements use a separate 3800 dollar reimbursement path rather than the utility's no-direct-charge scheduled replacement workflow.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "denver", "lakewood", "englewood", "westminster", "centennial", "wheat ridge" ],
+  "resolverHints" : [ ],
+  "resolverPostalPrefixes" : [ "800", "801", "802" ],
+  "sourceRefs" : [ "src-denver-inventory", "src-denver-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

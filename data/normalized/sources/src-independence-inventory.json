@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-independence-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Independence Water Department",
+  "sourceUrl" : "https://www.independencemo.gov/lead-and-copper-rule",
+  "scopeType" : "utility",
+  "scopeKey" : "independence-water-mo",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Independence says it is completing a comprehensive lead and copper inventory program and publishes a current water service line inventory PDF for residents.",
+  "reviewerNote" : "City of Independence lead and copper rule page reviewed manually for current PDF inventory access.",
+  "status" : "verified"
+}

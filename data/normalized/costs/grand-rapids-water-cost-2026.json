@@ -1,0 +1,19 @@
+{
+  "costId" : "grand-rapids-water-cost-2026",
+  "utilityId" : "grand-rapids-water-mi",
+  "city" : "grand-rapids",
+  "state" : "mi",
+  "publicSideBand" : "The city replaces the public side at no cost in all Grand Rapids program paths",
+  "privateSideBand" : "Private-side work is no cost when a qualifying leak or city project triggers replacement and otherwise the voluntary path uses owner-paid private-side work with ten-pay financing",
+  "fullReplacementBand" : "Full replacement is no direct charge in leak or city construction cases while the voluntary option spreads owner cost over ten years",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Grand Rapids publishes program responsibility and ten-pay rules rather than contractor bid amounts",
+  "permitAssumption" : "Eligibility depends on a qualifying leak city construction schedule or voluntary ten-pay enrollment",
+  "restorationAssumption" : "City contractors restore program-triggered work and voluntary participants follow the Water Service Agreement process",
+  "methodologySummary" : "Grand Rapids publishes a utility-specific split between no-cost leak or city-construction replacements and a voluntary ten-pay path so the cost route is grounded in local trigger rules rather than a generic no-cost promise.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when a leak or city project makes the address eligible and otherwise shift into the voluntary Water Service Agreement path where the private side is financed over time.",
+  "sourceRefs" : [ "src-grand-rapids-cost", "src-grand-rapids-program", "src-grand-rapids-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

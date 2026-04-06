@@ -1,0 +1,80 @@
+[
+  {
+    "sourceId": "src-kansas-city-inventory",
+    "sourceType": "utility_inventory",
+    "publisherName": "Kansas City Water",
+    "sourceUrl": "https://www.kcmo.gov/Home/Components/News/News/2739/16",
+    "scopeType": "utility",
+    "scopeKey": "kansas-city-water-mo",
+    "capturedAt": "2026-04-05T13:05:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Kansas City says it released its first service line inventory in October 2024, found zero known lead lines, and published public counts showing 23109 galvanized requiring replacement lines and 24842 unknown lines alongside the city map.",
+    "reviewerNote": "Official Kansas City news page reviewed manually for inventory counts and map language.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-kansas-city-notification",
+    "sourceType": "utility_notice",
+    "publisherName": "Kansas City Water",
+    "sourceUrl": "https://www.kcmo.gov/Home/Components/News/News/2865/231",
+    "scopeType": "utility",
+    "scopeKey": "kansas-city-water-mo",
+    "capturedAt": "2026-04-05T13:05:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Kansas City says recent service line protection letters are legitimate but optional homeowner coverage communications tied to private repair protection rather than lead replacement notices.",
+    "reviewerNote": "Official Kansas City communication page reviewed manually for optional coverage clarification.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-iowa-city-inventory",
+    "sourceType": "utility_inventory",
+    "publisherName": "Iowa City Water Division",
+    "sourceUrl": "https://www.icgov.org/government/departments-and-divisions/public-works/water",
+    "scopeType": "utility",
+    "scopeKey": "iowa-city-water-ia",
+    "capturedAt": "2026-04-05T22:10:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Iowa City says its water division maintains a lead reduction program and directs customers to service line material verification and replacement guidance through the water division resources.",
+    "reviewerNote": "Official Iowa City water division page reviewed manually for lead reduction program entry points.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-iowa-city-notification",
+    "sourceType": "utility_notice",
+    "publisherName": "Iowa City Water Division",
+    "sourceUrl": "https://www.icgov.org/home/showpublisheddocument/160/638974213462430000",
+    "scopeType": "utility",
+    "scopeKey": "iowa-city-water-ia",
+    "capturedAt": "2026-04-05T22:10:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Iowa City's 2025 FAQ tells residents to flush stagnant water, clean aerators, use cold water, and follow lead reduction guidance while evaluating service line material.",
+    "reviewerNote": "Official Iowa City lead FAQ reviewed manually for flushing and interim-use guidance.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-iowa-city-program",
+    "sourceType": "utility_program",
+    "publisherName": "Iowa City Water Division",
+    "sourceUrl": "https://www.icgov.org/home/showpublisheddocument/160/638974213462430000",
+    "scopeType": "program",
+    "scopeKey": "iowa-city-cost-share-reimbursement",
+    "capturedAt": "2026-04-05T22:10:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Iowa City says homeowners with lead or suspected lead service lines should tell contractors they want to use the city's cost-share reimbursement program before replacement work begins because the work remains owner-managed.",
+    "reviewerNote": "Official Iowa City lead FAQ reviewed manually for contractor notification and reimbursement workflow.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-iowa-city-cost",
+    "sourceType": "utility_cost",
+    "publisherName": "Iowa City Water Division",
+    "sourceUrl": "https://www.icgov.org/home/showpublisheddocument/160/638974213462430000",
+    "scopeType": "cost",
+    "scopeKey": "iowa-city-water-cost-2026",
+    "capturedAt": "2026-04-04T23:58:00+09:00",
+    "effectiveDate": "2026-04-04",
+    "claimSummary": "Iowa City says service line repairs generally cost thousands of dollars and can reach tens of thousands depending on site conditions, with reimbursement available in eligible owner-managed cases.",
+    "reviewerNote": "Official Iowa City lead FAQ reviewed manually for cost language.",
+    "status": "verified"
+  }
+]

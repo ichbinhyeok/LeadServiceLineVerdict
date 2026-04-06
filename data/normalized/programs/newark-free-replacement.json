@@ -1,0 +1,19 @@
+{
+  "programId" : "newark-free-replacement",
+  "programSlug" : "newark-free-replacement",
+  "programName" : "Newark Free Service Line Replacement Program",
+  "geography" : "City of Newark",
+  "state" : "oh",
+  "utilityIds" : [ "newark-water-oh" ],
+  "subsidyType" : "city-funded free replacement from main line to meter",
+  "publicSideCovered" : "yes city replaces from main to meter",
+  "privateSideCovered" : "yes city replaces to the meter at no cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "properties with galvanized or unknown notices can sign up and yellow or orange map points are checked for replacement",
+  "contractorRules" : "city crews or contractors perform the replacement",
+  "deadline" : null,
+  "applicationUrl" : "https://www.newarkohio.gov/lead-service-line-replacement/",
+  "sourceRefs" : [ "src-newark-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

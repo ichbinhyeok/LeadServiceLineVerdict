@@ -1,0 +1,19 @@
+{
+  "programId" : "kalamazoo-citywide-lslr-program",
+  "programSlug" : "kalamazoo-citywide-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Kalamazoo",
+  "state" : "mi",
+  "utilityIds" : [ "kalamazoo-water-mi" ],
+  "subsidyType" : "citywide replacement program supported by ratepayers state funding and foundation support",
+  "publicSideCovered" : "yes the city funds the public-side replacement work",
+  "privateSideCovered" : "yes qualifying customer-side lines are replaced at no charge in the city program",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "homes with lead lines or likely lead lines are prioritized through the utility lookup and replacement schedule",
+  "contractorRules" : "city staff and contractors coordinate replacement restoration and post-replacement testing",
+  "deadline" : null,
+  "applicationUrl" : "https://www.kalamazoocity.org/Residents/Water-Sewer-Service/More-About-Kalamazoos-Utility-Systems/Lead-Copper-Program",
+  "sourceRefs" : [ "src-kalamazoo-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

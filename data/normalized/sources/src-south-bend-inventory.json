@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-south-bend-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of South Bend Water Works",
+  "sourceUrl" : "https://southbendin.gov/department/public-works/utilities-division/water-works/",
+  "scopeType" : "utility",
+  "scopeKey" : "south-bend-water-in",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "South Bend Water Works says residents should use its service line inventory map to check address status, complete the city service line survey to verify private-side material, and use 311 or water quality staff for free lead testing and follow-up.",
+  "reviewerNote" : "Official South Bend Water Works page reviewed manually for map, survey, private-side verification, and testing workflow.",
+  "status" : "verified"
+}

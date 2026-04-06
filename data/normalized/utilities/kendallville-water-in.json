@@ -1,0 +1,32 @@
+{
+  "utilityId" : "kendallville-water-in",
+  "utilitySlug" : "kendallville-water-department",
+  "utilityName" : "City of Kendallville Water Department",
+  "aliases" : [ "Kendallville Water", "Kendallville Water Department" ],
+  "city" : "kendallville",
+  "county" : "noble",
+  "state" : "in",
+  "serviceAreaName" : "City of Kendallville",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.kendallvillein.gov/departments/Water/LeadLineReplacementProgram",
+  "lookupUrl" : "https://www.kendallvillein.gov/departments/Water/LeadLineReplacementProgram",
+  "notificationUrl" : "https://www.kendallvillein.gov/departments/Water/LeadLineReplacementProgram",
+  "programIds" : [ "kendallville-lslr-program" ],
+  "contactPhone" : "260-347-0852",
+  "contactEmail" : "clerk@kendallvillein.gov",
+  "inventoryStatus" : "inventory-notices-and-phase-1-replacement-program-published",
+  "inventorySummary" : "Kendallville says it completed its lead service line inventory on October 16 2024, keeps sending annual paper letters until replacement is recorded, and began phase 1 replacement work in 2026 using state grant and loan funding with signed right-of-entry forms rather than an owner-triggered citywide replacement path.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "contact_only",
+  "resolverMunicipalities" : [ "kendallville" ],
+  "resolverHints" : [ ],
+  "resolverPostalPrefixes" : [ "467" ],
+  "sourceRefs" : [ "src-kendallville-inventory", "src-kendallville-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

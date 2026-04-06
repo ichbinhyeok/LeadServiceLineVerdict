@@ -1,0 +1,19 @@
+{
+  "programId" : "dc-water-lprap",
+  "programSlug" : "dc-water-lprap",
+  "programName" : "Lead Pipe Replacement Assistance Program",
+  "geography" : "District of Columbia",
+  "state" : "dc",
+  "utilityIds" : [ "dc-water-dc" ],
+  "subsidyType" : "100 percent discount for eligible private-side-only replacements",
+  "publicSideCovered" : "no public-side work in this program",
+  "privateSideCovered" : "yes with approved contractor",
+  "incomeRules" : "DOEE reviews income verification to confirm assistance level",
+  "propertyRules" : "private-space lead or galvanized or brass with public-space copper",
+  "contractorRules" : "homeowner must use the approved contractor list",
+  "deadline" : null,
+  "applicationUrl" : "https://www.dcwater.com/resources/lead/partners-removing-lead/replacelead/customer-initiated-private-side-lead-replacement",
+  "sourceRefs" : [ "src-dc-private-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

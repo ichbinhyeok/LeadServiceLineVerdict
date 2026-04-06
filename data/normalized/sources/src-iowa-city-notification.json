@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-iowa-city-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Iowa City Water Division",
+  "sourceUrl" : "https://www.icgov.org/home/showpublisheddocument/160/638974213462430000",
+  "scopeType" : "utility",
+  "scopeKey" : "iowa-city-water-ia",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Iowa City's 2025 FAQ tells residents to flush stagnant water, clean aerators, use cold water, and follow lead reduction guidance while evaluating service line material.",
+  "reviewerNote" : "Official Iowa City lead FAQ reviewed manually for flushing and interim-use guidance.",
+  "status" : "verified"
+}

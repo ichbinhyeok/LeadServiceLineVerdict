@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-sioux-city-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Sioux City Water Plant",
+  "sourceUrl" : "https://www.sioux-city.org/leadlineinventory",
+  "scopeType" : "utility",
+  "scopeKey" : "sioux-city-water-ia",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Sioux City directs residents to an online lead service line inventory page for address-level service material review and pairs that inventory with city notice updates for properties that may still have lead-related service materials.",
+  "reviewerNote" : "Official City of Sioux City inventory endpoint reviewed manually via published city news references.",
+  "status" : "verified"
+}

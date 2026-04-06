@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-green-bay-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Green Bay Water Utility",
+  "sourceUrl" : "https://www.gbwater.org/service-line-lookup-map",
+  "scopeType" : "utility",
+  "scopeKey" : "green-bay-water-wi",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Green Bay Water says residents can use its service line lookup map to view utility-side and customer-side records, including lead GRR unknown and non-lead labels, and can schedule inspections or submit documentation if more information is needed.",
+  "reviewerNote" : "Official Green Bay service line map page reviewed manually for map labels and inspection workflow.",
+  "status" : "verified"
+}

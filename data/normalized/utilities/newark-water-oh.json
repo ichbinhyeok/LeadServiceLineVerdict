@@ -1,0 +1,32 @@
+{
+  "utilityId" : "newark-water-oh",
+  "utilitySlug" : "newark-water",
+  "utilityName" : "City of Newark Water Office",
+  "aliases" : [ "Newark Water Office", "City of Newark Water" ],
+  "city" : "newark",
+  "county" : "licking",
+  "state" : "oh",
+  "serviceAreaName" : "City of Newark water service area",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.newarkohio.gov/lead-service-line-replacement/",
+  "lookupUrl" : "https://www.newarkohio.gov/lead-service-line-replacement/",
+  "notificationUrl" : "https://www.newarkohio.gov/lead-service-line-replacement/",
+  "programIds" : [ "newark-free-replacement" ],
+  "contactPhone" : "740-670-7940",
+  "contactEmail" : "wateradm@newarkohiowater.net",
+  "inventoryStatus" : "customer-notices-and-signup-published",
+  "inventorySummary" : "Newark says customers with galvanized requiring replacement or unknown service lines have been notified, properties with yellow or orange dots on the city map are checked for replacement, and the city replaces the line from the main to the meter plus basic restoration free of charge.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "newark" ],
+  "resolverHints" : [ "licking county" ],
+  "resolverPostalPrefixes" : [ "430" ],
+  "sourceRefs" : [ "src-newark-inventory", "src-newark-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

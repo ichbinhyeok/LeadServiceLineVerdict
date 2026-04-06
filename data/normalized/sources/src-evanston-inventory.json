@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-evanston-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Evanston Water Production Bureau",
+  "sourceUrl" : "https://www.evanstonleadreplacement.org/",
+  "scopeType" : "utility",
+  "scopeKey" : "evanston-water-il",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Evanston says its public water service information map lets residents check an address or billing account for possible lead service exposure and that the city submitted a draft replacement plan in April 2025.",
+  "reviewerNote" : "Official Evanston lead replacement site reviewed manually for map coverage and draft-plan timing.",
+  "status" : "verified"
+}

@@ -1,0 +1,19 @@
+{
+  "costId" : "duluth-water-cost-2026",
+  "utilityId" : "duluth-water-mn",
+  "city" : "duluth",
+  "state" : "mn",
+  "publicSideBand" : "No direct charge in city-planned replacement projects",
+  "privateSideBand" : "No direct charge in city-planned replacement projects",
+  "fullReplacementBand" : "Full replacement is described as no cost to property owners in city-funded project areas",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Duluth publishes no-cost replacement language for planned projects instead of bid ranges",
+  "permitAssumption" : "Eligibility depends on city project selection and a signed work agreement",
+  "restorationAssumption" : "Restoration is handled through the city-led construction project scope",
+  "methodologySummary" : "Duluth ties the no-cost statement to funded city-planned replacement projects and explicitly disallows outside reimbursement so the page reflects project-funded eligibility rather than an open-ended market estimate.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when the address is selected for a city-led project and the owner signs the work agreement before the replacement enters the construction schedule.",
+  "sourceRefs" : [ "src-duluth-cost", "src-duluth-program" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

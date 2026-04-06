@@ -1,0 +1,19 @@
+{
+  "programId" : "toledo-lead-line-replacement",
+  "programSlug" : "toledo-lead-line-replacement",
+  "programName" : "Lead Line Replacement Program",
+  "geography" : "Toledo Public Utilities service area",
+  "state" : "oh",
+  "utilityIds" : [ "toledo-water-oh" ],
+  "subsidyType" : "grant-funded city-managed full replacement at no cost to the property owner",
+  "publicSideCovered" : "yes city-side replacement is utility-managed",
+  "privateSideCovered" : "yes identified customer-side lead service lines are replaced at no cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "properties with identified lead lines are scheduled through the city replacement program and advance notice process",
+  "contractorRules" : "city crews or contractors complete replacement and restoration",
+  "deadline" : null,
+  "applicationUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "sourceRefs" : [ "src-toledo-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

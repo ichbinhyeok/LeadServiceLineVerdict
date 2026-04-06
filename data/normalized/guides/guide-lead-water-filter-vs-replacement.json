@@ -1,0 +1,18 @@
+{
+  "guideId" : "guide-lead-water-filter-vs-replacement",
+  "slug" : "lead-water-filter-vs-replacement",
+  "title" : "Lead water filter vs replacement",
+  "eyebrow" : "Evergreen guide",
+  "heroSummary" : "A certified filter can reduce interim exposure, but it does not replace the need to verify and, when needed, replace a lead service line.",
+  "verdict" : "Use filters as an interim action when replacement is delayed, not as proof that a lead service line issue is solved.",
+  "keyPoints" : [ "Filters and cartridges only work when they are used and replaced according to the certification and manufacturer instructions.", "Testing can be helpful when it changes the next action or clarifies uncertainty, but it does not change the material of the pipe itself.", "A filter plan is strongest when it is tied to the utility's own notice and flushing guidance.", "Replacement remains the structural fix when a lead service line is confirmed." ],
+  "nextSteps" : [ "Read the utility's interim protection guidance before buying a filter.", "Use local filter and testing pages for utility-specific framing rather than a generic national answer.", "Keep the replacement path moving even if interim filtration is in place." ],
+  "faqs" : [ {
+    "question" : "Can a filter replace the need for lead service line replacement?",
+    "answer" : "No. A filter is an interim protection tool. It can reduce exposure in the near term, but it does not remove the lead service line from service."
+  }, {
+    "question" : "Should I test before or after replacing a lead line?",
+    "answer" : "It depends on the utility's guidance and what decision you are trying to make. Testing is most useful when it clarifies uncertainty or validates an interim protection plan."
+  } ],
+  "lastVerified" : [ 2026, 4, 4 ]
+}

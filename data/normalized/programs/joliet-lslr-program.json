@@ -1,0 +1,19 @@
+{
+  "programId" : "joliet-lslr-program",
+  "programSlug" : "joliet-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Joliet",
+  "state" : "il",
+  "utilityIds" : [ "joliet-water-il" ],
+  "subsidyType" : "city-managed full replacement program at no cost under leak repair elevated test results and water main rehabilitation scheduling",
+  "publicSideCovered" : "yes the city replaces the public portion at no cost",
+  "privateSideCovered" : "yes full replacement is provided at no cost when city criteria are met",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property must have a lead service line and either a disturbance elevated test result or later scheduled main rehabilitation",
+  "contractorRules" : "public utilities coordinates inspections testing replacement and post-replacement filter support",
+  "deadline" : null,
+  "applicationUrl" : "https://www.joliet.gov/government/departments/public-utilities/news-information/lead-service-line-info",
+  "sourceRefs" : [ "src-joliet-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

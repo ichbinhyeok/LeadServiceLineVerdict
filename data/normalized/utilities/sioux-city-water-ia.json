@@ -1,0 +1,32 @@
+{
+  "utilityId" : "sioux-city-water-ia",
+  "utilitySlug" : "sioux-city-water-plant",
+  "utilityName" : "City of Sioux City Water Plant",
+  "aliases" : [ "Sioux City Water", "Sioux City Water Plant" ],
+  "city" : "sioux-city",
+  "county" : "woodbury",
+  "state" : "ia",
+  "serviceAreaName" : "City of Sioux City",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.sioux-city.org/leadlineinventory",
+  "lookupUrl" : "https://www.sioux-city.org/leadlineinventory",
+  "notificationUrl" : "https://www.sioux-city.org/Home/Components/News/News/14920/271?arch=1&npage=2",
+  "programIds" : [ ],
+  "contactPhone" : "712-279-6150",
+  "contactEmail" : null,
+  "inventoryStatus" : "inventory-news-and-water-plant-guidance-published",
+  "inventorySummary" : "Sioux City says about 7300 properties could have a lead service line or a galvanized service line affected by lead, the online inventory should be used for address-level review, and residents with questions or updated material information are directed back to the Water Plant.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "sioux city", "sioux-city" ],
+  "resolverHints" : [ "morningside", "riverside", "northside", "downtown sioux city" ],
+  "resolverPostalPrefixes" : [ "511" ],
+  "sourceRefs" : [ "src-sioux-city-inventory", "src-sioux-city-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

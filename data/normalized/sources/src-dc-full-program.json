@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dc-full-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "DC Water",
+  "sourceUrl" : "https://www.dcwater.com/resources/lead/partners-removing-lead/replacelead/customer-initiated-full-lead-replacements",
+  "scopeType" : "program",
+  "scopeKey" : "dc-water-voluntary-full-replacement",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "DC Water's voluntary full replacement program pays for work in public space while the property owner pays for work on private property when both sides are lead and no capital project is scheduled.",
+  "reviewerNote" : "Official program page reviewed manually for public-space versus private-property cost split.",
+  "status" : "verified"
+}

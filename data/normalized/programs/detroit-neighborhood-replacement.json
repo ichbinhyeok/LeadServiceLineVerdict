@@ -1,0 +1,19 @@
+{
+  "programId" : "detroit-neighborhood-replacement",
+  "programSlug" : "detroit-neighborhood-replacement",
+  "programName" : "DWSD Neighborhood Lead Service Line Replacement Program",
+  "geography" : "City of Detroit",
+  "state" : "mi",
+  "utilityIds" : [ "detroit-water-mi" ],
+  "subsidyType" : "neighborhood-by-neighborhood utility-managed replacement tied to water main work and available funding",
+  "publicSideCovered" : "yes DWSD replaces the line from the water main when work reaches the block",
+  "privateSideCovered" : "yes DWSD says it replaces the lead service line with homeowner permission while crews are on the block",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "neighborhood timing depends on construction schedules funding and DWSD outreach before work begins",
+  "contractorRules" : "DWSD crews or contractors coordinate replacement and homeowner permission",
+  "deadline" : null,
+  "applicationUrl" : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-projects/making-detroit-lead-safe/lead-service-line-replacement-program",
+  "sourceRefs" : [ "src-detroit-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

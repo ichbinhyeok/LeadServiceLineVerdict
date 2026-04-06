@@ -1,0 +1,19 @@
+{
+  "programId" : "philadelphia-help-loan",
+  "programSlug" : "philadelphia-help-loan",
+  "programName" : "HELP Loan for Lead Service Lines",
+  "geography" : "Philadelphia",
+  "state" : "pa",
+  "utilityIds" : [ "philadelphia-water-department-pa" ],
+  "subsidyType" : "zero-interest loan pathway for confirmed lead service line replacement",
+  "publicSideCovered" : "no separate public-side utility share because the line is customer-owned in Philadelphia",
+  "privateSideCovered" : "loan can cover replacement cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property must meet HELP loan rules and have a confirmed lead line",
+  "contractorRules" : "owner applies through the HELP program and uses approved repair workflow",
+  "deadline" : null,
+  "applicationUrl" : "https://water.phila.gov/helploan/",
+  "sourceRefs" : [ "src-philadelphia-help" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

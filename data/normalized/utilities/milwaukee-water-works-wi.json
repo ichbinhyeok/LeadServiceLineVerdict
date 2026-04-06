@@ -1,0 +1,32 @@
+{
+  "utilityId" : "milwaukee-water-works-wi",
+  "utilitySlug" : "milwaukee-water-works",
+  "utilityName" : "Milwaukee Water Works",
+  "aliases" : [ "City of Milwaukee Water Works", "MWW" ],
+  "city" : "milwaukee",
+  "county" : "milwaukee",
+  "state" : "wi",
+  "serviceAreaName" : "City of Milwaukee",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://city.milwaukee.gov/water/LeadPipes/Overview",
+  "lookupUrl" : "https://city.milwaukee.gov/water/LeadPipes/CheckAddress",
+  "notificationUrl" : "https://city.milwaukee.gov/leadpipes",
+  "programIds" : [ "milwaukee-prioritization-program", "milwaukee-owner-request-program" ],
+  "contactPhone" : "414-286-2830",
+  "contactEmail" : "water@milwaukee.gov",
+  "inventoryStatus" : "lead-lines-tracked-and-prioritized",
+  "inventorySummary" : "Milwaukee Water Works says it is committed to replacing all 65000 remaining lead service lines by 2037. Its address lookup page shows recorded service line type and whether a property is prioritized for replacement in 2026, while city notices explain when owners do or do not pay for private-side work.",
+  "lineCounts" : {
+    "known" : 65000,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "milwaukee" ],
+  "resolverHints" : [ "bay view", "riverwest", "walkers point" ],
+  "resolverPostalPrefixes" : [ "532" ],
+  "sourceRefs" : [ "src-milwaukee-inventory", "src-milwaukee-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

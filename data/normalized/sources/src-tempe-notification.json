@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-tempe-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Tempe Water Utilities",
+  "sourceUrl" : "https://www.tempe.gov/government/public-works/water/water-quality/lead-and-copper",
+  "scopeType" : "utility",
+  "scopeKey" : "tempe-water-az",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Tempe says unknown notices are precautionary while survey and field verification continue, customers can search the public inventory, and if any lead or galvanized line is identified the city will notify customers and work with them on replacement and funding options.",
+  "reviewerNote" : "Official Tempe lead and copper notice page reviewed manually for precautionary notice and follow-up language.",
+  "status" : "verified"
+}

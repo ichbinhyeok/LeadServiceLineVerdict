@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-saint-paul-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Saint Paul Regional Water Services",
+  "sourceUrl" : "https://www.stpaul.gov/departments/saint-paul-regional-water-services/customer-resources/lead-free-sprws",
+  "scopeType" : "utility",
+  "scopeKey" : "saint-paul-regional-water-services-mn",
+  "capturedAt" : "2026-04-05T09:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Lead Free SPRWS says SPRWS serves about 96000 properties, about 17000 (18 percent) have a lead service line, and about 4500 (5 percent) have a service line of unknown material.",
+  "reviewerNote" : "Official Lead Free SPRWS page reviewed manually.",
+  "status" : "verified"
+}

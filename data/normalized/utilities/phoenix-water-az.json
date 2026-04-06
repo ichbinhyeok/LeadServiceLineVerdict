@@ -1,0 +1,32 @@
+{
+  "utilityId" : "phoenix-water-az",
+  "utilitySlug" : "phoenix-water-services",
+  "utilityName" : "City of Phoenix Water Services",
+  "aliases" : [ "Phoenix Water", "Phoenix Water Services" ],
+  "city" : "phoenix",
+  "county" : "maricopa",
+  "state" : "az",
+  "serviceAreaName" : "City of Phoenix Water Services",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://pipes.phoenix.gov/",
+  "lookupUrl" : "https://pipes.phoenix.gov/",
+  "notificationUrl" : "https://pipes.phoenix.gov/",
+  "programIds" : [ "phoenix-full-replacement" ],
+  "contactPhone" : "602-262-6251",
+  "contactEmail" : "watersmart@phoenix.gov",
+  "inventoryStatus" : "inventory-and-next-steps-site-published",
+  "inventorySummary" : "Phoenix says its public inventory uses non-lead lead galvanized and unknown categories, unknown lines are unlikely to be lead but still receive second verification and notices, mailed notifications went out as replacement work started in fall 2024, and if a lead or galvanized line is identified the city replaces the full line from the meter box to the house connection at no cost.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "phoenix" ],
+  "resolverHints" : [ "encanto", "alhambra", "maryvale", "deer valley", "camelback east" ],
+  "resolverPostalPrefixes" : [ "850" ],
+  "sourceRefs" : [ "src-phoenix-inventory", "src-phoenix-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

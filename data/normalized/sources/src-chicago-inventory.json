@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-chicago-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Chicago Department of Water Management",
+  "sourceUrl" : "https://www.leadsafechicago.org/water",
+  "scopeType" : "utility",
+  "scopeKey" : "chicago-water-il",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Chicago says homes built before 1986 are especially likely to have lead service lines and directs residents through Lead Safe Chicago water guidance to the inventory and free testing tools.",
+  "reviewerNote" : "Lead-Safe Chicago water guidance page reviewed manually.",
+  "status" : "verified"
+}

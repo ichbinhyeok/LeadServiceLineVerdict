@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-pittsburgh-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Pittsburgh Water",
+  "sourceUrl" : "https://www.pgh2o.com/your-water/lead-information",
+  "scopeType" : "utility",
+  "scopeKey" : "pittsburgh-water-pa",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Pittsburgh Water tells customers that residential customers who have a lead service line will have it replaced at no direct cost and links affected owners to the reimbursement program for private-side work.",
+  "reviewerNote" : "Official Pittsburgh Water lead information page reviewed manually for no-direct-cost replacement language and reimbursement referrals.",
+  "status" : "verified"
+}

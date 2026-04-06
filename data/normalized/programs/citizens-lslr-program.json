@@ -1,0 +1,19 @@
+{
+  "programId" : "citizens-lslr-program",
+  "programSlug" : "citizens-lslr-program",
+  "programName" : "Citizens Lead Service Line Replacement Program",
+  "geography" : "Citizens Energy Group water service territory",
+  "state" : "in",
+  "utilityIds" : [ "citizens-energy-group-in" ],
+  "subsidyType" : "multi-year replacement program that fully replaces customer-owned lead service lines through utility projects and targeted neighborhoods",
+  "publicSideCovered" : "yes Citizens funds the public right-of-way portion of full replacement",
+  "privateSideCovered" : "yes proactive neighborhood replacements occur at no additional cost and owner-initiated paths vary by location",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligibility depends on current project areas right-of-entry approval or owner-initiated replacement choice",
+  "contractorRules" : "Citizens contractors or approved plumbers complete the work depending on the replacement path",
+  "deadline" : null,
+  "applicationUrl" : "https://info.citizensenergygroup.com/projects/lead-service-line-replacement",
+  "sourceRefs" : [ "src-citizens-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

@@ -1,0 +1,19 @@
+{
+  "programId" : "grand-rapids-lslr-program",
+  "programSlug" : "grand-rapids-lslr-program",
+  "programName" : "Lead Line Replacement Program",
+  "geography" : "City of Grand Rapids",
+  "state" : "mi",
+  "utilityIds" : [ "grand-rapids-water-mi" ],
+  "subsidyType" : "city-managed no-cost replacement for leaks and city construction projects plus a ten-pay voluntary option",
+  "publicSideCovered" : "yes the city replaces the public side at no cost in all program paths",
+  "privateSideCovered" : "yes in leak or city-project cases and voluntary replacements can use the ten-pay financing path",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "service must be lead and either have a qualifying leak be within city construction or the owner must request the voluntary ten-pay option",
+  "contractorRules" : "approved city contractors and plumbers perform the work after a signed Water Service Agreement",
+  "deadline" : null,
+  "applicationUrl" : "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-line-replacement-program/",
+  "sourceRefs" : [ "src-grand-rapids-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-hamilton-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Hamilton Utilities + Public Works",
+  "sourceUrl" : "https://www.hamilton-oh.gov/lead-awareness",
+  "scopeType" : "utility",
+  "scopeKey" : "hamilton-water-oh",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Hamilton explains flush and filter guidance, says private-side replacement cost remains the owner's responsibility, and says the city replaces known city-owned lead service lines during water main projects.",
+  "reviewerNote" : "Official Hamilton public guidance reviewed manually for owner responsibility and water-main-project replacement rules.",
+  "status" : "verified"
+}

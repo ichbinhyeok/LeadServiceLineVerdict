@@ -1,0 +1,19 @@
+{
+  "programId" : "toledo-childcare-facility-replacement",
+  "programSlug" : "toledo-childcare-facility-replacement",
+  "programName" : "Childcare Facility Lead Service Line Replacement Program",
+  "geography" : "Toledo Public Utilities service area",
+  "state" : "oh",
+  "utilityIds" : [ "toledo-water-oh" ],
+  "subsidyType" : "free city-managed replacement program for licensed childcare facilities with lead service lines",
+  "publicSideCovered" : "yes city-owned lead service lines are replaced through the program",
+  "privateSideCovered" : "yes customer-owned lead portions are also replaced if identified",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "licensed childcare facilities are invited to sign up and applications are first come first served while funding remains",
+  "contractorRules" : "city schedules the work and handles contractor coordination",
+  "deadline" : null,
+  "applicationUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "sourceRefs" : [ "src-toledo-childcare" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

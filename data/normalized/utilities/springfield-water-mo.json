@@ -1,0 +1,32 @@
+{
+  "utilityId" : "springfield-water-mo",
+  "utilitySlug" : "springfield-water-utility",
+  "utilityName" : "City Utilities of Springfield",
+  "aliases" : [ "Springfield Water", "City Utilities Springfield" ],
+  "city" : "springfield",
+  "county" : "greene",
+  "state" : "mo",
+  "serviceAreaName" : "City Utilities of Springfield",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.cityutilities.net/lcr",
+  "lookupUrl" : "https://www.cityutilities.net/lcrmap",
+  "notificationUrl" : "https://www.cityutilities.net/m/newsflash/Home/Detail/88",
+  "programIds" : [ ],
+  "contactPhone" : "417-831-8787",
+  "contactEmail" : null,
+  "inventoryStatus" : "inventory-map-and-assistance-published",
+  "inventorySummary" : "Springfield says more than 38000 customer service lines have already been identified, homes built before 1989 are still asked to self-identify customer-owned materials, and City Utilities keeps both an interactive inventory map and free neighborhood assistance online while self-reporting and map cleanup continue.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "springfield" ],
+  "resolverHints" : [ "midtown springfield", "rountree", "phelps grove" ],
+  "resolverPostalPrefixes" : [ "658" ],
+  "sourceRefs" : [ "src-springfield-inventory", "src-springfield-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

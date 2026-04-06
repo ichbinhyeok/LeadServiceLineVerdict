@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-minneapolis-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Minneapolis Public Works",
+  "sourceUrl" : "https://www.minneapolismn.gov/government/projects/lead-service-lines/",
+  "scopeType" : "cost",
+  "scopeKey" : "minneapolis-water-cost-2026",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Minneapolis says state and federal funds are paying for lead water service line replacement at no cost to property owners in eligible project areas.",
+  "reviewerNote" : "Official Minneapolis no-cost replacement language reviewed manually for eligible project-area coverage.",
+  "status" : "verified"
+}

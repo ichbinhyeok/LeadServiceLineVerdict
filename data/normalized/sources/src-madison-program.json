@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-madison-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Madison Water Utility",
+  "sourceUrl" : "https://www.cityofmadison.com/water/water-quality/lead-copper-in-water/lead-service-line-inventory",
+  "scopeType" : "program",
+  "scopeKey" : "madison-rebate",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Madison says a property owner may be eligible for a rebate of up to $3000 if lead water service is discovered on private property, keeping the replacement on an owner-managed path with capped city support.",
+  "reviewerNote" : "Official Madison inventory page reviewed manually for the private-side rebate cap.",
+  "status" : "verified"
+}

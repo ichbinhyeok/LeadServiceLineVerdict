@@ -1,0 +1,32 @@
+{
+  "utilityId" : "evansville-water-in",
+  "utilitySlug" : "evansville-water-and-sewer-utility",
+  "utilityName" : "Evansville Water and Sewer Utility",
+  "aliases" : [ "EWSU", "Evansville Water" ],
+  "city" : "evansville",
+  "county" : "vanderburgh",
+  "state" : "in",
+  "serviceAreaName" : "Evansville Water and Sewer Utility service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://pws-ptd.120wateraudit.com/Evansville_Water_Utility_IN",
+  "lookupUrl" : "https://pws-ptd.120wateraudit.com/Evansville_Water_Utility_IN",
+  "notificationUrl" : "https://ewsu.com/water-sewer/water-resource-recovery/lead-safety/",
+  "programIds" : [ ],
+  "contactPhone" : "812-436-7846",
+  "contactEmail" : "customerservice@ewsu.com",
+  "inventoryStatus" : "inventory-map-and-notice-letters-published",
+  "inventorySummary" : "EWSU says its public inventory remains available through IDEM, customers received status letters in November 2024, the lead safety page posts downloadable lead GRR and unknown notice copies, and field verification continues before the utility overstates replacement timing.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "evansville" ],
+  "resolverHints" : [ "downtown evansville", "haynies corner", "jacobsville" ],
+  "resolverPostalPrefixes" : [ "477" ],
+  "sourceRefs" : [ "src-evansville-inventory", "src-evansville-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

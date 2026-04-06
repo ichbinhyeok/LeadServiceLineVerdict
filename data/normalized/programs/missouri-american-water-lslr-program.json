@@ -1,0 +1,19 @@
+{
+  "programId" : "missouri-american-water-lslr-program",
+  "programSlug" : "missouri-american-water-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "Missouri American Water service area",
+  "state" : "mo",
+  "utilityIds" : [ "missouri-american-water-mo" ],
+  "subsidyType" : "utility-managed replacement program for verified lead or galvanized service lines at no direct cost",
+  "publicSideCovered" : "yes Missouri American Water replaces the company-owned portion as part of the program",
+  "privateSideCovered" : "yes Missouri American Water says verified lead or galvanized service lines are replaced at no direct cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "customers must self-report or request inspection when material is unknown and the service line must be verified as lead or galvanized",
+  "contractorRules" : "Missouri American Water coordinates inspections outreach and replacement scheduling",
+  "deadline" : null,
+  "applicationUrl" : "https://www.amwater.com/moaw/water-quality/lead-and-drinking-water/lead-service-faqs",
+  "sourceRefs" : [ "src-mo-amwater-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

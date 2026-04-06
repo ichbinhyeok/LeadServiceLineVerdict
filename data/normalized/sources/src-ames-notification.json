@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-ames-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Ames Water & Pollution Control",
+  "sourceUrl" : "https://www.cityofames.org/files/assets/city/v/1/water-and-pollution-control/documents/lead_service_line_notice-2024.pdf",
+  "scopeType" : "utility",
+  "scopeKey" : "ames-water-ia",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Ames publishes a formal 2024 lead service line notice that explains homeowner ownership to the meter and interim guidance for households with lead service risk.",
+  "reviewerNote" : "Official Ames notice PDF reviewed manually.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dearborn-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Dearborn Water and Sewerage Division",
+  "sourceUrl" : "https://mail.cityofdearborn.org/news-and-events/city-news/2354-dearborn-s-water-tested-for-lead-yearly-always-within-federally-accepted-levels",
+  "scopeType" : "utility",
+  "scopeKey" : "dearborn-water-mi",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Dearborn says 100 homes are tested annually, results remain within federal action levels, and residents should complete the city's survey while the city works through Michigan's lead service line replacement mandate.",
+  "reviewerNote" : "Dearborn city news page reviewed manually for annual testing scale, action-level language, and survey guidance.",
+  "status" : "verified"
+}

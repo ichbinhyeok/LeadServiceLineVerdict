@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-grand-rapids-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Grand Rapids Water System",
+  "sourceUrl" : "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-prevention-tips/lead-water-service-line-map/",
+  "scopeType" : "utility",
+  "scopeKey" : "grand-rapids-water-mi",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Grand Rapids says residents can search the city's lead water service line map and that properties built before 1950 without confirming records are assumed to have lead service lines until a record or inspection proves otherwise.",
+  "reviewerNote" : "Official Grand Rapids map page reviewed manually for assumed-lead map rules.",
+  "status" : "verified"
+}

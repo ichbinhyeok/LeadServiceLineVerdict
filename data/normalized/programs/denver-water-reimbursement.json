@@ -1,0 +1,19 @@
+{
+  "programId" : "denver-water-reimbursement",
+  "programSlug" : "denver-water-reimbursement",
+  "programName" : "Lead Service Line Replacement Reimbursement",
+  "geography" : "Denver Water service area",
+  "state" : "co",
+  "utilityIds" : [ "denver-water-co" ],
+  "subsidyType" : "one-time $3800 reimbursement for approved off-schedule replacements",
+  "publicSideCovered" : "only if street portion is also replaced when lead",
+  "privateSideCovered" : "partial reimbursement for owner-managed replacement",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property owner must apply in advance and property cannot be on the current or next-year schedule",
+  "contractorRules" : "owner-managed contractor replacement must satisfy Denver Water reimbursement rules",
+  "deadline" : null,
+  "applicationUrl" : "https://www.denverwater.org/your-water/water-quality/lead/lead-service-line-reimbursement",
+  "sourceRefs" : [ "src-denver-reimbursement" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

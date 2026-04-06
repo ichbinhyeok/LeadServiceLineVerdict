@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-green-bay-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Green Bay Water Utility",
+  "sourceUrl" : "https://www.gbwater.org/service-line-lookup-map",
+  "scopeType" : "utility",
+  "scopeKey" : "green-bay-water-wi",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Green Bay Water explains what customer-side and utility-side lead GRR unknown and non-lead labels mean, directs residents with lead or GRR lines to municipal replacement contacts, and keeps owners of unknown lines on inspection or documentation follow-up.",
+  "reviewerNote" : "Official Green Bay label and notice language reviewed manually for GRR guidance and unknown-line follow-up.",
+  "status" : "verified"
+}

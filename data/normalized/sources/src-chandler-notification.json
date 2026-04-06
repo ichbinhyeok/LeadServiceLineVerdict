@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-chandler-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Chandler Water Utilities",
+  "sourceUrl" : "https://www.chandleraz.gov/residents/water/water-quality/lead-and-copper-rule-service-line-inspection",
+  "scopeType" : "utility",
+  "scopeKey" : "chandler-water-az",
+  "capturedAt" : "2026-04-05T09:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Chandler says unknown-status notices were sent in fall 2024 and fall 2025, field verifications continue through summer 2026, and residents receive a door hanger once material confirmation is complete.",
+  "reviewerNote" : "Official Chandler notification guidance reviewed manually.",
+  "status" : "verified"
+}

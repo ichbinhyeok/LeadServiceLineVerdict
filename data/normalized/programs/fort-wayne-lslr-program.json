@@ -1,0 +1,19 @@
+{
+  "programId" : "fort-wayne-lslr-program",
+  "programSlug" : "fort-wayne-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "Fort Wayne City Utilities",
+  "state" : "in",
+  "utilityIds" : [ "fort-wayne-water-in" ],
+  "subsidyType" : "federal grant assisted replacement program for targeted lead service line removals",
+  "publicSideCovered" : "yes City Utilities replaces the utility-owned portion during scheduled work",
+  "privateSideCovered" : "partial free replacements are available in project areas while owner-requested work may involve private-side costs",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "homes with lead or galvanized lines and owner requests can qualify through the city lead page",
+  "contractorRules" : "City Utilities or city contractors coordinate the public-side work and testing",
+  "deadline" : null,
+  "applicationUrl" : "https://utilities.cityoffortwayne.org/remove-lead",
+  "sourceRefs" : [ "src-fort-wayne-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

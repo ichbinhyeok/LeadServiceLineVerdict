@@ -1,0 +1,19 @@
+{
+  "programId" : "providence-accelerated-replacement",
+  "programSlug" : "providence-accelerated-replacement",
+  "programName" : "Accelerated Lead Service Line Replacement Program",
+  "geography" : "Providence Water service area",
+  "state" : "ri",
+  "utilityIds" : [ "providence-water-ri" ],
+  "subsidyType" : "federally funded free replacement program",
+  "publicSideCovered" : "yes public side is replaced at no cost",
+  "privateSideCovered" : "yes customer side is replaced at no cost in funded contracts",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property owner must sign a right of entry and wait for planned construction contracts",
+  "contractorRules" : "Providence Water contractors complete the work",
+  "deadline" : null,
+  "applicationUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-line-replacement-programs",
+  "sourceRefs" : [ "src-providence-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

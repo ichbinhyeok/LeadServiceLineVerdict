@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-springfield-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City Utilities of Springfield",
+  "sourceUrl" : "https://www.cityutilities.net/lcr",
+  "scopeType" : "utility",
+  "scopeKey" : "springfield-water-mo",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Springfield says it has identified utility-owned service line materials, asks pre-1989 homes to self-identify customer-owned materials, and publishes an interactive inventory map.",
+  "reviewerNote" : "City Utilities lead and copper rule page reviewed manually for pre-1989 self-identification and map workflow.",
+  "status" : "verified"
+}

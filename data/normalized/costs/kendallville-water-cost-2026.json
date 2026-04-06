@@ -1,0 +1,19 @@
+{
+  "costId" : "kendallville-water-cost-2026",
+  "utilityId" : "kendallville-water-in",
+  "city" : "kendallville",
+  "state" : "in",
+  "publicSideBand" : "City-managed public-side replacement is completed at no additional cost under the phased Kendallville program",
+  "privateSideBand" : "Participating customers pay no additional cost for replacement through the city program",
+  "fullReplacementBand" : "Full replacement is described as no additional cost to the customer when the property participates in the city program",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Kendallville publishes city-program cost coverage rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on annual notices phase-area selection and a signed right-of-entry form",
+  "restorationAssumption" : "Restoration and final scope are handled through the city-selected contractor process",
+  "methodologySummary" : "Kendallville ties its cost language to a phased city program that started potholing in March 2026 and replacement work in April 2026 rather than to an owner-sourced contractor estimate.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when the property is inside Kendallville's active program workflow and the owner returns the required participation and right-of-entry materials after the annual notice cycle.",
+  "sourceRefs" : [ "src-kendallville-cost", "src-kendallville-program", "src-kendallville-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

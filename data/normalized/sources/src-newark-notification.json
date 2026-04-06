@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-newark-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Newark Water Office",
+  "sourceUrl" : "https://www.newarkohio.gov/wp-content/uploads/Galvanized_Requiring_Replacement_SLN.pdf",
+  "scopeType" : "utility",
+  "scopeKey" : "newark-water-oh",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Newark's customer notice tells owners with galvanized requiring replacement lines to sign up for replacement and gives the water office phone and email for questions.",
+  "reviewerNote" : "Official Newark customer notice reviewed manually for sign-up and direct contact wording.",
+  "status" : "verified"
+}

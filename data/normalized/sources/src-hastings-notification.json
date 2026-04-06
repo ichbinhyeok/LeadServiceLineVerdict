@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-hastings-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Hastings Utilities Water Department",
+  "sourceUrl" : "https://engage.cityofhastings.org/water-lead-services-replacements",
+  "scopeType" : "utility",
+  "scopeKey" : "hastings-water-ne",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Hastings publishes customer letters monthly progress and neighborhood updates through its Water Main and Lead Service Replacement Program hub and reports 279 lead water services replaced so far.",
+  "reviewerNote" : "Official Engage Hastings project page reviewed manually for letter and progress-update links.",
+  "status" : "verified"
+}

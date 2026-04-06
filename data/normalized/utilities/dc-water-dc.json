@@ -1,0 +1,32 @@
+{
+  "utilityId" : "dc-water-dc",
+  "utilitySlug" : "dc-water",
+  "utilityName" : "DC Water",
+  "aliases" : [ "District of Columbia Water and Sewer Authority", "Lead Free DC" ],
+  "city" : "washington",
+  "county" : "district-of-columbia",
+  "state" : "dc",
+  "serviceAreaName" : "District of Columbia",
+  "serviceAreaType" : "district",
+  "inventoryUrl" : "https://www.dcwater.com/do-you-have-lead-pipes-let-us-help-you-find-out",
+  "lookupUrl" : "https://geo.dcwater.com/Lead/",
+  "notificationUrl" : "https://www.dcwater.com/resources/lead-free-dc/water-service-line-material-notifications",
+  "programIds" : [ "dc-water-lprap", "dc-water-voluntary-full-replacement" ],
+  "contactPhone" : "202-787-4044",
+  "contactEmail" : "lead@dcwater.com",
+  "inventoryStatus" : "map-published-with-verified-and-suspected-categories",
+  "inventorySummary" : "DC Water says its parcel map uses verified lead suspected lead no information suspected non-lead and verified non-lead categories, multilingual lead unknown and galvanized iron letters are posted online, and customers can use either the 100 percent private-side assistance path or the voluntary full replacement path depending on whether lead is on one side or both sides.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "washington", "district of columbia" ],
+  "resolverHints" : [ "capitol hill", "georgetown", "anacostia" ],
+  "resolverPostalPrefixes" : [ "200" ],
+  "sourceRefs" : [ "src-dc-inventory", "src-dc-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

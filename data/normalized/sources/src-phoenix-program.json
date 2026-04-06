@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-phoenix-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Phoenix Water Services",
+  "sourceUrl" : "https://pipes.phoenix.gov/",
+  "scopeType" : "program",
+  "scopeKey" : "phoenix-full-replacement",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Phoenix says when a galvanized or lead service line is identified, the city schedules replacement, replaces the full water service line from the meter box to the house connection, and covers the entire cost.",
+  "reviewerNote" : "Official Phoenix replacement plan page reviewed manually for full-line replacement scope and full cost coverage.",
+  "status" : "verified"
+}

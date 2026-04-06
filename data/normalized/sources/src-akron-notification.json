@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-akron-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Akron Water Supply Bureau",
+  "sourceUrl" : "https://www.akronohio.gov/Lead",
+  "scopeType" : "utility",
+  "scopeKey" : "akron-water-oh",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Akron says customers with unknown customer-side material should email the utility for a phone-based photo workflow, the city expects public-side lead replacement to finish by the end of 2025, and the lead page explains exposure-reduction steps.",
+  "reviewerNote" : "Official Akron lead page reviewed manually for unknown verification and end-of-2025 public-side replacement language.",
+  "status" : "verified"
+}

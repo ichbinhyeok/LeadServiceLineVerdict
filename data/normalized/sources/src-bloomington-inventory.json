@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-bloomington-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Bloomington Utilities",
+  "sourceUrl" : "https://bloomington.in.gov/utilities/inventory",
+  "scopeType" : "utility",
+  "scopeKey" : "bloomington-water-in",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Bloomington says its service line inventory covers more than 27000 service connections and displays address-level information based on records field verifications and modeling.",
+  "reviewerNote" : "Official Bloomington service line inventory page reviewed manually for searchable inventory coverage.",
+  "status" : "verified"
+}

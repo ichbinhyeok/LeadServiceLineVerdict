@@ -1,0 +1,19 @@
+{
+  "costId" : "philadelphia-water-cost-2026",
+  "utilityId" : "philadelphia-water-department-pa",
+  "city" : "philadelphia",
+  "state" : "pa",
+  "publicSideBand" : "No separate public-side utility share because service lines are customer-owned in Philadelphia",
+  "privateSideBand" : "HELP can provide a zero-interest loan and selected verification participants may receive free replacement",
+  "fullReplacementBand" : "Full replacement cost depends on the owner's contractor unless the property is in a free verification replacement path",
+  "costConfidence" : "low",
+  "housingTypeAssumption" : "Philadelphia publishes loan and selected free replacement pathways rather than citywide bid ranges",
+  "permitAssumption" : "Owners must confirm lead status and meet HELP or verification rules",
+  "restorationAssumption" : "Restoration depends on the contractor or the limited PWD verification replacement scope",
+  "methodologySummary" : "Philadelphia does not publish a citywide replacement price because service lines are customer-owned and instead splits cost between a limited free verification-replacement path and the zero-interest HELP loan for confirmed lead lines.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only if the property is selected for the limited Service Line Verification Program and otherwise remain responsible for choosing a contractor and using HELP or another owner-managed payment path.",
+  "sourceRefs" : [ "src-philadelphia-verification", "src-philadelphia-help" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : true,
+  "mediumConfidence" : false
+}

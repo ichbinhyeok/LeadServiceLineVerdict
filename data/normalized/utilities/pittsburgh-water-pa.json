@@ -1,0 +1,32 @@
+{
+  "utilityId" : "pittsburgh-water-pa",
+  "utilitySlug" : "pittsburgh-water",
+  "utilityName" : "Pittsburgh Water",
+  "aliases" : [ "PWSA", "Pittsburgh Water" ],
+  "city" : "pittsburgh",
+  "county" : "allegheny",
+  "state" : "pa",
+  "serviceAreaName" : "Pittsburgh Water service area",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.pgh2o.com/your-water/lead-information",
+  "lookupUrl" : "https://www.pgh2o.com/your-water/lead-information",
+  "notificationUrl" : "https://www.pgh2o.com/your-water/lead-information",
+  "programIds" : [ "pittsburgh-reimbursement" ],
+  "contactPhone" : "412-255-8987",
+  "contactEmail" : "leadhelp@pgh2o.com",
+  "inventoryStatus" : "lead-line-assistance-and-inventory-improvement",
+  "inventorySummary" : "Pittsburgh Water says Community Lead Response is on track to replace each lead line in Pittsburgh by 2027, targeted neighborhood and water-main work continue while unknown locations are improved, and private replacements that are not already covered by utility-led work move through income-based reimbursement up to 100 percent or a 1000 dollar stipend.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "pittsburgh" ],
+  "resolverHints" : [ "oakland", "squirrel hill", "south side", "lawrenceville" ],
+  "resolverPostalPrefixes" : [ "152" ],
+  "sourceRefs" : [ "src-pittsburgh-inventory", "src-pittsburgh-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

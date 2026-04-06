@@ -1,0 +1,19 @@
+{
+  "costId" : "ames-water-cost-2026",
+  "utilityId" : "ames-water-ia",
+  "city" : "ames",
+  "state" : "ia",
+  "publicSideBand" : "The city replaces service lines during eligible water main projects or other city construction triggers",
+  "privateSideBand" : "Homeowners own the water service line to the meter and should confirm replacement cost with local contractors when work is not part of a city project",
+  "fullReplacementBand" : "No official local bid range is published and owner cost depends on whether the work is tied to a city main project or a private replacement",
+  "costConfidence" : "low",
+  "housingTypeAssumption" : "Ames publishes responsibility rules and project triggers rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility for city-managed replacement depends on the current water main project and service line verification",
+  "restorationAssumption" : "Restoration and final scope vary by site and by whether the work is private or coordinated with a city project",
+  "methodologySummary" : "Ames does not publish a local replacement price and instead explains responsibility rules: the homeowner owns the line to the meter unless the replacement is folded into a city water-main or related construction project.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when Ames coordinates the line inside a current city project and otherwise stay on a private contractor path with site-specific pricing and restoration.",
+  "sourceRefs" : [ "src-ames-cost", "src-ames-inventory", "src-ames-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : true,
+  "mediumConfidence" : false
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mo-amwater-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Missouri American Water",
+  "sourceUrl" : "https://www.amwater.com/moaw/water-quality/lead-and-drinking-water/lead-service-faqs",
+  "scopeType" : "program",
+  "scopeKey" : "missouri-american-water-lslr-program",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Missouri American Water says verified company-owned or customer-owned lead or galvanized service lines are replaced at no direct cost to the customer.",
+  "reviewerNote" : "Official Missouri American Water FAQ reviewed manually for program language.",
+  "status" : "verified"
+}

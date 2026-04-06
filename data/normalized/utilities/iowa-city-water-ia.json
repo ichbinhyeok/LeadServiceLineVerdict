@@ -1,0 +1,32 @@
+{
+  "utilityId" : "iowa-city-water-ia",
+  "utilitySlug" : "iowa-city-water-division",
+  "utilityName" : "Iowa City Water Division",
+  "aliases" : [ "Iowa City Water", "Iowa City Water Division" ],
+  "city" : "iowa-city",
+  "county" : "johnson",
+  "state" : "ia",
+  "serviceAreaName" : "City of Iowa City",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.icgov.org/government/departments-and-divisions/public-works/water",
+  "lookupUrl" : "https://www.icgov.org/government/departments-and-divisions/public-works/water",
+  "notificationUrl" : "https://www.icgov.org/home/showpublisheddocument/160/638974213462430000",
+  "programIds" : [ "iowa-city-cost-share-reimbursement" ],
+  "contactPhone" : "319-356-5160",
+  "contactEmail" : null,
+  "inventoryStatus" : "lead-reduction-faq-and-cost-share-guidance-published",
+  "inventorySummary" : "Iowa City says its lead reduction FAQ tells residents to flush stagnant water clean aerators and use cold water while they evaluate service line material, and homeowners who plan replacement need to tell contractors they are using the city's cost-share reimbursement program before work begins because the work still runs through an owner-managed contractor path.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "iowa city" ],
+  "resolverHints" : [ "downtown iowa city", "longfellow", "mann", "university heights" ],
+  "resolverPostalPrefixes" : [ "522" ],
+  "sourceRefs" : [ "src-iowa-city-inventory", "src-iowa-city-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

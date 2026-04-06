@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-grand-rapids-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Grand Rapids Water System",
+  "sourceUrl" : "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/notice-of-the-possibility-of-a-lead-water-service-line/",
+  "scopeType" : "utility",
+  "scopeKey" : "grand-rapids-water-mi",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Grand Rapids says annual notices go to properties that may have lead service lines and that lines are replaced at no cost only when a leak or city construction project makes the address eligible.",
+  "reviewerNote" : "Official Grand Rapids annual notice page reviewed manually for annual notice and eligibility language.",
+  "status" : "verified"
+}

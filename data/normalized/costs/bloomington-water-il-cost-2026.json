@@ -1,0 +1,19 @@
+{
+  "costId" : "bloomington-water-il-cost-2026",
+  "utilityId" : "bloomington-water-il",
+  "city" : "bloomington",
+  "state" : "il",
+  "publicSideBand" : "Public-side work is being funded through Bloomington's water capital program",
+  "privateSideBand" : "The city anticipates customer-side replacement costs beginning in 2027 will be covered by rate increases with no additional cost to the owner",
+  "fullReplacementBand" : "Full replacement is expected to be no additional cost under the current rate-funded plan but the city says final customer costs are not guaranteed",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Bloomington publishes a planned citywide funding approach rather than contractor bid ranges",
+  "permitAssumption" : "Final customer responsibility depends on available funds and the block-by-block project schedule",
+  "restorationAssumption" : "Restoration and final scope will follow the city-managed construction process",
+  "methodologySummary" : "Bloomington does not publish contractor bid ranges but it does publish a utility-specific rate-funded replacement plan where recent water rate increases are intended to cover block-by-block work beginning in 2027 while the city still keeps a caveat on final customer-side coverage.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when Bloomington keeps the address inside the scheduled rate-funded city replacement path and available funds hold rather than leaving the property on an owner-managed private replacement outside the block program.",
+  "sourceRefs" : [ "src-bloomington-il-cost", "src-bloomington-il-program", "src-bloomington-il-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

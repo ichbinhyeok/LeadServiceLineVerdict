@@ -1,0 +1,32 @@
+{
+  "utilityId" : "bloomington-water-il",
+  "utilitySlug" : "bloomington-water-department",
+  "utilityName" : "City of Bloomington Water Department",
+  "aliases" : [ "Bloomington Water", "City of Bloomington Water" ],
+  "city" : "bloomington",
+  "county" : "mclean",
+  "state" : "il",
+  "serviceAreaName" : "City of Bloomington",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.bloomingtonil.gov/departments/water/project-updates/water-service-line-inventory",
+  "lookupUrl" : "https://experience.arcgis.com/experience/a478f50b36b548dab7b3ae2dbeeba1d7/",
+  "notificationUrl" : "https://www.bloomingtonil.gov/departments/water/resident-community/lead-service-line-replacement-project",
+  "programIds" : [ "bloomington-il-lslr-project" ],
+  "contactPhone" : "309-434-2400",
+  "contactEmail" : "water@cityblm.org",
+  "inventoryStatus" : "inventory-and-block-replacement-project-published",
+  "inventorySummary" : "Bloomington says it is potholing properties to verify private-side material, publishes an interactive map and dashboard with lead GRR unknown and non-lead categories, and plans block-by-block replacement beginning in 2027 under a rate-funded path that still carries a city caveat on final customer-side coverage.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "bloomington" ],
+  "resolverHints" : [ "downtown bloomington", "south hill", "white oak" ],
+  "resolverPostalPrefixes" : [ "617" ],
+  "sourceRefs" : [ "src-bloomington-il-inventory", "src-bloomington-il-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

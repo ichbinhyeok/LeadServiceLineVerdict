@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-minneapolis-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Minneapolis Public Works",
+  "sourceUrl" : "https://www.minneapolismn.gov/resident-services/utility-services/water/water-quality/water-quality-lead/plumbing-faucets/lead-service-line-map/",
+  "scopeType" : "utility",
+  "scopeKey" : "minneapolis-water-mn",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Minneapolis tells customers that unknown means there is a valid address but the matching water service line record is not available and encourages further research requests when the map shows unknown.",
+  "reviewerNote" : "Official Minneapolis lead service line map guidance reviewed manually for unknown-record meaning and further research workflow.",
+  "status" : "verified"
+}

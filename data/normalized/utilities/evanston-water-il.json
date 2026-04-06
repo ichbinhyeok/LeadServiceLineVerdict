@@ -1,0 +1,32 @@
+{
+  "utilityId" : "evanston-water-il",
+  "utilitySlug" : "evanston-water-production-bureau",
+  "utilityName" : "City of Evanston Water Production Bureau",
+  "aliases" : [ "Evanston Water", "City of Evanston Water" ],
+  "city" : "evanston",
+  "county" : "cook",
+  "state" : "il",
+  "serviceAreaName" : "City of Evanston",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.evanstonleadreplacement.org/",
+  "lookupUrl" : "https://www.evanstonleadreplacement.org/",
+  "notificationUrl" : "https://www.evanstonleadreplacement.org/",
+  "programIds" : [ "evanston-homeowner-initiated-lslr" ],
+  "contactPhone" : "847-448-4311",
+  "contactEmail" : "water@cityofevanston.org",
+  "inventoryStatus" : "inventory-map-and-no-cost-replacement-projects-published",
+  "inventorySummary" : "Evanston says its public service line map identifies potentially affected properties, the city submitted a draft replacement plan in April 2025, no-additional-cost replacement is already active in project areas, and a separate homeowner-initiated path offers reimbursement plus waived permit fees.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "service_area_notes",
+  "resolverMunicipalities" : [ "evanston" ],
+  "resolverHints" : [ "downtown evanston", "fifth ward", "west village" ],
+  "resolverPostalPrefixes" : [ "602" ],
+  "sourceRefs" : [ "src-evanston-inventory", "src-evanston-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

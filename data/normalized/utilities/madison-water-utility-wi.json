@@ -1,0 +1,32 @@
+{
+  "utilityId" : "madison-water-utility-wi",
+  "utilitySlug" : "madison-water-utility",
+  "utilityName" : "Madison Water Utility",
+  "aliases" : [ "Madison Water", "Madison Water Utility" ],
+  "city" : "madison",
+  "county" : "dane",
+  "state" : "wi",
+  "serviceAreaName" : "City of Madison",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.cityofmadison.com/water/water-quality/lead-copper-in-water/lead-service-line-inventory",
+  "lookupUrl" : "https://www.cityofmadison.com/water/water-quality/lead-copper-in-water/lead-service-line-inventory",
+  "notificationUrl" : "https://www.cityofmadison.com/water/water-quality/lead-copper-in-water/lead-service-line-inventory",
+  "programIds" : [ "madison-rebate" ],
+  "contactPhone" : "608-266-4651",
+  "contactEmail" : "water@madisonwater.org",
+  "inventoryStatus" : "inventory-published-with-no-known-lead-lines",
+  "inventorySummary" : "Madison says all known lead services were removed years ago and as of November 4 2025 it has no known lead service lines, historic records can still contain minor inaccuracies, and property owners who discover private lead service may qualify for a rebate up to 3000 dollars rather than a citywide no-cost replacement path.",
+  "lineCounts" : {
+    "known" : 0,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "madison" ],
+  "resolverHints" : [ "near east side", "monroe street" ],
+  "resolverPostalPrefixes" : [ "537" ],
+  "sourceRefs" : [ "src-madison-inventory", "src-madison-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

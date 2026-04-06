@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-iowa-amwater-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Iowa American Water",
+  "sourceUrl" : "https://amwater.com/iaaw/water-quality/lead-and-drinking-water/index",
+  "scopeType" : "program",
+  "scopeKey" : "iowa-american-water-lslr-program",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Iowa American Water says it is replacing lead and galvanized service lines through an ongoing program, asks customers to use the map and self-report workflow to identify remaining lines, and reported about 1300 customer-owned line replacements by November 2024.",
+  "reviewerNote" : "Iowa American Water lead and drinking water page plus progress release reviewed manually for program details.",
+  "status" : "verified"
+}

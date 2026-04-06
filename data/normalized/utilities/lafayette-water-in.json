@@ -1,0 +1,32 @@
+{
+  "utilityId" : "lafayette-water-in",
+  "utilitySlug" : "lafayette-water-works",
+  "utilityName" : "City of Lafayette Water Works",
+  "aliases" : [ "Lafayette Water Works", "Lafayette Water" ],
+  "city" : "lafayette",
+  "county" : "tippecanoe",
+  "state" : "in",
+  "serviceAreaName" : "City of Lafayette",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://lafayette.in.gov/3615/Lead-Service-Line-Replacement-Program",
+  "lookupUrl" : "https://lafayette.in.gov/3615/Lead-Service-Line-Replacement-Program",
+  "notificationUrl" : "https://lafayette.in.gov/3615/Lead-Service-Line-Replacement-Program",
+  "programIds" : [ "lafayette-lslr-program" ],
+  "contactPhone" : "765-807-1700",
+  "contactEmail" : "smoore@lafayette.in.gov",
+  "inventoryStatus" : "project-areas-and-notice-letters-published",
+  "inventorySummary" : "Lafayette says about 3200 service lines are currently flagged as lead galvanized requiring replacement or unknown, letters went out in early November 2024, and the city publishes current project areas plus 45-day notice and right-of-entry steps online.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "lafayette" ],
+  "resolverHints" : [ "downtown lafayette", "st mary historic district", "centennial" ],
+  "resolverPostalPrefixes" : [ "479" ],
+  "sourceRefs" : [ "src-lafayette-inventory", "src-lafayette-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-st-joseph-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of St. Joseph Water and Sewer Department",
+  "sourceUrl" : "https://www.sjcity.com/cityengineer/page/lead-service-replacement-program",
+  "scopeType" : "program",
+  "scopeKey" : "st-joseph-lead-service-replacement",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "St. Joseph says the DSMI is used to determine the extent of replacements, the city is replacing lead services at a 5 percent annual rate, and free voluntary testing is offered to eligible addresses.",
+  "reviewerNote" : "Official St. Joseph program details reviewed manually.",
+  "status" : "verified"
+}

@@ -1,0 +1,19 @@
+{
+  "programId" : "bloomington-il-lslr-project",
+  "programSlug" : "bloomington-il-lslr-project",
+  "programName" : "Lead Service Line Replacement Project",
+  "geography" : "City of Bloomington",
+  "state" : "il",
+  "utilityIds" : [ "bloomington-water-il" ],
+  "subsidyType" : "block-by-block city replacement project with customer-side costs expected to be covered by water rate increases",
+  "publicSideCovered" : "yes the city is planning and funding public-side work through the water capital program",
+  "privateSideCovered" : "yes the city anticipates the customer-side replacement cost will be covered by rate increases though final costs are not guaranteed",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "properties with lead lines are prioritized through block-by-block construction areas and final customer responsibility depends on available project funds",
+  "contractorRules" : "city-managed construction program coordinates replacements and restoration",
+  "deadline" : null,
+  "applicationUrl" : "https://www.bloomingtonil.gov/departments/water/resident-community/lead-service-line-replacement-project",
+  "sourceRefs" : [ "src-bloomington-il-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-lafayette-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Lafayette Water Works",
+  "sourceUrl" : "https://lafayette.in.gov/3615/Lead-Service-Line-Replacement-Program",
+  "scopeType" : "cost",
+  "scopeKey" : "lafayette-water-cost-2026",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Lafayette says phase I replacement work is funded through grants and loans with no cost to customers in the active project areas, but the no-cost claim is tied to those scheduled areas rather than every address citywide.",
+  "reviewerNote" : "Official Lafayette cost coverage language reviewed manually with project-area caveat.",
+  "status" : "verified"
+}

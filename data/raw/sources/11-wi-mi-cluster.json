@@ -1,0 +1,93 @@
+[
+  {
+    "sourceId": "src-green-bay-inventory",
+    "sourceType": "utility_inventory",
+    "publisherName": "Green Bay Water Utility",
+    "sourceUrl": "https://www.gbwater.org/service-line-lookup-map",
+    "scopeType": "utility",
+    "scopeKey": "green-bay-water-wi",
+    "capturedAt": "2026-04-05T15:05:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Green Bay Water says residents can use its service line lookup map to view utility-side and customer-side records, including lead GRR unknown and non-lead labels, and can schedule inspections or submit documentation if more information is needed.",
+    "reviewerNote": "Official Green Bay service line map page reviewed manually for map labels and inspection workflow.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-green-bay-notification",
+    "sourceType": "utility_notice",
+    "publisherName": "Green Bay Water Utility",
+    "sourceUrl": "https://www.gbwater.org/service-line-lookup-map",
+    "scopeType": "utility",
+    "scopeKey": "green-bay-water-wi",
+    "capturedAt": "2026-04-05T15:05:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Green Bay Water explains what customer-side and utility-side lead GRR unknown and non-lead labels mean, directs residents with lead or GRR lines to municipal replacement contacts, and keeps owners of unknown lines on inspection or documentation follow-up.",
+    "reviewerNote": "Official Green Bay label and notice language reviewed manually for GRR guidance and unknown-line follow-up.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-green-bay-program",
+    "sourceType": "utility_program",
+    "publisherName": "Green Bay Water Utility",
+    "sourceUrl": "https://www.gbwater.org/service-line-lookup-map",
+    "scopeType": "program",
+    "scopeKey": "green-bay-grr-replacement",
+    "capturedAt": "2026-04-05T15:05:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Green Bay Water says it is actively replacing galvanized lines requiring replacement through a DWSRF-financed project and that properties flagged as lead or GRR may qualify for limited-time municipal programs at reduced or no cost.",
+    "reviewerNote": "Official Green Bay replacement project page reviewed manually for GRR replacement and limited-time program language.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-grand-rapids-inventory",
+    "sourceType": "utility_inventory",
+    "publisherName": "City of Grand Rapids Water System",
+    "sourceUrl": "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-prevention-tips/lead-water-service-line-map/",
+    "scopeType": "utility",
+    "scopeKey": "grand-rapids-water-mi",
+    "capturedAt": "2026-04-05T12:25:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Grand Rapids says residents can search the city's lead water service line map and that properties built before 1950 without confirming records are assumed to have lead service lines until a record or inspection proves otherwise.",
+    "reviewerNote": "Official Grand Rapids map page reviewed manually for assumed-lead map rules.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-grand-rapids-notification",
+    "sourceType": "utility_notice",
+    "publisherName": "City of Grand Rapids Water System",
+    "sourceUrl": "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/notice-of-the-possibility-of-a-lead-water-service-line/",
+    "scopeType": "utility",
+    "scopeKey": "grand-rapids-water-mi",
+    "capturedAt": "2026-04-05T12:25:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Grand Rapids says annual notices go to properties that may have lead service lines and that lines are replaced at no cost only when a leak or city construction project makes the address eligible.",
+    "reviewerNote": "Official Grand Rapids annual notice page reviewed manually for annual notice and eligibility language.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-grand-rapids-program",
+    "sourceType": "utility_program",
+    "publisherName": "City of Grand Rapids Water System",
+    "sourceUrl": "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-line-replacement-program/",
+    "scopeType": "program",
+    "scopeKey": "grand-rapids-lslr-program",
+    "capturedAt": "2026-04-05T12:25:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Grand Rapids says the city replaces lead service lines at no cost when there is a leak or the home is within a city construction project and otherwise uses a voluntary ten-pay option for owners who want earlier replacement.",
+    "reviewerNote": "Official Grand Rapids replacement program page reviewed manually for no-cost eligibility and ten-pay option.",
+    "status": "verified"
+  },
+  {
+    "sourceId": "src-grand-rapids-cost",
+    "sourceType": "utility_cost",
+    "publisherName": "City of Grand Rapids Water System",
+    "sourceUrl": "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-line-replacement-program/",
+    "scopeType": "cost",
+    "scopeKey": "grand-rapids-water-cost-2026",
+    "capturedAt": "2026-04-05T12:25:00+09:00",
+    "effectiveDate": "2026-04-05",
+    "claimSummary": "Grand Rapids says qualifying leak and city construction replacements are no cost to the owner while voluntary early replacements require the owner to cover the private side through a Water Service Agreement and ten-pay financing path.",
+    "reviewerNote": "Official Grand Rapids cost responsibility language reviewed manually.",
+    "status": "verified"
+  }
+]

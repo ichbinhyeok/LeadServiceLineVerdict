@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-speedway-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Town of Speedway Water Works",
+  "sourceUrl" : "https://www.speedwayin.gov/water-works/lead-service-line-inventory-project",
+  "scopeType" : "utility",
+  "scopeKey" : "speedway-water-in",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Speedway says it mails letters to customers with lead or unknown service lines and uses homeowner surveys plus follow-up investigation to reduce unknown records instead of promising blanket immediate replacement.",
+  "reviewerNote" : "Official Speedway public communication guidance reviewed manually for letters, surveys, and unknown-line reduction steps.",
+  "status" : "verified"
+}

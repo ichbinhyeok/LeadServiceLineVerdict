@@ -1,0 +1,32 @@
+{
+  "utilityId" : "greater-cincinnati-water-works-oh",
+  "utilitySlug" : "greater-cincinnati-water-works",
+  "utilityName" : "Greater Cincinnati Water Works",
+  "aliases" : [ "GCWW", "Greater Cincinnati Water Works" ],
+  "city" : "cincinnati",
+  "county" : "hamilton",
+  "state" : "oh",
+  "serviceAreaName" : "Greater Cincinnati Water Works service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://la.mygcww.org/",
+  "lookupUrl" : "https://la.mygcww.org/",
+  "notificationUrl" : "https://la.mygcww.org/",
+  "programIds" : [ "gcww-full-replacement" ],
+  "contactPhone" : "513-651-5323",
+  "contactEmail" : "lead@GCWW.Cincinnati-OH.gov",
+  "inventoryStatus" : "lead-map-and-no-cost-program-published",
+  "inventorySummary" : "GCWW says its lead map supports property lookup, the utility pays 100 percent of replacement costs for participating properties, and work is scheduled for child care facilities water main projects individual leaking or high-lead cases and targeted areas using a prioritization model.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "cincinnati", "norwood" ],
+  "resolverHints" : [ "mt auburn", "westwood", "northside" ],
+  "resolverPostalPrefixes" : [ "452" ],
+  "sourceRefs" : [ "src-gcww-inventory", "src-gcww-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-iowa-city-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "Iowa City Water Division",
+  "sourceUrl" : "https://www.icgov.org/home/showpublisheddocument/160/638974213462430000",
+  "scopeType" : "cost",
+  "scopeKey" : "iowa-city-water-cost-2026",
+  "capturedAt" : "2026-04-04T23:58:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Iowa City says service line repairs generally cost thousands of dollars and can reach tens of thousands depending on site conditions, with reimbursement available in eligible owner-managed cases.",
+  "reviewerNote" : "Official Iowa City lead FAQ reviewed manually for cost language.",
+  "status" : "verified"
+}

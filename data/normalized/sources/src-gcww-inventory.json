@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-gcww-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Greater Cincinnati Water Works",
+  "sourceUrl" : "https://la.mygcww.org/",
+  "scopeType" : "utility",
+  "scopeKey" : "greater-cincinnati-water-works-oh",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "GCWW's lead site links to a lead map for property lookup and says some service lines on private property still contain lead.",
+  "reviewerNote" : "Official GCWW lead site reviewed manually for property lookup and private-side lead wording.",
+  "status" : "verified"
+}

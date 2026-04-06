@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dc-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "DC Water",
+  "sourceUrl" : "https://www.dcwater.com/resources/lead-free-dc/lead-free-dc-understanding-cost",
+  "scopeType" : "cost",
+  "scopeKey" : "dc-water-cost-2026",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "DC Water's FY 2024 cost page lists an estimated $21000 full replacement cost and $7200 private-side-only replacement cost and says the full estimate includes permitting traffic control paving and private-property restoration.",
+  "reviewerNote" : "Official cost methodology page reviewed manually.",
+  "status" : "verified"
+}

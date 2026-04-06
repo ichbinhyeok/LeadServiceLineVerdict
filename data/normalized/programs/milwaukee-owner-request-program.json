@@ -1,0 +1,19 @@
+{
+  "programId" : "milwaukee-owner-request-program",
+  "programSlug" : "milwaukee-owner-request-program",
+  "programName" : "Lead Service Line Replacement Owner Request Program",
+  "geography" : "City of Milwaukee",
+  "state" : "wi",
+  "utilityIds" : [ "milwaukee-water-works-wi" ],
+  "subsidyType" : "owner request pathway with city payment on the public side and owner payment rules on the private side",
+  "publicSideCovered" : "yes Milwaukee Water Works pays the public side",
+  "privateSideCovered" : "yes owner pays the lesser of actual private-side cost or the annual average",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "only owners of 1-4 unit residential properties with no commercial use are eligible",
+  "contractorRules" : "city selects approved properties each year and handles scheduling",
+  "deadline" : null,
+  "applicationUrl" : "https://city.milwaukee.gov/water/WaterQuality/LeadandWater/LSLR-Owner-Request",
+  "sourceRefs" : [ "src-milwaukee-owner-request" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

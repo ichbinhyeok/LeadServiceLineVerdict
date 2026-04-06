@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-philadelphia-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Philadelphia Water Department",
+  "sourceUrl" : "https://water.phila.gov/service-line-map",
+  "scopeType" : "utility",
+  "scopeKey" : "philadelphia-water-department-pa",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Philadelphia Water Department says its service line map categorizes properties as lead non-lead galvanized metal incomplete records or mixed based on available records and verification points.",
+  "reviewerNote" : "Official Philadelphia service line map page reviewed manually for current map categories and inventory wording.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-denver-reimbursement",
+  "sourceType" : "utility_program",
+  "publisherName" : "Denver Water",
+  "sourceUrl" : "https://www.denverwater.org/your-water/water-quality/lead/lead-service-line-reimbursement",
+  "scopeType" : "program",
+  "scopeKey" : "denver-water-reimbursement",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Denver Water says approved off-schedule replacements can receive a one-time $3800 reimbursement if the property is not on the current or next-year schedule and the owner uses the separate reimbursement workflow.",
+  "reviewerNote" : "Official reimbursement page reviewed manually for off-schedule eligibility and reimbursement cap.",
+  "status" : "verified"
+}

@@ -1,0 +1,19 @@
+{
+  "costId" : "jackson-water-cost-2026",
+  "utilityId" : "jackson-water-mi",
+  "city" : "jackson",
+  "state" : "mi",
+  "publicSideBand" : "The city coordinates public-side work at no direct cost through DWSRF-funded projects city crews and street reconstruction",
+  "privateSideBand" : "Eligible homeowners can have private-side lead service lines replaced at no cost under the current Jackson program",
+  "fullReplacementBand" : "Full replacement is described as no cost to the homeowner when the city schedules or approves the work",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Jackson publishes no-cost replacement language and funding sources rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on city sign-up approval or replacement scheduling in the resident's area",
+  "restorationAssumption" : "The city and its contractors handle restoration and final connections after replacement",
+  "methodologySummary" : "Jackson ties the cost page to a city-run replacement program funded through DWSRF loans local revenue and grants with early sign-up and scheduled neighborhood work instead of a market-price estimate.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when Jackson approves the address for the current no-cost program or schedules the work in the property's area after letters calls emails and door notices.",
+  "sourceRefs" : [ "src-jackson-cost", "src-jackson-program", "src-jackson-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

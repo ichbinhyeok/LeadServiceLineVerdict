@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mesa-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Mesa Water Resources",
+  "sourceUrl" : "https://www.mesaaz.gov/Utilities/Water-Wastewater/Water-Quality/Lead-and-Copper",
+  "scopeType" : "utility",
+  "scopeKey" : "mesa-water-az",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Mesa says its lead service line inventory map is public and that there are no lead containing service lines connecting city mains to customer meters.",
+  "reviewerNote" : "Official Mesa lead and copper page reviewed manually for public map and no-public-lead language.",
+  "status" : "verified"
+}

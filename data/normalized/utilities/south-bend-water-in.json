@@ -1,0 +1,32 @@
+{
+  "utilityId" : "south-bend-water-in",
+  "utilitySlug" : "south-bend-water-works",
+  "utilityName" : "City of South Bend Water Works",
+  "aliases" : [ "South Bend Water Works", "South Bend Municipal Utilities" ],
+  "city" : "south-bend",
+  "county" : "st-joseph",
+  "state" : "in",
+  "serviceAreaName" : "City of South Bend",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://southbendin.gov/department/public-works/utilities-division/water-works/",
+  "lookupUrl" : "https://southbendin.gov/department/public-works/utilities-division/water-works/",
+  "notificationUrl" : "https://southbendin.gov/work/city-asks-customers-to-complete-survey-on-water-service-line-material/",
+  "programIds" : [ ],
+  "contactPhone" : "574-235-5994",
+  "contactEmail" : "waterquality@southbendin.gov",
+  "inventoryStatus" : "service-line-map-and-survey-published",
+  "inventorySummary" : "South Bend Water Works says more than 34000 customers were asked to complete the city service line survey, the inventory map should be used to check address status, 311 or water quality staff can coordinate free lead testing, and the city still treats private-side verification as a prerequisite before it overstates replacement timing.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "south bend", "south-bend" ],
+  "resolverHints" : [ "downtown south bend", "river park", "near northwest" ],
+  "resolverPostalPrefixes" : [ "466" ],
+  "sourceRefs" : [ "src-south-bend-inventory", "src-south-bend-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

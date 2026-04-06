@@ -1,0 +1,32 @@
+{
+  "utilityId" : "ames-water-ia",
+  "utilitySlug" : "ames-water-pollution-control",
+  "utilityName" : "City of Ames Water & Pollution Control",
+  "aliases" : [ "Ames Water", "City of Ames Water and Pollution Control" ],
+  "city" : "ames",
+  "county" : "story",
+  "state" : "ia",
+  "serviceAreaName" : "City of Ames",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.cityofames.org/My-Government/Departments/Water-Pollution-Control/Water-Treatment-Plant/Lead-in-Drinking-Water",
+  "lookupUrl" : "https://www.cityofames.org/My-Government/Departments/Water-Pollution-Control/Water-Treatment-Plant/Lead-in-Drinking-Water",
+  "notificationUrl" : "https://www.cityofames.org/files/assets/city/v/1/water-and-pollution-control/documents/lead_service_line_notice-2024.pdf",
+  "programIds" : [ ],
+  "contactPhone" : "515-239-5150",
+  "contactEmail" : "calvin.forte@cityofames.org",
+  "inventoryStatus" : "inventory-page-map-and-2024-notice-published",
+  "inventorySummary" : "Ames publishes a lead inventory page map and inventory PDF, uses a formal 2024 notice for interim guidance, and explains that the homeowner owns the service line to the meter except when replacement is coordinated through a city water-main project or related city work rather than a standing no-cost program.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "ames" ],
+  "resolverHints" : [ "campustown", "north grand", "somerset", "south campus" ],
+  "resolverPostalPrefixes" : [ "500" ],
+  "sourceRefs" : [ "src-ames-inventory", "src-ames-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

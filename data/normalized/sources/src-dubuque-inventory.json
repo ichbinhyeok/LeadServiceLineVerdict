@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dubuque-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Dubuque Water Department",
+  "sourceUrl" : "https://cityofdubuque.org/3165/Lead-Service-Line-Replacement-Pilot-Prog",
+  "scopeType" : "utility",
+  "scopeKey" : "dubuque-water-ia",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Dubuque says its pilot-program page links to an online water service line inventory map, a spreadsheet, and a reporter form for customers to verify unknown service material while the city prepares to replace about 585 private lead service lines in three phases.",
+  "reviewerNote" : "Official City of Dubuque pilot page reviewed manually for map, reporter-form, and pilot-scope details.",
+  "status" : "verified"
+}

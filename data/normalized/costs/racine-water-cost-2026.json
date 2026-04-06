@@ -1,0 +1,19 @@
+{
+  "costId" : "racine-water-cost-2026",
+  "utilityId" : "racine-water-wi",
+  "city" : "racine",
+  "state" : "wi",
+  "publicSideBand" : "The city covers utility-owned work at no direct charge as part of the five-year replacement program",
+  "privateSideBand" : "Most invited homeowners can have lead service lines replaced free of charge through the current Racine program",
+  "fullReplacementBand" : "Full replacement is described as free of charge for most invited cases under the annual program",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Racine publishes program-funded replacement language rather than contractor bid amounts",
+  "permitAssumption" : "Eligibility depends on dashboard records annual notices and city invitation rules",
+  "restorationAssumption" : "The city and contractors manage restoration through the replacement program",
+  "methodologySummary" : "Racine ties cost to annual invitation-based replacement batches inside its multi-year city program rather than to an open homeowner quote model and says most invited homes can be completed for free.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when Racine identifies the address through its records and invitation workflow and moves the property into the current city-managed replacement batch.",
+  "sourceRefs" : [ "src-racine-cost", "src-racine-program", "src-racine-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

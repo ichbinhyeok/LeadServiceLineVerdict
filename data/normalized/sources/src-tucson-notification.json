@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-tucson-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Tucson Water",
+  "sourceUrl" : "https://www.tucsonaz.gov/Departments/Water/Water-Quality/lead-free",
+  "scopeType" : "utility",
+  "scopeKey" : "tucson-water-az",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Tucson Water says annual notices explain unknown and galvanized statuses, those notices do not by themselves mean a line contains lead, and the utility will reach out if additional steps or replacement are needed.",
+  "reviewerNote" : "Official Tucson notification guidance reviewed manually for annual notice and no-immediate-action language.",
+  "status" : "verified"
+}

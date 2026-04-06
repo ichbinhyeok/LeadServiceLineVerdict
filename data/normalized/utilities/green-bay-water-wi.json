@@ -1,0 +1,32 @@
+{
+  "utilityId" : "green-bay-water-wi",
+  "utilitySlug" : "green-bay-water-utility",
+  "utilityName" : "Green Bay Water Utility",
+  "aliases" : [ "Green Bay Water", "GBW" ],
+  "city" : "green-bay",
+  "county" : "brown",
+  "state" : "wi",
+  "serviceAreaName" : "City of Green Bay",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.gbwater.org/service-line-lookup-map",
+  "lookupUrl" : "https://greenbay.maps.arcgis.com/apps/webappviewer/index.html?id=0b09eb806416406eb25b4c1a8b8a5319",
+  "notificationUrl" : "https://www.gbwater.org/service-line-lookup-map",
+  "programIds" : [ "green-bay-grr-replacement" ],
+  "contactPhone" : "920-448-3480",
+  "contactEmail" : "justin.hewitt@greenbaywi.gov",
+  "inventoryStatus" : "service-line-lookup-and-replacement-guidance-published",
+  "inventorySummary" : "Green Bay Water says its lookup map distinguishes customer-side and utility-side lead GRR unknown and non-lead records, owners of unknown lines stay on inspection or documentation follow-up, and addresses flagged as lead or GRR are routed into limited-time municipal replacement contacts rather than a blanket citywide free-replacement promise.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "green bay", "green-bay" ],
+  "resolverHints" : [ "downtown green bay", "astor", "near west side" ],
+  "resolverPostalPrefixes" : [ "543" ],
+  "sourceRefs" : [ "src-green-bay-inventory", "src-green-bay-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

@@ -1,0 +1,19 @@
+{
+  "costId" : "flint-water-cost-2026",
+  "utilityId" : "flint-water-mi",
+  "city" : "flint",
+  "state" : "mi",
+  "publicSideBand" : "The city manages public-side work at no direct cost through the Flint replacement program and infrastructure projects",
+  "privateSideBand" : "Residential non-copper and lead service lines are replaced at no cost to the resident under the current program",
+  "fullReplacementBand" : "Full replacement is described as no cost to residents through the current Flint program",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Flint publishes no-cost program language and project progress rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on consent form submission and scheduling through the city replacement program",
+  "restorationAssumption" : "The city provides restoration flushing instructions and filter guidance after the work",
+  "methodologySummary" : "Flint anchors the cost route in its citywide no-cost replacement program and published progress updates rather than in homeowner bids and keeps the workflow tied to consent forms inspections and scheduled crews.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when Flint receives the consent form or opt-in request and moves the property into the remaining inspection and replacement workflow for lead or galvanized lines.",
+  "sourceRefs" : [ "src-flint-cost", "src-flint-program", "src-flint-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

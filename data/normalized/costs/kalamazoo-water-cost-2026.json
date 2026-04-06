@@ -1,0 +1,19 @@
+{
+  "costId" : "kalamazoo-water-cost-2026",
+  "utilityId" : "kalamazoo-water-mi",
+  "city" : "kalamazoo",
+  "state" : "mi",
+  "publicSideBand" : "The city funds public-side replacement work at no direct cost through its utility program",
+  "privateSideBand" : "Qualifying lead service line replacements are provided at no direct charge to the customer",
+  "fullReplacementBand" : "Full replacement is described as no direct cost to the customer under the current city program",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Kalamazoo publishes program funding and free testing language rather than contractor bid amounts",
+  "permitAssumption" : "Eligibility depends on the utility lookup tool and active replacement scheduling",
+  "restorationAssumption" : "City contractors and utility staff handle restoration and post-replacement testing",
+  "methodologySummary" : "Kalamazoo grounds its cost language in a city replacement program funded by utility rates state revolving fund support and foundation backing rather than in a resident-paid contractor estimate.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when the lookup and city scheduling process confirms the service line for the current replacement workflow instead of leaving the property in testing-only interim support.",
+  "sourceRefs" : [ "src-kalamazoo-cost", "src-kalamazoo-program", "src-kalamazoo-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

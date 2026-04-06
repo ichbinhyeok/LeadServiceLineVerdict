@@ -1,0 +1,19 @@
+{
+  "programId" : "philadelphia-service-line-verification",
+  "programSlug" : "philadelphia-service-line-verification",
+  "programName" : "Service Line Verification Program",
+  "geography" : "Philadelphia",
+  "state" : "pa",
+  "utilityIds" : [ "philadelphia-water-department-pa" ],
+  "subsidyType" : "free temporary verification program with free replacement if lead or galvanized is found",
+  "publicSideCovered" : "no separate public-side utility share because the line is customer-owned in Philadelphia",
+  "privateSideCovered" : "yes for selected properties if lead or galvanized is found",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "several hundred selected properties were invited and only invited owners can participate",
+  "contractorRules" : "PWD crews verify material and arrange replacement if needed",
+  "deadline" : null,
+  "applicationUrl" : "https://water.phila.gov/service-line/verification/",
+  "sourceRefs" : [ "src-philadelphia-verification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

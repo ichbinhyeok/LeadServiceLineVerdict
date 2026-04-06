@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mo-amwater-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Missouri American Water",
+  "sourceUrl" : "https://www.amwater.com/moaw/water-quality/lead-and-drinking-water/our-approach",
+  "scopeType" : "utility",
+  "scopeKey" : "missouri-american-water-mo",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Missouri American Water says it has company-side records, customers can use a service line material map, and unknown lines can be self-reported or inspected.",
+  "reviewerNote" : "Official Missouri American Water approach page reviewed manually.",
+  "status" : "verified"
+}

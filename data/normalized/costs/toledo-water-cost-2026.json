@@ -1,0 +1,19 @@
+{
+  "costId" : "toledo-water-cost-2026",
+  "utilityId" : "toledo-water-oh",
+  "city" : "toledo",
+  "state" : "oh",
+  "publicSideBand" : "The city replaces the city side at no direct charge to the property owner",
+  "privateSideBand" : "The city replaces identified customer-side lead service lines at no direct charge to the property owner",
+  "fullReplacementBand" : "There is no direct charge to the property owner for replacement under the current Toledo program",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Toledo publishes no-cost full replacement language rather than a contractor bid range",
+  "permitAssumption" : "The city schedules work through its lead line replacement program and advance notice letters",
+  "restorationAssumption" : "Contractors handle excavation and restoration as part of the replacement process",
+  "methodologySummary" : "Toledo anchors the cost page in a city-run replacement program funded through grants ARPA and state support with 45-day advance replacement letters rather than a homeowner quote model.",
+  "ownerTriggerSummary" : "Owners avoid direct cost when Toledo identifies a lead line in the current program and moves the property through the city's scheduled replacement workflow instead of a separate owner-managed project.",
+  "sourceRefs" : [ "src-toledo-cost", "src-toledo-program", "src-toledo-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

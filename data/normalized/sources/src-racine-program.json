@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-racine-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Racine Water Utility",
+  "sourceUrl" : "https://www.cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Water/Lead_Service_Line_Replacement/FAQ/FAQs.pdf",
+  "scopeType" : "program",
+  "scopeKey" : "racine-private-lead-service-line-replacement",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Racine says it is running a multi-year private lead service line replacement program and that invited homes can have lead services replaced at no cost in annual city-managed batches.",
+  "reviewerNote" : "Official Racine FAQ reviewed manually for program language.",
+  "status" : "verified"
+}

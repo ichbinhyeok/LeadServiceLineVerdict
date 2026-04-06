@@ -1,0 +1,32 @@
+{
+  "utilityId" : "monroe-water-mi",
+  "utilitySlug" : "monroe-water-wastewater",
+  "utilityName" : "City of Monroe Water and Wastewater Department",
+  "aliases" : [ "Monroe Water", "Monroe Water Department" ],
+  "city" : "monroe",
+  "county" : "monroe",
+  "state" : "mi",
+  "serviceAreaName" : "City of Monroe",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.monroemi.gov/c_i_t_y_h_a_l_l/departments/water__wastewater/lead_service",
+  "lookupUrl" : "https://www.monroemi.gov/c_i_t_y_h_a_l_l/departments/water__wastewater/lead_service",
+  "notificationUrl" : "https://www.monroemi.gov/c_i_t_y_h_a_l_l/departments/water__wastewater/lead_service",
+  "programIds" : [ ],
+  "contactPhone" : "734-384-9150",
+  "contactEmail" : "barry.laroy@monroemi.gov",
+  "inventoryStatus" : "lead-service-counts-and-replacement-application-published",
+  "inventorySummary" : "Monroe says approximately 1315 of 15251 customers have full or partial lead service lines requiring field verification. The city continues annual replacement work through construction and maintenance projects and publishes both a replacement application and priority areas online.",
+  "lineCounts" : {
+    "known" : 1315,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "contact_only",
+  "resolverMunicipalities" : [ "monroe" ],
+  "resolverHints" : [ "downtown monroe", "river raisin" ],
+  "resolverPostalPrefixes" : [ "481" ],
+  "sourceRefs" : [ "src-monroe-inventory", "src-monroe-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-akron-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Akron Water Supply Bureau",
+  "sourceUrl" : "https://www.akronohio.gov/ServiceLineInventory",
+  "scopeType" : "utility",
+  "scopeKey" : "akron-water-oh",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Akron says its service line inventory can be viewed online, there are no homeowner-owned private lead service lines in Akron, and galvanized private lines may still need removal in limited cases.",
+  "reviewerNote" : "Official Akron service line inventory page reviewed manually for inventory and private-side lead status.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-denver-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Denver Water",
+  "sourceUrl" : "https://www.denverwater.org/your-water/water-quality/lead",
+  "scopeType" : "utility",
+  "scopeKey" : "denver-water-co",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Denver Water says its address map can show whether a home is one of the estimated 60000 to 64000 homes with a possible lead service line and publishes a longer replacement outlook from 2026 to 2031.",
+  "reviewerNote" : "Official utility inventory page reviewed manually for address-map and longer construction outlook language.",
+  "status" : "verified"
+}

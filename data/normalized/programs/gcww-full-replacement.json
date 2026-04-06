@@ -1,0 +1,19 @@
+{
+  "programId" : "gcww-full-replacement",
+  "programSlug" : "gcww-full-replacement",
+  "programName" : "GCWW Lead Service Line Replacement Program",
+  "geography" : "Greater Cincinnati Water Works service area",
+  "state" : "oh",
+  "utilityIds" : [ "greater-cincinnati-water-works-oh" ],
+  "subsidyType" : "100 percent of replacement costs for participating properties",
+  "publicSideCovered" : "yes full program coverage",
+  "privateSideCovered" : "yes full program coverage",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "participation depends on GCWW program triggers and targeted areas",
+  "contractorRules" : "GCWW coordinates contractors and restoration",
+  "deadline" : null,
+  "applicationUrl" : "https://la.mygcww.org/",
+  "sourceRefs" : [ "src-gcww-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

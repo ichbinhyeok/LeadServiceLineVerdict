@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-detroit-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Detroit Water and Sewerage Department",
+  "sourceUrl" : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-projects/making-detroit-lead-safe/lead-service-line-replacement-program",
+  "scopeType" : "utility",
+  "scopeKey" : "detroit-water-mi",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Detroit says June 30 2025 notices covered 123387 service lines, updated verification plus predictive modeling still estimate more than 80000 lead service lines citywide, and the replacement page remains the address-level source of record.",
+  "reviewerNote" : "Official Detroit lead service line replacement program page reviewed manually for notice scale and modeled inventory language.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-milwaukee-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Milwaukee Water Works",
+  "sourceUrl" : "https://city.milwaukee.gov/leadpipes",
+  "scopeType" : "utility",
+  "scopeKey" : "milwaukee-water-works-wi",
+  "capturedAt" : "2026-04-05T10:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Milwaukee's lead pipes guidance says property owners receive notice before planned replacement work and explains when private-side costs are city-funded versus owner cost-sharing.",
+  "reviewerNote" : "Official city lead pipes FAQ page reviewed manually.",
+  "status" : "verified"
+}

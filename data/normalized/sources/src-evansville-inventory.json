@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-evansville-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Evansville Water and Sewer Utility",
+  "sourceUrl" : "https://ewsu.com/water-sewer/water-resource-recovery/lead-safety/",
+  "scopeType" : "utility",
+  "scopeKey" : "evansville-water-in",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "EWSU says its service line inventory remains public through IDEM and that field verification continues while unknown service line records are refined.",
+  "reviewerNote" : "Official EWSU lead safety page reviewed manually for IDEM inventory access and field-verification language.",
+  "status" : "verified"
+}

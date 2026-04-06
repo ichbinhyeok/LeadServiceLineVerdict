@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-minneapolis-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Minneapolis Public Works",
+  "sourceUrl" : "https://www.minneapolismn.gov/resident-services/utility-services/water/water-quality/water-quality-lead/plumbing-faucets/lead-service-line-map/",
+  "scopeType" : "utility",
+  "scopeKey" : "minneapolis-water-mn",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Minneapolis says its lead service line map is updated daily, customers can search an address, and the map uses lead non-lead and unknown symbols.",
+  "reviewerNote" : "Official Minneapolis lead service line map page reviewed manually for daily map updates and symbol guidance.",
+  "status" : "verified"
+}

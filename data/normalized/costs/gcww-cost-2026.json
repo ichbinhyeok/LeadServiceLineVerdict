@@ -1,0 +1,19 @@
+{
+  "costId" : "gcww-cost-2026",
+  "utilityId" : "greater-cincinnati-water-works-oh",
+  "city" : "cincinnati",
+  "state" : "oh",
+  "publicSideBand" : "GCWW says it pays 100 percent of replacement costs with participation in the program",
+  "privateSideBand" : "GCWW says it pays 100 percent of replacement costs with participation in the program",
+  "fullReplacementBand" : "GCWW says it pays 100 percent of all replacement costs for participating properties",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "GCWW program language states full coverage rather than a bid range",
+  "permitAssumption" : "Participation depends on GCWW program triggers and property eligibility",
+  "restorationAssumption" : "GCWW states restoration work is completed after replacement",
+  "methodologySummary" : "GCWW does not publish a local bid range; it publishes a utility-run program where replacement and restoration costs are carried by GCWW for properties that enter the official participation workflow.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when the address enters one of GCWW's replacement triggers such as child care facilities leaks water-main work elevated lead results or targeted-area prioritization.",
+  "sourceRefs" : [ "src-gcww-program", "src-gcww-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

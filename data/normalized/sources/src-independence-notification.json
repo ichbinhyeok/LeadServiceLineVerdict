@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-independence-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Independence Water Department",
+  "sourceUrl" : "https://www.independencemo.gov/lead-and-copper-rule",
+  "scopeType" : "utility",
+  "scopeKey" : "independence-water-mo",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Independence says customers with galvanized requiring replacement or unknown lines receive written notices and can request staff help to identify service line materials instead of relying on a full interactive lookup.",
+  "reviewerNote" : "City of Independence lead and copper rule page reviewed manually for written notice and staff-help guidance.",
+  "status" : "verified"
+}

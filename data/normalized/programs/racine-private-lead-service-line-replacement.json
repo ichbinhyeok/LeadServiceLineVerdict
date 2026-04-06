@@ -1,0 +1,19 @@
+{
+  "programId" : "racine-private-lead-service-line-replacement",
+  "programSlug" : "racine-private-lead-service-line-replacement",
+  "programName" : "Private Lead Service Line Replacement Program",
+  "geography" : "City of Racine",
+  "state" : "wi",
+  "utilityIds" : [ "racine-water-wi" ],
+  "subsidyType" : "five-year city lead service line replacement program funded on an annual basis",
+  "publicSideCovered" : "yes utility-owned portions are replaced as part of the city program",
+  "privateSideCovered" : "yes most invited homeowners can have their lead service lines replaced for free",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "properties identified through annual notices or city replacement outreach are eligible for invitations",
+  "contractorRules" : "city crews and contractors coordinate the replacement work and restoration",
+  "deadline" : null,
+  "applicationUrl" : "https://www.cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Water/Lead_Service_Line_Replacement/FAQ/FAQs.pdf",
+  "sourceRefs" : [ "src-racine-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-tucson-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "Tucson Water",
+  "sourceUrl" : "https://www.tucsonaz.gov/Departments/Water/Water-Quality/lead-free",
+  "scopeType" : "cost",
+  "scopeKey" : "tucson-water-cost-2026",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Tucson Water says confirmed service line replacements are completed at no cost to the customer once inspection determines replacement is required.",
+  "reviewerNote" : "Official Tucson replacement cost language reviewed manually for no-cost confirmed replacement language.",
+  "status" : "verified"
+}

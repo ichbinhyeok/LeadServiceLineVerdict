@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-saint-paul-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Saint Paul Regional Water Services",
+  "sourceUrl" : "https://www.stpaul.gov/departments/saint-paul-regional-water-services/customer-resources/lead-free-sprws",
+  "scopeType" : "utility",
+  "scopeKey" : "saint-paul-regional-water-services-mn",
+  "capturedAt" : "2026-04-05T09:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "SPRWS says customers should search the service line material map, and that eligible property owners can submit an intent form and will be contacted directly when no-cost replacement is scheduled in their area.",
+  "reviewerNote" : "Official Lead Free SPRWS page reviewed manually.",
+  "status" : "verified"
+}

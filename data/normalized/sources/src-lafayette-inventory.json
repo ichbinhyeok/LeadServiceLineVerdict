@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-lafayette-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Lafayette Water Works",
+  "sourceUrl" : "https://lafayette.in.gov/3615/Lead-Service-Line-Replacement-Program",
+  "scopeType" : "utility",
+  "scopeKey" : "lafayette-water-in",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Lafayette says about 3200 service lines are currently flagged as lead galvanized requiring replacement or unknown and publishes an online database showing address details for current project areas.",
+  "reviewerNote" : "Official Lafayette replacement program page reviewed manually for utility inventory and project-area details.",
+  "status" : "verified"
+}

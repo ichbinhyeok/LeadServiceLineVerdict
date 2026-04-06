@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dearborn-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Dearborn Water and Sewerage Division",
+  "sourceUrl" : "https://experience.arcgis.com/experience/f40b94e58e4a47fcbb89b3e69c64ec6d",
+  "scopeType" : "utility",
+  "scopeKey" : "dearborn-water-mi",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Dearborn provides a lead service line information map for residents and routes households to the city's service line survey and information resources.",
+  "reviewerNote" : "Dearborn lead service line information experience reviewed manually for map and survey workflow.",
+  "status" : "verified"
+}

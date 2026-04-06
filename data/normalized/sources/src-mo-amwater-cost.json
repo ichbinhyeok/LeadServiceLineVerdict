@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mo-amwater-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "Missouri American Water",
+  "sourceUrl" : "https://www.amwater.com/moaw/water-quality/lead-and-drinking-water/lead-service-faqs",
+  "scopeType" : "cost",
+  "scopeKey" : "missouri-american-water-cost-2026",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Missouri American Water says verified lead or galvanized service line replacement work is performed at no direct cost to the customer through the current program after self-report or inspection confirms material.",
+  "reviewerNote" : "Official Missouri American Water FAQ reviewed manually for no-direct-cost language.",
+  "status" : "verified"
+}

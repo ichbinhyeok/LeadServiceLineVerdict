@@ -1,0 +1,19 @@
+{
+  "programId" : "jackson-citywide-lslr-program",
+  "programSlug" : "jackson-citywide-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Jackson",
+  "state" : "mi",
+  "utilityIds" : [ "jackson-water-mi" ],
+  "subsidyType" : "citywide replacement program funded through DWSRF city crews and contracted replacement work",
+  "publicSideCovered" : "yes the city coordinates public-side replacement as part of scheduled work",
+  "privateSideCovered" : "yes eligible homeowners can receive private-side replacement at no cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligible homes inside the City of Jackson can sign up early or are contacted when replacement is scheduled in their area",
+  "contractorRules" : "city crews or city contractors perform the work after property access and the temporary license are granted",
+  "deadline" : null,
+  "applicationUrl" : "https://www.cityofjackson.org/1115/Lead-Service-Line-Replacements",
+  "sourceRefs" : [ "src-jackson-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

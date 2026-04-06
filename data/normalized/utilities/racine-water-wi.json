@@ -1,0 +1,32 @@
+{
+  "utilityId" : "racine-water-wi",
+  "utilitySlug" : "racine-water-utility",
+  "utilityName" : "City of Racine Water Utility",
+  "aliases" : [ "RWU", "Racine Water Utility" ],
+  "city" : "racine",
+  "county" : "racine",
+  "state" : "wi",
+  "serviceAreaName" : "City of Racine",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Water/Lead_Service_Line_Replacement/FAQ/FAQs.pdf",
+  "lookupUrl" : "https://www.cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Water/Lead_Service_Line_Replacement/FAQ/FAQs.pdf",
+  "notificationUrl" : "https://www.cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Health/_Documents/Environmental_Health/Lead%20in%20water.pdf",
+  "programIds" : [ "racine-private-lead-service-line-replacement" ],
+  "contactPhone" : "262-636-9181",
+  "contactEmail" : "support@cityofracine.org",
+  "inventoryStatus" : "five-year-replacement-program-and-annual-notice-docs-published",
+  "inventorySummary" : "Racine says the city is running a multi-year invitation-based lead service line replacement program, invited homeowners can receive free replacement in annual city-managed batches, and annual notice guidance remains active for homes with lead galvanized or unknown lines that are not yet in the current batch.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "service_area_notes",
+  "resolverMunicipalities" : [ "racine" ],
+  "resolverHints" : [ "west side racine", "mt pleasant", "north beach" ],
+  "resolverPostalPrefixes" : [ "534" ],
+  "sourceRefs" : [ "src-racine-inventory", "src-racine-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

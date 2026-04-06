@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-providence-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Providence Water",
+  "sourceUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-line-replacement-programs",
+  "scopeType" : "utility",
+  "scopeKey" : "providence-water-ri",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Providence Water says customers can check the map for lead or unknown lines, annual notices go to affected addresses, and eligible properties can sign up for replacement through the current construction queue instead of the separate loan path.",
+  "reviewerNote" : "Official Providence Water replacement program page reviewed manually for annual notice and eligibility workflow.",
+  "status" : "verified"
+}

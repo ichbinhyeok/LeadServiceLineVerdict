@@ -1,0 +1,19 @@
+{
+  "programId" : "minneapolis-citywide-replacement",
+  "programSlug" : "minneapolis-citywide-replacement",
+  "programName" : "Lead Water Service Line Replacement",
+  "geography" : "City of Minneapolis",
+  "state" : "mn",
+  "utilityIds" : [ "minneapolis-water-mn" ],
+  "subsidyType" : "state- and federally-funded no-cost replacement in eligible project areas",
+  "publicSideCovered" : "not separated from the owner side because the city page describes owner-owned service lines replaced through the project",
+  "privateSideCovered" : "yes lead service lines are replaced at no cost in eligible project areas",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligibility depends on the project area and city outreach before work begins",
+  "contractorRules" : "city contractors perform the replacement and the city inspects the work",
+  "deadline" : null,
+  "applicationUrl" : "https://www.minneapolismn.gov/government/projects/lead-service-lines/",
+  "sourceRefs" : [ "src-minneapolis-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

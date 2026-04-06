@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dubuque-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Dubuque Water Department",
+  "sourceUrl" : "https://cityofdubuque.org/3165/Lead-Service-Line-Replacement-Pilot-Prog",
+  "scopeType" : "program",
+  "scopeKey" : "dubuque-lslr-pilot-program",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Dubuque says the private lead service line replacement pilot will replace about 585 lines over three phases starting in 2024 and uses an interest form consent workflow and address selection process.",
+  "reviewerNote" : "Official City of Dubuque pilot page reviewed manually for pilot-program intake workflow and replacement scope.",
+  "status" : "verified"
+}

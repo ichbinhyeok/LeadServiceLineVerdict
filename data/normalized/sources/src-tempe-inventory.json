@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-tempe-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Tempe Water Utilities",
+  "sourceUrl" : "https://www.tempe.gov/government/public-works/water/water-quality/service-line-inventory",
+  "scopeType" : "utility",
+  "scopeKey" : "tempe-water-az",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Tempe says customers can review the public inventory, search an address, complete the survey, and that the city has no records of any known public lead service lines.",
+  "reviewerNote" : "Official Tempe service line inventory page reviewed manually for survey workflow and no-known-public-lead language.",
+  "status" : "verified"
+}

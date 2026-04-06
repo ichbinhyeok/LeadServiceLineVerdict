@@ -1,0 +1,19 @@
+{
+  "programId" : "chicago-lslr-program",
+  "programSlug" : "chicago-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Chicago",
+  "state" : "il",
+  "utilityIds" : [ "chicago-water-il" ],
+  "subsidyType" : "citywide lead service line replacement program with lookup guidance and scheduled replacement coordination",
+  "publicSideCovered" : "yes the city coordinates public-side replacement during scheduled project work",
+  "privateSideCovered" : "yes qualifying replacement work includes private-side coordination within the city program",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property must be identified through the city water guidance inventory path or replacement outreach",
+  "contractorRules" : "city-contracted replacement work and homeowner coordination rules apply to the active project area",
+  "deadline" : null,
+  "applicationUrl" : "https://www.leadsafechicago.org/lead-service-line-replacement",
+  "sourceRefs" : [ "src-chicago-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

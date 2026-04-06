@@ -1,0 +1,19 @@
+{
+  "programId" : "tucson-replacement-program",
+  "programSlug" : "tucson-replacement-program",
+  "programName" : "Tucson Water Service Line Replacement Program",
+  "geography" : "Tucson Water service area",
+  "state" : "az",
+  "utilityIds" : [ "tucson-water-az" ],
+  "subsidyType" : "city-managed replacement at no cost when inspection confirms lead or galvanized requiring replacement",
+  "publicSideCovered" : "yes Tucson Water handles the utility side",
+  "privateSideCovered" : "yes Tucson Water says confirmed replacement is scheduled at no cost to the customer",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligibility depends on inspections confirming lead or galvanized requiring replacement and utility outreach",
+  "contractorRules" : "Tucson Water crews coordinate the work and contact the customer with next steps",
+  "deadline" : null,
+  "applicationUrl" : "https://www.tucsonaz.gov/Departments/Water/Water-Quality/lead-free",
+  "sourceRefs" : [ "src-tucson-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

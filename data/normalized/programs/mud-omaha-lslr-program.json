@@ -1,0 +1,19 @@
+{
+  "programId" : "mud-omaha-lslr-program",
+  "programSlug" : "mud-omaha-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "Metropolitan Utilities District service area",
+  "state" : "ne",
+  "utilityIds" : [ "mud-omaha-ne" ],
+  "subsidyType" : "multi-year utility replacement program that replaces customer-owned lead service lines free of charge",
+  "publicSideCovered" : "yes M.U.D. coordinates utility-side work through the district program",
+  "privateSideCovered" : "yes customer-owned lead service lines are replaced free of charge",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "properties with lead service lines are prioritized through the district map and neighborhood rollout schedule",
+  "contractorRules" : "M.U.D. controls contractors and outside contractor scheduling is not part of the program",
+  "deadline" : null,
+  "applicationUrl" : "https://www.mudomaha.com/lead-information/",
+  "sourceRefs" : [ "src-mud-omaha-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

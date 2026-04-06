@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-columbia-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Columbia Water Utility",
+  "sourceUrl" : "https://beheard.como.gov/lead-compliance-program",
+  "scopeType" : "utility",
+  "scopeKey" : "columbia-water-mo",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Columbia says its lead compliance program includes a searchable assessment map and service line inventory information for the utility system.",
+  "reviewerNote" : "City of Columbia lead compliance page reviewed manually for map and utility-side inventory details.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-phoenix-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Phoenix Water Services",
+  "sourceUrl" : "https://pipes.phoenix.gov/",
+  "scopeType" : "utility",
+  "scopeKey" : "phoenix-water-az",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Phoenix says customers with lead galvanized or unknown service lines were sent mail notifications as replacement work began in fall 2024, and that unknown lines are unlikely to be lead but still receive second verification and next-step notices.",
+  "reviewerNote" : "Official Phoenix notification guidance reviewed manually for mailed notice timing and unknown-line follow-up wording.",
+  "status" : "verified"
+}

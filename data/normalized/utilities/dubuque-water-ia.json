@@ -1,0 +1,32 @@
+{
+  "utilityId" : "dubuque-water-ia",
+  "utilitySlug" : "dubuque-water-department",
+  "utilityName" : "City of Dubuque Water Department",
+  "aliases" : [ "Dubuque Water", "City of Dubuque Water Department" ],
+  "city" : "dubuque",
+  "county" : "dubuque",
+  "state" : "ia",
+  "serviceAreaName" : "City of Dubuque",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://cityofdubuque.org/3165/Lead-Service-Line-Replacement-Pilot-Prog",
+  "lookupUrl" : "https://dubuque.maps.arcgis.com/apps/instant/basic/index.html?appid=7ef7a167ce184b00a524c6604683af39",
+  "notificationUrl" : "https://cityofdubuque.org/3165/Lead-Service-Line-Replacement-Pilot-Prog",
+  "programIds" : [ "dubuque-lslr-pilot-program" ],
+  "contactPhone" : "563-690-6210",
+  "contactEmail" : null,
+  "inventoryStatus" : "inventory-map-reporter-form-and-pilot-page-published",
+  "inventorySummary" : "Dubuque says its online inventory map and spreadsheet support address-level review, staff use reporter forms and inspections to verify unknown service material, and the current pilot targets about 585 private lead water service lines in three phases starting in 2024.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "dubuque" ],
+  "resolverHints" : [ "central avenue", "north end", "point", "eagle point" ],
+  "resolverPostalPrefixes" : [ "520" ],
+  "sourceRefs" : [ "src-dubuque-inventory", "src-dubuque-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

@@ -1,0 +1,19 @@
+{
+  "costId" : "pittsburgh-water-cost-2026",
+  "utilityId" : "pittsburgh-water-pa",
+  "city" : "pittsburgh",
+  "state" : "pa",
+  "publicSideBand" : "Public-side costs are handled through Pittsburgh Water replacement work when applicable",
+  "privateSideBand" : "Private-side replacements may qualify for up to 100 percent reimbursement or a $1000 stipend based on income",
+  "fullReplacementBand" : "Full replacement responsibility depends on the utility project trigger and reimbursement tier",
+  "costConfidence" : "low",
+  "housingTypeAssumption" : "Pittsburgh Water publishes reimbursement tiers rather than a universal replacement price",
+  "permitAssumption" : "Owners must complete the work and submit reimbursement documentation",
+  "restorationAssumption" : "Actual restoration depends on the hired contractor and reimbursement path",
+  "methodologySummary" : "Pittsburgh Water does not publish one citywide price and instead frames cost through income-based reimbursement tiers plus city-led replacement triggers such as neighborhood work and water-main projects.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when Pittsburgh Water replaces the line through its residential replacement workflow and otherwise must complete the private replacement and submit reimbursement paperwork to recover part or all of the cost.",
+  "sourceRefs" : [ "src-pittsburgh-program", "src-pittsburgh-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : true,
+  "mediumConfidence" : false
+}

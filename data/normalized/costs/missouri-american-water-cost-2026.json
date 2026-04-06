@@ -1,0 +1,19 @@
+{
+  "costId" : "missouri-american-water-cost-2026",
+  "utilityId" : "missouri-american-water-mo",
+  "city" : "st-louis",
+  "state" : "mo",
+  "publicSideBand" : "Utility-managed company-owned work is covered as part of Missouri American Water's replacement program",
+  "privateSideBand" : "Verified lead or galvanized customer-owned service lines are replaced at no direct charge under the current program",
+  "fullReplacementBand" : "Full replacement is described as no direct charge when the service line is verified as lead or galvanized and scheduled with Missouri American Water",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Missouri American Water publishes explicit no-direct-cost replacement language instead of contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on self-report or inspection confirming lead or galvanized material and utility scheduling",
+  "restorationAssumption" : "The utility coordinates inspections and replacement work through its program rather than owner-managed contractor bids",
+  "methodologySummary" : "Missouri American Water publishes a utility-specific FAQ and program path that ties no-direct-cost replacement to verified lead or galvanized service material rather than a generic statewide estimate.",
+  "ownerTriggerSummary" : "Owners avoid private-side cost only after the utility verifies lead or galvanized material through self-report or inspection and places the address into the current Missouri American Water replacement workflow.",
+  "sourceRefs" : [ "src-mo-amwater-cost", "src-mo-amwater-program", "src-mo-amwater-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-springfield-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City Utilities of Springfield",
+  "sourceUrl" : "https://www.cityutilities.net/m/newsflash/Home/Detail/88",
+  "scopeType" : "utility",
+  "scopeKey" : "springfield-water-mo",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Springfield says more than 38000 customer service lines have been identified, older homes still need to report materials, and City Utilities provides free neighborhood assistance while self-reporting and map cleanup continue.",
+  "reviewerNote" : "City Utilities update page reviewed manually for current progress and neighborhood assistance language.",
+  "status" : "verified"
+}

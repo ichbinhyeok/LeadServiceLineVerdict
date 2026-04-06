@@ -1,0 +1,19 @@
+{
+  "programId" : "lafayette-lslr-program",
+  "programSlug" : "lafayette-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Lafayette",
+  "state" : "in",
+  "utilityIds" : [ "lafayette-water-in" ],
+  "subsidyType" : "city-managed full replacement program funded with grants and loans at no cost to customers in active project areas",
+  "publicSideCovered" : "yes the city replaces the public portion during the coordinated project",
+  "privateSideCovered" : "yes the city coordinates replacement of identified private-side lead lines at no cost in active project areas",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property must be identified by the city's inspections records or letters and owners must sign right-of-entry authorization forms",
+  "contractorRules" : "city-selected contractors and licensed plumbers complete the replacement and post-replacement testing",
+  "deadline" : null,
+  "applicationUrl" : "https://lafayette.in.gov/3615/Lead-Service-Line-Replacement-Program",
+  "sourceRefs" : [ "src-lafayette-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

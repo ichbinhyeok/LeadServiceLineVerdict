@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-pittsburgh-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Pittsburgh Water",
+  "sourceUrl" : "https://lead.pgh2o.com/leadreimbursement/",
+  "scopeType" : "program",
+  "scopeKey" : "pittsburgh-reimbursement",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Pittsburgh Water says the reimbursement program may reimburse up to 100 percent of private lead line replacement costs depending on income and includes a 1000 dollar stipend tier for higher incomes after owners complete the work and submit documentation.",
+  "reviewerNote" : "Official Pittsburgh Water reimbursement page reviewed manually for income-based reimbursement and stipend tiers.",
+  "status" : "verified"
+}

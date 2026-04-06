@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-denver-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Denver Water",
+  "sourceUrl" : "https://www.denverwater.org/your-water/water-quality/lead/lead-service-lines",
+  "scopeType" : "utility",
+  "scopeKey" : "denver-water-co",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Denver Water says customers with identified possible lead service lines will be notified before neighborhood replacement work and that the inventory is built from records tests and inspections.",
+  "reviewerNote" : "Official notification and service-line explanation page reviewed manually for neighborhood replacement notice workflow.",
+  "status" : "verified"
+}

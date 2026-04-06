@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-providence-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Providence Water",
+  "sourceUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-location-map",
+  "scopeType" : "utility",
+  "scopeKey" : "providence-water-ri",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Providence Water tells customers to use the lead service location map to learn whether the utility side or private side is lead or unknown at a property.",
+  "reviewerNote" : "Official Providence Water lead map page reviewed manually for map and public-private material split.",
+  "status" : "verified"
+}

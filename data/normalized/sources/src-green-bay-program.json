@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-green-bay-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Green Bay Water Utility",
+  "sourceUrl" : "https://www.gbwater.org/service-line-lookup-map",
+  "scopeType" : "program",
+  "scopeKey" : "green-bay-grr-replacement",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Green Bay Water says it is actively replacing galvanized lines requiring replacement through a DWSRF-financed project and that properties flagged as lead or GRR may qualify for limited-time municipal programs at reduced or no cost.",
+  "reviewerNote" : "Official Green Bay replacement project page reviewed manually for GRR replacement and limited-time program language.",
+  "status" : "verified"
+}

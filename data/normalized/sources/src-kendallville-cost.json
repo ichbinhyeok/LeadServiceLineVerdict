@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-kendallville-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Kendallville Water Department",
+  "sourceUrl" : "https://www.kendallvillein.gov/departments/Water/LeadLineReplacementProgram",
+  "scopeType" : "cost",
+  "scopeKey" : "kendallville-water-cost-2026",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Kendallville says no additional fees are required from customers to complete service line replacement at their home if they participate in the city's phased program and return the required forms.",
+  "reviewerNote" : "Official Kendallville cost language reviewed manually.",
+  "status" : "verified"
+}

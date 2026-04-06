@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-iowa-city-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Iowa City Water Division",
+  "sourceUrl" : "https://www.icgov.org/home/showpublisheddocument/160/638974213462430000",
+  "scopeType" : "program",
+  "scopeKey" : "iowa-city-cost-share-reimbursement",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Iowa City says homeowners with lead or suspected lead service lines should tell contractors they want to use the city's cost-share reimbursement program before replacement work begins because the work remains owner-managed.",
+  "reviewerNote" : "Official Iowa City lead FAQ reviewed manually for contractor notification and reimbursement workflow.",
+  "status" : "verified"
+}

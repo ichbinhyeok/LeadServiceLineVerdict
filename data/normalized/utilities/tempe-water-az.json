@@ -1,0 +1,32 @@
+{
+  "utilityId" : "tempe-water-az",
+  "utilitySlug" : "tempe-water-utilities",
+  "utilityName" : "City of Tempe Water Utilities",
+  "aliases" : [ "Tempe Water", "Tempe Water Utilities" ],
+  "city" : "tempe",
+  "county" : "maricopa",
+  "state" : "az",
+  "serviceAreaName" : "City of Tempe Water Utilities",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.tempe.gov/government/public-works/water/water-quality/service-line-inventory",
+  "lookupUrl" : "https://www.tempe.gov/government/public-works/water/water-quality/service-line-inventory",
+  "notificationUrl" : "https://www.tempe.gov/government/public-works/water/water-quality/lead-and-copper",
+  "programIds" : [ ],
+  "contactPhone" : "480-350-4311",
+  "contactEmail" : "ServiceLineInventory@tempe.gov",
+  "inventoryStatus" : "inventory-and-notification-guidance-published",
+  "inventorySummary" : "Tempe says customers can search the public inventory, the city has no records of any known public lead service lines, unknown notices are precautionary while survey and field inspections continue, and the city will work individually on replacement or funding options if any lead or galvanized line is identified.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "tempe" ],
+  "resolverHints" : [ ],
+  "resolverPostalPrefixes" : [ "852" ],
+  "sourceRefs" : [ "src-tempe-inventory", "src-tempe-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

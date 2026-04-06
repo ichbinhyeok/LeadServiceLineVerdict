@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-kalamazoo-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Kalamazoo Water Department",
+  "sourceUrl" : "https://www.kalamazoocity.org/Residents/Water-Sewer-Service/More-About-Kalamazoos-Utility-Systems/Lead-Copper-Program",
+  "scopeType" : "cost",
+  "scopeKey" : "kalamazoo-water-cost-2026",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Kalamazoo says replacement work is funded through utility rate payers, state revolving fund support, and foundation funding so customers are not charged directly for qualifying city-scheduled replacement work.",
+  "reviewerNote" : "Official Kalamazoo lead and copper program page reviewed manually for cost language.",
+  "status" : "verified"
+}

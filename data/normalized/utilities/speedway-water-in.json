@@ -1,0 +1,32 @@
+{
+  "utilityId" : "speedway-water-in",
+  "utilitySlug" : "speedway-water-works",
+  "utilityName" : "Town of Speedway Water Works",
+  "aliases" : [ "Speedway Water", "Town of Speedway Water Works" ],
+  "city" : "speedway",
+  "county" : "marion",
+  "state" : "in",
+  "serviceAreaName" : "Town of Speedway",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://pws-ptd.120wateraudit.com/Speedway-IN",
+  "lookupUrl" : "https://pws-ptd.120wateraudit.com/Speedway-IN",
+  "notificationUrl" : "https://www.speedwayin.gov/water-works/lead-service-line-inventory-project",
+  "programIds" : [ ],
+  "contactPhone" : "317-246-4111",
+  "contactEmail" : "SpeedwayWater@structurepoint.com",
+  "inventoryStatus" : "inventory-project-and-public-inventory-published",
+  "inventorySummary" : "Speedway says it publicly posted its October 2024 inventory for about 4300 service connections, mails letters to lead and unknown addresses, and uses homeowner surveys plus targeted field investigation rather than a blanket replacement promise while unknown records are reduced.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "speedway" ],
+  "resolverHints" : [ "main street speedway" ],
+  "resolverPostalPrefixes" : [ "462" ],
+  "sourceRefs" : [ "src-speedway-inventory", "src-speedway-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

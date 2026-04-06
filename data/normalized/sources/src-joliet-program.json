@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-joliet-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Joliet Department of Public Utilities",
+  "sourceUrl" : "https://www.joliet.gov/government/departments/public-utilities/news-information/lead-service-line-info",
+  "scopeType" : "program",
+  "scopeKey" : "joliet-lslr-program",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Joliet says it proactively replaces lead water service lines and covers full replacement at no cost when a leak repair elevated water test or water main rehabilitation project triggers the program.",
+  "reviewerNote" : "Official Joliet replacement program language reviewed manually for trigger-based no-cost replacement rules.",
+  "status" : "verified"
+}

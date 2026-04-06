@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-kendallville-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Kendallville Water Department",
+  "sourceUrl" : "https://www.kendallvillein.gov/departments/Water/LeadLineReplacementProgram",
+  "scopeType" : "utility",
+  "scopeKey" : "kendallville-water-in",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Kendallville says it completed and submitted its lead service line inventory on October 16, 2024 using records review, visual inspections, and potholing.",
+  "reviewerNote" : "Official Kendallville lead line replacement page reviewed manually.",
+  "status" : "verified"
+}

@@ -1,0 +1,32 @@
+{
+  "utilityId" : "blue-springs-water-mo",
+  "utilitySlug" : "blue-springs-water-services",
+  "utilityName" : "City of Blue Springs Water and Sewer Services",
+  "aliases" : [ "Blue Springs Water", "Blue Springs Water and Sewer Services" ],
+  "city" : "blue-springs",
+  "county" : "jackson",
+  "state" : "mo",
+  "serviceAreaName" : "City of Blue Springs",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.bluespringsgov.com/2544/Water-Service-Line-Inventory-Information",
+  "lookupUrl" : "https://www.bluespringsgov.com/2544/Water-Service-Line-Inventory-Information",
+  "notificationUrl" : "https://www.bluespringsgov.com/1875/Lead-and-Copper-Information",
+  "programIds" : [ ],
+  "contactPhone" : "816-228-0195",
+  "contactEmail" : null,
+  "inventoryStatus" : "inventory-page-and-self-survey-published",
+  "inventorySummary" : "Blue Springs says its inventory page pairs an address-check document with a resident private-side survey, the city is still completing inventory work, and the lead guidance page points residents to flushing exposure-reduction and water-quality result resources while verification continues.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "service_area_notes",
+  "resolverMunicipalities" : [ "blue springs", "blue-springs" ],
+  "resolverHints" : [ "downtown blue springs", "chapel ridge", "south blue springs" ],
+  "resolverPostalPrefixes" : [ "640" ],
+  "sourceRefs" : [ "src-blue-springs-inventory", "src-blue-springs-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-columbus-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Columbus Division of Water",
+  "sourceUrl" : "https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts/Water-Health/Lead-Service-Program-Information",
+  "scopeType" : "program",
+  "scopeKey" : "columbus-lslr-program",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Columbus says it started street-by-street replacement in 2025, will replace lead and galvanized water service lines at no direct cost when construction reaches an eligible street, and requires a signed work agreement for participation.",
+  "reviewerNote" : "Official Columbus scheduled replacement program page reviewed manually for 2025 launch timing and work-agreement rules.",
+  "status" : "verified"
+}

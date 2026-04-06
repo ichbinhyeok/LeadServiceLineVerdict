@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dc-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "DC Water",
+  "sourceUrl" : "https://www.dcwater.com/do-you-have-lead-pipes-let-us-help-you-find-out",
+  "scopeType" : "utility",
+  "scopeKey" : "dc-water-dc",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "DC Water's inventory map uses verified lead suspected lead no information suspected non-lead and verified non-lead categories for parcel lookup.",
+  "reviewerNote" : "Official utility inventory and address lookup page reviewed manually for current parcel-map categories.",
+  "status" : "verified"
+}

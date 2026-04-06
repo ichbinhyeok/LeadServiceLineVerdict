@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-joliet-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Joliet Department of Public Utilities",
+  "sourceUrl" : "https://www.joliet.gov/government/departments/public-utilities/news-information/lead-service-line-info",
+  "scopeType" : "utility",
+  "scopeKey" : "joliet-water-il",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Joliet says its interactive map shows water service material by address, prioritizes pre-1940s homes for inventory work, and offers free inspections when the private side is still unknown.",
+  "reviewerNote" : "Official Joliet lead service line information page reviewed manually for map coverage and inspection language.",
+  "status" : "verified"
+}

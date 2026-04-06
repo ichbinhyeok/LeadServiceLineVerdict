@@ -1,0 +1,32 @@
+{
+  "utilityId" : "council-bluffs-water-ia",
+  "utilitySlug" : "council-bluffs-water-works",
+  "utilityName" : "Council Bluffs Water Works",
+  "aliases" : [ "Council Bluffs Water Works", "CBWW" ],
+  "city" : "council-bluffs",
+  "county" : "pottawattamie",
+  "state" : "ia",
+  "serviceAreaName" : "City of Council Bluffs",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.cbwaterworks.com/water-quality/",
+  "lookupUrl" : "https://experience.arcgis.com/experience/20689c2f036249e1adc67cf58934a10c",
+  "notificationUrl" : "https://www.cbwaterworks.com/wp-content/uploads/2022/02/Lead-in-Drinking-Water-Information-Guide-2022_03032022.pdf",
+  "programIds" : [ "council-bluffs-lslr-project" ],
+  "contactPhone" : "712-328-1006",
+  "contactEmail" : "custserv@cbwaterworks.com",
+  "inventoryStatus" : "downloadable-lead-lists-map-and-project-notice-published",
+  "inventorySummary" : "Council Bluffs Water Works publishes downloadable lead galvanized-requiring-replacement and unknown lists, a public address map, and a formal customer information guide, while the current SRF-funded project notice ties replacement work back to the same map and list-based inventory.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "council bluffs", "council-bluffs" ],
+  "resolverHints" : [ "downtown council bluffs", "broadway", "lake manawa" ],
+  "resolverPostalPrefixes" : [ "515" ],
+  "sourceRefs" : [ "src-council-bluffs-inventory", "src-council-bluffs-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

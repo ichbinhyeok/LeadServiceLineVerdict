@@ -1,0 +1,19 @@
+{
+  "programId" : "lead-free-sprws",
+  "programSlug" : "lead-free-sprws",
+  "programName" : "Lead Free SPRWS",
+  "geography" : "SPRWS service area",
+  "state" : "mn",
+  "utilityIds" : [ "saint-paul-regional-water-services-mn" ],
+  "subsidyType" : "no-cost lead line replacement for eligible properties",
+  "publicSideCovered" : "yes when the utility replaces the full line",
+  "privateSideCovered" : "yes at no cost to property owners in the current program",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligibility depends on service line material and current construction area",
+  "contractorRules" : "SPRWS coordinates all work",
+  "deadline" : null,
+  "applicationUrl" : "https://www.stpaul.gov/departments/saint-paul-regional-water-services/customer-resources/lead-free-sprws",
+  "sourceRefs" : [ "src-saint-paul-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

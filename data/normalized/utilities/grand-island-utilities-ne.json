@@ -1,0 +1,32 @@
+{
+  "utilityId" : "grand-island-utilities-ne",
+  "utilitySlug" : "grand-island-utilities-department",
+  "utilityName" : "Grand Island Utilities Department",
+  "aliases" : [ "GIUD", "Grand Island Utilities" ],
+  "city" : "grand-island",
+  "county" : "hall",
+  "state" : "ne",
+  "serviceAreaName" : "City of Grand Island",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.giud.com/o/giud/page/lead-service-line-replacement-project-lsl",
+  "lookupUrl" : "https://gis.grand-island.com",
+  "notificationUrl" : "https://www.giud.com/o/giud/page/lead-service-line-replacement-project-lsl",
+  "programIds" : [ "grand-island-lslr-project" ],
+  "contactPhone" : "308-385-5480",
+  "contactEmail" : null,
+  "inventoryStatus" : "gis-lookup-and-replacement-project-page-published",
+  "inventorySummary" : "Grand Island Utilities says its GIS lookup distinguishes lead non-lead and unknown materials by address, mailed notices go to lead or unknown properties, and the city's multi-year replacement project uses the same lookup plus outreach workflow to move customers into active work.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "grand island", "grand-island" ],
+  "resolverHints" : [ "downtown grand island", "fonner park", "stuhr" ],
+  "resolverPostalPrefixes" : [ "688" ],
+  "sourceRefs" : [ "src-grand-island-inventory", "src-grand-island-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

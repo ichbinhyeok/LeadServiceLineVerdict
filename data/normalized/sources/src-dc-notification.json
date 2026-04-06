@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dc-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "DC Water",
+  "sourceUrl" : "https://www.dcwater.com/resources/lead-free-dc/water-service-line-material-notifications",
+  "scopeType" : "utility",
+  "scopeKey" : "dc-water-dc",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "DC Water publishes lead unknown and galvanized-iron notification letters in multiple languages and directs customers to Lead Free DC at lead@dcwater.com or 202-787-4044 for help.",
+  "reviewerNote" : "Official notification page reviewed manually for multilingual letter availability and contact guidance.",
+  "status" : "verified"
+}

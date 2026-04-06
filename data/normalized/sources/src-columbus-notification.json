@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-columbus-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Columbus Division of Water",
+  "sourceUrl" : "https://www.columbus.gov/Services/Columbus-Water-Power/About-Columbus-Water-Power/The-Division-of-Water/Water-Facts/Water-Health/Lead-Service-Program-Information",
+  "scopeType" : "utility",
+  "scopeKey" : "columbus-water-oh",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Columbus says annual water line material notices are not water quality notices and that a lead or galvanized notice means some portion of the city-owned side, customer-owned side, or both contains lead or galvanized material.",
+  "reviewerNote" : "Official Columbus lead service line notice guidance reviewed manually for annual material notice framing.",
+  "status" : "verified"
+}

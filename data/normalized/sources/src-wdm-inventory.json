@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-wdm-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "West Des Moines Water Works",
+  "sourceUrl" : "https://www.wdmww.com/servicelinesurvey.aspx",
+  "scopeType" : "utility",
+  "scopeKey" : "west-des-moines-water-ia",
+  "capturedAt" : "2026-04-05T10:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "West Des Moines Water Works says it is updating its lead service line inventory and still had about 7000 unknown service materials as of December 2023 while it collects survey responses and map updates.",
+  "reviewerNote" : "Official West Des Moines survey page reviewed manually.",
+  "status" : "verified"
+}

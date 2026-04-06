@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-duluth-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Duluth Lead Removal Program",
+  "sourceUrl" : "https://duluthmn.gov/public-works-utilities/lead-water-education/lead-service-line-replacement/",
+  "scopeType" : "cost",
+  "scopeKey" : "duluth-water-cost-2026",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Duluth says project-area lead service line replacements are funded at no cost to property owners and reimbursement outside the city program is not allowed with this funding.",
+  "reviewerNote" : "Official Duluth no-cost replacement language reviewed manually.",
+  "status" : "verified"
+}

@@ -1,0 +1,19 @@
+{
+  "programId" : "pittsburgh-reimbursement",
+  "programSlug" : "pittsburgh-reimbursement",
+  "programName" : "Lead Service Line Replacement Reimbursement Program",
+  "geography" : "Pittsburgh",
+  "state" : "pa",
+  "utilityIds" : [ "pittsburgh-water-pa" ],
+  "subsidyType" : "up to 100 percent reimbursement based on income",
+  "publicSideCovered" : "not a separate public-side grant statement on the reimbursement page",
+  "privateSideCovered" : "yes via reimbursement or stipend pathway",
+  "incomeRules" : "income review determines 100 percent 75 percent 50 percent or stipend support",
+  "propertyRules" : "available to customers who replaced a private lead service line since January 2019",
+  "contractorRules" : "customer hires the plumber and submits reimbursement paperwork",
+  "deadline" : null,
+  "applicationUrl" : "https://lead.pgh2o.com/leadreimbursement/",
+  "sourceRefs" : [ "src-pittsburgh-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

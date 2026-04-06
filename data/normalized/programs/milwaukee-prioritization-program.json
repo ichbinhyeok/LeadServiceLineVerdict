@@ -1,0 +1,19 @@
+{
+  "programId" : "milwaukee-prioritization-program",
+  "programSlug" : "milwaukee-prioritization-program",
+  "programName" : "Milwaukee Prioritization Program",
+  "geography" : "City of Milwaukee",
+  "state" : "wi",
+  "utilityIds" : [ "milwaukee-water-works-wi" ],
+  "subsidyType" : "city-managed replacement focused on neighborhoods with the greatest need",
+  "publicSideCovered" : "yes in city-managed replacements",
+  "privateSideCovered" : "depends on the replacement trigger and property type",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "neighborhood prioritization uses lead line density child blood lead data and socioeconomic need",
+  "contractorRules" : "city-managed replacement scheduling",
+  "deadline" : null,
+  "applicationUrl" : "https://city.milwaukee.gov/water/LeadPipes/MPP",
+  "sourceRefs" : [ "src-milwaukee-prioritization" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

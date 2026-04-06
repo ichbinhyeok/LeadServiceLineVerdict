@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-tucson-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Tucson Water",
+  "sourceUrl" : "https://www.tucsonaz.gov/Departments/Water/Water-Quality/lead-free",
+  "scopeType" : "program",
+  "scopeKey" : "tucson-replacement-program",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Tucson Water says if inspections confirm a service line requires replacement, the utility will reach out with next steps and complete the work at no cost to the customer.",
+  "reviewerNote" : "Official Tucson replacement program page reviewed manually for confirmed-replacement workflow.",
+  "status" : "verified"
+}

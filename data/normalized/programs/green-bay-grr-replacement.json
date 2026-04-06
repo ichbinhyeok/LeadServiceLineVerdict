@@ -1,0 +1,19 @@
+{
+  "programId" : "green-bay-grr-replacement",
+  "programSlug" : "green-bay-grr-replacement",
+  "programName" : "Galvanized Service Line Replacement",
+  "geography" : "City of Green Bay",
+  "state" : "wi",
+  "utilityIds" : [ "green-bay-water-wi" ],
+  "subsidyType" : "municipal replacement project for galvanized lines requiring replacement financed through the Wisconsin DWSRF",
+  "publicSideCovered" : "yes Green Bay Water coordinates utility-side work",
+  "privateSideCovered" : "conditional properties flagged as lead or GRR may qualify for municipal programs at reduced or no cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "properties flagged as lead or GRR can contact Green Bay Water for inspection scheduling and replacement eligibility",
+  "contractorRules" : "utility staff schedule inspections and funded project work through the replacement program",
+  "deadline" : null,
+  "applicationUrl" : "https://www.gbwater.org/service-line-lookup-map",
+  "sourceRefs" : [ "src-green-bay-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

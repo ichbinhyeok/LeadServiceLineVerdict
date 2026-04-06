@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-phoenix-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Phoenix Water Services",
+  "sourceUrl" : "https://pipes.phoenix.gov/",
+  "scopeType" : "cost",
+  "scopeKey" : "phoenix-water-cost-2026",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Phoenix says the city covers the entire cost of the replacement process, including full water service line replacement and disturbed-area restoration, when replacement is required.",
+  "reviewerNote" : "Official Phoenix replacement cost language reviewed manually.",
+  "status" : "verified"
+}

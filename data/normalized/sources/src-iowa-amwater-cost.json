@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-iowa-amwater-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "Iowa American Water",
+  "sourceUrl" : "https://newsroom.amwater.com/2024-11-22-Iowa-American-Water-Announces-Lead-Service-Line-Replacement-Program-Progress-Approximately-1%2C300-Customer-Owned-Lines-Replaced",
+  "scopeType" : "cost",
+  "scopeKey" : "iowa-american-water-cost-2026",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Iowa American Water says lead and galvanized lines are being replaced at no direct cost to customers under the current program and reported about 1300 completed customer-owned replacements by November 2024.",
+  "reviewerNote" : "Iowa American Water press release reviewed manually for cost language and replacement progress.",
+  "status" : "verified"
+}

@@ -1,0 +1,32 @@
+{
+  "utilityId" : "aurora-water-il",
+  "utilitySlug" : "aurora-water-production-division",
+  "utilityName" : "City of Aurora Water Production Division",
+  "aliases" : [ "Aurora Water", "City of Aurora Water" ],
+  "city" : "aurora",
+  "county" : "kane",
+  "state" : "il",
+  "serviceAreaName" : "City of Aurora",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://yourvoice.aurora.il.us/leadnotice",
+  "lookupUrl" : "https://yourvoice.aurora.il.us/leadnotice",
+  "notificationUrl" : "https://yourvoice.aurora.il.us/leadnotice",
+  "programIds" : [ "aurora-lslr-program" ],
+  "contactPhone" : "630-256-4636",
+  "contactEmail" : "waterlines@aurora.il.us",
+  "inventoryStatus" : "lead-notice-and-map-request-page-published",
+  "inventorySummary" : "Aurora says residents can use its lead notice portal to review lead unknown galvanized and connector-unknown statuses, the city issued a 2025 action-level exceedance notice with mitigation steps, and replacement splits between no-cost city-triggered work and owner-managed early replacement where the owner still starts with the private-side contractor cost.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "aurora" ],
+  "resolverHints" : [ "downtown aurora", "west side aurora", "east side aurora" ],
+  "resolverPostalPrefixes" : [ "605" ],
+  "sourceRefs" : [ "src-aurora-inventory", "src-aurora-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

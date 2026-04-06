@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-aurora-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Aurora Water Production Division",
+  "sourceUrl" : "https://www.aurora.il.us/News-articles/Lead-Service-Line-Replacement-Progress",
+  "scopeType" : "cost",
+  "scopeKey" : "aurora-water-il-cost-2026",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Aurora says the city replaces qualifying lead service line work at no cost when disturbances or elevated sampling results occur, while owner-managed early replacements still require the homeowner to pay for the private-side segment and the city completes the remainder at no cost within 30 days.",
+  "reviewerNote" : "Official Aurora cost responsibility language reviewed manually.",
+  "status" : "verified"
+}

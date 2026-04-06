@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-citizens-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Citizens Energy Group",
+  "sourceUrl" : "https://blog.citizensenergygroup.com/news/citizens-energy-group-unveils-lead-service-line-inventory-portal-mailing-letters-to-customers-who-own-or-may-own-lead-water-service-lines",
+  "scopeType" : "utility",
+  "scopeKey" : "citizens-energy-group-in",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Citizens says it launched a searchable customer service line inventory portal and estimates that more than 75000 customers may still own and use lead service lines.",
+  "reviewerNote" : "Official Citizens inventory launch announcement reviewed manually for portal and scale language.",
+  "status" : "verified"
+}

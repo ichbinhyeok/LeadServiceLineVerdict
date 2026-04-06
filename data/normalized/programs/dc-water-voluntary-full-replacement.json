@@ -1,0 +1,19 @@
+{
+  "programId" : "dc-water-voluntary-full-replacement",
+  "programSlug" : "dc-water-voluntary-full-replacement",
+  "programName" : "Voluntary Replacement Program",
+  "geography" : "District of Columbia",
+  "state" : "dc",
+  "utilityIds" : [ "dc-water-dc" ],
+  "subsidyType" : "DC Water coordinates full replacement when both sides are lead and no capital project is scheduled",
+  "publicSideCovered" : "yes DC Water pays for all work in public space",
+  "privateSideCovered" : "yes property owner pays for private property work",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property owner must request replacement and confirm lead on private property",
+  "contractorRules" : "owner may hire a private plumber or DC Water contractor and must coordinate permits",
+  "deadline" : null,
+  "applicationUrl" : "https://www.dcwater.com/resources/lead/partners-removing-lead/replacelead/customer-initiated-full-lead-replacements",
+  "sourceRefs" : [ "src-dc-full-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

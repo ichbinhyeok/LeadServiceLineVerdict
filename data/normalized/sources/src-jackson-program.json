@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-jackson-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Jackson Water Department",
+  "sourceUrl" : "https://www.cityofjackson.org/1115/Lead-Service-Line-Replacements",
+  "scopeType" : "program",
+  "scopeKey" : "jackson-citywide-lslr-program",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Jackson says eligible homeowners can sign up early for free private lead service line replacement and that the city uses DWSRF loans local revenue and grants to fund the work.",
+  "reviewerNote" : "City of Jackson replacement program page reviewed manually for program details.",
+  "status" : "verified"
+}

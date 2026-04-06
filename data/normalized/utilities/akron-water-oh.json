@@ -1,0 +1,32 @@
+{
+  "utilityId" : "akron-water-oh",
+  "utilitySlug" : "akron-water-supply",
+  "utilityName" : "City of Akron Water Supply Bureau",
+  "aliases" : [ "Akron Water", "Akron Water Supply" ],
+  "city" : "akron",
+  "county" : "summit",
+  "state" : "oh",
+  "serviceAreaName" : "City of Akron water service area",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.akronohio.gov/ServiceLineInventory",
+  "lookupUrl" : "https://www.akronohio.gov/ServiceLineInventory",
+  "notificationUrl" : "https://www.akronohio.gov/Lead",
+  "programIds" : [ ],
+  "contactPhone" : "330-678-0077",
+  "contactEmail" : "waterquality@akronohio.gov",
+  "inventoryStatus" : "inventory-published-and-city-side-lead-removal-nearly-complete",
+  "inventorySummary" : "Akron says its service line inventory is available online, there are no homeowner-owned lead service lines in Akron, unknown customer-side records can be verified through a phone-based photo workflow, and city-owned lead replacement is expected to finish by the end of 2025.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "akron" ],
+  "resolverHints" : [ "highland square", "firestone park", "north hill", "ellet" ],
+  "resolverPostalPrefixes" : [ "443" ],
+  "sourceRefs" : [ "src-akron-inventory", "src-akron-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

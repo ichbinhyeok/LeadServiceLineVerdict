@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mishawaka-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Mishawaka Utilities",
+  "sourceUrl" : "https://mishawaka.in.gov/lead-free/",
+  "scopeType" : "utility",
+  "scopeKey" : "mishawaka-water-in",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Mishawaka says it has already replaced the utility-owned portion of about 4100 lead service lines and continues field investigations plus predictive modeling to identify remaining unknown lines.",
+  "reviewerNote" : "Official Mishawaka lead free page reviewed manually for replacement progress and inventory details.",
+  "status" : "verified"
+}

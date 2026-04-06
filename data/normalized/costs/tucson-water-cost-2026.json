@@ -1,0 +1,19 @@
+{
+  "costId" : "tucson-water-cost-2026",
+  "utilityId" : "tucson-water-az",
+  "city" : "tucson",
+  "state" : "az",
+  "publicSideBand" : "Tucson Water handles replacement at no cost when the service line requires replacement",
+  "privateSideBand" : "Tucson Water says confirmed replacement is at no cost to the customer",
+  "fullReplacementBand" : "Tucson Water describes replacement as no cost after inspection confirms the line requires replacement",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Tucson publishes no-cost replacement language tied to confirmed inspections rather than a bid range",
+  "permitAssumption" : "Eligibility depends on inspection results and utility outreach",
+  "restorationAssumption" : "Scope and restoration are handled through Tucson Water's replacement process once replacement is confirmed",
+  "methodologySummary" : "Tucson ties the no-cost language to confirmed replacements after inspection rather than a standing bid range so the page reflects utility eligibility and managed scope instead of an owner quote.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only once Tucson confirms the service line requires replacement and the utility reaches out with the next-step workflow for scheduling and completion.",
+  "sourceRefs" : [ "src-tucson-cost", "src-tucson-program", "src-tucson-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

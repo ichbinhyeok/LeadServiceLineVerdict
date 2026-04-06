@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-detroit-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Detroit Water and Sewerage Department",
+  "sourceUrl" : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-projects/making-detroit-lead-safe/lead-service-line-replacement-program",
+  "scopeType" : "utility",
+  "scopeKey" : "detroit-water-mi",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Detroit says 123387 notices went to properties with known lead known galvanized or unknown service line materials on June 30 2025 and directs residents back to the updated map and verification tools.",
+  "reviewerNote" : "Official Detroit notice guidance reviewed manually for 2025 notice count and address-check workflow.",
+  "status" : "verified"
+}

@@ -1,0 +1,19 @@
+{
+  "costId" : "lafayette-water-cost-2026",
+  "utilityId" : "lafayette-water-in",
+  "city" : "lafayette",
+  "state" : "in",
+  "publicSideBand" : "City-managed public-side work is covered under the Lafayette replacement program",
+  "privateSideBand" : "No direct charge to customers for identified private-side replacements in active project areas",
+  "fullReplacementBand" : "Full replacement is described as no direct charge to customers in the current Lafayette program phases",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Lafayette publishes program-funded replacement language instead of contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on identification letters project-area scheduling and signed right-of-entry forms",
+  "restorationAssumption" : "Restoration and post-replacement testing are handled through the city-coordinated contractor process",
+  "methodologySummary" : "Lafayette ties its cost language to active project phases funded through grants and loans and to the city's posted 45-day construction notice and right-of-entry workflow rather than a citywide contractor quote.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when the address is in an active Lafayette project area and the owner returns the required right-of-entry materials so the city-coordinated contractor can complete replacement.",
+  "sourceRefs" : [ "src-lafayette-cost", "src-lafayette-program", "src-lafayette-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-rockford-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Rockford Water Division",
+  "sourceUrl" : "https://rockfordil.gov/320/Lead-Drinking-Water",
+  "scopeType" : "utility",
+  "scopeKey" : "rockford-water-il",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Rockford says free annual lead testing is available, explains how lead can enter water through service lines and plumbing, and publishes exposure-reduction guidance on the same page.",
+  "reviewerNote" : "Official Rockford notice and testing guidance reviewed manually for testing and exposure-reduction language.",
+  "status" : "verified"
+}

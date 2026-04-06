@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-bloomington-il-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Bloomington Water Department",
+  "sourceUrl" : "https://www.bloomingtonil.gov/departments/water/resident-community/lead-service-line-replacement-project",
+  "scopeType" : "cost",
+  "scopeKey" : "bloomington-water-il-cost-2026",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Bloomington says customer-side replacement costs beginning in 2027 are expected to be covered by recent water rate increases with no additional cost to the property owner, though the city does not guarantee funds will be sufficient in every case.",
+  "reviewerNote" : "Official Bloomington cost language reviewed manually for rate-funded no-additional-cost expectations and caveat.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-dubuque-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Dubuque Water Department",
+  "sourceUrl" : "https://cityofdubuque.org/3165/Lead-Service-Line-Replacement-Pilot-Prog",
+  "scopeType" : "utility",
+  "scopeKey" : "dubuque-water-ia",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Dubuque explains lead health risk, tells residents to use the reporter form or request an inspection when they are unsure, and says selected pilot participants receive direct follow-up from the Water Department.",
+  "reviewerNote" : "Official City of Dubuque pilot page reviewed manually for notification and follow-up language.",
+  "status" : "verified"
+}

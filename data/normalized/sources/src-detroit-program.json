@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-detroit-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Detroit Water and Sewerage Department",
+  "sourceUrl" : "https://detroitmi.gov/departments/water-and-sewerage-department/dwsd-projects/making-detroit-lead-safe/lead-service-line-replacement-program",
+  "scopeType" : "program",
+  "scopeKey" : "detroit-neighborhood-replacement",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Detroit says DWSD has replaced more than 15000 lead service lines since 2018, works neighborhood-by-neighborhood, and replaces the line with homeowner permission when crews reach the block.",
+  "reviewerNote" : "Official Detroit program details reviewed manually for replacement progress and homeowner-permission workflow.",
+  "status" : "verified"
+}

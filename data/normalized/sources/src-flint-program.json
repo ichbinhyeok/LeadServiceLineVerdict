@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-flint-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Flint",
+  "sourceUrl" : "https://www.cityofflint.com/get-the-lead-out/",
+  "scopeType" : "program",
+  "scopeKey" : "flint-citywide-lslr-program",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Flint says the city is still running a free service line replacement program and uses consent forms plus scheduled visits to inspect and replace remaining lead or galvanized lines at no cost.",
+  "reviewerNote" : "City of Flint get-the-lead-out page reviewed manually for current program details.",
+  "status" : "verified"
+}

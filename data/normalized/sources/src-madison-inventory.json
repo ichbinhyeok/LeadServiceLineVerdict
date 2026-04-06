@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-madison-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Madison Water Utility",
+  "sourceUrl" : "https://www.cityofmadison.com/water/water-quality/lead-copper-in-water/lead-service-line-inventory",
+  "scopeType" : "utility",
+  "scopeKey" : "madison-water-utility-wi",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Madison says all known lead services remaining in the city are none and that as of November 4 2025 it has no known lead service lines, while historic records can still contain inaccuracies.",
+  "reviewerNote" : "Official Madison inventory page reviewed manually for zero-known-lead status and historical-record caveat.",
+  "status" : "verified"
+}

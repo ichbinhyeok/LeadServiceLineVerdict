@@ -1,0 +1,32 @@
+{
+  "utilityId" : "grand-rapids-water-mi",
+  "utilitySlug" : "grand-rapids-water-system",
+  "utilityName" : "City of Grand Rapids Water System",
+  "aliases" : [ "Grand Rapids Water", "Grand Rapids Water System" ],
+  "city" : "grand-rapids",
+  "county" : "kent",
+  "state" : "mi",
+  "serviceAreaName" : "City of Grand Rapids",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-prevention-tips/lead-water-service-line-map/",
+  "lookupUrl" : "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/lead-prevention-tips/lead-water-service-line-map/",
+  "notificationUrl" : "https://www.grandrapidsmi.gov/departments/water-system/lead-in-drinking-water/notice-of-the-possibility-of-a-lead-water-service-line/",
+  "programIds" : [ "grand-rapids-lslr-program" ],
+  "contactPhone" : "616-456-3000",
+  "contactEmail" : "water@grcity.us",
+  "inventoryStatus" : "map-annual-notice-and-no-cost-program-published",
+  "inventorySummary" : "Grand Rapids says properties built before 1950 without confirming records are treated as assumed lead on the city map, annual notices remain active for homes that may have lead lines, leak or city construction triggers the no-cost path, and voluntary early replacement moves into a separate ten-pay Water Service Agreement.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "grand rapids", "grand-rapids" ],
+  "resolverHints" : [ "downtown grand rapids", "west grand", "third ward" ],
+  "resolverPostalPrefixes" : [ "495" ],
+  "sourceRefs" : [ "src-grand-rapids-inventory", "src-grand-rapids-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

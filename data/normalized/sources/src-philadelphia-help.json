@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-philadelphia-help",
+  "sourceType" : "utility_program",
+  "publisherName" : "Philadelphia Water Department",
+  "sourceUrl" : "https://water.phila.gov/helploan/",
+  "scopeType" : "program",
+  "scopeKey" : "philadelphia-help-loan",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Philadelphia Water says HELP is a zero-interest loan and the lead service line version can be used when a property has a confirmed lead service line outside the limited free verification path.",
+  "reviewerNote" : "Official Philadelphia HELP loan page reviewed manually for the confirmed lead service line eligibility path.",
+  "status" : "verified"
+}

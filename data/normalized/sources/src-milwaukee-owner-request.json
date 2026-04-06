@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-milwaukee-owner-request",
+  "sourceType" : "utility_program",
+  "publisherName" : "Milwaukee Water Works",
+  "sourceUrl" : "https://city.milwaukee.gov/water/WaterQuality/LeadandWater/LSLR-Owner-Request",
+  "scopeType" : "program",
+  "scopeKey" : "milwaukee-owner-request-program",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Milwaukee's Owner Request Program says eligible 1-4 unit residential owners can request replacement, the city pays the public side, and the 2025 average private-side cost is $3999 with the owner paying the lesser of actual cost or the average cost.",
+  "reviewerNote" : "Official owner request program page reviewed manually.",
+  "status" : "verified"
+}

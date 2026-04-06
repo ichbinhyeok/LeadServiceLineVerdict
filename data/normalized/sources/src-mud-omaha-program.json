@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mud-omaha-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Metropolitan Utilities District",
+  "sourceUrl" : "https://www.mudomaha.com/lead-information/",
+  "scopeType" : "program",
+  "scopeKey" : "mud-omaha-lslr-program",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "M.U.D. says its multi-year program started in 2024, uses a lead service line map to determine eligibility, and replaces customer-owned lead service lines free of charge.",
+  "reviewerNote" : "M.U.D. replacement program page reviewed manually for 2024 launch timing and free replacement coverage.",
+  "status" : "verified"
+}

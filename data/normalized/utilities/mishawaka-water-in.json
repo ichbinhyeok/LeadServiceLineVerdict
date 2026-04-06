@@ -1,0 +1,32 @@
+{
+  "utilityId" : "mishawaka-water-in",
+  "utilitySlug" : "mishawaka-utilities",
+  "utilityName" : "Mishawaka Utilities",
+  "aliases" : [ "Mishawaka Water", "Mishawaka Utilities" ],
+  "city" : "mishawaka",
+  "county" : "st-joseph",
+  "state" : "in",
+  "serviceAreaName" : "City of Mishawaka",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://mishawaka.in.gov/lead-free/",
+  "lookupUrl" : "https://mishawaka.in.gov/lead-free/",
+  "notificationUrl" : "https://mishawaka.in.gov/lead-free/",
+  "programIds" : [ ],
+  "contactPhone" : "574-258-1652",
+  "contactEmail" : "MishawakaLeadFree@Mishawaka.in.gov",
+  "inventoryStatus" : "lead-free-page-and-owner-inspection-process-published",
+  "inventorySummary" : "Mishawaka says it has already replaced the utility-owned portion of about 4100 lead service lines, mailed letters to customers with lead galvanized or unknown lines in late 2024, and will replace the utility side within 45 days when an owner replaces a lead or galvanized private-side line.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "mishawaka" ],
+  "resolverHints" : [ "downtown mishawaka", "beutter park", "ball band" ],
+  "resolverPostalPrefixes" : [ "465" ],
+  "sourceRefs" : [ "src-mishawaka-inventory", "src-mishawaka-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

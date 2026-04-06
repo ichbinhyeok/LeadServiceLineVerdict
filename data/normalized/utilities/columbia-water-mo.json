@@ -1,0 +1,32 @@
+{
+  "utilityId" : "columbia-water-mo",
+  "utilitySlug" : "columbia-water-utility",
+  "utilityName" : "City of Columbia Water Utility",
+  "aliases" : [ "Columbia Utilities", "Columbia Water Utility" ],
+  "city" : "columbia",
+  "county" : "boone",
+  "state" : "mo",
+  "serviceAreaName" : "City of Columbia",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://beheard.como.gov/lead-compliance-program",
+  "lookupUrl" : "https://storymaps.arcgis.com/stories/d6134fec95c2413faab553fd8196784c",
+  "notificationUrl" : "https://beheard.como.gov/lead-compliance-program",
+  "programIds" : [ ],
+  "contactPhone" : "573-874-7307",
+  "contactEmail" : "Matthew.Nestor@CoMo.gov",
+  "inventoryStatus" : "storymap-survey-and-inventory-guidance-published",
+  "inventorySummary" : "Columbia says its lead compliance program includes a searchable assessment map, utility-side inventory details, an online survey for unknown customer-owned service lines, and step-by-step inspection guidance for residents.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "columbia" ],
+  "resolverHints" : [ "downtown columbia", "old southwest", "east campus" ],
+  "resolverPostalPrefixes" : [ "652" ],
+  "sourceRefs" : [ "src-columbia-inventory", "src-columbia-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

@@ -1,0 +1,19 @@
+{
+  "programId" : "flint-citywide-lslr-program",
+  "programSlug" : "flint-citywide-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "City of Flint",
+  "state" : "mi",
+  "utilityIds" : [ "flint-water-mi" ],
+  "subsidyType" : "citywide no-cost lead service line replacement and consent-based inspection program nearing completion",
+  "publicSideCovered" : "yes the city coordinates public-side work through the Flint replacement program",
+  "privateSideCovered" : "yes residential non-copper and lead service lines are replaced at no cost under the current program",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "residents must submit consent forms and allow access for inspection and replacement of remaining non-copper lines",
+  "contractorRules" : "city staff or city contractors coordinate replacement flushing and filter guidance after the work",
+  "deadline" : null,
+  "applicationUrl" : "https://www.cityofflint.com/get-the-lead-out/",
+  "sourceRefs" : [ "src-flint-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

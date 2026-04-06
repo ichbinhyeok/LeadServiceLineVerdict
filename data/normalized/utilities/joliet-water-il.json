@@ -1,0 +1,32 @@
+{
+  "utilityId" : "joliet-water-il",
+  "utilitySlug" : "joliet-public-utilities",
+  "utilityName" : "City of Joliet Department of Public Utilities",
+  "aliases" : [ "Joliet Public Utilities", "Joliet Water" ],
+  "city" : "joliet",
+  "county" : "will",
+  "state" : "il",
+  "serviceAreaName" : "City of Joliet",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.joliet.gov/government/departments/public-utilities/news-information/lead-service-line-info",
+  "lookupUrl" : "https://experience.arcgis.com/experience/f091114be0ca45638b8d77530a7f32e0",
+  "notificationUrl" : "https://www.joliet.gov/government/departments/public-utilities/news-information/lead-service-line-info",
+  "programIds" : [ "joliet-lslr-program" ],
+  "contactPhone" : "815-724-4220",
+  "contactEmail" : "publicutilities@joliet.gov",
+  "inventoryStatus" : "inventory-map-and-free-testing-program-published",
+  "inventorySummary" : "Joliet says it maintains an interactive water service inventory map, proactively replaces lead lines at no cost when leak repair elevated test results or water main rehabilitation trigger the program, and provides point-of-use pitchers at no cost in several elevated-risk situations.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "joliet" ],
+  "resolverHints" : [ "cathedral area", "reedswood", "west side joliet" ],
+  "resolverPostalPrefixes" : [ "604" ],
+  "sourceRefs" : [ "src-joliet-inventory", "src-joliet-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

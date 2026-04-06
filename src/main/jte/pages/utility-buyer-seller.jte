@@ -1,0 +1,194 @@
+@import owner.leadserviceline.pages.UtilityPageModel
+@import owner.leadserviceline.pages.PageSeoModel
+@param UtilityPageModel page
+@param PageSeoModel seo
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${seo.title()}</title>
+    <meta name="description" content="${seo.description()}">
+    <link rel="canonical" href="${seo.canonicalUrl()}">
+    <meta name="robots" content="${seo.robots()}">
+    @for (var jsonLd : seo.jsonLd())
+        <script type="application/ld+json">${jsonLd}</script>
+    @endfor
+    <link rel="stylesheet" href="/app.css?v=20260405-qa3">
+    <link rel="icon" href="/favicon.svg?v=20260405-qa3" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__inner">
+        <a class="brand-mark" href="/">Lead Service Line Verdict</a>
+        <nav class="site-nav">
+            <a href="/">Home</a>
+            <a href="/lookup">Lookup</a>
+            <a class="active" href="${page.navigation().stream().filter(candidate -> !candidate.supportLayer()).findFirst().map(link -> link.path()).orElse(seo.canonicalUrl())}">Utility Record</a>
+            <a href="/#guides">Guides</a>
+        </nav>
+        <div class="site-avatar"><span class="material-symbols-outlined">water_drop</span></div>
+    </div>
+</header>
+
+<main class="page-shell">
+    <section class="hero-band">
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <div class="kicker">${page.utility().state().toUpperCase()} / ${page.utility().city()} / support route</div>
+                <h1>${page.heroTitle()}</h1>
+                <p>${page.heroSummary()}</p>
+                <div class="utility-nav">
+                    @for (var link : page.navigation())
+                        <a href="${link.path()}" class="${link.active() ? "active" : ""}">${link.label()}</a>
+                    @endfor
+                </div>
+                <div class="support-banner" style="margin-top: 24px;">
+                    <strong>Support route only</strong>
+                    <p>This page should help a transaction conversation after the utility overview, notice, program, and cost routes are understood. It should not replace them, and it should not read like a generic plumbing checklist.</p>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="hero-media__frame">
+                    <img src="/media/inspection-tech.jpg" alt="Inspection and property review context for buyer seller decisions">
+                </div>
+                <div class="floating-note">
+                    <strong>Noindex boundary</strong>
+                    <p>Buyer-seller guidance stays subordinate by design. The official utility record and local replacement path remain the primary evidence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block">
+        <div class="section-grid two">
+            <div>
+                <div class="editorial-line">
+                    <div class="kicker">Transaction order</div>
+                </div>
+                <h2>What the parties should anchor first.</h2>
+                <div class="checklist-list" style="margin-top: 22px;">
+                    @for (var step : page.nextSteps())
+                        <div class="checklist-item">
+                            <strong>Negotiation step</strong>
+                            <p>${step}</p>
+                        </div>
+                    @endfor
+                </div>
+            </div>
+            <div class="aside-panel">
+                <h2>Pull the local record into the file before negotiating.</h2>
+                <p>Escrow, seller credit, early replacement, and contractor timing all depend on whether the utility record says known lead, possible lead, unknown material, or already cleared.</p>
+                <div class="hero-actions">
+                    <a class="button" href="${page.utility().lookupUrl()}">Official lookup</a>
+                    <a class="button ghost" href="${page.utility().inventoryUrl()}">Inventory record</a>
+                    <a class="button ghost" href="${page.utility().notificationUrl()}">Notice page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block section-soft">
+        <div class="section-grid two">
+            <div>
+                <div class="editorial-line">
+                    <div class="kicker">Local facts that change the deal</div>
+                </div>
+                <h2>Utility-specific signals to surface in the negotiation.</h2>
+                <div class="content-stack">
+                    @for (var fact : page.keyFacts())
+                        <div class="content-card">
+                            <h3>${fact.label()}</h3>
+                            <p><strong>${fact.value()}</strong></p>
+                            @if (fact.detail() != null && !fact.detail().isBlank())
+                                <p>${fact.detail()}</p>
+                            @endif
+                        </div>
+                    @endfor
+                </div>
+            </div>
+            <div>
+                <div class="editorial-line">
+                    <div class="kicker">Cost framing</div>
+                </div>
+                <h2>Use local responsibility splits, not a national average.</h2>
+                @if (page.cost() != null)
+                    <div class="checklist-list" style="margin-top: 22px;">
+                        @for (var responsibility : page.costResponsibilities())
+                            <div class="checklist-item">
+                                <strong>${responsibility.scope()}</strong>
+                                <p>${responsibility.band()}</p>
+                                <p>${responsibility.detail()}</p>
+                            </div>
+                        @endfor
+                    </div>
+                @else
+                    <div class="support-banner">
+                        <strong>Cost route held back</strong>
+                        <p>This utility does not currently have a strong enough local methodology to turn replacement cost into a public landing page. Keep the negotiation anchored to the utility record and any verified program rules.</p>
+                    </div>
+                @endif
+            </div>
+        </div>
+    </section>
+
+    @if (!page.programSummaries().isEmpty())
+        <section class="section-block">
+            <div class="editorial-line">
+                <div class="kicker">Program leverage</div>
+            </div>
+            <h2>Replacement support that can change escrow or credit math.</h2>
+            <div class="section-grid two">
+                @for (var program : page.programSummaries())
+                    <div class="content-card">
+                        <span class="status-pill">${program.verificationLabel()}</span>
+                        <h3>${program.programName()}</h3>
+                        <p>${program.subsidyType()}</p>
+                        <p><strong>Public side:</strong> ${program.publicSideCovered()}</p>
+                        <p><strong>Private side:</strong> ${program.privateSideCovered()}</p>
+                        @if (program.incomeRules() != null && !program.incomeRules().isBlank())
+                            <p><strong>Income rules:</strong> ${program.incomeRules()}</p>
+                        @endif
+                        @if (program.propertyRules() != null && !program.propertyRules().isBlank())
+                            <p><strong>Property rules:</strong> ${program.propertyRules()}</p>
+                        @endif
+                        @if (program.contractorRules() != null && !program.contractorRules().isBlank())
+                            <p><strong>Contractor rules:</strong> ${program.contractorRules()}</p>
+                        @endif
+                        <p><a href="${program.applicationUrl()}">${program.applicationUrl()}</a></p>
+                    </div>
+                @endfor
+            </div>
+        </section>
+    @endif
+
+    <section class="section-block">
+        <div class="editorial-line">
+            <div class="kicker">Route cautions</div>
+        </div>
+        <h2>What this page should not overclaim.</h2>
+        <div class="section-grid two">
+            @for (var caution : page.routeCautions())
+                <div class="content-card tint-warm">
+                    <p>${caution}</p>
+                </div>
+            @endfor
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <div>
+            <div class="brand-mark">Lead Service Line Verdict</div>
+            <p class="muted">${page.utility().utilityName()} buyer-seller support route for ${page.utility().city()}, ${page.utility().state().toUpperCase()}.</p>
+        </div>
+        <div class="footer__links">
+            <a href="${page.utility().lookupUrl()}">Official Lookup</a>
+            <a href="${page.navigation().stream().filter(candidate -> !candidate.supportLayer()).findFirst().map(link -> link.path()).orElse(seo.canonicalUrl())}">Utility Record</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+

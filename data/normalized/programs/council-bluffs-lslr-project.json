@@ -1,0 +1,19 @@
+{
+  "programId" : "council-bluffs-lslr-project",
+  "programSlug" : "council-bluffs-lslr-project",
+  "programName" : "Lead Service Line Replacement Project",
+  "geography" : "Council Bluffs",
+  "state" : "ia",
+  "utilityIds" : [ "council-bluffs-water-ia" ],
+  "subsidyType" : "SRF-funded replacement project described through the utility's public notice and map guidance",
+  "publicSideCovered" : "the public notice describes utility-managed replacement work tied to the project area and funding cycle",
+  "privateSideCovered" : "exact private-side cost and eligibility should be confirmed with Council Bluffs Water Works before work begins",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligibility depends on the current project area public notice and utility outreach",
+  "contractorRules" : "CBWW coordinates the project notice timeline map updates and construction communication",
+  "deadline" : null,
+  "applicationUrl" : "https://www.cbwaterworks.com/wp-content/uploads/2025/05/Lead-Service-Line-Replacement-Project-Public-Notice.pdf",
+  "sourceRefs" : [ "src-council-bluffs-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

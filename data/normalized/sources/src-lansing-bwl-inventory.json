@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-lansing-bwl-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Lansing Board of Water and Light",
+  "sourceUrl" : "https://www.lbwl.com/customers/water-resource-center/lead-information",
+  "scopeType" : "utility",
+  "scopeKey" : "lansing-bwl-mi",
+  "capturedAt" : "2026-04-05T10:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "BWL says it completed removal of all known active lead service lines and galvanized requiring replacement lines in 2016 and verified by October 16 2024 that no lead, galvanized requiring replacement, or unknown service lines remain.",
+  "reviewerNote" : "Official BWL lead information page reviewed manually.",
+  "status" : "verified"
+}

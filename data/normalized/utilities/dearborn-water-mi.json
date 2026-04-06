@@ -1,0 +1,32 @@
+{
+  "utilityId" : "dearborn-water-mi",
+  "utilitySlug" : "dearborn-water-sewerage-division",
+  "utilityName" : "City of Dearborn Water and Sewerage Division",
+  "aliases" : [ "Dearborn Water", "Dearborn Water and Sewerage" ],
+  "city" : "dearborn",
+  "county" : "wayne",
+  "state" : "mi",
+  "serviceAreaName" : "City of Dearborn",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://experience.arcgis.com/experience/f40b94e58e4a47fcbb89b3e69c64ec6d",
+  "lookupUrl" : "https://experience.arcgis.com/experience/f40b94e58e4a47fcbb89b3e69c64ec6d",
+  "notificationUrl" : "https://mail.cityofdearborn.org/news-and-events/city-news/2354-dearborn-s-water-tested-for-lead-yearly-always-within-federally-accepted-levels",
+  "programIds" : [ ],
+  "contactPhone" : "313-943-2308",
+  "contactEmail" : null,
+  "inventoryStatus" : "map-survey-and-annual-testing-guidance-published",
+  "inventorySummary" : "Dearborn points residents to a lead service line information map, says 100 homes are tested annually with results remaining within federal action levels, and asks households to complete the service line survey while the city works through Michigan's replacement mandate.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "dearborn" ],
+  "resolverHints" : [ "east dearborn", "south end", "west dearborn" ],
+  "resolverPostalPrefixes" : [ "481" ],
+  "sourceRefs" : [ "src-dearborn-inventory", "src-dearborn-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

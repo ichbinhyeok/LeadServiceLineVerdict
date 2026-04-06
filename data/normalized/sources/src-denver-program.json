@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-denver-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Denver Water",
+  "sourceUrl" : "https://www.denverwater.org/your-water/water-quality/lead/lead-service-line-replacement-program",
+  "scopeType" : "program",
+  "scopeKey" : "denver-water-lead-reduction-program",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Denver Water says the Lead Reduction Program replaces customer-owned lead service lines with copper at no direct charge on the utility schedule and requires owner consent before work proceeds.",
+  "reviewerNote" : "Official replacement program page reviewed manually for no-direct-charge replacement and owner-consent rules.",
+  "status" : "verified"
+}

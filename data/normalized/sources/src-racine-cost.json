@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-racine-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Racine Water Utility",
+  "sourceUrl" : "https://www.cityofracine.org/uploadedFiles/_MainSiteContent/Departments/Water/Lead_Service_Line_Replacement/FAQ/FAQs.pdf",
+  "scopeType" : "cost",
+  "scopeKey" : "racine-water-cost-2026",
+  "capturedAt" : "2026-04-04T23:45:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Racine says invited homeowners can have lead service lines replaced at no cost through the current city-managed batch and invitation workflow.",
+  "reviewerNote" : "Official Racine FAQ reviewed manually for cost language.",
+  "status" : "verified"
+}

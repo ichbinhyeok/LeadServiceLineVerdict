@@ -1,0 +1,19 @@
+{
+  "costId" : "newark-water-cost-2026",
+  "utilityId" : "newark-water-oh",
+  "city" : "newark",
+  "state" : "oh",
+  "publicSideBand" : "City of Newark replaces from the main line to the meter free of charge",
+  "privateSideBand" : "City of Newark says the service line replacement is free of charge to the homeowner through the current program",
+  "fullReplacementBand" : "Full replacement from main to meter is free of charge in the current grant-funded program",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Newark's current program language applies to eligible noticed properties and signup flow",
+  "permitAssumption" : "Eligibility depends on program notices and replacement map status",
+  "restorationAssumption" : "City-funded restoration of disturbed areas is included in the current program",
+  "methodologySummary" : "Newark's current cost page is grounded in the city's grant-funded promise to replace the full line from the main to the meter and restore disturbed areas without charging the homeowner.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when the property is in the city's current replacement workflow and the owner follows the notice and sign-up path instead of arranging a separate private replacement.",
+  "sourceRefs" : [ "src-newark-program", "src-newark-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

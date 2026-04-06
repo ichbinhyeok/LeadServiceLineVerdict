@@ -1,0 +1,32 @@
+{
+  "utilityId" : "rockford-water-il",
+  "utilitySlug" : "rockford-water-division",
+  "utilityName" : "City of Rockford Water Division",
+  "aliases" : [ "Rockford Water", "City of Rockford Water Division" ],
+  "city" : "rockford",
+  "county" : "winnebago",
+  "state" : "il",
+  "serviceAreaName" : "City of Rockford",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://rockfordil.gov/320/Lead-Drinking-Water",
+  "lookupUrl" : "https://experience.arcgis.com/experience/07f1e11a33c64876989a0ed6c6075a81",
+  "notificationUrl" : "https://rockfordil.gov/320/Lead-Drinking-Water",
+  "programIds" : [ "rockford-lslr-program" ],
+  "contactPhone" : "779-348-7300",
+  "contactEmail" : "Jamie.Rott@rockfordil.gov",
+  "inventoryStatus" : "interactive-map-and-citywide-replacement-project-published",
+  "inventorySummary" : "Rockford says customers can use its interactive service line map, submit a digital survey to improve private-side material records, request free annual lead testing, and coordinate full replacement where the owner covers the private side while the city replaces the public segment at the same time.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "rockford" ],
+  "resolverHints" : [ "downtown rockford", "midtown rockford", "signal hill" ],
+  "resolverPostalPrefixes" : [ "611" ],
+  "sourceRefs" : [ "src-rockford-inventory", "src-rockford-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

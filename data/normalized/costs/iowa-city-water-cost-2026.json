@@ -1,0 +1,19 @@
+{
+  "costId" : "iowa-city-water-cost-2026",
+  "utilityId" : "iowa-city-water-ia",
+  "city" : "iowa-city",
+  "state" : "ia",
+  "publicSideBand" : "The city maintains the utility-owned portion to the meter and verifies eligible lead service line work under its lead reduction program",
+  "privateSideBand" : "Owners hire the contractor and the city offers cost-share reimbursement for eligible lead service line replacement work",
+  "fullReplacementBand" : "Service line repairs generally cost thousands of dollars and can reach tens of thousands in complex locations while city reimbursement reduces owner cost in eligible cases",
+  "costConfidence" : "low",
+  "housingTypeAssumption" : "Iowa City publishes reimbursement and broad cost language instead of contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on lead or suspected lead service status city verification and reimbursement paperwork",
+  "restorationAssumption" : "Permits contractor coordination and restoration vary by site and remain owner-managed before reimbursement review",
+  "methodologySummary" : "Iowa City does not publish a fixed local replacement price and instead explains that service line repairs can range from thousands to tens of thousands while the city reimburses part of eligible owner-managed work.",
+  "ownerTriggerSummary" : "Owners remain responsible for hiring the contractor and telling the contractor about the city's cost-share program before work begins so reimbursement can be reviewed after the city verifies eligibility.",
+  "sourceRefs" : [ "src-iowa-city-cost", "src-iowa-city-program", "src-iowa-city-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : true,
+  "mediumConfidence" : false
+}

@@ -1,0 +1,32 @@
+{
+  "utilityId" : "kalamazoo-water-mi",
+  "utilitySlug" : "kalamazoo-water-department",
+  "utilityName" : "City of Kalamazoo Water Department",
+  "aliases" : [ "Kalamazoo Water", "City of Kalamazoo Water" ],
+  "city" : "kalamazoo",
+  "county" : "kalamazoo",
+  "state" : "mi",
+  "serviceAreaName" : "City of Kalamazoo",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.kalamazoocity.org/Residents/Water-Sewer-Service/More-About-Kalamazoos-Utility-Systems/Lead-Copper-Program",
+  "lookupUrl" : "https://www.kalamazoocity.org/Residents/Water-Sewer-Service/More-About-Kalamazoos-Utility-Systems/Lead-Copper-Program",
+  "notificationUrl" : "https://www.kalamazoocity.org/Residents/Water-Sewer-Service/Request-Free-Water-Testing-for-Lead-Copper",
+  "programIds" : [ "kalamazoo-citywide-lslr-program" ],
+  "contactPhone" : "269-337-8000",
+  "contactEmail" : "311@kalamazoocity.org",
+  "inventoryStatus" : "corrosion-control-free-testing-and-replacement-program-published",
+  "inventorySummary" : "Kalamazoo says residents should use the service material lookup tool to check an address, free lead and copper testing plus filters are interim support, and no-charge replacement stays tied to the funded citywide replacement program rather than the testing workflow itself.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "kalamazoo" ],
+  "resolverHints" : [ "edison", "eastwood", "westnedge" ],
+  "resolverPostalPrefixes" : [ "490" ],
+  "sourceRefs" : [ "src-kalamazoo-inventory", "src-kalamazoo-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

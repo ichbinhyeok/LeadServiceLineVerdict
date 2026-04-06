@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-minneapolis-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Minneapolis Public Works",
+  "sourceUrl" : "https://www.minneapolismn.gov/government/projects/lead-service-lines/",
+  "scopeType" : "program",
+  "scopeKey" : "minneapolis-citywide-replacement",
+  "capturedAt" : "2026-04-05T21:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Minneapolis says the city is replacing lead water service lines across the city, that state and federal funds are paying for the work at no cost to property owners, and that the project follows the 2033 state goal and 2037 federal requirement.",
+  "reviewerNote" : "Official Minneapolis replacement project page reviewed manually for no-cost funding and 2033/2037 timing.",
+  "status" : "verified"
+}

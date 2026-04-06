@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-jackson-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Jackson Water Department",
+  "sourceUrl" : "https://www.cityofjackson.org/1117/What-Residents-Need-to-Know-About-Lead-L",
+  "scopeType" : "utility",
+  "scopeKey" : "jackson-water-mi",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Jackson says residents receive mailed letters phone calls email messages and door notices when replacement work is scheduled and that eligible homeowners can sign up early before the next round of free replacement work reaches their area.",
+  "reviewerNote" : "City of Jackson resident guidance page reviewed manually for notice and early sign-up language.",
+  "status" : "verified"
+}

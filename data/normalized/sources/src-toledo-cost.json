@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-toledo-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Toledo Division of Water Distribution",
+  "sourceUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "scopeType" : "cost",
+  "scopeKey" : "toledo-water-cost-2026",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Toledo says there is no direct charge to the property owner for replacement, that grants ARPA and state funding support the program, and that replacement letters are sent 45 days before scheduled work.",
+  "reviewerNote" : "Official Toledo cost language reviewed manually.",
+  "status" : "verified"
+}

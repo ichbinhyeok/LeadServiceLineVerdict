@@ -1,0 +1,32 @@
+{
+  "utilityId" : "bloomington-water-in",
+  "utilitySlug" : "bloomington-utilities",
+  "utilityName" : "City of Bloomington Utilities",
+  "aliases" : [ "Bloomington Utilities", "CBU" ],
+  "city" : "bloomington",
+  "county" : "monroe",
+  "state" : "in",
+  "serviceAreaName" : "City of Bloomington Utilities service area",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://bloomington.in.gov/utilities/inventory",
+  "lookupUrl" : "https://bloomington.in.gov/utilities/inventory",
+  "notificationUrl" : "https://bloomington.in.gov/utilities/inventory",
+  "programIds" : [ ],
+  "contactPhone" : "812-349-3655",
+  "contactEmail" : "wq@bloomington.in.gov",
+  "inventoryStatus" : "inventory-and-right-of-entry-process-published",
+  "inventorySummary" : "Bloomington says its searchable inventory covers more than 27000 service connections, selected owners may be asked to sign right-of-entry forms for field verification, and those verified lead findings will feed into a future citywide replacement schedule.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "bloomington" ],
+  "resolverHints" : [ "elm heights", "prospect hill", "garden hill" ],
+  "resolverPostalPrefixes" : [ "474" ],
+  "sourceRefs" : [ "src-bloomington-inventory", "src-bloomington-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

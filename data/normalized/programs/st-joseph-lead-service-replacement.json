@@ -1,0 +1,19 @@
+{
+  "programId" : "st-joseph-lead-service-replacement",
+  "programSlug" : "st-joseph-lead-service-replacement",
+  "programName" : "Lead Service Replacement Program",
+  "geography" : "City of St. Joseph",
+  "state" : "mi",
+  "utilityIds" : [ "st-joseph-water-mi" ],
+  "subsidyType" : "city-managed annual lead service replacement program with DSMI-driven eligibility and free testing for eligible properties",
+  "publicSideCovered" : "yes the city manages replacement obligations under the state schedule",
+  "privateSideCovered" : "replacement scope depends on DSMI results and city coordination with the property",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligibility is driven by the DSMI point-of-entry inspection results and the current replacement schedule",
+  "contractorRules" : "city staff and contractors coordinate inspections testing and scheduled replacement work",
+  "deadline" : null,
+  "applicationUrl" : "https://www.sjcity.com/cityengineer/page/lead-service-replacement-program",
+  "sourceRefs" : [ "src-st-joseph-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

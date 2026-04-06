@@ -1,0 +1,19 @@
+{
+  "costId" : "madison-water-cost-2026",
+  "utilityId" : "madison-water-utility-wi",
+  "city" : "madison",
+  "state" : "wi",
+  "publicSideBand" : "No public-side cost is published because Madison reports no known utility-owned lead service lines",
+  "privateSideBand" : "Up to $3000 rebate may be available if a property owner discovers lead service on private property",
+  "fullReplacementBand" : "Full replacement cost is mostly owner-managed with rebate support rather than a published citywide price",
+  "costConfidence" : "low",
+  "housingTypeAssumption" : "Madison publishes rebate support but not current bid ranges",
+  "permitAssumption" : "Owner must confirm lead service on private property and contact Madison Water",
+  "restorationAssumption" : "Contractor and restoration scope vary by private-property conditions",
+  "methodologySummary" : "Madison does not have a citywide utility replacement price because it reports no known utility-owned lead service lines and instead offers a capped rebate only when a property owner discovers lead on private property.",
+  "ownerTriggerSummary" : "Owners stay on an owner-managed path unless private lead is discovered and Madison Water confirms rebate eligibility so this route remains a rebate guide rather than a no-cost program page.",
+  "sourceRefs" : [ "src-madison-program", "src-madison-notification" ],
+  "lastVerified" : [ 2026, 4, 5 ],
+  "lowConfidence" : true,
+  "mediumConfidence" : false
+}

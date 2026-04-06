@@ -1,0 +1,19 @@
+{
+  "programId" : "providence-loan-program",
+  "programSlug" : "providence-loan-program",
+  "programName" : "Providence Water 0 Percent Loan Program",
+  "geography" : "Providence Water service area",
+  "state" : "ri",
+  "utilityIds" : [ "providence-water-ri" ],
+  "subsidyType" : "10-year 0 percent interest loan for private-side replacement",
+  "publicSideCovered" : "yes Providence Water replaces the public side at no cost when the owner replaces the private side",
+  "privateSideCovered" : "loan-supported private-side replacement",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "used when a property is not currently in a funded contract",
+  "contractorRules" : "owner uses the Providence Water loan pathway and replacement rules",
+  "deadline" : null,
+  "applicationUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-line-replacement-programs",
+  "sourceRefs" : [ "src-providence-loan" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

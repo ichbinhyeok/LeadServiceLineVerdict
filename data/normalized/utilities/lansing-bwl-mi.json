@@ -1,0 +1,32 @@
+{
+  "utilityId" : "lansing-bwl-mi",
+  "utilitySlug" : "lansing-board-of-water-light",
+  "utilityName" : "Lansing Board of Water and Light",
+  "aliases" : [ "BWL", "Lansing BWL" ],
+  "city" : "lansing",
+  "county" : "ingham",
+  "state" : "mi",
+  "serviceAreaName" : "Lansing Board of Water and Light service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://www.lbwl.com/customers/water-resource-center/lead-information",
+  "lookupUrl" : "https://www.lbwl.com/customers/water-resource-center/lead-information",
+  "notificationUrl" : "https://www.lbwl.com/customers/water-resource-center/lead-information",
+  "programIds" : [ ],
+  "contactPhone" : "517-702-6006",
+  "contactEmail" : "custservice@lbwl.com",
+  "inventoryStatus" : "verified-no-remaining-lead-service-lines",
+  "inventorySummary" : "BWL says it removed all known active lead service lines and galvanized requiring replacement lines by 2016 and verified by October 16 2024 that no lead service lines, galvanized requiring replacement lines, or unknown service lines remain in its system.",
+  "lineCounts" : {
+    "known" : 0,
+    "potential" : null,
+    "unknown" : 0,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "contact_only",
+  "resolverMunicipalities" : [ "lansing" ],
+  "resolverHints" : [ "old town", "westside", "eastside" ],
+  "resolverPostalPrefixes" : [ "489" ],
+  "sourceRefs" : [ "src-lansing-bwl-inventory", "src-lansing-bwl-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

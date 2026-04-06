@@ -1,0 +1,32 @@
+{
+  "utilityId" : "tucson-water-az",
+  "utilitySlug" : "tucson-water",
+  "utilityName" : "Tucson Water",
+  "aliases" : [ "Tucson Water" ],
+  "city" : "tucson",
+  "county" : "pima",
+  "state" : "az",
+  "serviceAreaName" : "Tucson Water service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://www.tucsonaz.gov/Departments/Water/Water-Quality/lead-free",
+  "lookupUrl" : "https://www.tucsonaz.gov/Departments/Water/Water-Quality/lead-free",
+  "notificationUrl" : "https://www.tucsonaz.gov/Departments/Water/Water-Quality/lead-free",
+  "programIds" : [ "tucson-replacement-program" ],
+  "contactPhone" : "520-791-5945",
+  "contactEmail" : "leadcopperruleinquiries@tucsonaz.gov",
+  "inventoryStatus" : "inventory-and-annual-notice-guidance-published",
+  "inventorySummary" : "Tucson Water says customers can view the service line inventory online, annual unknown or galvanized notices do not by themselves mean there is lead at the address, citywide inspections continue, and any confirmed replacement is scheduled at no cost to the customer.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "tucson" ],
+  "resolverHints" : [ ],
+  "resolverPostalPrefixes" : [ "857" ],
+  "sourceRefs" : [ "src-tucson-inventory", "src-tucson-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

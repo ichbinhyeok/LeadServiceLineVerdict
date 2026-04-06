@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-iowa-amwater-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Iowa American Water",
+  "sourceUrl" : "https://amwater.com/iaaw/water-quality/lead-and-drinking-water/index",
+  "scopeType" : "utility",
+  "scopeKey" : "iowa-american-water-ia",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Iowa American Water says customers can use an interactive web-based map to view utility-side and customer-side service line materials and self-report unknown lines through the same workflow.",
+  "reviewerNote" : "Iowa American Water lead and drinking water page reviewed manually for map and self-report workflow.",
+  "status" : "verified"
+}

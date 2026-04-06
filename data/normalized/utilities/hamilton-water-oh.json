@@ -1,0 +1,32 @@
+{
+  "utilityId" : "hamilton-water-oh",
+  "utilitySlug" : "hamilton-utilities-water",
+  "utilityName" : "City of Hamilton Utilities + Public Works Water",
+  "aliases" : [ "City of Hamilton Water", "Hamilton Water" ],
+  "city" : "hamilton",
+  "county" : "butler",
+  "state" : "oh",
+  "serviceAreaName" : "City of Hamilton",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.hamilton-oh.gov/lead-awareness",
+  "lookupUrl" : "https://www.hamilton-oh.gov/lead-awareness",
+  "notificationUrl" : "https://www.hamilton-oh.gov/lead-awareness",
+  "programIds" : [ ],
+  "contactPhone" : "513-785-7430",
+  "contactEmail" : "customerserviceweb@hamilton-oh.gov",
+  "inventoryStatus" : "interactive-map-and-notice-guidance-published",
+  "inventorySummary" : "Hamilton says its interactive lead service line map shows the best available data for both customer-owned and utility-owned portions, private-side replacement cost remains the owner's responsibility, and the city replaces known public-side lead lines during water main projects.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "hamilton" ],
+  "resolverHints" : [ ],
+  "resolverPostalPrefixes" : [ "450" ],
+  "sourceRefs" : [ "src-hamilton-inventory", "src-hamilton-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

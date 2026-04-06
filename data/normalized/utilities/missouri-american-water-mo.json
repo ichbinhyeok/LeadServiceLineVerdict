@@ -1,0 +1,32 @@
+{
+  "utilityId" : "missouri-american-water-mo",
+  "utilitySlug" : "missouri-american-water",
+  "utilityName" : "Missouri American Water",
+  "aliases" : [ "Missouri American Water", "MO American Water" ],
+  "city" : "st-louis",
+  "county" : "st-louis",
+  "state" : "mo",
+  "serviceAreaName" : "Missouri American Water service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://www.amwater.com/moaw/water-quality/lead-and-drinking-water/our-approach",
+  "lookupUrl" : "https://www.amwater.com/moaw/water-quality/lead-and-drinking-water/",
+  "notificationUrl" : "https://www.amwater.com/moaw/water-quality/lead-and-drinking-water/lead-service-faqs",
+  "programIds" : [ "missouri-american-water-lslr-program" ],
+  "contactPhone" : "866-430-0820",
+  "contactEmail" : null,
+  "inventoryStatus" : "service-line-map-self-report-and-2030-replacement-pledge-published",
+  "inventorySummary" : "Missouri American Water says customers can use its service line material map, self-report or request inspection when material is unknown, the company plans to replace lead and galvanized lines in the communities it serves by 2030, and verified lead or galvanized lines move into a no-direct-cost replacement path.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "contact_only",
+  "resolverMunicipalities" : [ "st louis", "saint louis", "st joseph", "joplin", "jefferson city" ],
+  "resolverHints" : [ "chesterfield", "florissant", "arnold", "mexico", "warrensburg" ],
+  "resolverPostalPrefixes" : [ "631", "645", "648", "651" ],
+  "sourceRefs" : [ "src-mo-amwater-inventory", "src-mo-amwater-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

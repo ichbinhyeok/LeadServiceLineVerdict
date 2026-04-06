@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-flint-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Flint",
+  "sourceUrl" : "https://www.cityofflint.com/progress-report-on-flint-water/",
+  "scopeType" : "cost",
+  "scopeKey" : "flint-water-cost-2026",
+  "capturedAt" : "2026-04-05T11:45:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Flint says all lead service line replacement work is done at no cost to residents under the citywide program once consent forms and scheduling are completed.",
+  "reviewerNote" : "City of Flint progress report reviewed manually for no-cost replacement language.",
+  "status" : "verified"
+}

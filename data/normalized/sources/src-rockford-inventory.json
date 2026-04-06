@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-rockford-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Rockford Water Division",
+  "sourceUrl" : "https://rockfordil.gov/320/Lead-Drinking-Water",
+  "scopeType" : "utility",
+  "scopeKey" : "rockford-water-il",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Rockford says customers can use its interactive map to identify public and private service line materials and can submit a digital survey to improve private-side material records.",
+  "reviewerNote" : "Official Rockford lead page reviewed manually for inventory details.",
+  "status" : "verified"
+}

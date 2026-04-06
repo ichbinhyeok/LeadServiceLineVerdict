@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-bloomington-il-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Bloomington Water Department",
+  "sourceUrl" : "https://www.bloomingtonil.gov/departments/water/resident-community/lead-service-line-replacement-project",
+  "scopeType" : "program",
+  "scopeKey" : "bloomington-il-lslr-project",
+  "capturedAt" : "2026-04-05T15:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Bloomington says the lead service line replacement project will replace outdated lead water lines on a block-by-block basis beginning in 2027 under the city's rate-funded replacement plan.",
+  "reviewerNote" : "Official Bloomington program page reviewed manually for block-by-block 2027 replacement timing.",
+  "status" : "verified"
+}

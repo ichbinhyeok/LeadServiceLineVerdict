@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-fort-wayne-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Fort Wayne City Utilities",
+  "sourceUrl" : "https://utilities.cityoffortwayne.org/remove-lead",
+  "scopeType" : "program",
+  "scopeKey" : "fort-wayne-lslr-program",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Fort Wayne says its remove-lead program uses city and federal funding to replace service lines in selected neighborhoods and coordinates work with owners when those projects are scheduled.",
+  "reviewerNote" : "Official Fort Wayne remove-lead page reviewed manually for neighborhood program coverage.",
+  "status" : "verified"
+}

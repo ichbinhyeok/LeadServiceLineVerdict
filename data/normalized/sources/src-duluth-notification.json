@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-duluth-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Duluth Lead Removal Program",
+  "sourceUrl" : "https://duluthmn.gov/public-works-utilities/lead-water-education/lead-service-line-replacement/",
+  "scopeType" : "utility",
+  "scopeKey" : "duluth-water-mn",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Duluth says owners in planned replacement areas are notified in advance by mail, email, phone calls, and door knocks before construction begins.",
+  "reviewerNote" : "Official Duluth replacement page reviewed manually.",
+  "status" : "verified"
+}

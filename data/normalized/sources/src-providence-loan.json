@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-providence-loan",
+  "sourceType" : "utility_program",
+  "publisherName" : "Providence Water",
+  "sourceUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-line-replacement-programs",
+  "scopeType" : "program",
+  "scopeKey" : "providence-loan-program",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Providence Water says owners outside planned contracts can use a 10-year 0 percent interest loan and that the utility will replace the public side at no cost only when the private side is replaced through that separate loan path.",
+  "reviewerNote" : "Official Providence Water replacement program page reviewed manually for 10-year 0 percent loan and public-side coverage rules.",
+  "status" : "verified"
+}

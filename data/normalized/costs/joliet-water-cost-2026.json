@@ -1,0 +1,19 @@
+{
+  "costId" : "joliet-water-cost-2026",
+  "utilityId" : "joliet-water-il",
+  "city" : "joliet",
+  "state" : "il",
+  "publicSideBand" : "The city manages public-side work at no cost under the current program",
+  "privateSideBand" : "Private-side work is replaced at no cost when a lead line qualifies through leak repair elevated testing or water main rehabilitation",
+  "fullReplacementBand" : "Full replacement is no direct charge to the homeowner under the current Joliet program triggers",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Joliet publishes city-program eligibility and no-cost language rather than contractor bid ranges",
+  "permitAssumption" : "Replacement eligibility depends on a qualifying disturbance elevated test result or scheduled rehabilitation work",
+  "restorationAssumption" : "The city also provides point-of-use pitchers at no cost for affected homes",
+  "methodologySummary" : "Joliet ties its cost route to explicit utility triggers such as leak repair elevated test results and water main rehabilitation rather than to a standing homeowner quote.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when a Joliet trigger places the address into the current replacement workflow instead of leaving the owner to initiate replacement outside the city's qualifying paths.",
+  "sourceRefs" : [ "src-joliet-cost", "src-joliet-program", "src-joliet-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

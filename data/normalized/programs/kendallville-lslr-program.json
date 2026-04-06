@@ -1,0 +1,19 @@
+{
+  "programId" : "kendallville-lslr-program",
+  "programSlug" : "kendallville-lslr-program",
+  "programName" : "Lead Line Replacement Program",
+  "geography" : "City of Kendallville",
+  "state" : "in",
+  "utilityIds" : [ "kendallville-water-in" ],
+  "subsidyType" : "city-managed phased replacement program backed by state grant and loan funding",
+  "publicSideCovered" : "yes the city manages replacement work in the public system",
+  "privateSideCovered" : "yes participating customers pay no additional fees when they join the city program",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "service lines requiring replacement are identified through the inventory and phase areas and owners must sign a right-of-entry form",
+  "contractorRules" : "city-selected contractors perform potholing verification replacement and follow-up testing",
+  "deadline" : null,
+  "applicationUrl" : "https://www.kendallvillein.gov/departments/Water/LeadLineReplacementProgram",
+  "sourceRefs" : [ "src-kendallville-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

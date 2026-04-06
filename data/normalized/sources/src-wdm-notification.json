@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-wdm-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "West Des Moines Water Works",
+  "sourceUrl" : "https://www.wdmww.com/faq.aspx",
+  "scopeType" : "utility",
+  "scopeKey" : "west-des-moines-water-ia",
+  "capturedAt" : "2026-04-05T10:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "West Des Moines Water Works points customers to ownership guidance, directs service line questions through the utility customer service team, and asks residents to complete the service line survey while inventory unknowns are reduced.",
+  "reviewerNote" : "Official West Des Moines FAQ reviewed manually.",
+  "status" : "verified"
+}

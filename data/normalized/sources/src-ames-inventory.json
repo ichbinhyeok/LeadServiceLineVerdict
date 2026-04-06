@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-ames-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Ames Water & Pollution Control",
+  "sourceUrl" : "https://www.cityofames.org/My-Government/Departments/Water-Pollution-Control/Water-Treatment-Plant/Lead-in-Drinking-Water",
+  "scopeType" : "utility",
+  "scopeKey" : "ames-water-ia",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Ames publishes a lead inventory page with a city lead service line map inventory PDF and contact information for lead questions.",
+  "reviewerNote" : "Official Ames lead page reviewed manually.",
+  "status" : "verified"
+}

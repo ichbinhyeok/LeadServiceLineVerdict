@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-duluth-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "City of Duluth Lead Removal Program",
+  "sourceUrl" : "https://duluthmn.gov/public-works-utilities/lead-water-education/lead-service-line-identification/",
+  "scopeType" : "utility",
+  "scopeKey" : "duluth-water-mn",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Duluth says its service line inventory is publicly available, shows lead, galvanized, unknown, and non-lead counts, and directs residents to the Lead Inventory Tracking Tool or city contact for address checks.",
+  "reviewerNote" : "Official Duluth inventory page reviewed manually.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-kansas-city-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Kansas City Water",
+  "sourceUrl" : "https://www.kcmo.gov/Home/Components/News/News/2865/231",
+  "scopeType" : "utility",
+  "scopeKey" : "kansas-city-water-mo",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Kansas City says recent service line protection letters are legitimate but optional homeowner coverage communications tied to private repair protection rather than lead replacement notices.",
+  "reviewerNote" : "Official Kansas City communication page reviewed manually for optional coverage clarification.",
+  "status" : "verified"
+}

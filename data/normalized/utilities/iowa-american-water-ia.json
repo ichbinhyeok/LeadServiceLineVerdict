@@ -1,0 +1,32 @@
+{
+  "utilityId" : "iowa-american-water-ia",
+  "utilitySlug" : "iowa-american-water",
+  "utilityName" : "Iowa American Water",
+  "aliases" : [ "Iowa American Water", "American Water Iowa" ],
+  "city" : "davenport",
+  "county" : "scott",
+  "state" : "ia",
+  "serviceAreaName" : "Iowa American Water service area",
+  "serviceAreaType" : "regional-utility",
+  "inventoryUrl" : "https://amwater.com/iaaw/water-quality/lead-and-drinking-water/index",
+  "lookupUrl" : "https://experience.arcgis.com/experience/4997839853a040a8b1f330523b8d929b/",
+  "notificationUrl" : "https://newsroom.amwater.com/2024-11-22-Iowa-American-Water-Announces-Lead-Service-Line-Replacement-Program-Progress-Approximately-1%2C300-Customer-Owned-Lines-Replaced",
+  "programIds" : [ "iowa-american-water-lslr-program" ],
+  "contactPhone" : "866-269-2837",
+  "contactEmail" : null,
+  "inventoryStatus" : "interactive-map-and-no-cost-replacement-program-published",
+  "inventorySummary" : "Iowa American Water says customers can use an interactive lead service line map, unknown and lead customers receive required letters and self-report prompts, and the utility says about 1300 customer-owned lines had already been replaced at no direct cost under the current program by November 2024.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "davenport", "bettendorf", "riverdale" ],
+  "resolverHints" : [ "east davenport", "bettendorf", "riverdale" ],
+  "resolverPostalPrefixes" : [ "527" ],
+  "sourceRefs" : [ "src-iowa-amwater-inventory", "src-iowa-amwater-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

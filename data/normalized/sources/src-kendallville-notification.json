@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-kendallville-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Kendallville Water Department",
+  "sourceUrl" : "https://www.kendallvillein.gov/departments/Water/LeadLineReplacementProgram",
+  "scopeType" : "utility",
+  "scopeKey" : "kendallville-water-in",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Kendallville says customers with services requiring replacement have received paper letters each year around November or December and will continue receiving them until replacement is recorded, separate from the phased funded replacement rollout.",
+  "reviewerNote" : "Official Kendallville notification language reviewed manually.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mud-omaha-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "Metropolitan Utilities District",
+  "sourceUrl" : "https://www.mudomaha.com/lead-information/",
+  "scopeType" : "cost",
+  "scopeKey" : "mud-omaha-water-cost-2026",
+  "capturedAt" : "2026-04-04T23:58:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "M.U.D. says customer-owned lead service lines are replaced free of charge, ties eligibility to its program rollout, and notes an average replacement value of about $8000.",
+  "reviewerNote" : "M.U.D. replacement program page reviewed manually for cost language.",
+  "status" : "verified"
+}

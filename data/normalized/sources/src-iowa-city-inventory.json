@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-iowa-city-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Iowa City Water Division",
+  "sourceUrl" : "https://www.icgov.org/government/departments-and-divisions/public-works/water",
+  "scopeType" : "utility",
+  "scopeKey" : "iowa-city-water-ia",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Iowa City says its water division maintains a lead reduction program and directs customers to service line material verification and replacement guidance through the water division resources.",
+  "reviewerNote" : "Official Iowa City water division page reviewed manually for lead reduction program entry points.",
+  "status" : "verified"
+}

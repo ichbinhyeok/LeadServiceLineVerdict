@@ -1,0 +1,18 @@
+{
+  "guideId" : "guide-what-is-a-lead-service-line",
+  "slug" : "what-is-a-lead-service-line",
+  "title" : "What is a lead service line?",
+  "eyebrow" : "Evergreen guide",
+  "heroSummary" : "A lead service line is the buried pipe that carries water from the water main to a building. It is different from interior plumbing, fixtures, or an old faucet.",
+  "verdict" : "Start by confirming whether the service line itself is lead, galvanized requiring replacement, unknown, or non-lead before you spend time comparing filters, testing, or plumbers.",
+  "keyPoints" : [ "A service line is the pipe between the utility water main and the building entry point.", "Lead service line risk is not the same thing as an old brass faucet or interior solder issue.", "Many utilities track both public-side and private-side material, and the two sides can differ.", "An unknown record means the utility does not yet have enough evidence to classify the line confidently." ],
+  "nextSteps" : [ "Use your utility's official lookup or service line map first.", "Read the notice language carefully to see whether it refers to a known lead line, possible lead line, or unknown material.", "If the line is not being replaced immediately, move next to filter and testing guidance that matches your utility status." ],
+  "faqs" : [ {
+    "question" : "Does a lead service line mean the water is automatically unsafe every day?",
+    "answer" : "Not necessarily. Exposure depends on disturbance, corrosion conditions, and whether lead is present on the public side, private side, or both. That is why the first step is confirming the service line status and reading the utility guidance."
+  }, {
+    "question" : "Is a lead service line the same thing as plumbing inside the house?",
+    "answer" : "No. The service line is the buried pipe that connects the property to the main. Interior plumbing, fixtures, and solder are separate systems and should not be collapsed into the same claim."
+  } ],
+  "lastVerified" : [ 2026, 4, 4 ]
+}

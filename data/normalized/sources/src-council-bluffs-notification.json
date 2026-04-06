@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-council-bluffs-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Council Bluffs Water Works",
+  "sourceUrl" : "https://www.cbwaterworks.com/wp-content/uploads/2022/02/Lead-in-Drinking-Water-Information-Guide-2022_03032022.pdf",
+  "scopeType" : "utility",
+  "scopeKey" : "council-bluffs-water-ia",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Council Bluffs Water Works publishes a lead information guide that explains flushing and other protective steps for customers who may have lead service materials.",
+  "reviewerNote" : "Official Council Bluffs lead information guide reviewed manually.",
+  "status" : "verified"
+}

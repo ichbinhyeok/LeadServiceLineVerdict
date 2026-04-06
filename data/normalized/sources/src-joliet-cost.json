@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-joliet-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Joliet Department of Public Utilities",
+  "sourceUrl" : "https://www.joliet.gov/government/departments/public-utilities/news-information/lead-service-line-info",
+  "scopeType" : "cost",
+  "scopeKey" : "joliet-water-cost-2026",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Joliet says full lead service line replacement is no cost to the homeowner when specific program triggers are met and that affected homes can also receive point-of-use pitchers at no cost.",
+  "reviewerNote" : "Official Joliet cost coverage language reviewed manually for trigger-based no-cost replacement and pitcher support.",
+  "status" : "verified"
+}

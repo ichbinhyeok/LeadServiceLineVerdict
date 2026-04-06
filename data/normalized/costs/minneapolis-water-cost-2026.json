@@ -1,0 +1,19 @@
+{
+  "costId" : "minneapolis-water-cost-2026",
+  "utilityId" : "minneapolis-water-mn",
+  "city" : "minneapolis",
+  "state" : "mn",
+  "publicSideBand" : "No direct charge to property owners in funded project areas",
+  "privateSideBand" : "No direct charge to property owners in funded project areas",
+  "fullReplacementBand" : "Full replacement is described as no cost to property owners where the city has identified eligible project areas",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "City of Minneapolis replacement page publishes no-cost replacement language rather than bid ranges",
+  "permitAssumption" : "Eligibility depends on the current project area and city outreach before work begins",
+  "restorationAssumption" : "City contractors perform the replacement and the city inspects the work with project-area restoration handled through the construction process",
+  "methodologySummary" : "Minneapolis frames cost through funded project-area eligibility rather than bid ranges with state and federal funding covering contractor work for addresses the city has moved into active replacement areas.",
+  "ownerTriggerSummary" : "Owners avoid direct cost when the city identifies the address in an eligible project area and outreach moves the property into the funded replacement queue instead of leaving the line owner-managed.",
+  "sourceRefs" : [ "src-minneapolis-cost", "src-minneapolis-program" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

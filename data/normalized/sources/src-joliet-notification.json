@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-joliet-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Joliet Department of Public Utilities",
+  "sourceUrl" : "https://www.joliet.gov/government/departments/public-utilities/news-information/lead-service-line-info",
+  "scopeType" : "utility",
+  "scopeKey" : "joliet-water-il",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Joliet says qualifying homes can receive free water testing and that point-of-use pitchers are provided at no cost when lead lines elevated tests or disturbance risks trigger interim protection guidance.",
+  "reviewerNote" : "Official Joliet notice and customer guidance reviewed manually for free testing and interim pitcher support.",
+  "status" : "verified"
+}

@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-council-bluffs-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Council Bluffs Water Works",
+  "sourceUrl" : "https://www.cbwaterworks.com/wp-content/uploads/2025/05/Lead-Service-Line-Replacement-Project-Public-Notice.pdf",
+  "scopeType" : "program",
+  "scopeKey" : "council-bluffs-lslr-project",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Council Bluffs Water Works publishes a public notice for an SRF-funded lead service line replacement project and ties the project to its current map lists and customer guidance.",
+  "reviewerNote" : "Official Council Bluffs project notice reviewed manually.",
+  "status" : "verified"
+}

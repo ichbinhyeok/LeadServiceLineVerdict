@@ -1,0 +1,19 @@
+{
+  "programId" : "madison-rebate",
+  "programSlug" : "madison-rebate",
+  "programName" : "Madison Lead Service Rebate",
+  "geography" : "City of Madison",
+  "state" : "wi",
+  "utilityIds" : [ "madison-water-utility-wi" ],
+  "subsidyType" : "rebate up to 3000 dollars for private-property lead service replacement",
+  "publicSideCovered" : "no public-side work because Madison reports no known lead service lines in the utility system",
+  "privateSideCovered" : "partial private-side reimbursement",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "property owner must discover lead service on private property and contact Madison Water for details",
+  "contractorRules" : "owner arranges replacement and seeks rebate support",
+  "deadline" : null,
+  "applicationUrl" : "https://www.cityofmadison.com/water/water-quality/lead-copper-in-water/lead-service-line-inventory",
+  "sourceRefs" : [ "src-madison-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

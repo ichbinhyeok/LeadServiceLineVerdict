@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-evanston-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "City of Evanston Water Production Bureau",
+  "sourceUrl" : "https://www.cityofevanston.org/departments/public_works/plans_programs/private-side_lslr_pilot.php",
+  "scopeType" : "program",
+  "scopeKey" : "evanston-homeowner-initiated-lslr",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Evanston says its homeowner-initiated program coordinates simultaneous public and private replacement, uses licensed plumbers plus city inspection, and offers a $2500 reimbursement with waived permit fees.",
+  "reviewerNote" : "Official Evanston homeowner-initiated program page reviewed manually for reimbursement and permit language.",
+  "status" : "verified"
+}

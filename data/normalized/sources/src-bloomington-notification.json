@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-bloomington-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Bloomington Utilities",
+  "sourceUrl" : "https://bloomington.in.gov/utilities/inventory",
+  "scopeType" : "utility",
+  "scopeKey" : "bloomington-water-in",
+  "capturedAt" : "2026-04-05T13:05:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Bloomington says selected owners may be asked to sign right-of-entry agreements for field verification and that verified lead findings will feed into a future citywide replacement schedule.",
+  "reviewerNote" : "Official Bloomington field-verification and next-step guidance reviewed manually.",
+  "status" : "verified"
+}

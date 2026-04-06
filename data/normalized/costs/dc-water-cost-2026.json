@@ -1,0 +1,19 @@
+{
+  "costId" : "dc-water-cost-2026",
+  "utilityId" : "dc-water-dc",
+  "city" : "washington",
+  "state" : "dc",
+  "publicSideBand" : "Public-side work is utility-managed when DC Water initiates or coordinates a full replacement",
+  "privateSideBand" : "$7200 estimated FY 2024 private-side-only replacement cost",
+  "fullReplacementBand" : "$21000 estimated FY 2024 full replacement cost including permitting traffic control paving and private-property restoration",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "DC Water FY 2024 estimate based on contractor bids and restoration costs",
+  "permitAssumption" : "DC Water estimate includes permitting fees and street traffic maintenance",
+  "restorationAssumption" : "DC Water estimate includes road paving and restoration of private property to pre-construction conditions",
+  "methodologySummary" : "DC Water publishes a utility-specific FY 2024 methodology page with separate private-side-only and full replacement estimates tied to bids permitting traffic control paving and private-property restoration.",
+  "ownerTriggerSummary" : "Owners use the 100 percent assistance path when they qualify for Lead Pipe Replacement Assistance and otherwise face private-property cost in the voluntary full replacement path when no capital project is already scheduled.",
+  "sourceRefs" : [ "src-dc-cost", "src-dc-full-program", "src-dc-private-program" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

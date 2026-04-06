@@ -1,0 +1,32 @@
+{
+  "utilityId" : "mesa-water-az",
+  "utilitySlug" : "mesa-water",
+  "utilityName" : "City of Mesa Water Resources",
+  "aliases" : [ "Mesa Water", "Mesa Water Resources" ],
+  "city" : "mesa",
+  "county" : "maricopa",
+  "state" : "az",
+  "serviceAreaName" : "City of Mesa",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.mesaaz.gov/Utilities/Water-Wastewater/Water-Quality/Lead-and-Copper",
+  "lookupUrl" : "https://www.mesaaz.gov/Utilities/Water-Wastewater/Water-Quality/Lead-and-Copper",
+  "notificationUrl" : "https://www.mesaaz.gov/Utilities/Water-Wastewater/Water-Quality/Lead-and-Copper",
+  "programIds" : [ ],
+  "contactPhone" : "480-644-5980",
+  "contactEmail" : "leadandcopper@mesaaz.gov",
+  "inventoryStatus" : "inventory-published-no-known-public-lead-lines",
+  "inventorySummary" : "Mesa says its inventory map is public, there are no lead containing service lines connecting city mains to customer meters, letters explain next steps for galvanized or unknown private-side material, and if a letter was not sent no further action is needed.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "mesa" ],
+  "resolverHints" : [ "dobson ranch", "downtown mesa", "eastmark", "red mountain ranch" ],
+  "resolverPostalPrefixes" : [ "852" ],
+  "sourceRefs" : [ "src-mesa-inventory", "src-mesa-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

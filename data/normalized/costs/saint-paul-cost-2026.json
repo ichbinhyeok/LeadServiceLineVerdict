@@ -1,0 +1,19 @@
+{
+  "costId" : "saint-paul-cost-2026",
+  "utilityId" : "saint-paul-regional-water-services-mn",
+  "city" : "saint-paul",
+  "state" : "mn",
+  "publicSideBand" : "No direct charge to property owners under Lead Free SPRWS",
+  "privateSideBand" : "No direct charge to property owners under Lead Free SPRWS",
+  "fullReplacementBand" : "No direct charge when the property is eligible in the current replacement program",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "SPRWS published no-cost replacement language for eligible addresses",
+  "permitAssumption" : "SPRWS schedules work by construction area and eligibility",
+  "restorationAssumption" : "SPRWS coordinates replacement and restoration through the program",
+  "methodologySummary" : "SPRWS ties the cost page to its Lead Free SPRWS 10-year replacement program and area-based scheduling so the route reflects funded eligibility rather than an owner quote or market bid.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when the address enters the active Lead Free SPRWS workflow and the property is scheduled in an eligible construction area after the utility's outreach and intent process.",
+  "sourceRefs" : [ "src-saint-paul-program", "src-saint-paul-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

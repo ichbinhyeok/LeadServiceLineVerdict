@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-jackson-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Jackson Water Department",
+  "sourceUrl" : "https://www.cityofjackson.org/1117/What-Residents-Need-to-Know-About-Lead-L",
+  "scopeType" : "cost",
+  "scopeKey" : "jackson-water-cost-2026",
+  "capturedAt" : "2026-04-05T12:25:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Jackson says lead service line replacements do not bring any extra cost to the homeowner when the address is approved in the city program and that the city restores affected areas after construction.",
+  "reviewerNote" : "City of Jackson resident guidance page reviewed manually for no-cost replacement language.",
+  "status" : "verified"
+}

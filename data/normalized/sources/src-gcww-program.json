@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-gcww-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Greater Cincinnati Water Works",
+  "sourceUrl" : "https://la.mygcww.org/",
+  "scopeType" : "program",
+  "scopeKey" : "gcww-full-replacement",
+  "capturedAt" : "2026-04-05T20:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "GCWW says it pays 100 percent of all replacement costs with participation in the program and completes restoration after replacement.",
+  "reviewerNote" : "Official GCWW lead site reviewed manually for full replacement and restoration coverage.",
+  "status" : "verified"
+}

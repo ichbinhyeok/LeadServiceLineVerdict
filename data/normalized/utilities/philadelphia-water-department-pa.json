@@ -1,0 +1,32 @@
+{
+  "utilityId" : "philadelphia-water-department-pa",
+  "utilitySlug" : "philadelphia-water-department",
+  "utilityName" : "Philadelphia Water Department",
+  "aliases" : [ "PWD", "Philly Water" ],
+  "city" : "philadelphia",
+  "county" : "philadelphia",
+  "state" : "pa",
+  "serviceAreaName" : "Philadelphia Water Department service area",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://water.phila.gov/service-line-map",
+  "lookupUrl" : "https://water.phila.gov/service-line/check/",
+  "notificationUrl" : "https://water.phila.gov/lead/info-sessions/",
+  "programIds" : [ "philadelphia-service-line-verification", "philadelphia-help-loan" ],
+  "contactPhone" : "215-685-6300",
+  "contactEmail" : "waterinfo@phila.gov",
+  "inventoryStatus" : "citywide-service-line-map-published",
+  "inventorySummary" : "Philadelphia Water Department says its service line map categorizes properties as lead non-lead galvanized metal incomplete records or mixed, mandatory letters in November 2024 and December 2025 explained customer-owned materials, invited properties can join a limited free verification program, and confirmed lead lines otherwise stay on a zero-interest HELP loan or owner-managed contractor path.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "philadelphia", "philly" ],
+  "resolverHints" : [ "kensington", "west philadelphia", "south philadelphia" ],
+  "resolverPostalPrefixes" : [ "191" ],
+  "sourceRefs" : [ "src-philadelphia-inventory", "src-philadelphia-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 5 ]
+}

@@ -1,0 +1,19 @@
+{
+  "programId" : "iowa-american-water-lslr-program",
+  "programSlug" : "iowa-american-water-lslr-program",
+  "programName" : "Lead Service Line Replacement Program",
+  "geography" : "Iowa American Water service area",
+  "state" : "ia",
+  "utilityIds" : [ "iowa-american-water-ia" ],
+  "subsidyType" : "ongoing utility replacement program that replaces lead and galvanized customer-owned lines at no direct cost",
+  "publicSideCovered" : "yes Iowa American Water coordinates utility-side replacement as part of the program",
+  "privateSideCovered" : "yes customer-owned lead and galvanized lines are replaced at no direct cost",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "lead galvanized or unknown customers identified through the map and notice letters are part of the ongoing replacement effort",
+  "contractorRules" : "Iowa American Water coordinates the replacement process and depends on customer cooperation to identify remaining lines",
+  "deadline" : null,
+  "applicationUrl" : "https://amwater.com/iaaw/water-quality/lead-and-drinking-water/index",
+  "sourceRefs" : [ "src-iowa-amwater-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

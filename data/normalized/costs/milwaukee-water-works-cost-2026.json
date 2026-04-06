@@ -1,0 +1,19 @@
+{
+  "costId" : "milwaukee-water-works-cost-2026",
+  "utilityId" : "milwaukee-water-works-wi",
+  "city" : "milwaukee",
+  "state" : "wi",
+  "publicSideBand" : "Milwaukee Water Works pays the publicly owned section",
+  "privateSideBand" : "$3999 average 2025 private-side cost in the Owner Request Program and the owner pays the lesser of actual cost or the average cost",
+  "fullReplacementBand" : "For many required 1-4 unit non-commercial replacements the owner pays nothing and owner-request replacements require the owner to cover the private side",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Published owner-request assumptions for Milwaukee residential properties",
+  "permitAssumption" : "Program selection and city scheduling determine when work can proceed",
+  "restorationAssumption" : "Actual contractor scope varies by property and Milwaukee cites an annual average rather than a fixed bid",
+  "methodologySummary" : "Milwaukee publishes a utility-specific owner-request methodology anchored to the 2025 average private-side cost and a separate no-cost path for required replacement cases that the city schedules.",
+  "ownerTriggerSummary" : "Owners pay only in the owner-request path while required 1-4 unit non-commercial replacement cases can be city-funded and use a different notice and scheduling workflow.",
+  "sourceRefs" : [ "src-milwaukee-owner-request", "src-milwaukee-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

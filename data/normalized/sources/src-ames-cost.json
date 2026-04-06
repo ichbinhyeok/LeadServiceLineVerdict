@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-ames-cost",
+  "sourceType" : "utility_cost",
+  "publisherName" : "City of Ames Water & Pollution Control",
+  "sourceUrl" : "https://www.cityofames.org/My-Government/Departments/Water-Pollution-Control/Service-Lines",
+  "scopeType" : "cost",
+  "scopeKey" : "ames-water-cost-2026",
+  "capturedAt" : "2026-04-04T23:59:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Ames says the property owner is responsible for the service line to the meter except when replacement is coordinated through a city water main project or related city work, so the city does not publish a standing no-cost replacement promise.",
+  "reviewerNote" : "Official Ames service lines page reviewed manually for ownership language.",
+  "status" : "verified"
+}

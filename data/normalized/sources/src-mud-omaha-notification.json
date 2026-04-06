@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-mud-omaha-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "Metropolitan Utilities District",
+  "sourceUrl" : "https://www.mudomaha.com/lead-status-unknown/",
+  "scopeType" : "utility",
+  "scopeKey" : "mud-omaha-ne",
+  "capturedAt" : "2026-04-05T22:10:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "M.U.D. gives unknown-status customers a survey path, instructions to identify service line material, and access to free pitchers or sample kits through partner programs.",
+  "reviewerNote" : "M.U.D. lead-status-unknown page reviewed manually for survey, pitcher, and sample-kit guidance.",
+  "status" : "verified"
+}

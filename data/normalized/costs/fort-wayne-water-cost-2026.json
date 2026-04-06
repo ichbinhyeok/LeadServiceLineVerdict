@@ -1,0 +1,19 @@
+{
+  "costId" : "fort-wayne-water-cost-2026",
+  "utilityId" : "fort-wayne-water-in",
+  "city" : "fort-wayne",
+  "state" : "in",
+  "publicSideBand" : "City Utilities coordinates utility-managed replacement at no direct charge during city grant-funded lead projects",
+  "privateSideBand" : "Project-area homeowners can receive free replacement while owner-requested or out-of-area work may involve private-side contractor cost",
+  "fullReplacementBand" : "Full replacement is no direct charge in grant-funded project areas and cost varies outside those target areas",
+  "costConfidence" : "medium",
+  "housingTypeAssumption" : "Fort Wayne publishes grant-funded lead replacement language rather than contractor bid ranges",
+  "permitAssumption" : "Eligibility depends on the city's lead page survey project area and replacement scheduling",
+  "restorationAssumption" : "Restoration scope follows city contractor work and the city water quality team coordinates follow-up testing",
+  "methodologySummary" : "Fort Wayne anchors cost in selected grant-funded neighborhood projects rather than a citywide quote and ties replacement coverage to the remove-lead program's area-based rollout and utility coordination.",
+  "ownerTriggerSummary" : "Owners avoid direct cost only when the property is inside a funded Fort Wayne replacement area and the city schedules the work rather than leaving the owner to pursue an out-of-area contractor path.",
+  "sourceRefs" : [ "src-fort-wayne-cost", "src-fort-wayne-program", "src-fort-wayne-notification" ],
+  "lastVerified" : [ 2026, 4, 4 ],
+  "lowConfidence" : false,
+  "mediumConfidence" : true
+}

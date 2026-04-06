@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-toledo-notification",
+  "sourceType" : "utility_notice",
+  "publisherName" : "City of Toledo Division of Water Distribution",
+  "sourceUrl" : "https://toledo.oh.gov/residents/water/lead-service-lines",
+  "scopeType" : "utility",
+  "scopeKey" : "toledo-water-oh",
+  "capturedAt" : "2026-04-05T09:30:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Toledo says annual notices were mailed to about 50000 customers with confirmed lead, galvanized requiring replacement, or unknown material on either side of the service line, and a replacement letter is sent 45 days before scheduled lead line work.",
+  "reviewerNote" : "Official Toledo annual notice guidance reviewed manually.",
+  "status" : "verified"
+}

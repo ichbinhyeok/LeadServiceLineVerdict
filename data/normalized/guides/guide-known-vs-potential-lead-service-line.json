@@ -1,0 +1,18 @@
+{
+  "guideId" : "guide-known-vs-potential-lead-service-line",
+  "slug" : "known-vs-potential-lead-service-line",
+  "title" : "Known vs potential lead service line",
+  "eyebrow" : "Evergreen guide",
+  "heroSummary" : "Utilities use different labels for certainty. A known lead line means the utility has direct evidence or a verified record. A potential or possible lead line often means the utility still needs more evidence.",
+  "verdict" : "Do not treat a potential lead notice as the same thing as a confirmed line unless the utility explicitly says it should be treated that way for replacement planning.",
+  "keyPoints" : [ "Known or verified lead usually means the utility has inspection, replacement, or material-record evidence.", "Potential, possible, or suspected lead often reflects incomplete records or a statistical assumption.", "Unknown service line material is a separate category and should stay separate from both known lead and non-lead.", "Your next action depends on the utility's wording, not a generic internet definition." ],
+  "nextSteps" : [ "Compare the exact notice language against the utility's current inventory or notice page.", "If the property is still only potential or unknown, check whether the utility offers verification or inspection.", "If the property is confirmed lead, move next to program and replacement-cost pages tied to the same utility." ],
+  "faqs" : [ {
+    "question" : "Why would a utility call a line possible lead instead of lead?",
+    "answer" : "Utilities often have legacy records with gaps. They may know the installation era, neighborhood pattern, or historic material records but still lack a direct inspection or replacement event that confirms the current material."
+  }, {
+    "question" : "Should buyers and sellers handle possible lead the same way as known lead?",
+    "answer" : "Usually the language should be more specific. Buyers and sellers should frame the issue around the utility's actual certainty level and the cost or verification path that follows from that status."
+  } ],
+  "lastVerified" : [ 2026, 4, 4 ]
+}

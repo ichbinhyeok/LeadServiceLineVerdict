@@ -1,0 +1,19 @@
+{
+  "programId" : "dubuque-lslr-pilot-program",
+  "programSlug" : "dubuque-lslr-pilot-program",
+  "programName" : "Lead Service Line Replacement Pilot Program",
+  "geography" : "City of Dubuque",
+  "state" : "ia",
+  "utilityIds" : [ "dubuque-water-ia" ],
+  "subsidyType" : "interest-based pilot program for selected private lead service line replacements backed by federal and state funding",
+  "publicSideCovered" : "no separate public-side claim because Dubuque says the service line from the water main to the meter is customer-owned in Dubuque",
+  "privateSideCovered" : "selected eligible private lead service lines can be replaced through the city pilot at no cost to the owner or tenant",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "eligibility depends on current pilot-area criteria Water Department review and city outreach after interest forms are submitted",
+  "contractorRules" : "property owners submit the interest form and complete verification or consent steps if the city selects the address",
+  "deadline" : null,
+  "applicationUrl" : "https://cityofdubuque.org/3165/Lead-Service-Line-Replacement-Pilot-Prog",
+  "sourceRefs" : [ "src-dubuque-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

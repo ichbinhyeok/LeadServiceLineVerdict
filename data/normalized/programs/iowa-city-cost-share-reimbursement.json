@@ -1,0 +1,19 @@
+{
+  "programId" : "iowa-city-cost-share-reimbursement",
+  "programSlug" : "iowa-city-cost-share-reimbursement",
+  "programName" : "Cost-Share Reimbursement Program",
+  "geography" : "City of Iowa City",
+  "state" : "ia",
+  "utilityIds" : [ "iowa-city-water-ia" ],
+  "subsidyType" : "cost-share reimbursement path for eligible lead service line replacement after city verification and contractor work",
+  "publicSideCovered" : "partial the city maintains the utility-owned portion to the meter and verifies eligible work",
+  "privateSideCovered" : "partial eligible lead or suspected lead service line replacements can use the city reimbursement path after contractor completion",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "homes with lead or suspected lead service lines using the city's verification and reimbursement rules may qualify",
+  "contractorRules" : "homeowners hire a local excavating or plumbing contractor and the city verifies materials permits and reimbursement paperwork",
+  "deadline" : null,
+  "applicationUrl" : "https://www.icgov.org/home/showpublisheddocument/160/638974213462430000",
+  "sourceRefs" : [ "src-iowa-city-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

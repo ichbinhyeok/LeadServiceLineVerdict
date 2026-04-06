@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-milwaukee-prioritization",
+  "sourceType" : "utility_program",
+  "publisherName" : "Milwaukee Water Works",
+  "sourceUrl" : "https://city.milwaukee.gov/water/LeadPipes/MPP",
+  "scopeType" : "program",
+  "scopeKey" : "milwaukee-prioritization-program",
+  "capturedAt" : "2026-04-04T20:20:00+09:00",
+  "effectiveDate" : "2026-04-04",
+  "claimSummary" : "Milwaukee's prioritization page says the utility aims to replace 65000 lead service lines by 2037 and uses line density child blood lead data and socioeconomic need to prioritize neighborhoods.",
+  "reviewerNote" : "Official prioritization program page reviewed manually.",
+  "status" : "verified"
+}

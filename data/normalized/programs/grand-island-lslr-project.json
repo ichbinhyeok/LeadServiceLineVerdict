@@ -1,0 +1,19 @@
+{
+  "programId" : "grand-island-lslr-project",
+  "programSlug" : "grand-island-lslr-project",
+  "programName" : "Lead Service Line Replacement Project",
+  "geography" : "City of Grand Island",
+  "state" : "ne",
+  "utilityIds" : [ "grand-island-utilities-ne" ],
+  "subsidyType" : "multi-year utility-managed replacement project for addresses identified through the GIUD inventory and mailed notices",
+  "publicSideCovered" : "yes the utility manages replacement work through the current city project",
+  "privateSideCovered" : "private-side responsibility should be confirmed with GIUD for the specific address because the public page focuses on identification and project scheduling",
+  "incomeRules" : "no published income screen",
+  "propertyRules" : "addresses with lead or unknown service material move through the city's notice and project workflow",
+  "contractorRules" : "GIUD staff and project contractors coordinate mailed notices inspections and replacement scheduling",
+  "deadline" : null,
+  "applicationUrl" : "https://www.giud.com/o/giud/page/lead-service-line-replacement-project-lsl",
+  "sourceRefs" : [ "src-grand-island-program" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

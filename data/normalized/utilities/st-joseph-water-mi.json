@@ -1,0 +1,32 @@
+{
+  "utilityId" : "st-joseph-water-mi",
+  "utilitySlug" : "st-joseph-water-and-sewer",
+  "utilityName" : "City of St. Joseph Water and Sewer Department",
+  "aliases" : [ "St. Joseph Water", "St Joseph Water" ],
+  "city" : "st-joseph",
+  "county" : "berrien",
+  "state" : "mi",
+  "serviceAreaName" : "City of St. Joseph",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://www.sjcity.com/cityengineer/page/lead-service-replacement-program",
+  "lookupUrl" : "https://www.sjcity.com/cityengineer/page/lead-service-replacement-program",
+  "notificationUrl" : "https://www.sjcity.com/cityengineer/page/lead-service-replacement-program",
+  "programIds" : [ "st-joseph-lead-service-replacement" ],
+  "contactPhone" : "269-983-1240",
+  "contactEmail" : "leadservice@sjcity.com",
+  "inventoryStatus" : "dsmi-map-and-testing-program-published",
+  "inventorySummary" : "St. Joseph says its complete distribution system material inventory was submitted in October 2024, the public DSMI map is the current address-check path, and owners of unknown lines can move toward the replacement queue through point-of-entry inspections and the city's voluntary testing workflow.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "st joseph", "saint joseph" ],
+  "resolverHints" : [ "downtown st joseph", "silver beach", "upton" ],
+  "resolverPostalPrefixes" : [ "490" ],
+  "sourceRefs" : [ "src-st-joseph-inventory", "src-st-joseph-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

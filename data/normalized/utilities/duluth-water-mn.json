@@ -1,0 +1,32 @@
+{
+  "utilityId" : "duluth-water-mn",
+  "utilitySlug" : "duluth-lead-removal-program",
+  "utilityName" : "City of Duluth Lead Removal Program",
+  "aliases" : [ "Duluth Water", "Lead Removal Program" ],
+  "city" : "duluth",
+  "county" : "st-louis",
+  "state" : "mn",
+  "serviceAreaName" : "City of Duluth",
+  "serviceAreaType" : "city",
+  "inventoryUrl" : "https://duluthmn.gov/public-works-utilities/lead-water-education/lead-service-line-identification/",
+  "lookupUrl" : "https://duluthmn.gov/public-works-utilities/lead-water-education/lead-service-line-identification/",
+  "notificationUrl" : "https://duluthmn.gov/public-works-utilities/lead-water-education/lead-service-line-replacement/",
+  "programIds" : [ "duluth-citywide-replacement" ],
+  "contactPhone" : "218-730-4673",
+  "contactEmail" : "leadremoval@duluthmn.gov",
+  "inventoryStatus" : "inventory-published-through-city-and-state-tooling",
+  "inventorySummary" : "Duluth says its service line inventory is publicly available through the city page and the Minnesota tool, and that city-led replacement projects are funded at no cost to property owners in eligible areas.",
+  "lineCounts" : {
+    "known" : null,
+    "potential" : null,
+    "unknown" : null,
+    "nonLead" : null
+  },
+  "addressLookupMode" : "official_lookup",
+  "resolverMunicipalities" : [ "duluth" ],
+  "resolverHints" : [ "lakeside", "lincoln park", "west duluth", "hillside" ],
+  "resolverPostalPrefixes" : [ "558" ],
+  "sourceRefs" : [ "src-duluth-inventory", "src-duluth-notification" ],
+  "verificationStatus" : "verified",
+  "lastVerified" : [ 2026, 4, 4 ]
+}

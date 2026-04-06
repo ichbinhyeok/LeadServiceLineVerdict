@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-providence-program",
+  "sourceType" : "utility_program",
+  "publisherName" : "Providence Water",
+  "sourceUrl" : "https://www.provwater.com/water-quality/lead-center/lead-service-line-replacement-programs",
+  "scopeType" : "program",
+  "scopeKey" : "providence-accelerated-replacement",
+  "capturedAt" : "2026-04-05T16:20:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Providence Water says it is using federal and state funding to replace lead service lines for free in planned contracts and aims to replace all lead service lines in its service area by 2033.",
+  "reviewerNote" : "Official Providence Water replacement program page reviewed manually for free planned-contract replacement and 2033 target.",
+  "status" : "verified"
+}

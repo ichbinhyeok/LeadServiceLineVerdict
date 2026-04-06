@@ -1,0 +1,13 @@
+{
+  "sourceId" : "src-fort-wayne-inventory",
+  "sourceType" : "utility_inventory",
+  "publisherName" : "Fort Wayne City Utilities",
+  "sourceUrl" : "https://www.cityoffortwayne.org/lead",
+  "scopeType" : "utility",
+  "scopeKey" : "fort-wayne-water-in",
+  "capturedAt" : "2026-04-05T14:15:00+09:00",
+  "effectiveDate" : "2026-04-05",
+  "claimSummary" : "Fort Wayne says homes built before 1937 are more likely to have lead service lines and directs customers to the city lead page for inventory guidance and next steps.",
+  "reviewerNote" : "Official Fort Wayne lead page reviewed manually for pre-1937 risk and inventory guidance.",
+  "status" : "verified"
+}
