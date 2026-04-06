@@ -73,7 +73,7 @@
                 <h2>Program detail should stay narrower than the marketing copy.</h2>
                 @if (page.programSummaries().isEmpty())
                     <div class="support-note">
-                        No verified utility-linked program is loaded yet. This route remains source-first and avoids promising funding or eligibility.
+            No verified local replacement program is loaded yet. This route stays source-first and avoids promising funding or eligibility.
                     </div>
                 @else
                     <div class="content-stack">

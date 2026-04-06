@@ -60,8 +60,8 @@
                     @endif
                 </div>
                 <div class="floating-note">
-                    <strong>Guide boundary</strong>
-                    <p>These evergreen explainers are support material. The local utility record still decides what a reader should do next for a real address.</p>
+                    <strong>How to use this guide</strong>
+                    <p>These explainers give background context. The local utility record still decides what a reader should do next for a real address.</p>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
         <div class="section-grid two">
             <div>
                 <div class="editorial-line">
-                    <div class="kicker">Core reading</div>
+                    <div class="kicker">What to know first</div>
                 </div>
                 <h2>What to keep straight before you move local.</h2>
                 <div class="checklist-list" style="margin-top: 22px;">
@@ -85,9 +85,9 @@
             </div>
             <div>
                 <div class="editorial-line">
-                    <div class="kicker">Local handoff</div>
+                    <div class="kicker">Then go local</div>
                 </div>
-                <h2>How to use this guide without drifting generic.</h2>
+                <h2>How to move from background context to the right utility page.</h2>
                 <div class="checklist-list" style="margin-top: 22px;">
                     @for (var step : page.guide().nextSteps())
                         <div class="checklist-item">
@@ -119,7 +119,7 @@
     @if (!page.relatedGuides().isEmpty())
         <section class="section-block">
             <div class="editorial-line">
-                <div class="kicker">Read next</div>
+                <div class="kicker">Related guides</div>
             </div>
             <h2>Stay in the same narrow decision lane.</h2>
             <div class="section-grid three">

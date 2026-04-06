@@ -35,7 +35,7 @@
     <section class="hero-band">
         <div class="hero-grid">
             <div class="hero-copy">
-                <div class="kicker">State utility directory</div>
+                <div class="kicker">State utility list</div>
                 <h1>${page.state().toUpperCase()} lead service line utilities.</h1>
                 <p>Use the state page when you do not know the utility yet. The real answer still lives on the local utility page, where notice language, replacement support, and cost responsibility can differ by operator.</p>
                 <div class="hero-actions">
@@ -46,17 +46,17 @@
                 </div>
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <small>Utility canonicals</small>
+                        <small>Utilities covered</small>
                         <strong>${page.utilities().size()}</strong>
-                        <p>Utility pages in the current ${page.state().toUpperCase()} launch cohort.</p>
+                        <p>Utility pages currently covered in ${page.state().toUpperCase()}.</p>
                     </div>
                     <div class="stat-card soft">
                         <small>Verified programs</small>
                         <strong>${page.programCount()}</strong>
-                        <p>Utility-linked replacement support records currently surfaced for this state.</p>
+                        <p>Replacement support records currently surfaced for this state.</p>
                     </div>
                     <div class="stat-card warm">
-                        <small>Public pages</small>
+                        <small>Pages live</small>
                         <strong>${page.routeCount()}</strong>
                         <p>Overview, notice, program, cost, and selective support pages currently live in this state.</p>
                     </div>
@@ -67,7 +67,7 @@
                     <img src="/media/service-line-diagram.jpg" alt="Lead service line diagram and local record blueprint">
                 </div>
                 <div class="floating-note">
-                    <strong>Why this page exists</strong>
+                    <strong>How to use this page</strong>
                     <p>State pages help readers orient. Utility pages still carry the authoritative local distinctions around lead, possible lead, unknown material, and who pays.</p>
                 </div>
             </div>
@@ -76,18 +76,18 @@
 
     <section class="section-block">
         <div class="editorial-line">
-            <div class="kicker">How to use the hub</div>
+            <div class="kicker">How to use the state page</div>
         </div>
-        <h2>Do not stop at the state layer.</h2>
+        <h2>Use the state page to narrow the right utility.</h2>
         <div class="section-grid three">
             <div class="content-card tint-soft">
                 <span class="label">1. Find the utility</span>
-                <h3>Use the state hub to narrow the local operator.</h3>
+                <h3>Use the state page to narrow the local operator.</h3>
                 <p>The correct utility matters more than the city label alone because the inventory record, notice language, and program rules can all change by operator.</p>
             </div>
             <div class="content-card tint-blue">
                 <span class="label">2. Open the utility page</span>
-                <h3>Move from directory to decision page.</h3>
+                <h3>Then open the utility page.</h3>
                 <p>The utility page is where the local record separates overview, notification, program, and replacement-cost questions instead of flattening them into one generic answer.</p>
             </div>
             <div class="content-card tint-warm">
@@ -108,8 +108,8 @@
                 <p class="lede">Use these entries to find the right utility. Then open the local record for the actual answer.</p>
             </div>
             <div class="support-banner">
-                <strong>Canonical rule</strong>
-                <p>Utility pages stay primary. City and state layers are only navigation aids unless the question is explicitly about statewide program coverage.</p>
+                    <strong>Keep the utility page primary</strong>
+                    <p>City and state pages help you navigate. The utility page is still the place to read the actual notice, program, and replacement details.</p>
             </div>
         </div>
         <div class="section-grid two" style="margin-top: 28px;">
@@ -136,11 +136,11 @@
                     <div class="kicker">Program layer</div>
                 </div>
                 <h2>Statewide support still flows through utility pages.</h2>
-                <p>The state program rollup is useful when the question is <em>which utilities in this state have verified support?</em> It is not a replacement for the local utility record.</p>
+                <p>The state program page is useful when the question is <em>which utilities in this state have verified support?</em> It is not a replacement for the local utility record.</p>
             </div>
             <div class="aside-panel">
                 <h2>Use the rollup when funding is the first question.</h2>
-                <p>Once the program or reimbursement path matters more than the inventory label itself, drop into the statewide support ledger and then move back into the matching utility page.</p>
+                <p>Once the program or reimbursement path matters more than the inventory label itself, open the state program page and then move back into the matching utility page.</p>
                 @if (page.programCount() > 0)
                     <div class="hero-actions">
                         <a class="button" href="/lead-service-line/${page.state()}/programs">Open ${page.state().toUpperCase()} program rollup</a>

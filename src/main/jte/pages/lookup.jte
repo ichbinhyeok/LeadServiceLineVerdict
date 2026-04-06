@@ -37,7 +37,7 @@
             <div class="hero-copy">
                 <div class="status-pill ${page.ambiguous() ? "warm" : ""}">Utility lookup</div>
                 <h1>Find the most likely utility before you rely on a notice, program, or cost page.</h1>
-                <p>This resolver is meant to narrow to the right utility page. The utility's own map, address checker, or mailed notice still controls the final handoff.</p>
+                <p>This lookup is meant to narrow to the right utility page. The utility's own map, address checker, or mailed notice still controls the final handoff.</p>
                 @if (page.attempted())
                     <div class="note-panel" style="margin-top: 24px;">
                         <strong>Match summary</strong>

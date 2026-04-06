@@ -37,7 +37,7 @@
             <div class="hero-copy">
                 <div class="kicker">State program tracker</div>
                 <h1>${page.state().toUpperCase()} lead service line programs.</h1>
-                <p>This rollup is for the reader whose first question is <em>what funding or utility-managed replacement path exists in this state?</em> The entries stay utility-linked so the statewide view never detaches from the local record.</p>
+                <p>This page is for the reader whose first question is <em>what funding or utility-managed replacement path exists in this state?</em> Every entry still leads back to a local utility page.</p>
                 <div class="hero-actions">
                     <a class="button" href="/lead-service-line/${page.state()}">Back to ${page.state().toUpperCase()} hub</a>
                     <a class="button secondary" href="/lookup">Run address lookup</a>
@@ -46,7 +46,7 @@
                     <div class="stat-card">
                         <small>Verified programs</small>
                         <strong>${page.programs().size()}</strong>
-                        <p>Support paths with live utility-linked evidence in the current state cohort.</p>
+                        <p>Support paths with live local evidence in the current state coverage set.</p>
                     </div>
                     <div class="stat-card soft">
                         <small>Covered utilities</small>
@@ -54,7 +54,7 @@
                         <p>Utility pages currently linked to at least one replacement, reimbursement, or inspection-support path.</p>
                     </div>
                     <div class="stat-card warm">
-                        <small>Public pages</small>
+                        <small>Pages live</small>
                         <strong>${page.routeCount()}</strong>
                         <p>This page helps you move from a statewide funding question into the right local utility record.</p>
                     </div>
@@ -65,7 +65,7 @@
                     <img src="/media/pipes-hero.jpg" alt="Underground utility piping and replacement support context">
                 </div>
                 <div class="floating-note">
-                    <strong>Program reading rule</strong>
+                    <strong>Read the coverage first</strong>
                     <p>Grant, reimbursement, loan, and utility-managed replacement should never be collapsed into the same claim. Coverage boundaries matter more than the headline label.</p>
                 </div>
             </div>
@@ -91,14 +91,14 @@
             <div class="content-card tint-soft">
                 <span class="label">Return path</span>
                 <h3>Always route back to the utility page.</h3>
-                <p>Once the funding path is clear, the utility-specific overview, notification, and cost pages still control how the record should be interpreted for a real address.</p>
+                <p>Once the funding path is clear, the utility overview, notification, and cost pages still control how the record should be interpreted for a real address.</p>
             </div>
         </div>
     </section>
 
     <section class="section-block section-soft">
         <div class="editorial-line">
-            <div class="kicker">Utility-linked programs</div>
+            <div class="kicker">Programs in this state</div>
         </div>
         <h2>Current verified support paths in ${page.state().toUpperCase()}.</h2>
         <div class="content-stack">
@@ -144,10 +144,10 @@
     <div class="footer__inner">
         <div>
             <div class="brand-mark">Lead Service Line Verdict</div>
-            <p class="muted">${page.state().toUpperCase()} program tracker for utility-linked lead line replacement support.</p>
+            <p class="muted">${page.state().toUpperCase()} program tracker for local lead line replacement support.</p>
         </div>
         <div class="footer__links">
-            <a href="/lead-service-line/${page.state()}">State Hub</a>
+            <a href="/lead-service-line/${page.state()}">State page</a>
             <a href="/lookup">Lookup</a>
         </div>
     </div>

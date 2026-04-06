@@ -44,8 +44,8 @@
                     @endfor
                 </div>
                 <div class="support-banner" style="margin-top: 24px;">
-                    <strong>Support route only</strong>
-                    <p>This page should help a transaction conversation after the utility overview, notice, program, and cost routes are understood. It should not replace them, and it should not read like a generic plumbing checklist.</p>
+                    <strong>Transaction support only</strong>
+                    <p>This page should help a transaction conversation after the utility overview, notice, program, and cost pages are understood. It should not replace them, and it should not read like a generic plumbing checklist.</p>
                 </div>
             </div>
             <div class="hero-media">

@@ -56,7 +56,7 @@
                     <div class="stat-card warm">
                         <small>Programs tracked</small>
                         <strong>${page.programCount()}</strong>
-                        <p>Verified utility-linked replacement programs, reimbursements, and funded support paths.</p>
+                        <p>Local replacement programs, reimbursements, and funded support paths now tracked on the site.</p>
                     </div>
                 </div>
             </div>
@@ -77,7 +77,7 @@
             <div class="kicker">Utility lookup</div>
         </div>
         <h2>Start with your utility, then confirm on the official address checker.</h2>
-        <p class="lede">Use this when you know the address, city, or utility name but not the right local record yet. The resolver points you to the most likely utility page, then hands you to the official lookup.</p>
+        <p class="lede">Use this when you know the address, city, or utility name but not the right local record yet. The lookup points you to the most likely utility page, then hands you to the official lookup.</p>
         <form class="lookup-form" method="post" action="/lookup">
             <label>
                 Address or utility hint
@@ -113,7 +113,7 @@
                     @for (var state : page.states())
                         <div class="content-card">
                             <h3><a href="/lead-service-line/${state.state()}">${state.state().toUpperCase()}</a></h3>
-                            <p>${state.utilityCount()} utilities and ${state.indexableRouteCount()} public pages in the current launch set.</p>
+                            <p>${state.utilityCount()} utilities and ${state.indexableRouteCount()} pages currently live.</p>
                         </div>
                     @endfor
                 </div>
@@ -167,7 +167,7 @@
             <div class="kicker">Background guides</div>
         </div>
         <h2>Guides help with context, but the utility page stays primary.</h2>
-        <p class="lede">Use a guide when you need the basics first. Then move back into the utility-specific record for the actual decision.</p>
+        <p class="lede">Use a guide when you need the basics first. Then move back into the local utility record for the actual decision.</p>
         <div class="section-grid three">
             @for (var guide : page.guides())
                 <div class="content-card">

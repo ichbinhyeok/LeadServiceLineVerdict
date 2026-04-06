@@ -53,7 +53,7 @@
                     <img src="/media/kitchen-faucet.jpg" alt="Modern kitchen faucet with running water">
                 </div>
                 <div class="floating-note">
-                    <strong>Certified authority</strong>
+                    <strong>Interim only</strong>
                     <p>Filters and testing are interim safety layers. They are not equivalent to a utility-confirmed full replacement path.</p>
                 </div>
             </div>
@@ -62,7 +62,7 @@
 
     <section class="section-block section-soft">
         <div class="support-note">
-            <p><strong>Trust constraint:</strong> filter guidance sits below inventory, notice, and replacement decisions. Use it when replacement is delayed or line status remains unresolved, not as a substitute for line replacement.</p>
+            <p><strong>Use this only when replacement is not immediate:</strong> filter guidance sits below inventory, notice, and replacement decisions. It is not a substitute for line replacement.</p>
         </div>
     </section>
 
