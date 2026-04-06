@@ -153,14 +153,20 @@ public class SiteController {
 
 	@GetMapping(value = "/robots.txt", produces = MediaType.TEXT_PLAIN_VALUE)
 	@ResponseBody
-	public String robotsTxt() {
-		return pageService.robotsTxt();
+	public ResponseEntity<String> robotsTxt() {
+		return ResponseEntity.ok()
+				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
+				.header("Pragma", "no-cache")
+				.body(pageService.robotsTxt());
 	}
 
 	@GetMapping(value = "/sitemap.xml", produces = MediaType.APPLICATION_XML_VALUE)
 	@ResponseBody
-	public String sitemapXml() {
-		return pageService.sitemapXml();
+	public ResponseEntity<String> sitemapXml() {
+		return ResponseEntity.ok()
+				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
+				.header("Pragma", "no-cache")
+				.body(pageService.sitemapXml());
 	}
 
 	private void requireOpsAccess(String opsToken) {

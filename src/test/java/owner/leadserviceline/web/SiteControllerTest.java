@@ -1202,6 +1202,7 @@ class SiteControllerTest {
 		mockMvc.perform(get("/robots.txt"))
 				.andExpect(status().isOk())
 				.andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_PLAIN))
+				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
 				.andExpect(content().string(Matchers.containsString("Disallow: /lookup")))
 				.andExpect(content().string(Matchers.containsString("Disallow: /ops/")))
 				.andExpect(content().string(Matchers.containsString("Sitemap: https://example.test/sitemap.xml")));
@@ -1212,6 +1213,7 @@ class SiteControllerTest {
 		mockMvc.perform(get("/sitemap.xml"))
 				.andExpect(status().isOk())
 				.andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_XML))
+				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
 				.andExpect(content().string(Matchers.containsString("<loc>https://example.test/lead-service-line/dc/washington/dc-water</loc>")))
 				.andExpect(content().string(Matchers.not(Matchers.containsString("/lead-service-line/co/denver/denver-water/replacement-cost"))));
 	}
