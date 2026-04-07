@@ -7,6 +7,7 @@ public record RecommendationClickEventRecord(
 		String productName,
 		String sourcePath,
 		String slot,
+		String validationLabel,
 		String destinationDomain
 ) {
 }

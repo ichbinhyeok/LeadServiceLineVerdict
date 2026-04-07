@@ -1,8 +1,10 @@
 @import owner.leadserviceline.pages.GuidePageModel
 @import owner.leadserviceline.pages.PageSeoModel
+@import owner.leadserviceline.recommendation.RecommendationTrackingService
 @param GuidePageModel page
 @param PageSeoModel seo
 @param String gaMeasurementId
+@param RecommendationTrackingService recommendationTracking
 <!doctype html>
 <html lang="en">
 <head>
@@ -193,7 +195,7 @@
                          data-ga-recommendation-category="${recommendation.category()}"
                          data-ga-merchant-name="${recommendation.merchantName()}"
                          data-ga-destination-label="${recommendation.destinationLabel()}">
-                        <img src="/events/recommendation-impression?slug=${recommendation.slug()}&pagePath=/guides/${page.guide().slug()}&slot=guide-card"
+                        <img src="${recommendationTracking.impressionPath(recommendation.slug(), "/guides/" + page.guide().slug(), "guide-card")}"
                              alt=""
                              width="1"
                              height="1"
@@ -208,7 +210,7 @@
                         <p class="muted">${recommendation.evidenceNote()}</p>
                         <div class="hero-actions" style="margin-top: 18px;">
                             <a class="button"
-                               href="/go/${recommendation.slug()}?slot=guide-card"
+                               href="${recommendationTracking.clickPath(recommendation.slug(), "/guides/" + page.guide().slug(), "guide-card")}"
                                rel="nofollow noopener"
                                target="_blank"
                                data-ga-click-event="recommendation_click"

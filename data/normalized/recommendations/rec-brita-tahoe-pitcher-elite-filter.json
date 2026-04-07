@@ -1,0 +1,18 @@
+{
+  "recommendationId" : "rec-brita-tahoe-pitcher-elite-filter",
+  "slug" : "brita-tahoe-pitcher-elite-filter",
+  "guideSlug" : "best-lead-reduction-filters-after-a-lead-notice",
+  "displayOrder" : 1,
+  "name" : "Brita Tahoe Water Pitcher with Elite Filter",
+  "badge" : "Lower-maintenance pitcher",
+  "category" : "pitcher",
+  "merchantName" : "Brita",
+  "destinationLabel" : "See current price",
+  "destinationUrl" : "https://www.brita.com/products/tahoe-water-pitcher-elite-filter/",
+  "amazonFallbackUrl" : "https://www.amazon.com/s?k=Brita+Tahoe+Water+Pitcher+with+Elite+Filter",
+  "bestFor" : "Readers who want a familiar 10-cup pitcher starter setup and a longer filter-change interval than a higher-maintenance pitcher workflow.",
+  "whyItFits" : "This is a cleaner entry recommendation than a cartridge-only upsell because it ships as a full starter setup. Brita positions the Tahoe as a 10-cup pitcher bundled with the Elite filter and a SmartLight indicator, which makes the maintenance story easier to follow for households that want a simple first move.",
+  "watchout" : "It is still a refill-and-fridge pitcher, so it is weaker for heavier all-day kitchen use or readers who want filtered water on demand right at the faucet.",
+  "evidenceNote" : "Brita says the Tahoe includes one Elite filter, removes 99% of lead, and lasts 120 gallons or about 6 months for most households.",
+  "lastVerified" : [ 2026, 4, 7 ]
+}

@@ -86,8 +86,8 @@ public class LeadServiceLinePageService {
 				addressGeocoder,
 				new ObjectMapper(),
 				new LookupLoggingProperties(false, "data/logs/lookup-events.jsonl", 14),
-				new RecommendationLoggingProperties(false, "data/logs/recommendation-clicks.jsonl", "data/logs/recommendation-impressions.jsonl", 30),
-				new SiteRuntimeProperties("https://leadlinerecord.com", false, "", true, "admin", "tlsgur3108", "")
+				new RecommendationLoggingProperties(false, "data/logs/recommendation-clicks.jsonl", "data/logs/recommendation-impressions.jsonl", 30, ""),
+				new SiteRuntimeProperties("https://leadlinerecord.com", false, "", false, "", "", "")
 		);
 	}
 
@@ -392,8 +392,8 @@ public class LeadServiceLinePageService {
 						))
 		);
 		var metrics = List.of(
-				new OpsMetric("Recommendation impressions", recommendationImpressions.size()),
-				new OpsMetric("Recommendation clicks", recommendationEvents.size()),
+				new OpsMetric("Validated recommendation impressions", recommendationImpressions.size()),
+				new OpsMetric("Validated recommendation clicks", recommendationEvents.size()),
 				new OpsMetric("Unique products", (int) recommendationEvents.stream()
 						.map(RecommendationClickEventRecord::recommendationSlug)
 						.filter(this::hasText)
@@ -414,6 +414,7 @@ public class LeadServiceLinePageService {
 				slotPerformance,
 				pagePerformance,
 				recommendationLoggingProperties.recommendationLogEnabled(),
+				recommendationLoggingProperties.eventProtectionEnabled(),
 				lookupLoggingProperties.lookupLogEnabled(),
 				siteRuntimeProperties.opsReviewEnabled()
 		);

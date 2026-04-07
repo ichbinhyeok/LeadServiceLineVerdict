@@ -9,10 +9,10 @@
   "merchantName" : "Tap Score",
   "destinationLabel" : "See current options",
   "destinationUrl" : "https://mytapscore.com/products/lead-and-copper-water-test",
-  "amazonFallbackUrl" : "https://www.amazon.com/s?k=lead+and+copper+water+test+kit",
+  "amazonFallbackUrl" : "",
   "bestFor" : "Readers whose main question is whether lead or copper are showing up at the tap and who do not need a huge city-water panel yet.",
   "whyItFits" : "This is the cleanest recommendation when the decision is narrow and the site is trying not to oversell a much broader test than the reader actually needs.",
   "watchout" : "It will not answer the broader disinfection-byproduct or volatile-organic-compound questions that can matter after water-main work or a wider city-water concern.",
-  "evidenceNote" : "Tap Score says this kit is recommended for targeted lead and copper testing and includes certified laboratory analysis with quantified results.",
-  "lastVerified" : [ 2026, 4, 6 ]
+  "evidenceNote" : "Tap Score says this kit is recommended for targeted lead and copper testing, includes certified laboratory analysis, and reports quantified lead and copper results.",
+  "lastVerified" : [ 2026, 4, 7 ]
 }

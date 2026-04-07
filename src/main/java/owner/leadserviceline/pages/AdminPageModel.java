@@ -9,6 +9,7 @@ public record AdminPageModel(
 		List<AdminPerformanceRow> slotPerformance,
 		List<AdminPerformanceRow> pagePerformance,
 		boolean recommendationLogEnabled,
+		boolean recommendationTrackingProtected,
 		boolean lookupLogEnabled,
 		boolean opsReviewEnabled
 ) {

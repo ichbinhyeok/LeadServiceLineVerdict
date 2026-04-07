@@ -163,7 +163,7 @@ class DataBuildToolTest {
 		assertTrue(Files.exists(dataRoot.resolve("normalized/sources/src-hastings-program.json")));
 		assertTrue(Files.exists(dataRoot.resolve("normalized/sources/src-sioux-city-inventory.json")));
 		assertTrue(Files.exists(dataRoot.resolve("normalized/guides/guide-who-pays-for-lead-service-line-replacement.json")));
-		assertTrue(Files.exists(dataRoot.resolve("normalized/recommendations/rec-brita-elite-replacement-filters.json")));
+		assertTrue(Files.exists(dataRoot.resolve("normalized/recommendations/rec-brita-tahoe-pitcher-elite-filter.json")));
 		assertTrue(Files.exists(dataRoot.resolve("normalized/recommendations/rec-tap-score-advanced-city-water.json")));
 
 		var routes = Files.readString(dataRoot.resolve("derived/routes.json"));

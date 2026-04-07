@@ -10,6 +10,7 @@ import owner.leadserviceline.lookup.LookupEventLogger;
 import owner.leadserviceline.recommendation.RecommendationDestinationResolver;
 import owner.leadserviceline.recommendation.RecommendationClickLogger;
 import owner.leadserviceline.recommendation.RecommendationImpressionLogger;
+import owner.leadserviceline.recommendation.RecommendationTrackingService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -39,6 +40,7 @@ public class SiteController {
 	private final RecommendationDestinationResolver recommendationDestinationResolver;
 	private final RecommendationClickLogger recommendationClickLogger;
 	private final RecommendationImpressionLogger recommendationImpressionLogger;
+	private final RecommendationTrackingService recommendationTrackingService;
 	private final SiteRuntimeProperties siteRuntimeProperties;
 
 	public SiteController(
@@ -47,6 +49,7 @@ public class SiteController {
 			RecommendationDestinationResolver recommendationDestinationResolver,
 			RecommendationClickLogger recommendationClickLogger,
 			RecommendationImpressionLogger recommendationImpressionLogger,
+			RecommendationTrackingService recommendationTrackingService,
 			SiteRuntimeProperties siteRuntimeProperties
 	) {
 		this.pageService = pageService;
@@ -54,12 +57,18 @@ public class SiteController {
 		this.recommendationDestinationResolver = recommendationDestinationResolver;
 		this.recommendationClickLogger = recommendationClickLogger;
 		this.recommendationImpressionLogger = recommendationImpressionLogger;
+		this.recommendationTrackingService = recommendationTrackingService;
 		this.siteRuntimeProperties = siteRuntimeProperties;
 	}
 
 	@ModelAttribute("gaMeasurementId")
 	public String gaMeasurementId() {
 		return hasText(siteRuntimeProperties.gaMeasurementId()) ? siteRuntimeProperties.gaMeasurementId().trim() : "";
+	}
+
+	@ModelAttribute("recommendationTracking")
+	public RecommendationTrackingService recommendationTracking() {
+		return recommendationTrackingService;
 	}
 
 	@GetMapping("/")
@@ -124,6 +133,9 @@ public class SiteController {
 			HttpServletResponse response,
 			Model model
 	) {
+		if (!siteRuntimeProperties.adminConfigured()) {
+			throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+		}
 		if (!hasValidAdminAuthorization(authorization)) {
 			return unauthorizedAdmin();
 		}
@@ -177,13 +189,36 @@ public class SiteController {
 	@GetMapping("/go/{slug}")
 	public ResponseEntity<Void> recommendationRedirect(
 			@PathVariable String slug,
+			@RequestParam(required = false) String sourcePath,
 			@RequestParam(required = false) String slot,
-			@RequestHeader(value = "Referer", required = false) String referer
+			@RequestParam(required = false, name = "sig") String signature,
+			@RequestHeader(value = "Referer", required = false) String referer,
+			@RequestHeader(value = "Sec-Fetch-Site", required = false) String secFetchSite,
+			@RequestHeader(value = HttpHeaders.USER_AGENT, required = false) String userAgent,
+			HttpServletRequest request
 	) {
 		var recommendation = pageService.recommendation(slug)
 				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
 		var destination = recommendationDestinationResolver.resolve(recommendation);
-		recommendationClickLogger.logClick(recommendation, destination.url(), referer, slot);
+		var verification = recommendationTrackingService.validateClick(
+				recommendation.slug(),
+				sourcePath,
+				slot,
+				signature,
+				referer,
+				secFetchSite,
+				userAgent,
+				request.getRemoteAddr()
+		);
+		if (verification.trusted()) {
+			recommendationClickLogger.logClick(
+					recommendation,
+					destination.url(),
+					verification.trackedPath(),
+					verification.slot(),
+					verification.validationLabel()
+			);
+		}
 		return ResponseEntity.status(HttpStatus.FOUND)
 				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
 				.header("Pragma", "no-cache")
@@ -198,11 +233,35 @@ public class SiteController {
 	public ResponseEntity<byte[]> recommendationImpression(
 			@RequestParam String slug,
 			@RequestParam(required = false) String pagePath,
-			@RequestParam(required = false) String slot
+			@RequestParam(required = false) String slot,
+			@RequestParam(required = false, name = "sig") String signature,
+			@RequestHeader(value = "Referer", required = false) String referer,
+			@RequestHeader(value = "Sec-Fetch-Site", required = false) String secFetchSite,
+			@RequestHeader(value = "Sec-Fetch-Dest", required = false) String secFetchDest,
+			@RequestHeader(value = HttpHeaders.USER_AGENT, required = false) String userAgent,
+			HttpServletRequest request
 	) {
 		var recommendation = pageService.recommendation(slug)
 				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-		recommendationImpressionLogger.logImpression(recommendation, pagePath, slot);
+		var verification = recommendationTrackingService.validateImpression(
+				recommendation.slug(),
+				pagePath,
+				slot,
+				signature,
+				referer,
+				secFetchSite,
+				secFetchDest,
+				userAgent,
+				request.getRemoteAddr()
+		);
+		if (verification.trusted()) {
+			recommendationImpressionLogger.logImpression(
+					recommendation,
+					verification.trackedPath(),
+					verification.slot(),
+					verification.validationLabel()
+			);
+		}
 		return ResponseEntity.ok()
 				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
 				.header("Pragma", "no-cache")
@@ -274,7 +333,7 @@ public class SiteController {
 	}
 
 	private boolean hasValidAdminAuthorization(String authorization) {
-		if (!siteRuntimeProperties.adminEnabled()) {
+		if (!siteRuntimeProperties.adminConfigured()) {
 			return false;
 		}
 		if (authorization == null || !authorization.startsWith("Basic ")) {

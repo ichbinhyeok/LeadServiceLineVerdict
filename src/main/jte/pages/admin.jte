@@ -56,7 +56,7 @@
                     <p>This page is intentionally narrow. It is here to confirm whether buying-guide clicks are happening at all, which products get the earliest traction, and whether the internal ops queue is reachable.</p>
                     <div class="support-banner" style="margin-top: 28px; background: rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.9);">
                         <strong style="color: #ffffff;">Security note</strong>
-                        <p style="color: rgba(215, 226, 255, 0.88);">This route uses HTTP Basic auth and should still sit behind environment-level secret overrides in production.</p>
+                        <p style="color: rgba(215, 226, 255, 0.88);">This route uses HTTP Basic auth and signed recommendation events. Treat these counts as directional validated activity, not billing-grade analytics.</p>
                     </div>
                 </div>
                 <div class="hero-copy">
@@ -65,7 +65,7 @@
                             <div class="stat-card soft">
                                 <small>${metric.label()}</small>
                                 <strong>${metric.value()}</strong>
-                                <p>Current internal count from the local log snapshot.</p>
+                                <p>Current internal count from the validated local log snapshot.</p>
                             </div>
                         @endfor
                     </div>
@@ -84,7 +84,11 @@
                 <div class="checklist-list" style="margin-top: 22px;">
                     <div class="checklist-item">
                         <strong>Recommendation click log</strong>
-                        <p>@if (page.recommendationLogEnabled()) Enabled. @else Disabled. @endif This controls whether `/go/...` redirect clicks are written to the local JSONL log.</p>
+                        <p>@if (page.recommendationLogEnabled()) Enabled. @else Disabled. @endif This controls whether validated `/go/...` redirect clicks are written to the local JSONL log.</p>
+                    </div>
+                    <div class="checklist-item">
+                        <strong>Signed recommendation tracking</strong>
+                        <p>@if (page.recommendationTrackingProtected()) Enabled. @else Disabled until a recommendation event secret is configured. @endif Public recommendation endpoints stay live either way, but only signed same-page requests should count as trusted activity.</p>
                     </div>
                     <div class="checklist-item">
                         <strong>Lookup log</strong>
@@ -107,11 +111,11 @@
         <div class="editorial-line">
             <div class="kicker">Recent recommendation clicks</div>
         </div>
-        <h2>Latest outbound product activity.</h2>
+        <h2>Latest validated outbound product activity.</h2>
         @if (page.recentClicks().isEmpty())
             <div class="support-banner">
                 <strong>No click events yet</strong>
-                <p>Once readers click the buying-guide buttons, the latest events will appear here.</p>
+                <p>Once readers click the signed buying-guide buttons, the latest validated events will appear here.</p>
             </div>
         @else
             <div class="ops-grid">
@@ -140,11 +144,11 @@
                 <div class="editorial-line">
                     <div class="kicker">Slot performance</div>
                 </div>
-                <h2>Which CTA surfaces are getting action.</h2>
+                <h2>Which CTA surfaces are getting validated action.</h2>
                 @if (page.slotPerformance().isEmpty())
                     <div class="support-banner">
                         <strong>No slot data yet</strong>
-                        <p>Slot-level impressions and clicks will appear here once pages start loading and readers hit recommendation CTAs.</p>
+                        <p>Slot-level validated impressions and clicks will appear here once pages start loading and readers hit recommendation CTAs.</p>
                     </div>
                 @else
                     <div class="content-stack">
@@ -163,11 +167,11 @@
                 <div class="editorial-line">
                     <div class="kicker">Page performance</div>
                 </div>
-                <h2>Which pages are generating recommendation activity.</h2>
+                <h2>Which pages are generating validated recommendation activity.</h2>
                 @if (page.pagePerformance().isEmpty())
                     <div class="support-banner">
                         <strong>No page data yet</strong>
-                        <p>Page-level impressions and clicks will appear here once recommendation surfaces start loading.</p>
+                        <p>Page-level validated impressions and clicks will appear here once recommendation surfaces start loading.</p>
                     </div>
                 @else
                     <div class="content-stack">

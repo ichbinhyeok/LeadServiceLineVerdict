@@ -9,10 +9,10 @@
   "merchantName" : "Tap Score",
   "destinationLabel" : "See current options",
   "destinationUrl" : "https://mytapscore.com/products/advanced-city-water-test",
-  "amazonFallbackUrl" : "https://www.amazon.com/s?k=advanced+city+water+test+kit",
+  "amazonFallbackUrl" : "",
   "bestFor" : "Readers who want one thorough lab-backed answer after a notice, repeated water-quality concern, or post-replacement comparison.",
   "whyItFits" : "This is the stronger recommendation when the reader clearly wants a full baseline instead of piecemeal testing and would act differently if a wider set of contaminants appears.",
   "watchout" : "It costs more than the narrow kits, so it is overkill unless the reader will actually use the broader result set to decide on treatment, follow-up testing, or escalation.",
   "evidenceNote" : "Tap Score says the Advanced City Water Test covers 111 analytes, including metals, VOCs, and disinfection byproducts, with step-by-step sampling instructions.",
-  "lastVerified" : [ 2026, 4, 6 ]
+  "lastVerified" : [ 2026, 4, 7 ]
 }

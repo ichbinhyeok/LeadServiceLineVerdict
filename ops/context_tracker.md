@@ -27,6 +27,8 @@
 - OCI deployment scaffolding now exists with ARM64 Docker build, `docker-compose.yml`, external port `8094`, internal port `8080`, and a GitHub Actions deploy workflow.
 - Deployment now pins the OCI server to `shinhyeok22/leadline:${GIT_SHA}` instead of trusting `latest` alone, so image provenance can be verified after each rollout.
 - The OCI workflow is now manual-only (`workflow_dispatch`) so `main` pushes do not modify the shared server automatically.
+- Admin access now fails closed: the route stays hidden by default, enabling admin without explicit credentials fails configuration binding, and the legacy fallback credential pair is no longer accepted.
+- Recommendation redirect and impression logging now use signed same-page tracking parameters with practical spoof suppression, while public redirect and pixel responses remain usable even when an event is not trusted.
 - This remains the highest-priority vertical.
 
 ## Latest decisions
@@ -35,6 +37,8 @@
 - Revenue starts with tests, filters, and replacement referrals.
 - Recommended stack is `Spring Boot` + `jte`.
 - Phase 1 storage is raw `CSV` plus normalized and derived `JSON`.
+- Public recommendation endpoints stay public, but only signed page-generated events should count as trusted admin analytics.
+- Admin should return `404` when disabled or misconfigured instead of advertising a dormant Basic Auth surface.
 
 ## What changed this session
 - Merged project-local docs with the independent spec set.
@@ -139,16 +143,21 @@
 - Re-verified after the CSS pass that the sampled desktop and iPhone SE pages have no horizontal overflow, no sub-16px body/link/form text in the audited selectors, working click flows, and zero browser console errors.
 - Ran a route-inventory-wide visual QA pass across all `274` public routes plus `/` and `/lookup`, split into four desktop chunks and four iPhone SE chunks, and found no remaining horizontal overflow, no below-threshold body/form/link text, and no undersized mobile nav/tab/button targets under the current audit rules.
 - Verified representative interactive flows after the full scan, including home to guides, state program rollup to utility program, utility tab transitions, and mobile lookup resolution, with no application console errors during the app scan.
+- Removed fallback admin credentials from runtime defaults, added startup validation for explicit non-legacy admin credentials, and split controller tests so disabled admin returns `404` while enabled admin still uses Basic Auth.
+- Added signed recommendation click and impression URLs to guide and utility recommendation surfaces, validated those events server-side, suppressed cross-site or malformed requests, and deduped repeated same-client events in short windows before writing JSONL logs.
+- Updated the admin dashboard copy and metrics to describe recommendation data as validated directional activity rather than raw trustworthy performance data.
+- Added focused tests for admin misconfiguration, hidden-by-default admin behavior, and signed recommendation logging with spoof suppression and dedupe.
 
 ## Next recommended tasks
-1. Add more structured inventory counts and sharper notice-language evidence for narrative-only utilities where official sources allow it.
-2. Improve resolver precision beyond municipality and ZIP heuristics with parcel-authoritative geocoding or a better boundary dataset.
-3. Add narrative-quality checks for cost methodology copy before medium-confidence cost pages are indexable.
-4. Keep support-layer routes selective and explicitly tied to local evidence rather than broad utility expansion.
-5. Resume cohort expansion only after another round of core page evidence improvements is in place.
-6. Run browser-based visual QA once the local Playwright permission issue is cleared so the unified frontend pass can be checked in a real browser.
+1. Set `LEAD_LINE_ADMIN_USERNAME`, `LEAD_LINE_ADMIN_PASSWORD`, and `LEAD_LINE_RECOMMENDATION_EVENT_SECRET` in each real environment before relying on admin or recommendation analytics.
+2. Keep recommendation dashboard language conservative and resist treating JSONL counts as fraud-proof conversion reporting.
+3. Add more structured inventory counts and sharper notice-language evidence for narrative-only utilities where official sources allow it.
+4. Improve resolver precision beyond municipality and ZIP heuristics with parcel-authoritative geocoding or a better boundary dataset.
+5. Add narrative-quality checks for cost methodology copy before medium-confidence cost pages are indexable.
+6. Keep support-layer routes selective and explicitly tied to local evidence rather than broad utility expansion.
 
 ## Open questions
 - How aggressive the first city-page layer should be.
 - Whether phase 1 address resolution should stay heuristic or graduate to parcel-authoritative geocoding.
 - Whether medium-confidence cost pages should be indexable from launch or held back until more methodology text exists.
+- Whether recommendation event validation should eventually distinguish trusted same-origin browser traffic from server-side QA traffic in the admin UI rather than only at log-write time.

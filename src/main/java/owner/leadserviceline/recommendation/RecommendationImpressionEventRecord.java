@@ -5,6 +5,7 @@ public record RecommendationImpressionEventRecord(
 		String recommendationSlug,
 		String guideSlug,
 		String pagePath,
-		String slot
+		String slot,
+		String validationLabel
 ) {
 }

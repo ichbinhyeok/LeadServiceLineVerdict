@@ -35,12 +35,12 @@ class RecommendationDestinationResolverTest {
 		));
 
 		var resolved = resolver.resolve(recommendation(
-				"brita-elite-replacement-filters",
-				"https://www.brita.com/products/elite-replacement-filters/",
-				"https://www.amazon.com/s?k=Brita+Elite+Replacement+Filters"
+				"brita-tahoe-pitcher-elite-filter",
+				"https://www.brita.com/products/tahoe-water-pitcher-elite-filter/",
+				"https://www.amazon.com/s?k=Brita+Tahoe+Water+Pitcher+with+Elite+Filter"
 		));
 
-		assertEquals("https://www.amazon.com/s?k=Brita+Elite+Replacement+Filters&tag=leadline-20", resolved.url());
+		assertEquals("https://www.amazon.com/s?k=Brita+Tahoe+Water+Pitcher+with+Elite+Filter&tag=leadline-20", resolved.url());
 		assertEquals("amazon-fallback", resolved.strategy());
 	}
 

@@ -36,7 +36,13 @@ public class RecommendationClickLogger {
 		this.properties = properties;
 	}
 
-	public void logClick(ProductRecommendationRecord recommendation, String destinationUrl, String referer, String slot) {
+	public void logClick(
+			ProductRecommendationRecord recommendation,
+			String destinationUrl,
+			String sourcePath,
+			String slot,
+			String validationLabel
+	) {
 		if (!properties.recommendationLogEnabled()) {
 			return;
 		}
@@ -46,8 +52,9 @@ public class RecommendationClickLogger {
 				recommendation.slug(),
 				recommendation.guideSlug(),
 				recommendation.name(),
-				extractSourcePath(referer),
+				normalizeValue(sourcePath),
 				normalizeValue(slot),
+				normalizeValue(validationLabel),
 				extractDestinationDomain(destinationUrl)
 		);
 
@@ -125,18 +132,6 @@ public class RecommendationClickLogger {
 		} catch (IOException exception) {
 			LOGGER.warn("Skipping unreadable recommendation log line during append");
 			return Optional.empty();
-		}
-	}
-
-	private String extractSourcePath(String referer) {
-		if (referer == null || referer.isBlank()) {
-			return "";
-		}
-		try {
-			var uri = URI.create(referer);
-			return uri.getPath() == null ? "" : uri.getPath();
-		} catch (IllegalArgumentException exception) {
-			return referer.startsWith("/") ? referer : "";
 		}
 	}
 

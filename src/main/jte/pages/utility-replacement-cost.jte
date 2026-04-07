@@ -1,8 +1,10 @@
 @import owner.leadserviceline.pages.UtilityPageModel
 @import owner.leadserviceline.pages.PageSeoModel
+@import owner.leadserviceline.recommendation.RecommendationTrackingService
 @param UtilityPageModel page
 @param PageSeoModel seo
 @param String gaMeasurementId
+@param RecommendationTrackingService recommendationTracking
 <!doctype html>
 <html lang="en">
 <head>
@@ -248,7 +250,7 @@
                  data-ga-recommendation-name="PUR PLUS Faucet Filtration System"
                  data-ga-recommendation-category="faucet-filter"
                  data-ga-merchant-name="PUR">
-                <img src="/events/recommendation-impression?slug=pur-plus-faucet-system-vertical&pagePath=${page.currentRoute().path()}&slot=utility-cost-faucet"
+                <img src="${recommendationTracking.impressionPath("pur-plus-faucet-system-vertical", page.currentRoute().path(), "utility-cost-faucet")}"
                      alt=""
                      width="1"
                      height="1"
@@ -259,7 +261,7 @@
                 <h3>PUR PLUS Faucet Filtration System</h3>
                 <p>Best when the household needs a simple interim setup while quotes, reimbursements, or utility timing are still unresolved.</p>
                 <a class="button"
-                   href="/go/pur-plus-faucet-system-vertical?slot=utility-cost-faucet"
+                   href="${recommendationTracking.clickPath("pur-plus-faucet-system-vertical", page.currentRoute().path(), "utility-cost-faucet")}"
                    rel="nofollow noopener"
                    target="_blank"
                    data-ga-click-event="recommendation_click"
@@ -277,7 +279,7 @@
                  data-ga-recommendation-name="Epic Smart Shield Under-Sink Filter"
                  data-ga-recommendation-category="under-sink-filter"
                  data-ga-merchant-name="Epic Water Filters">
-                <img src="/events/recommendation-impression?slug=epic-smart-shield-under-sink&pagePath=${page.currentRoute().path()}&slot=utility-cost-under-sink"
+                <img src="${recommendationTracking.impressionPath("epic-smart-shield-under-sink", page.currentRoute().path(), "utility-cost-under-sink")}"
                      alt=""
                      width="1"
                      height="1"
@@ -288,7 +290,7 @@
                 <h3>Epic Smart Shield Under-Sink Filter</h3>
                 <p>Best when the likely delay is long enough that a sturdier under-sink setup makes more sense than a shorter-term workaround.</p>
                 <a class="button"
-                   href="/go/epic-smart-shield-under-sink?slot=utility-cost-under-sink"
+                   href="${recommendationTracking.clickPath("epic-smart-shield-under-sink", page.currentRoute().path(), "utility-cost-under-sink")}"
                    rel="nofollow noopener"
                    target="_blank"
                    data-ga-click-event="recommendation_click"
@@ -306,7 +308,7 @@
                  data-ga-recommendation-name="Tap Score Essential City Water Test"
                  data-ga-recommendation-category="water-test"
                  data-ga-merchant-name="Tap Score">
-                <img src="/events/recommendation-impression?slug=tap-score-essential-city-water&pagePath=${page.currentRoute().path()}&slot=utility-cost-test"
+                <img src="${recommendationTracking.impressionPath("tap-score-essential-city-water", page.currentRoute().path(), "utility-cost-test")}"
                      alt=""
                      width="1"
                      height="1"
@@ -317,7 +319,7 @@
                 <h3>Tap Score Essential City Water Test</h3>
                 <p>Best when a broader baseline could justify the interim plan or document a before-and-after change while replacement remains pending.</p>
                 <a class="button"
-                   href="/go/tap-score-essential-city-water?slot=utility-cost-test"
+                   href="${recommendationTracking.clickPath("tap-score-essential-city-water", page.currentRoute().path(), "utility-cost-test")}"
                    rel="nofollow noopener"
                    target="_blank"
                    data-ga-click-event="recommendation_click"

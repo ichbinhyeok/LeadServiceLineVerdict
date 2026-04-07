@@ -1,8 +1,10 @@
 @import owner.leadserviceline.pages.UtilityPageModel
 @import owner.leadserviceline.pages.PageSeoModel
+@import owner.leadserviceline.recommendation.RecommendationTrackingService
 @param UtilityPageModel page
 @param PageSeoModel seo
 @param String gaMeasurementId
+@param RecommendationTrackingService recommendationTracking
 <!doctype html>
 <html lang="en">
 <head>
@@ -147,7 +149,7 @@
                  data-ga-recommendation-name="PUR PLUS Faucet Filtration System"
                  data-ga-recommendation-category="faucet-filter"
                  data-ga-merchant-name="PUR">
-                <img src="/events/recommendation-impression?slug=pur-plus-faucet-system-vertical&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-faucet"
+                <img src="${recommendationTracking.impressionPath("pur-plus-faucet-system-vertical", page.currentRoute().path(), "utility-filter-testing-faucet")}"
                      alt=""
                      width="1"
                      height="1"
@@ -158,7 +160,7 @@
                 <h3>PUR PLUS Faucet Filtration System</h3>
                 <p>Best when the household wants filtered drinking water on demand without waiting on a pitcher refill.</p>
                 <a class="button"
-                   href="/go/pur-plus-faucet-system-vertical?slot=utility-filter-testing-faucet"
+                   href="${recommendationTracking.clickPath("pur-plus-faucet-system-vertical", page.currentRoute().path(), "utility-filter-testing-faucet")}"
                    rel="nofollow noopener"
                    target="_blank"
                    data-ga-click-event="recommendation_click"
@@ -176,7 +178,7 @@
                  data-ga-recommendation-name="ZeroWater 10 Cup Pitcher"
                  data-ga-recommendation-category="pitcher-filter"
                  data-ga-merchant-name="ZeroWater">
-                <img src="/events/recommendation-impression?slug=zerowater-10-cup-pitcher&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-pitcher"
+                <img src="${recommendationTracking.impressionPath("zerowater-10-cup-pitcher", page.currentRoute().path(), "utility-filter-testing-pitcher")}"
                      alt=""
                      width="1"
                      height="1"
@@ -187,7 +189,7 @@
                 <h3>ZeroWater 10 Cup Pitcher</h3>
                 <p>Best when the household prefers a portable pitcher and can stay disciplined on more active filter changes.</p>
                 <a class="button"
-                   href="/go/zerowater-10-cup-pitcher?slot=utility-filter-testing-pitcher"
+                   href="${recommendationTracking.clickPath("zerowater-10-cup-pitcher", page.currentRoute().path(), "utility-filter-testing-pitcher")}"
                    rel="nofollow noopener"
                    target="_blank"
                    data-ga-click-event="recommendation_click"
@@ -205,7 +207,7 @@
                  data-ga-recommendation-name="Tap Score Lead and Copper Water Test"
                  data-ga-recommendation-category="water-test"
                  data-ga-merchant-name="Tap Score">
-                <img src="/events/recommendation-impression?slug=tap-score-lead-and-copper&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-test"
+                <img src="${recommendationTracking.impressionPath("tap-score-lead-and-copper", page.currentRoute().path(), "utility-filter-testing-test")}"
                      alt=""
                      width="1"
                      height="1"
@@ -216,7 +218,7 @@
                 <h3>Tap Score Lead and Copper Water Test</h3>
                 <p>Best when a narrower lab-backed result would change the next step for this utility-specific situation.</p>
                 <a class="button"
-                   href="/go/tap-score-lead-and-copper?slot=utility-filter-testing-test"
+                   href="${recommendationTracking.clickPath("tap-score-lead-and-copper", page.currentRoute().path(), "utility-filter-testing-test")}"
                    rel="nofollow noopener"
                    target="_blank"
                    data-ga-click-event="recommendation_click"

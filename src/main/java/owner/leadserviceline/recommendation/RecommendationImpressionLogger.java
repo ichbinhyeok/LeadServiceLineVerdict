@@ -35,7 +35,7 @@ public class RecommendationImpressionLogger {
 		this.properties = properties;
 	}
 
-	public void logImpression(ProductRecommendationRecord recommendation, String pagePath, String slot) {
+	public void logImpression(ProductRecommendationRecord recommendation, String pagePath, String slot, String validationLabel) {
 		if (!properties.recommendationLogEnabled()) {
 			return;
 		}
@@ -45,7 +45,8 @@ public class RecommendationImpressionLogger {
 				recommendation.slug(),
 				recommendation.guideSlug(),
 				normalizeValue(pagePath),
-				normalizeValue(slot)
+				normalizeValue(slot),
+				normalizeValue(validationLabel)
 		);
 
 		try {

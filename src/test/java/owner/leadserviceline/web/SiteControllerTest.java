@@ -3,6 +3,7 @@ package owner.leadserviceline.web;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
+import owner.leadserviceline.recommendation.RecommendationTrackingService;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,16 +24,20 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 		"lead-service-line.ops-review-enabled=true",
 		"lead-service-line.ops-review-token=test-token",
 		"lead-service-line.admin-enabled=true",
-		"lead-service-line.admin-username=admin",
-		"lead-service-line.admin-password=tlsgur3108",
+		"lead-service-line.admin-username=test-admin",
+		"lead-service-line.admin-password=test-password-123",
 		"lead-service-line.site-base-url=https://example.test",
-		"lead-service-line.ga-measurement-id=G-TEST123456"
+		"lead-service-line.ga-measurement-id=G-TEST123456",
+		"lead-service-line.recommendation-event-secret=test-recommendation-secret"
 })
 @AutoConfigureMockMvc
 class SiteControllerTest {
 
 	@Autowired
 	private MockMvc mockMvc;
+
+	@Autowired
+	private RecommendationTrackingService recommendationTracking;
 
 	@Test
 	void homePageRendersSeedUtilities() throws Exception {
@@ -271,31 +276,42 @@ class SiteControllerTest {
 		mockMvc.perform(get("/guides/best-lead-reduction-filters-after-a-lead-notice"))
 				.andExpect(status().isOk())
 				.andExpect(content().string(Matchers.containsString("data-ga-page-type=\"guide\"")))
-				.andExpect(content().string(Matchers.containsString("Brita Elite Replacement Filters")))
+				.andExpect(content().string(Matchers.containsString("Brita Tahoe Water Pitcher with Elite Filter")))
 				.andExpect(content().string(Matchers.containsString("Epic Smart Shield Under-Sink Water Filter System")))
 				.andExpect(content().string(Matchers.containsString("data-ga-impression-event=\"recommendation_impression\"")))
 				.andExpect(content().string(Matchers.containsString("data-ga-click-event=\"recommendation_click\"")))
-				.andExpect(content().string(Matchers.containsString("/go/brita-elite-replacement-filters?slot=guide-card")))
-				.andExpect(content().string(Matchers.containsString("/events/recommendation-impression?slug=brita-elite-replacement-filters&pagePath=/guides/best-lead-reduction-filters-after-a-lead-notice&slot=guide-card")));
+				.andExpect(content().string(Matchers.containsString("/go/brita-tahoe-pitcher-elite-filter?slot=guide-card")))
+				.andExpect(content().string(Matchers.containsString("sourcePath=/guides/best-lead-reduction-filters-after-a-lead-notice")))
+				.andExpect(content().string(Matchers.containsString("pagePath=/guides/best-lead-reduction-filters-after-a-lead-notice")))
+				.andExpect(content().string(Matchers.containsString("sig=")));
 	}
 
 	@Test
 	void recommendationRedirectUsesOfficialProductUrl() throws Exception {
-		mockMvc.perform(get("/go/brita-elite-replacement-filters")
-						.param("slot", "guide-card")
+		var redirectPath = recommendationTracking.clickPath(
+				"brita-tahoe-pitcher-elite-filter",
+				"/guides/best-lead-reduction-filters-after-a-lead-notice",
+				"guide-card"
+		);
+
+		mockMvc.perform(get(redirectPath)
 						.header("Referer", "https://example.test/guides/best-lead-reduction-filters-after-a-lead-notice"))
 				.andExpect(status().is3xxRedirection())
-				.andExpect(header().string("Location", "https://www.brita.com/products/elite-replacement-filters/"))
+				.andExpect(header().string("Location", "https://www.brita.com/products/tahoe-water-pitcher-elite-filter/"))
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
 				.andExpect(header().string("X-Robots-Tag", Matchers.containsString("noindex, nofollow")));
 	}
 
 	@Test
 	void recommendationImpressionPixelResponds() throws Exception {
-		mockMvc.perform(get("/events/recommendation-impression")
-						.param("slug", "brita-elite-replacement-filters")
-						.param("pagePath", "/guides/best-lead-reduction-filters-after-a-lead-notice")
-						.param("slot", "guide-card"))
+		var impressionPath = recommendationTracking.impressionPath(
+				"brita-tahoe-pitcher-elite-filter",
+				"/guides/best-lead-reduction-filters-after-a-lead-notice",
+				"guide-card"
+		);
+
+		mockMvc.perform(get(impressionPath)
+						.header("Referer", "https://example.test/guides/best-lead-reduction-filters-after-a-lead-notice"))
 				.andExpect(status().isOk())
 				.andExpect(content().contentTypeCompatibleWith(MediaType.IMAGE_GIF))
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")));
@@ -1302,11 +1318,11 @@ class SiteControllerTest {
 	@Test
 	void adminPageRendersWithBasicAuth() throws Exception {
 		mockMvc.perform(get("/admin")
-						.header("Authorization", basicAuth("admin", "tlsgur3108")))
+						.header("Authorization", basicAuth("test-admin", "test-password-123")))
 				.andExpect(status().isOk())
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
 				.andExpect(content().string(Matchers.containsString("Recommendation click activity and internal review entry points.")))
-				.andExpect(content().string(Matchers.containsString("Recommendation click log")))
+				.andExpect(content().string(Matchers.containsString("Signed recommendation tracking")))
 				.andExpect(content().string(Matchers.containsString("Ops review")));
 	}
 
