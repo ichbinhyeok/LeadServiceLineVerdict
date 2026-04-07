@@ -2,6 +2,7 @@
 @import owner.leadserviceline.pages.PageSeoModel
 @param UtilityPageModel page
 @param PageSeoModel seo
+@param String gaMeasurementId
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +12,17 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    @if (gaMeasurementId != null && !gaMeasurementId.isBlank())
+        <meta name="ga-measurement-id" content="${gaMeasurementId}">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+        <script>
+            const gaMeasurementId = document.querySelector('meta[name="ga-measurement-id"]').content;
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', gaMeasurementId);
+        </script>
+    @endif
     <meta property="og:site_name" content="Lead Line Record">
     <meta property="og:title" content="${seo.title()}">
     <meta property="og:description" content="${seo.description()}">
@@ -28,11 +40,19 @@
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">$unsafe{jsonLd}</script>
     @endfor
-    <script src="/app.js?v=20260406-mobile-nav1" defer></script>
+    <script src="/app.js?v=20260407-ga-events1" defer></script>
     <link rel="stylesheet" href="/app.css?v=20260406-mobile-nav1">
     <link rel="icon" href="/favicon.svg?v=20260405-qa3" type="image/svg+xml">
 </head>
-<body>
+<body
+        data-ga-page-type="utility"
+        data-ga-utility-id="${page.utility().utilityId()}"
+        data-ga-utility-slug="${page.utility().utilitySlug()}"
+        data-ga-utility-name="${page.utility().utilityName()}"
+        data-ga-utility-city="${page.utility().city()}"
+        data-ga-utility-state="${page.utility().state()}"
+        data-ga-utility-section="${page.section().routeTemplate()}"
+        data-ga-route-indexable="${page.currentRoute().indexable()}">
 <header class="site-header">
     <div class="site-header__inner">
         <a class="brand-mark" href="/">Lead Line Record</a>
@@ -221,7 +241,13 @@
         </div>
         <h2>Direct product options while replacement funding or scheduling is still moving.</h2>
         <div class="section-grid three">
-            <div class="content-card tint-blue">
+            <div class="content-card tint-blue"
+                 data-ga-impression-event="recommendation_impression"
+                 data-ga-slot="utility-cost-faucet"
+                 data-ga-recommendation-slug="pur-plus-faucet-system-vertical"
+                 data-ga-recommendation-name="PUR PLUS Faucet Filtration System"
+                 data-ga-recommendation-category="faucet-filter"
+                 data-ga-merchant-name="PUR">
                 <img src="/events/recommendation-impression?slug=pur-plus-faucet-system-vertical&pagePath=${page.currentRoute().path()}&slot=utility-cost-faucet"
                      alt=""
                      width="1"
@@ -232,9 +258,25 @@
                 <span class="label">Lower-friction filter</span>
                 <h3>PUR PLUS Faucet Filtration System</h3>
                 <p>Best when the household needs a simple interim setup while quotes, reimbursements, or utility timing are still unresolved.</p>
-                <a class="button" href="/go/pur-plus-faucet-system-vertical?slot=utility-cost-faucet" rel="nofollow noopener" target="_blank">Open direct filter option</a>
+                <a class="button"
+                   href="/go/pur-plus-faucet-system-vertical?slot=utility-cost-faucet"
+                   rel="nofollow noopener"
+                   target="_blank"
+                   data-ga-click-event="recommendation_click"
+                   data-ga-slot="utility-cost-faucet"
+                   data-ga-recommendation-slug="pur-plus-faucet-system-vertical"
+                   data-ga-recommendation-name="PUR PLUS Faucet Filtration System"
+                   data-ga-recommendation-category="faucet-filter"
+                   data-ga-merchant-name="PUR"
+                   data-ga-destination-label="Open direct filter option">Open direct filter option</a>
             </div>
-            <div class="content-card tint-soft">
+            <div class="content-card tint-soft"
+                 data-ga-impression-event="recommendation_impression"
+                 data-ga-slot="utility-cost-under-sink"
+                 data-ga-recommendation-slug="epic-smart-shield-under-sink"
+                 data-ga-recommendation-name="Epic Smart Shield Under-Sink Filter"
+                 data-ga-recommendation-category="under-sink-filter"
+                 data-ga-merchant-name="Epic Water Filters">
                 <img src="/events/recommendation-impression?slug=epic-smart-shield-under-sink&pagePath=${page.currentRoute().path()}&slot=utility-cost-under-sink"
                      alt=""
                      width="1"
@@ -245,9 +287,25 @@
                 <span class="label">Higher-volume kitchen</span>
                 <h3>Epic Smart Shield Under-Sink Filter</h3>
                 <p>Best when the likely delay is long enough that a sturdier under-sink setup makes more sense than a shorter-term workaround.</p>
-                <a class="button" href="/go/epic-smart-shield-under-sink?slot=utility-cost-under-sink" rel="nofollow noopener" target="_blank">Open direct under-sink option</a>
+                <a class="button"
+                   href="/go/epic-smart-shield-under-sink?slot=utility-cost-under-sink"
+                   rel="nofollow noopener"
+                   target="_blank"
+                   data-ga-click-event="recommendation_click"
+                   data-ga-slot="utility-cost-under-sink"
+                   data-ga-recommendation-slug="epic-smart-shield-under-sink"
+                   data-ga-recommendation-name="Epic Smart Shield Under-Sink Filter"
+                   data-ga-recommendation-category="under-sink-filter"
+                   data-ga-merchant-name="Epic Water Filters"
+                   data-ga-destination-label="Open direct under-sink option">Open direct under-sink option</a>
             </div>
-            <div class="content-card tint-warm">
+            <div class="content-card tint-warm"
+                 data-ga-impression-event="recommendation_impression"
+                 data-ga-slot="utility-cost-test"
+                 data-ga-recommendation-slug="tap-score-essential-city-water"
+                 data-ga-recommendation-name="Tap Score Essential City Water Test"
+                 data-ga-recommendation-category="water-test"
+                 data-ga-merchant-name="Tap Score">
                 <img src="/events/recommendation-impression?slug=tap-score-essential-city-water&pagePath=${page.currentRoute().path()}&slot=utility-cost-test"
                      alt=""
                      width="1"
@@ -258,7 +316,17 @@
                 <span class="label">Baseline utility-water test</span>
                 <h3>Tap Score Essential City Water Test</h3>
                 <p>Best when a broader baseline could justify the interim plan or document a before-and-after change while replacement remains pending.</p>
-                <a class="button" href="/go/tap-score-essential-city-water?slot=utility-cost-test" rel="nofollow noopener" target="_blank">Open direct test option</a>
+                <a class="button"
+                   href="/go/tap-score-essential-city-water?slot=utility-cost-test"
+                   rel="nofollow noopener"
+                   target="_blank"
+                   data-ga-click-event="recommendation_click"
+                   data-ga-slot="utility-cost-test"
+                   data-ga-recommendation-slug="tap-score-essential-city-water"
+                   data-ga-recommendation-name="Tap Score Essential City Water Test"
+                   data-ga-recommendation-category="water-test"
+                   data-ga-merchant-name="Tap Score"
+                   data-ga-destination-label="Open direct test option">Open direct test option</a>
             </div>
         </div>
     </section>

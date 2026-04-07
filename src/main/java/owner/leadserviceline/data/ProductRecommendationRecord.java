@@ -16,6 +16,7 @@ public record ProductRecommendationRecord(
 		String merchantName,
 		String destinationLabel,
 		String destinationUrl,
+		String amazonFallbackUrl,
 		String bestFor,
 		String whyItFits,
 		String watchout,
@@ -32,6 +33,7 @@ public record ProductRecommendationRecord(
 		merchantName = merchantName == null ? "" : merchantName;
 		destinationLabel = destinationLabel == null ? "" : destinationLabel;
 		destinationUrl = destinationUrl == null ? "" : destinationUrl;
+		amazonFallbackUrl = amazonFallbackUrl == null ? "" : amazonFallbackUrl;
 		bestFor = bestFor == null ? "" : bestFor;
 		whyItFits = whyItFits == null ? "" : whyItFits;
 		watchout = watchout == null ? "" : watchout;

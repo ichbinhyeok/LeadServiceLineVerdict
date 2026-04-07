@@ -2,6 +2,7 @@
 @import owner.leadserviceline.pages.PageSeoModel
 @param UtilityPageModel page
 @param PageSeoModel seo
+@param String gaMeasurementId
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +12,17 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    @if (gaMeasurementId != null && !gaMeasurementId.isBlank())
+        <meta name="ga-measurement-id" content="${gaMeasurementId}">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+        <script>
+            const gaMeasurementId = document.querySelector('meta[name="ga-measurement-id"]').content;
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', gaMeasurementId);
+        </script>
+    @endif
     <meta property="og:site_name" content="Lead Line Record">
     <meta property="og:title" content="${seo.title()}">
     <meta property="og:description" content="${seo.description()}">
@@ -28,11 +40,19 @@
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">$unsafe{jsonLd}</script>
     @endfor
-    <script src="/app.js?v=20260406-mobile-nav1" defer></script>
+    <script src="/app.js?v=20260407-ga-events1" defer></script>
     <link rel="stylesheet" href="/app.css?v=20260406-mobile-nav1">
     <link rel="icon" href="/favicon.svg?v=20260405-qa3" type="image/svg+xml">
 </head>
-<body>
+<body
+        data-ga-page-type="utility"
+        data-ga-utility-id="${page.utility().utilityId()}"
+        data-ga-utility-slug="${page.utility().utilitySlug()}"
+        data-ga-utility-name="${page.utility().utilityName()}"
+        data-ga-utility-city="${page.utility().city()}"
+        data-ga-utility-state="${page.utility().state()}"
+        data-ga-utility-section="${page.section().routeTemplate()}"
+        data-ga-route-indexable="${page.currentRoute().indexable()}">
 <header class="site-header">
     <div class="site-header__inner">
         <a class="brand-mark" href="/">Lead Line Record</a>

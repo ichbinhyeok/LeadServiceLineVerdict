@@ -2,6 +2,7 @@
 @import owner.leadserviceline.pages.PageSeoModel
 @param UtilityPageModel page
 @param PageSeoModel seo
+@param String gaMeasurementId
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +12,17 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    @if (gaMeasurementId != null && !gaMeasurementId.isBlank())
+        <meta name="ga-measurement-id" content="${gaMeasurementId}">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+        <script>
+            const gaMeasurementId = document.querySelector('meta[name="ga-measurement-id"]').content;
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', gaMeasurementId);
+        </script>
+    @endif
     <meta property="og:site_name" content="Lead Line Record">
     <meta property="og:title" content="${seo.title()}">
     <meta property="og:description" content="${seo.description()}">
@@ -28,11 +40,19 @@
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">$unsafe{jsonLd}</script>
     @endfor
-    <script src="/app.js?v=20260406-mobile-nav1" defer></script>
+    <script src="/app.js?v=20260407-ga-events1" defer></script>
     <link rel="stylesheet" href="/app.css?v=20260406-mobile-nav1">
     <link rel="icon" href="/favicon.svg?v=20260405-qa3" type="image/svg+xml">
 </head>
-<body>
+<body
+        data-ga-page-type="utility"
+        data-ga-utility-id="${page.utility().utilityId()}"
+        data-ga-utility-slug="${page.utility().utilitySlug()}"
+        data-ga-utility-name="${page.utility().utilityName()}"
+        data-ga-utility-city="${page.utility().city()}"
+        data-ga-utility-state="${page.utility().state()}"
+        data-ga-utility-section="${page.section().routeTemplate()}"
+        data-ga-route-indexable="${page.currentRoute().indexable()}">
 <header class="site-header">
     <div class="site-header__inner">
         <a class="brand-mark" href="/">Lead Line Record</a>
@@ -120,7 +140,13 @@
         </div>
         <h2>Direct interim options for this utility page.</h2>
         <div class="section-grid three">
-            <div class="content-card tint-blue">
+            <div class="content-card tint-blue"
+                 data-ga-impression-event="recommendation_impression"
+                 data-ga-slot="utility-filter-testing-faucet"
+                 data-ga-recommendation-slug="pur-plus-faucet-system-vertical"
+                 data-ga-recommendation-name="PUR PLUS Faucet Filtration System"
+                 data-ga-recommendation-category="faucet-filter"
+                 data-ga-merchant-name="PUR">
                 <img src="/events/recommendation-impression?slug=pur-plus-faucet-system-vertical&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-faucet"
                      alt=""
                      width="1"
@@ -131,9 +157,25 @@
                 <span class="label">Fastest setup</span>
                 <h3>PUR PLUS Faucet Filtration System</h3>
                 <p>Best when the household wants filtered drinking water on demand without waiting on a pitcher refill.</p>
-                <a class="button" href="/go/pur-plus-faucet-system-vertical?slot=utility-filter-testing-faucet" rel="nofollow noopener" target="_blank">Open quick-pick filter</a>
+                <a class="button"
+                   href="/go/pur-plus-faucet-system-vertical?slot=utility-filter-testing-faucet"
+                   rel="nofollow noopener"
+                   target="_blank"
+                   data-ga-click-event="recommendation_click"
+                   data-ga-slot="utility-filter-testing-faucet"
+                   data-ga-recommendation-slug="pur-plus-faucet-system-vertical"
+                   data-ga-recommendation-name="PUR PLUS Faucet Filtration System"
+                   data-ga-recommendation-category="faucet-filter"
+                   data-ga-merchant-name="PUR"
+                   data-ga-destination-label="Open quick-pick filter">Open quick-pick filter</a>
             </div>
-            <div class="content-card tint-soft">
+            <div class="content-card tint-soft"
+                 data-ga-impression-event="recommendation_impression"
+                 data-ga-slot="utility-filter-testing-pitcher"
+                 data-ga-recommendation-slug="zerowater-10-cup-pitcher"
+                 data-ga-recommendation-name="ZeroWater 10 Cup Pitcher"
+                 data-ga-recommendation-category="pitcher-filter"
+                 data-ga-merchant-name="ZeroWater">
                 <img src="/events/recommendation-impression?slug=zerowater-10-cup-pitcher&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-pitcher"
                      alt=""
                      width="1"
@@ -144,9 +186,25 @@
                 <span class="label">Pitcher option</span>
                 <h3>ZeroWater 10 Cup Pitcher</h3>
                 <p>Best when the household prefers a portable pitcher and can stay disciplined on more active filter changes.</p>
-                <a class="button" href="/go/zerowater-10-cup-pitcher?slot=utility-filter-testing-pitcher" rel="nofollow noopener" target="_blank">Open quick-pick pitcher</a>
+                <a class="button"
+                   href="/go/zerowater-10-cup-pitcher?slot=utility-filter-testing-pitcher"
+                   rel="nofollow noopener"
+                   target="_blank"
+                   data-ga-click-event="recommendation_click"
+                   data-ga-slot="utility-filter-testing-pitcher"
+                   data-ga-recommendation-slug="zerowater-10-cup-pitcher"
+                   data-ga-recommendation-name="ZeroWater 10 Cup Pitcher"
+                   data-ga-recommendation-category="pitcher-filter"
+                   data-ga-merchant-name="ZeroWater"
+                   data-ga-destination-label="Open quick-pick pitcher">Open quick-pick pitcher</a>
             </div>
-            <div class="content-card tint-warm">
+            <div class="content-card tint-warm"
+                 data-ga-impression-event="recommendation_impression"
+                 data-ga-slot="utility-filter-testing-test"
+                 data-ga-recommendation-slug="tap-score-lead-and-copper"
+                 data-ga-recommendation-name="Tap Score Lead and Copper Water Test"
+                 data-ga-recommendation-category="water-test"
+                 data-ga-merchant-name="Tap Score">
                 <img src="/events/recommendation-impression?slug=tap-score-lead-and-copper&pagePath=${page.currentRoute().path()}&slot=utility-filter-testing-test"
                      alt=""
                      width="1"
@@ -157,7 +215,17 @@
                 <span class="label">Targeted lab test</span>
                 <h3>Tap Score Lead and Copper Water Test</h3>
                 <p>Best when a narrower lab-backed result would change the next step for this utility-specific situation.</p>
-                <a class="button" href="/go/tap-score-lead-and-copper?slot=utility-filter-testing-test" rel="nofollow noopener" target="_blank">Open quick-pick test</a>
+                <a class="button"
+                   href="/go/tap-score-lead-and-copper?slot=utility-filter-testing-test"
+                   rel="nofollow noopener"
+                   target="_blank"
+                   data-ga-click-event="recommendation_click"
+                   data-ga-slot="utility-filter-testing-test"
+                   data-ga-recommendation-slug="tap-score-lead-and-copper"
+                   data-ga-recommendation-name="Tap Score Lead and Copper Water Test"
+                   data-ga-recommendation-category="water-test"
+                   data-ga-merchant-name="Tap Score"
+                   data-ga-destination-label="Open quick-pick test">Open quick-pick test</a>
             </div>
         </div>
     </section>

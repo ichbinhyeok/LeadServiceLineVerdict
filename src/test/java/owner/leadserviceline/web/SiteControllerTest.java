@@ -25,7 +25,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 		"lead-service-line.admin-enabled=true",
 		"lead-service-line.admin-username=admin",
 		"lead-service-line.admin-password=tlsgur3108",
-		"lead-service-line.site-base-url=https://example.test"
+		"lead-service-line.site-base-url=https://example.test",
+		"lead-service-line.ga-measurement-id=G-TEST123456"
 })
 @AutoConfigureMockMvc
 class SiteControllerTest {
@@ -269,8 +270,11 @@ class SiteControllerTest {
 	void buyingGuideRendersRecommendationCards() throws Exception {
 		mockMvc.perform(get("/guides/best-lead-reduction-filters-after-a-lead-notice"))
 				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("data-ga-page-type=\"guide\"")))
 				.andExpect(content().string(Matchers.containsString("Brita Elite Replacement Filters")))
 				.andExpect(content().string(Matchers.containsString("Epic Smart Shield Under-Sink Water Filter System")))
+				.andExpect(content().string(Matchers.containsString("data-ga-impression-event=\"recommendation_impression\"")))
+				.andExpect(content().string(Matchers.containsString("data-ga-click-event=\"recommendation_click\"")))
 				.andExpect(content().string(Matchers.containsString("/go/brita-elite-replacement-filters?slot=guide-card")))
 				.andExpect(content().string(Matchers.containsString("/events/recommendation-impression?slug=brita-elite-replacement-filters&pagePath=/guides/best-lead-reduction-filters-after-a-lead-notice&slot=guide-card")));
 	}
@@ -301,6 +305,9 @@ class SiteControllerTest {
 	void utilityFilterPageShowsDirectQuickPickLinks() throws Exception {
 		mockMvc.perform(get("/lead-service-line/co/denver/denver-water/filter-and-testing"))
 				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("data-ga-page-type=\"utility\"")))
+				.andExpect(content().string(Matchers.containsString("data-ga-utility-section=\"utility-filter-and-testing\"")))
+				.andExpect(content().string(Matchers.containsString("data-ga-click-event=\"recommendation_click\"")))
 				.andExpect(content().string(Matchers.containsString("/go/pur-plus-faucet-system-vertical?slot=utility-filter-testing-faucet")))
 				.andExpect(content().string(Matchers.containsString("/go/tap-score-lead-and-copper?slot=utility-filter-testing-test")));
 	}
@@ -309,6 +316,9 @@ class SiteControllerTest {
 	void utilityReplacementCostPageShowsDirectQuickPickLinks() throws Exception {
 		mockMvc.perform(get("/lead-service-line/dc/washington/dc-water/replacement-cost"))
 				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("data-ga-page-type=\"utility\"")))
+				.andExpect(content().string(Matchers.containsString("data-ga-utility-section=\"utility-replacement-cost\"")))
+				.andExpect(content().string(Matchers.containsString("data-ga-impression-event=\"recommendation_impression\"")))
 				.andExpect(content().string(Matchers.containsString("/go/pur-plus-faucet-system-vertical?slot=utility-cost-faucet")))
 				.andExpect(content().string(Matchers.containsString("/go/tap-score-essential-city-water?slot=utility-cost-test")));
 	}
@@ -1187,6 +1197,9 @@ class SiteControllerTest {
 	void philadelphiaOverviewShowsMailingTimelineAndHelpLoanPath() throws Exception {
 		mockMvc.perform(get("/lead-service-line/pa/philadelphia/philadelphia-water-department"))
 				.andExpect(status().isOk())
+				.andExpect(content().string(Matchers.containsString("data-ga-page-type=\"utility\"")))
+				.andExpect(content().string(Matchers.containsString("data-ga-utility-section=\"utility-overview\"")))
+				.andExpect(content().string(Matchers.containsString("data-ga-utility-slug=\"philadelphia-water-department\"")))
 				.andExpect(content().string(Matchers.containsString("November 2024")))
 				.andExpect(content().string(Matchers.containsString("December 2025")))
 				.andExpect(content().string(Matchers.containsString("zero-interest HELP loan")));
@@ -1304,6 +1317,9 @@ class SiteControllerTest {
 				.andExpect(content().string(Matchers.containsString("<title>Lead service line lookup, notices, programs")))
 				.andExpect(content().string(Matchers.containsString("<link rel=\"canonical\" href=\"https://example.test/\">")))
 				.andExpect(content().string(Matchers.containsString("<meta name=\"robots\" content=\"index,follow\">")))
+				.andExpect(content().string(Matchers.containsString("<meta name=\"ga-measurement-id\" content=\"G-TEST123456\">")))
+				.andExpect(content().string(Matchers.containsString("https://www.googletagmanager.com/gtag/js?id=G-TEST123456")))
+				.andExpect(content().string(Matchers.containsString("gtag('config', gaMeasurementId);")))
 				.andExpect(content().string(Matchers.containsString("<meta property=\"og:title\" content=\"Lead service line lookup, notices, programs")))
 				.andExpect(content().string(Matchers.containsString("<meta name=\"twitter:card\" content=\"summary_large_image\">")));
 	}
@@ -1328,7 +1344,7 @@ class SiteControllerTest {
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
 				.andExpect(content().string(Matchers.containsString("<loc>https://example.test/about</loc>")))
 				.andExpect(content().string(Matchers.containsString("<loc>https://example.test/lead-service-line/pa</loc>")))
-				.andExpect(content().string(Matchers.containsString("<lastmod>2026-04-06</lastmod>")))
+				.andExpect(content().string(Matchers.containsString("<lastmod>2026-04-07</lastmod>")))
 				.andExpect(content().string(Matchers.containsString("<loc>https://example.test/lead-service-line/dc/washington/dc-water</loc>")))
 				.andExpect(content().string(Matchers.not(Matchers.containsString("/lead-service-line/co/denver/denver-water/replacement-cost"))));
 	}
@@ -1344,7 +1360,9 @@ class SiteControllerTest {
 		mockMvc.perform(get("/contact"))
 				.andExpect(status().isOk())
 				.andExpect(content().string(Matchers.containsString("mailto:shinhyeok22@gmail.com")))
-				.andExpect(content().string(Matchers.containsString("shinhyeok22@gmail.com")));
+				.andExpect(content().string(Matchers.containsString("shinhyeok22@gmail.com")))
+				.andExpect(content().string(Matchers.containsString("<meta name=\"ga-measurement-id\" content=\"G-TEST123456\">")))
+				.andExpect(content().string(Matchers.containsString("gtag('config', gaMeasurementId);")));
 	}
 
 	@Test

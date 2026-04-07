@@ -2,6 +2,7 @@
 @import owner.leadserviceline.pages.PageSeoModel
 @param GuidePageModel page
 @param PageSeoModel seo
+@param String gaMeasurementId
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +12,17 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    @if (gaMeasurementId != null && !gaMeasurementId.isBlank())
+        <meta name="ga-measurement-id" content="${gaMeasurementId}">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+        <script>
+            const gaMeasurementId = document.querySelector('meta[name="ga-measurement-id"]').content;
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', gaMeasurementId);
+        </script>
+    @endif
     <meta property="og:site_name" content="Lead Line Record">
     <meta property="og:title" content="${seo.title()}">
     <meta property="og:description" content="${seo.description()}">
@@ -28,11 +40,14 @@
     @for (var jsonLd : seo.jsonLd())
         <script type="application/ld+json">$unsafe{jsonLd}</script>
     @endfor
-    <script src="/app.js?v=20260406-mobile-nav1" defer></script>
+    <script src="/app.js?v=20260407-ga-events1" defer></script>
     <link rel="stylesheet" href="/app.css?v=20260406-mobile-nav1">
     <link rel="icon" href="/favicon.svg?v=20260405-qa3" type="image/svg+xml">
 </head>
-<body>
+<body
+        data-ga-page-type="guide"
+        data-ga-guide-slug="${page.guide().slug()}"
+        data-ga-guide-title="${page.guide().title()}">
 <header class="site-header">
     <div class="site-header__inner">
         <a class="brand-mark" href="/">Lead Line Record</a>
@@ -156,7 +171,7 @@
                 <div class="kicker">Recommended products</div>
             </div>
             <h2>Products that match this exact decision lane.</h2>
-            <p class="muted" style="margin-top: 14px;">These links currently open official product pages through a local redirect, so merchant targets can be swapped later without rewriting the guide.</p>
+            <p class="muted" style="margin-top: 14px;">These links run through a local redirect so direct affiliate URLs can be injected later, while Amazon-tagged fallback links can cover the merchants that do not have a direct program yet.</p>
             @if ("best-lead-reduction-filters-after-a-lead-notice".equals(page.guide().slug()))
                 <div class="support-banner" style="margin-top: 22px;">
                     <strong>Certification first</strong>
@@ -170,7 +185,14 @@
             @endif
             <div class="section-grid two" style="margin-top: 24px;">
                 @for (var recommendation : page.recommendations())
-                    <div class="content-card">
+                    <div class="content-card"
+                         data-ga-impression-event="recommendation_impression"
+                         data-ga-slot="guide-card"
+                         data-ga-recommendation-slug="${recommendation.slug()}"
+                         data-ga-recommendation-name="${recommendation.name()}"
+                         data-ga-recommendation-category="${recommendation.category()}"
+                         data-ga-merchant-name="${recommendation.merchantName()}"
+                         data-ga-destination-label="${recommendation.destinationLabel()}">
                         <img src="/events/recommendation-impression?slug=${recommendation.slug()}&pagePath=/guides/${page.guide().slug()}&slot=guide-card"
                              alt=""
                              width="1"
@@ -185,7 +207,17 @@
                         <p><strong>Watchout:</strong> ${recommendation.watchout()}</p>
                         <p class="muted">${recommendation.evidenceNote()}</p>
                         <div class="hero-actions" style="margin-top: 18px;">
-                            <a class="button" href="/go/${recommendation.slug()}?slot=guide-card" rel="nofollow noopener" target="_blank">${recommendation.destinationLabel()}</a>
+                            <a class="button"
+                               href="/go/${recommendation.slug()}?slot=guide-card"
+                               rel="nofollow noopener"
+                               target="_blank"
+                               data-ga-click-event="recommendation_click"
+                               data-ga-slot="guide-card"
+                               data-ga-recommendation-slug="${recommendation.slug()}"
+                               data-ga-recommendation-name="${recommendation.name()}"
+                               data-ga-recommendation-category="${recommendation.category()}"
+                               data-ga-merchant-name="${recommendation.merchantName()}"
+                               data-ga-destination-label="${recommendation.destinationLabel()}">${recommendation.destinationLabel()}</a>
                         </div>
                         <p class="muted" style="margin-top: 14px;">${recommendation.merchantName()} - last verified ${recommendation.lastVerified().toString()}.</p>
                     </div>

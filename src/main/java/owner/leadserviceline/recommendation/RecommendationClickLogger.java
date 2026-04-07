@@ -36,7 +36,7 @@ public class RecommendationClickLogger {
 		this.properties = properties;
 	}
 
-	public void logClick(ProductRecommendationRecord recommendation, String referer, String slot) {
+	public void logClick(ProductRecommendationRecord recommendation, String destinationUrl, String referer, String slot) {
 		if (!properties.recommendationLogEnabled()) {
 			return;
 		}
@@ -48,7 +48,7 @@ public class RecommendationClickLogger {
 				recommendation.name(),
 				extractSourcePath(referer),
 				normalizeValue(slot),
-				extractDestinationDomain(recommendation.destinationUrl())
+				extractDestinationDomain(destinationUrl)
 		);
 
 		try {

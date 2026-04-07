@@ -2,6 +2,7 @@
 @import owner.leadserviceline.pages.PageSeoModel
 @param HomePageModel page
 @param PageSeoModel seo
+@param String gaMeasurementId
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +12,17 @@
     <meta name="description" content="${seo.description()}">
     <link rel="canonical" href="${seo.canonicalUrl()}">
     <meta name="robots" content="${seo.robots()}">
+    @if (gaMeasurementId != null && !gaMeasurementId.isBlank())
+        <meta name="ga-measurement-id" content="${gaMeasurementId}">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+        <script>
+            const gaMeasurementId = document.querySelector('meta[name="ga-measurement-id"]').content;
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', gaMeasurementId);
+        </script>
+    @endif
     <meta property="og:site_name" content="Lead Line Record">
     <meta property="og:title" content="${seo.title()}">
     <meta property="og:description" content="${seo.description()}">

@@ -9,6 +9,7 @@ public record SiteRuntimeProperties(
 		String opsReviewToken,
 		boolean adminEnabled,
 		String adminUsername,
-		String adminPassword
+		String adminPassword,
+		String gaMeasurementId
 ) {
 }

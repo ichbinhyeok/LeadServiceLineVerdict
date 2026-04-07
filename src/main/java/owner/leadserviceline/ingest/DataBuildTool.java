@@ -465,6 +465,9 @@ public final class DataBuildTool {
 			requiredNonBlank(recommendation.badge(), "recommendation.badge");
 			requiredNonBlank(recommendation.destinationLabel(), "recommendation.destinationLabel");
 			validateHttpsUrl(requiredNonBlank(recommendation.destinationUrl(), "recommendation.destinationUrl"), "recommendation.destinationUrl");
+			if (!recommendation.amazonFallbackUrl().isBlank()) {
+				validateHttpsUrl(recommendation.amazonFallbackUrl(), "recommendation.amazonFallbackUrl");
+			}
 			requiredNonBlank(recommendation.bestFor(), "recommendation.bestFor");
 			requiredNonBlank(recommendation.whyItFits(), "recommendation.whyItFits");
 			requiredNonBlank(recommendation.watchout(), "recommendation.watchout");

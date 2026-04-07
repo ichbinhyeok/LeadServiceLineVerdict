@@ -7,6 +7,7 @@ import java.util.Base64;
 import owner.leadserviceline.pages.LeadServiceLinePageService;
 import owner.leadserviceline.pages.OpsReviewSnapshotModel;
 import owner.leadserviceline.lookup.LookupEventLogger;
+import owner.leadserviceline.recommendation.RecommendationDestinationResolver;
 import owner.leadserviceline.recommendation.RecommendationClickLogger;
 import owner.leadserviceline.recommendation.RecommendationImpressionLogger;
 import jakarta.servlet.http.HttpServletRequest;
@@ -24,6 +25,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.server.ResponseStatusException;
 
 @Controller
@@ -34,6 +36,7 @@ public class SiteController {
 
 	private final LeadServiceLinePageService pageService;
 	private final LookupEventLogger lookupEventLogger;
+	private final RecommendationDestinationResolver recommendationDestinationResolver;
 	private final RecommendationClickLogger recommendationClickLogger;
 	private final RecommendationImpressionLogger recommendationImpressionLogger;
 	private final SiteRuntimeProperties siteRuntimeProperties;
@@ -41,15 +44,22 @@ public class SiteController {
 	public SiteController(
 			LeadServiceLinePageService pageService,
 			LookupEventLogger lookupEventLogger,
+			RecommendationDestinationResolver recommendationDestinationResolver,
 			RecommendationClickLogger recommendationClickLogger,
 			RecommendationImpressionLogger recommendationImpressionLogger,
 			SiteRuntimeProperties siteRuntimeProperties
 	) {
 		this.pageService = pageService;
 		this.lookupEventLogger = lookupEventLogger;
+		this.recommendationDestinationResolver = recommendationDestinationResolver;
 		this.recommendationClickLogger = recommendationClickLogger;
 		this.recommendationImpressionLogger = recommendationImpressionLogger;
 		this.siteRuntimeProperties = siteRuntimeProperties;
+	}
+
+	@ModelAttribute("gaMeasurementId")
+	public String gaMeasurementId() {
+		return hasText(siteRuntimeProperties.gaMeasurementId()) ? siteRuntimeProperties.gaMeasurementId().trim() : "";
 	}
 
 	@GetMapping("/")
@@ -172,13 +182,14 @@ public class SiteController {
 	) {
 		var recommendation = pageService.recommendation(slug)
 				.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-		recommendationClickLogger.logClick(recommendation, referer, slot);
+		var destination = recommendationDestinationResolver.resolve(recommendation);
+		recommendationClickLogger.logClick(recommendation, destination.url(), referer, slot);
 		return ResponseEntity.status(HttpStatus.FOUND)
 				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
 				.header("Pragma", "no-cache")
 				.header("Referrer-Policy", "no-referrer")
 				.header("X-Robots-Tag", "noindex, nofollow, noarchive")
-				.location(URI.create(recommendation.destinationUrl()))
+				.location(URI.create(destination.url()))
 				.build();
 	}
 

@@ -87,7 +87,7 @@ public class LeadServiceLinePageService {
 				new ObjectMapper(),
 				new LookupLoggingProperties(false, "data/logs/lookup-events.jsonl", 14),
 				new RecommendationLoggingProperties(false, "data/logs/recommendation-clicks.jsonl", "data/logs/recommendation-impressions.jsonl", 30),
-				new SiteRuntimeProperties("https://leadlinerecord.com", false, "", true, "admin", "tlsgur3108")
+				new SiteRuntimeProperties("https://leadlinerecord.com", false, "", true, "admin", "tlsgur3108", "")
 		);
 	}
 
@@ -1736,7 +1736,8 @@ public class LeadServiceLinePageService {
 								"Logging",
 								List.of(
 										"Optional internal lookup diagnostics are disabled by default. When enabled, the log is designed to keep only coarse buckets or short safe labels rather than raw submitted address text.",
-										"Retention for the optional lookup log is intentionally short-lived so the file stays operational, not archival."
+										"Retention for the optional lookup log is intentionally short-lived so the file stays operational, not archival.",
+										"The site also uses Google Analytics 4 to measure page views and engagement on public pages so the site owner can understand which utility records are being used."
 								)
 						),
 						new StaticPageSection(
