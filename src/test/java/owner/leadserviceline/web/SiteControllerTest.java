@@ -297,7 +297,7 @@ class SiteControllerTest {
 		mockMvc.perform(get(redirectPath)
 						.header("Referer", "https://example.test/guides/best-lead-reduction-filters-after-a-lead-notice"))
 				.andExpect(status().is3xxRedirection())
-				.andExpect(header().string("Location", "https://www.brita.com/products/tahoe-water-pitcher-elite-filter/"))
+				.andExpect(header().string("Location", "https://www.amazon.com/s?k=Brita+Tahoe+Water+Pitcher+with+Elite+Filter&tag=leadlinerecord-20"))
 				.andExpect(header().string("Cache-Control", Matchers.containsString("no-store")))
 				.andExpect(header().string("X-Robots-Tag", Matchers.containsString("noindex, nofollow")));
 	}
@@ -1333,11 +1333,44 @@ class SiteControllerTest {
 				.andExpect(content().string(Matchers.containsString("<title>Lead service line lookup, notices, programs")))
 				.andExpect(content().string(Matchers.containsString("<link rel=\"canonical\" href=\"https://example.test/\">")))
 				.andExpect(content().string(Matchers.containsString("<meta name=\"robots\" content=\"index,follow\">")))
+				.andExpect(content().string(Matchers.containsString("<link rel=\"icon\" href=\"/favicon.svg?v=20260405-qa3\" type=\"image/svg+xml\">")))
+				.andExpect(content().string(Matchers.containsString("<link rel=\"alternate icon\" href=\"/favicon.ico?v=20260408-ico1\" type=\"image/x-icon\">")))
+				.andExpect(content().string(Matchers.containsString("<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png?v=20260408-icons1\">")))
+				.andExpect(content().string(Matchers.containsString("<link rel=\"manifest\" href=\"/site.webmanifest?v=20260408-icons1\">")))
+				.andExpect(content().string(Matchers.containsString("<meta name=\"theme-color\" content=\"#0b5fff\">")))
 				.andExpect(content().string(Matchers.containsString("<meta name=\"ga-measurement-id\" content=\"G-TEST123456\">")))
 				.andExpect(content().string(Matchers.containsString("https://www.googletagmanager.com/gtag/js?id=G-TEST123456")))
 				.andExpect(content().string(Matchers.containsString("gtag('config', gaMeasurementId);")))
 				.andExpect(content().string(Matchers.containsString("<meta property=\"og:title\" content=\"Lead service line lookup, notices, programs")))
 				.andExpect(content().string(Matchers.containsString("<meta name=\"twitter:card\" content=\"summary_large_image\">")));
+	}
+
+	@Test
+	void faviconIcoResourceIsServed() throws Exception {
+		mockMvc.perform(get("/favicon.ico"))
+				.andExpect(status().isOk())
+				.andExpect(header().string("Content-Type", Matchers.containsString("image/x-icon")));
+	}
+
+	@Test
+	void mobileIconAndManifestResourcesAreServed() throws Exception {
+		mockMvc.perform(get("/apple-touch-icon.png"))
+				.andExpect(status().isOk())
+				.andExpect(header().string("Content-Type", Matchers.containsString("image/png")));
+
+		mockMvc.perform(get("/android-chrome-192x192.png"))
+				.andExpect(status().isOk())
+				.andExpect(header().string("Content-Type", Matchers.containsString("image/png")));
+
+		mockMvc.perform(get("/android-chrome-512x512.png"))
+				.andExpect(status().isOk())
+				.andExpect(header().string("Content-Type", Matchers.containsString("image/png")));
+
+		mockMvc.perform(get("/site.webmanifest"))
+				.andExpect(status().isOk())
+				.andExpect(header().string("Content-Type", Matchers.containsString("application/manifest+json")))
+				.andExpect(content().string(Matchers.containsString("\"src\": \"/android-chrome-192x192.png?v=20260408-icons1\"")))
+				.andExpect(content().string(Matchers.containsString("\"src\": \"/android-chrome-512x512.png?v=20260408-icons1\"")));
 	}
 
 	@Test

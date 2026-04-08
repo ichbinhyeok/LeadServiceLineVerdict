@@ -65,7 +65,10 @@ class RecommendationLoggingControllerTest {
 						.header("Sec-Fetch-Site", "same-origin")
 						.header(HttpHeaders.USER_AGENT, "JUnit Browser"))
 				.andExpect(status().is3xxRedirection())
-				.andExpect(header().string("Location", Matchers.containsString("brita.com/products/tahoe-water-pitcher-elite-filter")));
+				.andExpect(header().string("Location", Matchers.allOf(
+						Matchers.containsString("amazon.com/s?k=Brita+Tahoe+Water+Pitcher+with+Elite+Filter"),
+						Matchers.containsString("tag=leadlinerecord-20")
+				)));
 
 		mockMvc.perform(get(redirectPath)
 						.header("Referer", "https://example.test/guides/best-lead-reduction-filters-after-a-lead-notice")

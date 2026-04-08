@@ -43,6 +43,10 @@
     <script src="/app.js?v=20260406-mobile-nav1" defer></script>
     <link rel="stylesheet" href="/app.css?v=20260406-mobile-nav1">
     <link rel="icon" href="/favicon.svg?v=20260405-qa3" type="image/svg+xml">
+    <link rel="alternate icon" href="/favicon.ico?v=20260408-ico1" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260408-icons1">
+    <link rel="manifest" href="/site.webmanifest?v=20260408-icons1">
+    <meta name="theme-color" content="#0b5fff">
 </head>
 <body>
 <header class="site-header">

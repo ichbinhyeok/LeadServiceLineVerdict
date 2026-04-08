@@ -14,6 +14,8 @@ import owner.leadserviceline.recommendation.RecommendationTrackingService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -320,6 +322,14 @@ public class SiteController {
 				.header(HttpHeaders.CACHE_CONTROL, "no-store, max-age=0")
 				.header("Pragma", "no-cache")
 				.body(pageService.sitemapXml());
+	}
+
+	@GetMapping(value = "/site.webmanifest", produces = "application/manifest+json")
+	@ResponseBody
+	public ResponseEntity<Resource> siteWebManifest() {
+		return ResponseEntity.ok()
+				.contentType(MediaType.parseMediaType("application/manifest+json"))
+				.body(new ClassPathResource("static/site.webmanifest"));
 	}
 
 	private void requireOpsAccess(String opsToken) {
